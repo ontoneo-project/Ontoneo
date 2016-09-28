@@ -6,6 +6,8 @@ This ontology has been created to provide a consensus representation of salient 
 
 OntONeo  is a collection of entities related to anatomy, embryology and medical specialties related to care of woman and child (gynecology, obstetric, pediatric, neonatology).
 
+There is a Google Group for discussing the project at http://groups.google.com/group/ontoneo-discuss. Click the "Apply for Membership" link to join.
+
 # The OntONeo suite
 
 The OntONeo suite is a collection of open ontologies available about Obstetric and Neonatal domain, currently designed to be composed by three complementary sub-ontologies covering several data from electronic health records (EHRs) involved in the care of the pregnant woman, and of her baby.
