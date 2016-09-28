@@ -1,4 +1,4 @@
-# Ontoneo <img class=wp-image-96 align=right src="https://github.com/ffarinel/Ontoneo/blob/master/ontoneo_transparent.png"/>
+# Obstetric and Neonatal Ontology <img class=wp-image-96 align=right src="https://github.com/ffarinel/Ontoneo/blob/master/ontoneo_transparent.png"/>
 
 The Obstetric and Neonatal Ontology is a structured controlled vocabulary to provide a representation of the data from electronic health records (EHRs) involved in the care of the pregnant woman, and of her baby.
 
