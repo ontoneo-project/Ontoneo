@@ -1,0 +1,3689 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY fma "http://purl.obolibrary.org/obo/fma#" >
+    <!ENTITY pato "http://purl.obolibrary.org/obo/pato#" >
+    <!ENTITY sio "http://semanticscience.org/resource/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ontoneo "http://purl.obolibrary.org/obo/ontoneo/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY protege "http://protege.stanford.edu/plugins/owl/protege#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;ontoneo/ontoneo.owl#"
+     xml:base="&obo;ontoneo/ontoneo.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:ontoneo="&obo;ontoneo/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:pato="&obo;pato#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sio="http://semanticscience.org/resource/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:fma="&obo;fma#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="&obo;ontoneo/ontoneo.owl">
+        <rdfs:label xml:lang="en">The Ontology of Obstetric and Neonatal domain</rdfs:label>
+        <rdfs:label xml:lang="pt">A Ontologia do Domínio Obstétrico e Neonatal</rdfs:label>
+        <owl:versionInfo rdf:datatype="&xsd;dateTime">2016-11-07</owl:versionInfo>
+        <dc:source rdf:datatype="&xsd;string">ISBN:9780262527811 - Building Ontologies with Basic Formal Ontology. By Robert Arp, Barry Smith and Andrew D. Spear</dc:source>
+        <rdfs:comment rdf:datatype="&xsd;string">PERSON: Fernanda Farinelli
+OntONeo development prioritizes the reuse of classes and entities from FMA ontology to deal with human anatomy approaches. Every class reference of others ontology for the anatomy domain, for example, UBERON and CARO, in which has the cross-reference annotation to some FMA class are replaced by the FMA class referred.</rdfs:comment>
+        <rdfs:comment rdf:datatype="&xsd;string">PERSON: Fernanda Farinelli
+Ontoneo is a ontology that the development is in progress, then take in mind for while the stability of URIs and labels. We are sure that the upper level ontology used is BFO version 2 and that we are priorize the reuse of terms find on OBO Foundry ontologies.</rdfs:comment>
+        <dc:source rdf:datatype="&xsd;string">Woman’s Health Record Model from The American Congress of Obstetrician and Gynecologists (acog.org).</dc:source>
+        <dc:source rdf:datatype="&xsd;string">https://github.com/ontoneo-project/Ontoneo</dc:source>
+        <foaf:mbox rdf:datatype="&xsd;string">ontoneoontology@gmail.com</foaf:mbox>
+        <dc:contributor>Fernanda Farinelli</dc:contributor>
+        <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
+        <rdfs:comment xml:lang="en">IDs allocated to individuals: ONTONEO_90000000 - ONTONEO_99999999</rdfs:comment>
+        <dc:contributor xml:lang="en">Peter L. Elkin</dc:contributor>
+        <protege:defaultLanguage xml:lang="en">en</protege:defaultLanguage>
+        <foaf:homepage>https://ontoneo.com/</foaf:homepage>
+        <dc:creator xml:lang="en">Fernanda Farinelli</dc:creator>
+        <dc:contributor xml:lang="en">Mauricio B. de Almeida</dc:contributor>
+        <rdfs:comment xml:lang="en">OntoNeo, is developed by Fernanda Farinelli and her contributor group is licensed under CC BY 4.0.</rdfs:comment>
+        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
+The default language of this ontology is English mainly because the reusable ontologies are conceived in English. However, this ontology intends to be bilingual in order to attend the necessities of Brazilian issues. Then, every relevant term we defined in Portuguese (Brazilian portuguese) using the tag xml:lang=&quot;pt&quot; the follow annotations: label, definition, alternative term.</rdfs:comment>
+        <dc:contributor xml:lang="en">Zilma Silveira Nogueira Reis</dc:contributor>
+        <ontoneo:ONTONEO_1000000 xml:lang="pt">pt</ontoneo:ONTONEO_1000000>
+        <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/BFO_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/DOID_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/FMA_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/HP_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/IAO_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/OBI_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/OGMS_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/PATO_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/RO_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/SYMP_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/v1/ontoneo.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_1000000 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;ontoneo/ONTONEO_1000000">
+        <rdfs:label xml:lang="en">alternative language</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">An alternative language in which the ontology is represented.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON:Fernanda Farinelli</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">alternative language</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000125"/>
+        <rdfs:range rdf:resource="&xsd;language"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/identifier -->
+
+    <owl:AnnotationProperty rdf:about="&dc;identifier"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BCGO_0000075 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BCGO_0000075">
+        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
+        <rdfs:label xml:lang="en">examines</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">relates an investigation to any biologically-related entity that is examined as part of that process, such as a protein, a biological process, etc.</obo:IAO_0000115>
+        <rdfs:range rdf:resource="&obo;BFO_0000001"/>
+        <rdfs:isDefinedBy rdf:resource="&obo;bcgo.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&owl;topObjectProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/obo/owl/OBO_REL#exists_during -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#exists_during"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000001 -->
+
+    <owl:ObjectProperty rdf:about="&sio;SIO_000001">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">is related to</rdfs:label>
+        <rdfs:comment xml:lang="en">&apos;is related to&apos; is the top level relation in SIO</rdfs:comment>
+        <obo:IAO_0000115 xml:lang="en">A is related to B iff there is some relation between A and B.</obo:IAO_0000115>
+        <dc:identifier>SIO_000001</dc:identifier>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000736 -->
+
+    <owl:ObjectProperty rdf:about="&sio;SIO_000736">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">is comparable to</rdfs:label>
+        <dc:identifier>SIO_000736</dc:identifier>
+        <obo:IAO_0000115 xml:lang="en">is comparable to is a relation between two entities that share at least one feature whose value can be compared.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&sio;SIO_000001"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001242 -->
+
+    <owl:ObjectProperty rdf:about="&sio;SIO_001242">
+        <rdf:type rdf:resource="&owl;SymmetricProperty"/>
+        <rdfs:label xml:lang="en">is identical to</rdfs:label>
+        <dc:identifier>SIO_001242</dc:identifier>
+        <obo:IAO_0000115 xml:lang="en">is identical to is a relation between two objects that are conceptually the same notwithstanding provenance or other non-intrinsic attributes.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&sio;SIO_000736"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000012 -->
+
+    <owl:Class rdf:about="&obo;CMO_0000012">
+        <rdfs:label rdf:datatype="&xsd;string">body weight</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000128"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">CMO:0000012</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The heaviness or degree to which an entire organism&apos;s body is drawn to the earth by gravity.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cmo.owl</obo:IAO_0000412>
+        <obo:IAO_0000118 xml:lang="pt">peso corporal</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000013 -->
+
+    <owl:Class rdf:about="&obo;CMO_0000013">
+        <rdfs:label rdf:datatype="&xsd;string">body length</rdfs:label>
+        <rdfs:label xml:lang="pt">comprimento do corpo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000122"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A measurement of the longest dimension of a body, typically between two distinct ends of the body.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">CMO:0000013</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cmo.owl</obo:IAO_0000412>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0000106 -->
+
+    <owl:Class rdf:about="&obo;CMO_0000106">
+        <rdfs:label rdf:datatype="&xsd;string">body height</rdfs:label>
+        <rdfs:label xml:lang="pt">altura corporal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000119"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">CMO:0000106</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The vertical measurement of a body.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cmo.owl</obo:IAO_0000412>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001331 -->
+
+    <owl:Class rdf:about="&obo;CMO_0001331">
+        <rdfs:label rdf:datatype="&xsd;string">body height at withers</rdfs:label>
+        <rdfs:label xml:lang="pt">Altura do corpo na cernelha</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CMO_0000106"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-01-09T17:28:13Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">CMO:0001331</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">JSmith</oboInOwl:created_by>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The vertical measurement of the body of a four-legged animal, from the ground to the high part of the back between the shoulder blades.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cmo.owl</obo:IAO_0000412>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/CMO_0001332 -->
+
+    <owl:Class rdf:about="&obo;CMO_0001332">
+        <rdfs:label rdf:datatype="&xsd;string">body height at hip</rdfs:label>
+        <rdfs:label xml:lang="pt">Altura corporal no quadril</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;CMO_0000106"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-01-09T17:29:18Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">CMO:0001332</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">JSmith</oboInOwl:created_by>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The vertical measurement of the body of a four-legged animal, from the ground to the point of the hip.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cmo.owl</obo:IAO_0000412>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4 -->
+
+    <rdf:Description rdf:about="&obo;DOID_4">
+        <rdfs:label xml:lang="pt">doença</rdfs:label>
+        <owl:equivalentClass rdf:resource="&obo;OGMS_0000031"/>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+        <oboInOwl:hasDbXref>Term IRI: http://purl.obolibrary.org/obo/OGMS_0000031</oboInOwl:hasDbXref>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_16564 -->
+
+    <rdf:Description rdf:about="&obo;FMA_16564">
+        <rdfs:label xml:lang="pt">pelve feminina</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_17558 -->
+
+    <rdf:Description rdf:about="&obo;FMA_17558">
+        <rdfs:label xml:lang="pt">utero</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_19898 -->
+
+    <rdf:Description rdf:about="&obo;FMA_19898">
+        <rdfs:label xml:lang="pt">seio feminino</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_223655"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118 xml:lang="pt">mama feminina, seio da mulher</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_19908 -->
+
+    <rdf:Description rdf:about="&obo;FMA_19908">
+        <rdfs:label xml:lang="pt">seio femnino esquerdo</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_223655"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_19910 -->
+
+    <rdf:Description rdf:about="&obo;FMA_19910">
+        <rdfs:label xml:lang="pt">seio femnino direito</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_223655"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_19949 -->
+
+    <rdf:Description rdf:about="&obo;FMA_19949">
+        <rdfs:label xml:lang="pt">vagina</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_19970 -->
+
+    <rdf:Description rdf:about="&obo;FMA_19970">
+        <rdfs:label xml:lang="pt">vestíbulo da vagina</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_20367 -->
+
+    <rdf:Description rdf:about="&obo;FMA_20367">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_20374 -->
+
+    <rdf:Description rdf:about="&obo;FMA_20374">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_20394 -->
+
+    <rdf:Description rdf:about="&obo;FMA_20394">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="&obo;CMO_0000012"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="&obo;CMO_0000106"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000086"/>
+                        <owl:someValuesFrom rdf:resource="&obo;PATO_0020000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&sio;SIO_001242"/>
+                        <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_20462 -->
+
+    <rdf:Description rdf:about="&obo;FMA_20462">
+        <rdfs:label xml:lang="pt">vulva</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_222944 -->
+
+    <rdf:Description rdf:about="&obo;FMA_222944">
+        <rdfs:label xml:lang="pt">tronco feminino</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_223655 -->
+
+    <rdf:Description rdf:about="&obo;FMA_223655">
+        <rdfs:label xml:lang="pt">tórax feminino</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_222944"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_228738 -->
+
+    <rdf:Description rdf:about="&obo;FMA_228738">
+        <rdfs:label xml:lang="pt">garganta</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_259094 -->
+
+    <rdf:Description rdf:about="&obo;FMA_259094">
+        <rdfs:label xml:lang="pt">abdômen feminino</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118 xml:lang="pt">abdômen da mulher</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_45649 -->
+
+    <rdf:Description rdf:about="&obo;FMA_45649">
+        <rdfs:label xml:lang="pt">genitália externa feminina</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_45654 -->
+
+    <rdf:Description rdf:about="&obo;FMA_45654">
+        <rdfs:label xml:lang="pt">genitália interna feminina</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_46472 -->
+
+    <rdf:Description rdf:about="&obo;FMA_46472">
+        <rdfs:label xml:lang="pt">nariz</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_50720 -->
+
+    <rdf:Description rdf:about="&obo;FMA_50720">
+        <rdfs:label xml:lang="pt">artéria</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_52780 -->
+
+    <rdf:Description rdf:about="&obo;FMA_52780">
+        <rdfs:label xml:lang="pt">ouvido</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_53641 -->
+
+    <rdf:Description rdf:about="&obo;FMA_53641">
+        <rdfs:label xml:lang="pt">ouvido esquerdo</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_53642 -->
+
+    <rdf:Description rdf:about="&obo;FMA_53642">
+        <rdfs:label xml:lang="pt">ouvido esquerdo</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_54448 -->
+
+    <rdf:Description rdf:about="&obo;FMA_54448">
+        <rdfs:label xml:lang="pt">olho</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_54449 -->
+
+    <rdf:Description rdf:about="&obo;FMA_54449">
+        <rdfs:label xml:lang="pt">olho esquerdo</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_54450 -->
+
+    <rdf:Description rdf:about="&obo;FMA_54450">
+        <rdfs:label xml:lang="pt">olho esquedo</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67473 -->
+
+    <owl:Class rdf:about="&obo;FMA_67473">
+        <rdfs:label xml:lang="pt">parede do vaso sanguíneo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67812 -->
+
+    <rdf:Description rdf:about="&obo;FMA_67812">
+        <rdfs:label xml:lang="pt">corpo humano feminino</rdfs:label>
+        <rdfs:comment xml:lang="en">Anatomical structure which is the aggregate material substance of an individual member of the Homo sapiens species which is a woman?</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_7149 -->
+
+    <rdf:Description rdf:about="&obo;FMA_7149">
+        <rdfs:label xml:lang="pt">sistemas do corpo humano</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_7160 -->
+
+    <rdf:Description rdf:about="&obo;FMA_7160">
+        <rdfs:label xml:lang="pt">sistema reprodutivo</rdfs:label>
+        <obo:IAO_0000118 xml:lang="pt">sistema genital</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_7181 -->
+
+    <rdf:Description rdf:about="&obo;FMA_7181">
+        <rdfs:label xml:lang="pt">tronco</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9576 -->
+
+    <rdf:Description rdf:about="&obo;FMA_9576">
+        <rdfs:label xml:lang="pt">tórax</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_7181"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9577 -->
+
+    <rdf:Description rdf:about="&obo;FMA_9577">
+        <rdfs:label xml:lang="pt">abdômen</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9578 -->
+
+    <rdf:Description rdf:about="&obo;FMA_9578">
+        <rdfs:label xml:lang="pt">pélvis</rdfs:label>
+        <obo:IAO_0000118 xml:lang="pt">bacia</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9601 -->
+
+    <rdf:Description rdf:about="&obo;FMA_9601">
+        <rdfs:label xml:lang="pt">seio</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_9576"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118 xml:lang="pt">mama</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9670 -->
+
+    <owl:Class rdf:about="&obo;FMA_9670">
+        <rdfs:label xml:lang="pt">orção de sangue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9909 -->
+
+    <rdf:Description rdf:about="&obo;FMA_9909">
+        <rdfs:label xml:lang="pt">clitóris</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008015 -->
+
+    <owl:Class rdf:about="&obo;GO_0008015">
+        <rdfs:label xml:lang="en">blood circulation</rdfs:label>
+        <rdfs:label xml:lang="pt">circulação sanguínea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/go.owl</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en">The flow of blood through the body of an animal, enabling the transport of nutrients to the tissues and the removal of waste products.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="&obo;GO_0008150">
+        <rdfs:label xml:lang="en">biological_process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <obo:IAO_0000412>http://purl.obolibrary.org/obo/go.owl</obo:IAO_0000412>
+        <obo:IAO_0000115 xml:lang="en">Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000003 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000003">
+        <rdfs:label xml:lang="pt">unidade de medida</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000109 -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000109">
+        <rdfs:label xml:lang="pt">dado de medição</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
+
+    <rdf:Description rdf:about="&obo;NCBITaxon_9606">
+        <rdfs:label xml:lang="pt">Homo sapiens</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <rdf:Description rdf:about="&obo;OBI_0000011">
+        <rdfs:label xml:lang="pt">processo planejado</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000020 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000020">
+        <rdfs:label xml:lang="pt">sintoma</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000024 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000024">
+        <rdfs:label xml:lang="pt">sinal</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000029 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000029">
+        <rdfs:label xml:lang="pt">sinal vital</rdfs:label>
+        <obo:IAO_0000118 xml:lang="pt">SSVV</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000031">
+        <rdfs:label xml:lang="pt">doença</rdfs:label>
+        <oboInOwl:hasDbXref>DOID:4</oboInOwl:hasDbXref>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000057 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000057">
+        <rdfs:label xml:lang="pt">exame físico</rdfs:label>
+        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
+A process that has participant some human body and realizes some patient role, inhering to some Homo sapiens which has a genotypic sex quality.</rdfs:comment>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000083 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000083">
+        <rdfs:label xml:lang="pt">achados do exame físico</rdfs:label>
+        <obo:IAO_0000118 xml:lang="pt">achados diagnósticos do exame físico</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000097 -->
+
+    <rdf:Description rdf:about="&obo;OGMS_0000097">
+        <rdfs:label xml:lang="pt">consulta médica</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMIABIS_0001026 -->
+
+    <rdf:Description rdf:about="&obo;OMIABIS_0001026">
+        <rdfs:label xml:lang="pt">prontuário médico</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000011"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OGMS_0000097"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118 xml:lang="pt">prontuário do paciente, registro do paciente</obo:IAO_0000118>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
+
+    <rdf:Description rdf:about="&obo;PATO_0000011">
+        <rdfs:label xml:lang="pt">idade</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000119 -->
+
+    <rdf:Description rdf:about="&obo;PATO_0000119">
+        <rdfs:label xml:lang="pt">altura</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000122 -->
+
+    <rdf:Description rdf:about="&obo;PATO_0000122">
+        <rdfs:label xml:lang="pt">comprimento</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000128 -->
+
+    <rdf:Description rdf:about="&obo;PATO_0000128">
+        <rdfs:label xml:lang="pt">peso</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001018"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000146 -->
+
+    <rdf:Description rdf:about="&obo;PATO_0000146">
+        <rdfs:label xml:lang="pt">temperatura</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001025 -->
+
+    <rdf:Description rdf:about="&obo;PATO_0001025">
+        <rdfs:label xml:lang="pt">pressão</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001241 -->
+
+    <rdf:Description rdf:about="&obo;PATO_0001241">
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000118"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0002062 -->
+
+    <rdf:Description rdf:about="&obo;PATO_0002062">
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0020000 -->
+
+    <rdf:Description rdf:about="&obo;PATO_0020000">
+        <rdfs:label xml:lang="pt">genótipo do sexo</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0020001 -->
+
+    <rdf:Description rdf:about="&obo;PATO_0020001">
+        <rdfs:label xml:lang="pt">genótipo para sexo masculino</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0020002 -->
+
+    <rdf:Description rdf:about="&obo;PATO_0020002">
+        <rdfs:label xml:lang="pt">genótipo para sexo feminino</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000178 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000178">
+        <rdfs:label xml:lang="pt">perda de peso</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000196 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000196">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000403 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000403">
+        <rdfs:label xml:lang="pt">ganho de peso</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000410 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000410">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000459 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000459">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000461 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000461">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000473 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000473">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000480 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000480">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000486 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000486">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000488 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000488">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000504 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000504">
+        <rdfs:label xml:lang="pt">dor de cabeça</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000514 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000514">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000528 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000528">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000567 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000567">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000597 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000597">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000891 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0000891">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0019141 -->
+
+    <rdf:Description rdf:about="&obo;SYMP_0019141">
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
+    </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000004 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000004">
+        <rdfs:label xml:lang="en">blood pressure</rdfs:label>
+        <rdfs:label xml:lang="pt">pressão arterial</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;PATO_0001025"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002503"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_67473"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                        <owl:allValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;FMA_9670"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;RO_0000056"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;GO_0008015"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000029"/>
+        <obo:IAO_0000119>http://en.wikipedia.org/wiki/Blood_pressure</obo:IAO_0000119>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000116>Unless otherwise specified, a clinical report of a blood pressure is systolic left ventricular pressure over diastolic left ventricular pressure.</obo:IAO_0000116>
+        <obo:IAO_0000111>blood pressure</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">The pressure exerted by circulating blood on the walls of blood vessels.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000005 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000005">
+        <rdfs:label xml:lang="en">blood pressure measurement datum</rdfs:label>
+        <rdfs:label xml:lang="pt">pressão arterial medida</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000221"/>
+                <owl:someValuesFrom rdf:resource="&obo;VSO_0000004"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <obo:IAO_0000118 xml:lang="pt">PA, valor da pressão arterial, pressão arterial medida</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000006 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000006">
+        <rdfs:label xml:lang="en">blood pressure measurement process</rdfs:label>
+        <rdfs:label xml:lang="pt">processo de medição da pressão arterial</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;VSO_0000005"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000007 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000007">
+        <rdfs:label xml:lang="en">body temperature</rdfs:label>
+        <rdfs:label xml:lang="pt">temperatura corporal</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;PATO_0000146"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                        <owl:allValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                            </owl:Restriction>
+                        </owl:allValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000029"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The temperature of a part of the human body</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000008 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000008">
+        <rdfs:label xml:lang="en">body temperature measurement datum</rdfs:label>
+        <rdfs:label xml:lang="pt">temperatura corporal medida</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000221"/>
+                <owl:someValuesFrom rdf:resource="&obo;VSO_0000013"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <obo:IAO_0000118 xml:lang="pt">T</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000009 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000009">
+        <rdfs:label xml:lang="en">body temperature measurement process</rdfs:label>
+        <rdfs:label xml:lang="pt">processo de medição da temperatura corporal</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;VSO_0000008"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000013 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000013">
+        <rdfs:label xml:lang="en">core body temperature</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VSO_0000007"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000015 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000015">
+        <rdfs:label xml:lang="en">diastolic blood pressure</rdfs:label>
+        <rdfs:label xml:lang="pt">pressão areterial diastólica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VSO_0000004"/>
+        <obo:IAO_0000115>The blood pressure during diastole.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">Pad, pressão sanguínea diastólica</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000029 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000029">
+        <rdfs:label xml:lang="en">pulse rate</rdfs:label>
+        <rdfs:label xml:lang="pt">freqüência cardíaca</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000029"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_50720"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The rate at which an artery pulses (i.e., participates in expansion-contraction cycles) as blood passes through it.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">pulsação, batimentos cardíacos</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000030 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000030">
+        <rdfs:label xml:lang="en">pulse rate measurement datum</rdfs:label>
+        <rdfs:label xml:lang="pt">freqüência cardíaca medida</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000221"/>
+                <owl:someValuesFrom rdf:resource="&obo;VSO_0000029"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <obo:IAO_0000118 xml:lang="pt">FR, P, pulso, pulsação, pulsação medida</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000031 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000031">
+        <rdfs:label xml:lang="en">pulse rate measurement process</rdfs:label>
+        <rdfs:label xml:lang="pt">processo de medição da freqüência cardíaca</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;VSO_0000030"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000034 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000034">
+        <rdfs:label xml:lang="en">respiratory rate</rdfs:label>
+        <rdfs:label xml:lang="pt">freqüência respiratória</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000029"/>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000161"/>
+        <obo:IAO_0000115>The rate at which an organism breathes.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">respiração</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000035 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000035">
+        <rdfs:label xml:lang="en">respiratory rate measurement datum</rdfs:label>
+        <rdfs:label xml:lang="pt">freqüência respiratória medida</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000221"/>
+                <owl:someValuesFrom rdf:resource="&obo;VSO_0000034"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000109"/>
+        <obo:IAO_0000118 xml:lang="pt">FR, respiração medida</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000036 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000036">
+        <rdfs:label xml:lang="en">respiratory rate measurement process</rdfs:label>
+        <rdfs:label xml:lang="pt">processo de medição da freqüência respiratória</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;VSO_0000035"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VSO_0000038 -->
+
+    <owl:Class rdf:about="&obo;VSO_0000038">
+        <rdfs:label xml:lang="en">systolic blood pressure</rdfs:label>
+        <rdfs:label xml:lang="pt">pressão arterial sistólica</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VSO_0000004"/>
+        <obo:IAO_0000115>The blood pressure during systole.</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">Pas, pressão sanguínea sistólica</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000000 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000000">
+        <rdfs:label xml:lang="en">female physical examination</rdfs:label>
+        <rdfs:label xml:lang="pt">exame físico feminino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000057"/>
+        <obo:IAO_0000115 xml:lang="en">A physical examination that has participant some Female human body and realizes some patient role, inhering to some Homo sapiens which has female genotypic sex quality.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame físico que tem como participante algum corpo humano feminino e realiza um papel paciente, inerente a algums Homo sapiens, que tem a como qualidade genotípica o sexo feminino.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000001 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000001">
+        <rdfs:label xml:lang="en">head examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000002 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000002">
+        <rdfs:label xml:lang="en">female breast examination</rdfs:label>
+        <rdfs:label xml:lang="pt">exame da mama feminina</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000022"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000016"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_19898"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A female physical examination .</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame físico feminino .</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000003 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000003">
+        <rdfs:label xml:lang="en">female abdominal examination</rdfs:label>
+        <rdfs:label xml:lang="pt">exame abdominal feminino</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000023"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_259094"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000015"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A female physical examination .</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame físico feminino .</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">exame do abdome feminino</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000004 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000004">
+        <rdfs:label xml:lang="en">female pelvic examination</rdfs:label>
+        <rdfs:label xml:lang="pt">exame pélvico feminino</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000024"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_16564"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000018"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A female physical examination .</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame físico feminino .</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">exame da pélvis feminina</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000005 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000005">
+        <rdfs:label xml:lang="en">vaginal examination</rdfs:label>
+        <rdfs:label xml:lang="pt">exame vaginal</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_19949"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000000"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000019"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A female physical examination .</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="en">vaginal examination</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="pt">Um exame físico feminino .</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">exame vaginal, exame da vagina</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000006 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000006">
+        <rdfs:label xml:lang="en">eyes examination</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000001"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;FMA_54449"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;FMA_54450"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_54448"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000007 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000007">
+        <rdfs:label xml:lang="en">female breast palpation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000002"/>
+        <obo:IAO_0000115 xml:lang="en">A female breast examination .</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame de mama feminina .</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000008 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000008">
+        <rdfs:label xml:lang="en">female breast inspection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000002"/>
+        <obo:IAO_0000115 xml:lang="en">A female breast examination .</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame de mama feminina .</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000009 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000009">
+        <rdfs:label xml:lang="en">vaginal bimanual examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000005"/>
+        <obo:IAO_0000115 xml:lang="en">A vaginal examination .</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame da vagina .</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000010 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000010">
+        <rdfs:label xml:lang="en">vaginal rectovaginal examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000005"/>
+        <obo:IAO_0000115 xml:lang="en">A vaginal examination .</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame da vagina .</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000011 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000011">
+        <rdfs:label xml:lang="en">medical record part</rdfs:label>
+        <rdfs:label xml:lang="pt">seção do prontuário médico</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;IAO_0000314"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OMIABIS_0001026"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000012 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000012">
+        <rdfs:label xml:lang="en">physical examination section</rdfs:label>
+        <rdfs:label xml:lang="pt">seção de exame físico</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OMIABIS_0001026"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000015 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000015">
+        <rdfs:label xml:lang="en">abdominal examination finding</rdfs:label>
+        <rdfs:label xml:lang="pt">achados do exame físico abdominal feminino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000083"/>
+        <obo:IAO_0000115 xml:lang="en">A physical examination finding ...</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um achado de um exame físico ...</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">achados do exame abdominal da mulher, achados do exame abdominal feminino</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000016 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000016">
+        <rdfs:label xml:lang="en">breast examination finding</rdfs:label>
+        <rdfs:label xml:lang="pt">achados do exame de mama feminino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000083"/>
+        <obo:IAO_0000115 xml:lang="en">A physical examination finding ...</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um achado de um exame físico ...</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">achados do exame de mama da mulher</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000017 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000017">
+        <rdfs:label xml:lang="en">general examination finding</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000083"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000049"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000052"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000050"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                                <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000051"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A physical examination finding ...</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um achado de um exame físico ...</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000018 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000018">
+        <rdfs:label xml:lang="en">pelvic examination finding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000083"/>
+        <obo:IAO_0000115 xml:lang="en">A physical examination finding ...</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um achado de um exame físico ...</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000019 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000019">
+        <rdfs:label xml:lang="en">vaginal examination finding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000083"/>
+        <obo:IAO_0000115 xml:lang="en">A physical examination finding ...</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um achado de um exame físico ...</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000020 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000020">
+        <rdfs:label xml:lang="en">ears examination</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000001"/>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;FMA_53641"/>
+                                    </owl:Restriction>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;FMA_53642"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_52780"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000022 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000022">
+        <rdfs:label xml:lang="en">breast examination</rdfs:label>
+        <rdfs:label xml:lang="pt">exame da mama</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000016"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A physical examination .</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame físico  .</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000023 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000023">
+        <rdfs:label xml:lang="en">abdominal examination</rdfs:label>
+        <rdfs:label xml:lang="pt">exame abdominal</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_9577"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OGMS_0000057"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000015"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000024 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000024">
+        <rdfs:label xml:lang="en">pelvic examination</rdfs:label>
+        <rdfs:label xml:lang="pt">exame pélvico</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_9578"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000018"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A physical examination .</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame físico  .</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">exame da pélvis</obo:IAO_0000118>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000025 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000025">
+        <rdfs:label xml:lang="en">general examination</rdfs:label>
+        <rdfs:label xml:lang="pt">exame geral</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Class>
+                                <owl:complementOf>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;FMA_7160"/>
+                                    </owl:Restriction>
+                                </owl:complementOf>
+                            </owl:Class>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_7149"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000026"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000000"/>
+                            </owl:Restriction>
+                        </owl:unionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 xml:lang="en">A general physical examination .</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame físico geral  .</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000026 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000026">
+        <rdfs:label xml:lang="en">male physical examination</rdfs:label>
+        <rdfs:label xml:lang="pt">exame físico masculino</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000057"/>
+        <obo:IAO_0000115 xml:lang="en">A physical examination that has participant some male human body and realizes some patient role, inhering to some Homo sapiens which has male genotypic sex quality.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Um exame físico que tem como participante algum corpo humano masculino e realiza um papel paciente, inerente a algums Homo sapiens, que tem a como qualidade genotípica o sexo masculino.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000027 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000027">
+        <rdfs:label xml:lang="en">psychiatric examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000029 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000029">
+        <rdfs:label xml:lang="en">nose examination</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_46472"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000030 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000030">
+        <rdfs:label xml:lang="en">throat examination</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000001"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_228738"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000031 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000031">
+        <rdfs:label xml:lang="en">cardiovascular examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000032 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000032">
+        <rdfs:label xml:lang="en">respiratory examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000033 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000033">
+        <rdfs:label xml:lang="en">gastrointestinal examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000034 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000034">
+        <rdfs:label xml:lang="en">neurologic examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000035 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000035">
+        <rdfs:label xml:lang="en">endocrine examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000036 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000036">
+        <rdfs:label xml:lang="en">musculoskeletal examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000037 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000037">
+        <rdfs:label xml:lang="en">skin examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000038 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000038">
+        <rdfs:label xml:lang="en">immunologic examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000039 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000039">
+        <rdfs:label xml:lang="en">hematologic and lymphatic examination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000025"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000040 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000040">
+        <rdfs:label xml:lang="en">constitutional examination</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000025"/>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                                <owl:someValuesFrom rdf:resource="&obo;CMO_0000012"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                                <owl:someValuesFrom rdf:resource="&obo;CMO_0000106"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000020"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                                <owl:someValuesFrom rdf:resource="&obo;SYMP_0000178"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BCGO_0000075"/>
+                                <owl:someValuesFrom rdf:resource="&obo;SYMP_0000403"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;NCBITaxon_9606"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000047 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000047">
+        <rdfs:label xml:lang="en">height measurement data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000048 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000048">
+        <rdfs:label xml:lang="en">weight measurement data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000032"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000049 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000049">
+        <rdfs:label xml:lang="en">weight unit</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000050 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000050">
+        <rdfs:label xml:lang="en">height unit</rdfs:label>
+        <rdfs:label xml:lang="pt">unidade de medida da altura</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000003"/>
+        <obo:IAO_0000115 xml:lang="en">A unit that is a standard vertical distance measured  between two points where the lowest point is at ground level and the highest point is above the lowest point.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Uma unidade que é uma medida padrão da distância vertical entre dois pontos onde o ponto inferior está no nível do chão e o ponto mais alto está acima do ponto mais baixo.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000051 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000051">
+        <rdfs:label xml:lang="en">body height measurement data</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000047"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="&obo;CMO_0000106"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000052 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000052">
+        <rdfs:label xml:lang="en">body weight measurement data</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000048"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="&obo;CMO_0000012"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000055 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000055">
+        <rdfs:label xml:lang="en">date</rdfs:label>
+        <rdfs:label xml:lang="pt">data</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000038"/>
+        <obo:IAO_0000115 xml:lang="en">A one-dimensional temporal region that refers to time stated in terms of the day, month, and year in wich some event happens.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Uma região temporal unidimensional que se refere ao tempo indicado em termos do dia, mês e ano em que algum evento acontece.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000056 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000056">
+        <rdfs:label xml:lang="en">vital signs section</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;ontoneo/ONTONEO_00000011"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OMIABIS_0001026"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000583"/>
+                        <owl:someValuesFrom rdf:resource="&obo;VSO_0000005"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000583"/>
+                        <owl:someValuesFrom rdf:resource="&obo;VSO_0000008"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000583"/>
+                        <owl:someValuesFrom rdf:resource="&obo;VSO_0000030"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000583"/>
+                        <owl:someValuesFrom rdf:resource="&obo;VSO_0000035"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                <owl:someValuesFrom rdf:resource="&obo;OGMS_0000029"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000057 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000057">
+        <rdfs:label xml:lang="en">vital sign finding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000014"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000058 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000058">
+        <rdfs:label xml:lang="en">diastolic blood pressure measurement datum</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;VSO_0000005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="&obo;VSO_0000015"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000090 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_90000090">
+        <rdfs:label xml:lang="en">systolic blood pressure measurement datum</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;VSO_0000005"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;IAO_0000136"/>
+                        <owl:someValuesFrom rdf:resource="&obo;VSO_0000038"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000145 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_90000145">
+        <rdfs:label xml:lang="en">static breast inspection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000146 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_90000146">
+        <rdfs:label xml:lang="en">dinamic breast inspection</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000008"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000000 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000000">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label>woman 1</rdfs:label>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000006"/>
+        <obo:RO_0002150 rdf:resource="&obo;ontoneo/ONTONEO_90000024"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000026"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000050"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000001 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000001">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label>woman 3</rdfs:label>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000005"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000028"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000052"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000002 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000002">
+        <rdf:type rdf:resource="&obo;NCBITaxon_9606"/>
+        <rdfs:label>woman 2</rdfs:label>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000004"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000027"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000051"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000003 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000003">
+        <rdfs:label>man 1</rdfs:label>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000005"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000004 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000004">
+        <rdf:type rdf:resource="&obo;PATO_0020002"/>
+        <rdfs:label xml:lang="en">female genotypic sex of woman 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000005 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000005">
+        <rdf:type rdf:resource="&obo;PATO_0020001"/>
+        <rdf:type rdf:resource="&obo;PATO_0020002"/>
+        <rdfs:label xml:lang="en">female genotypic sex of woman 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000006 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000006">
+        <rdf:type rdf:resource="&obo;PATO_0020001"/>
+        <rdf:type rdf:resource="&obo;PATO_0020002"/>
+        <rdfs:label xml:lang="en">female genotypic sex of woman 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000007 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000007">
+        <rdf:type rdf:resource="&obo;FMA_259094"/>
+        <rdfs:label xml:lang="en">female abdomen of woman 1</rdfs:label>
+        <fma:regional_part_of rdf:resource="&obo;ontoneo/ONTONEO_90000000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000008 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000008">
+        <rdf:type rdf:resource="&obo;FMA_259094"/>
+        <rdfs:label xml:lang="en">female abdomen of woman 2</rdfs:label>
+        <fma:regional_part_of rdf:resource="&obo;ontoneo/ONTONEO_90000002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000009 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000009">
+        <rdf:type rdf:resource="&obo;FMA_259094"/>
+        <rdfs:label xml:lang="en">female abdomen of woman 3</rdfs:label>
+        <fma:regional_part_of rdf:resource="&obo;ontoneo/ONTONEO_90000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000010 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000010">
+        <rdfs:label xml:lang="en">woman 1 patient role</rdfs:label>
+        <obo:RO_0000081 rdf:resource="&obo;ontoneo/ONTONEO_90000000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000011 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000011">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000000"/>
+        <rdfs:label xml:lang="en">female physical examination of woman 1</rdfs:label>
+        <obo:BCGO_0000075 rdf:resource="&obo;ontoneo/ONTONEO_90000000"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000016"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000031"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000034"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000012 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000012">
+        <rdfs:label xml:lang="en">woman 2 patient role</rdfs:label>
+        <obo:RO_0000081 rdf:resource="&obo;ontoneo/ONTONEO_90000002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000013 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000013">
+        <rdfs:label xml:lang="en">woman 3 patient role</rdfs:label>
+        <obo:RO_0000081 rdf:resource="&obo;ontoneo/ONTONEO_90000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000014 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000014">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000000"/>
+        <rdfs:label xml:lang="en">female physical examination of woman 2</rdfs:label>
+        <obo:BCGO_0000075 rdf:resource="&obo;ontoneo/ONTONEO_90000002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000015 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000015">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000000"/>
+        <rdfs:label xml:lang="en">female physical examination of woman 3</rdfs:label>
+        <obo:BCGO_0000075 rdf:resource="&obo;ontoneo/ONTONEO_90000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000016 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000016">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000003"/>
+        <rdfs:label xml:lang="en">female abdominal examination of woman 1</rdfs:label>
+        <obo:BCGO_0000075 rdf:resource="&obo;ontoneo/ONTONEO_90000007"/>
+        <obo:BFO_0000050 rdf:resource="&obo;ontoneo/ONTONEO_90000011"/>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000017"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000017 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000017">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000015"/>
+        <rdfs:label xml:lang="en">abdominal examination finding of woman 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000018 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000018">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000015"/>
+        <rdfs:label xml:lang="en">abdominal examination finding of woman 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000019 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000019">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000015"/>
+        <rdfs:label xml:lang="en">abdominal examination finding of woman 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000020 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000020">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000003"/>
+        <rdfs:label xml:lang="en">female abdominal examination of woman 3</rdfs:label>
+        <obo:BCGO_0000075 rdf:resource="&obo;ontoneo/ONTONEO_90000009"/>
+        <obo:BFO_0000050 rdf:resource="&obo;ontoneo/ONTONEO_90000015"/>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000019"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000021 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000021">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000003"/>
+        <rdfs:label xml:lang="en">female abdominal examination of woman 2</rdfs:label>
+        <obo:BCGO_0000075 rdf:resource="&obo;ontoneo/ONTONEO_90000008"/>
+        <obo:BFO_0000050 rdf:resource="&obo;ontoneo/ONTONEO_90000014"/>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000018"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000022 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000022">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000051"/>
+        <rdfs:label xml:lang="en">body height measurement data of woman 2</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;ontoneo/ONTONEO_90000027"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000023 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000023">
+        <rdf:type rdf:resource="&obo;PATO_0000011"/>
+        <rdfs:label>30</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000024 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000024">
+        <rdf:type rdf:resource="&obo;PATO_0000011"/>
+        <rdfs:label>28</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000025 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000025">
+        <rdf:type rdf:resource="&obo;PATO_0000011"/>
+        <rdfs:label>29</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000026 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000026">
+        <rdf:type rdf:resource="&obo;CMO_0000012"/>
+        <rdfs:label>64</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000027 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000027">
+        <rdf:type rdf:resource="&obo;CMO_0000012"/>
+        <rdfs:label>79</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000028 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000028">
+        <rdf:type rdf:resource="&obo;CMO_0000012"/>
+        <rdfs:label>85</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000029 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000029">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000051"/>
+        <rdfs:label xml:lang="en">body height measurement data of woman 1</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;ontoneo/ONTONEO_90000026"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000030 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000030">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000051"/>
+        <rdfs:label xml:lang="en">body height measurement data of woman 3</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;ontoneo/ONTONEO_90000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000031 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000031">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
+        <rdfs:label xml:lang="en">general examination finding of woman 1</rdfs:label>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000029"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000032 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000032">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
+        <rdfs:label xml:lang="en">general examination finding of woman 2</rdfs:label>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000022"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000033 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000033">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
+        <rdfs:label xml:lang="en">general examination finding of woman 3</rdfs:label>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000030"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000034 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000034">
+        <rdfs:label xml:lang="en">patient symptom report 1 of woman 1</rdfs:label>
+        <obo:IAO_0000142 rdf:resource="&obo;ontoneo/ONTONEO_90000036"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000035 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000035">
+        <rdfs:label xml:lang="en">patient symptom report 2 of woman 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000036 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000036">
+        <rdf:type rdf:resource="&obo;SYMP_0000504"/>
+        <rdfs:label xml:lang="en">headache of woman 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000037 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000037">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000040"/>
+        <rdfs:label xml:lang="en">constitutional examination of woman 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000038 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000038">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000012"/>
+        <rdfs:label xml:lang="en">physical examination section of woman 1s medical record</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000011"/>
+        <obo:BFO_0000050 rdf:resource="&obo;ontoneo/ONTONEO_90000039"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000045"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000039 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000039">
+        <rdf:type rdf:resource="&obo;OMIABIS_0001026"/>
+        <rdfs:label xml:lang="en">EHR of woman 1</rdfs:label>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000038"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000062"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000067"/>
+        <obo:OBI_0000312 rdf:resource="&obo;ontoneo/ONTONEO_90000128"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000041 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000041">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000055"/>
+        <rdfs:label xml:lang="en">May 24, 2011</rdfs:label>
+        <rdfs:label xml:lang="pt">24 de Maio de 2011</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000042 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000042">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000055"/>
+        <rdfs:label xml:lang="en">November 18, 2010</rdfs:label>
+        <rdfs:label xml:lang="pt">18 de Novembro de 2010</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000043 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000043">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000055"/>
+        <rdfs:label xml:lang="en">January 12, 2012</rdfs:label>
+        <rdfs:label xml:lang="pt">12 de Janeiro de 2012</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000044 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000044">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000025"/>
+        <rdfs:label xml:lang="en">general examination of woman 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000045 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000045">
+        <rdfs:label xml:lang="en">date of examination 1 of woman 1</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;ontoneo/ONTONEO_90000041"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000047 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000047">
+        <rdfs:label xml:lang="en">date of examination 1 of woman 2</rdfs:label>
+        <obo:IAO_0000136 rdf:resource="&obo;ontoneo/ONTONEO_90000042"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000048 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000048">
+        <rdfs:label>date of examination 1 of woman 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000049 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000049">
+        <rdf:type rdf:resource="&obo;OGMS_0000083"/>
+        <rdfs:label>physical examination finding of woman 1</rdfs:label>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000017"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000031"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000050 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000050">
+        <rdf:type rdf:resource="&obo;CMO_0000106"/>
+        <rdfs:label>1,56</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000051 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000051">
+        <rdf:type rdf:resource="&obo;CMO_0000106"/>
+        <rdfs:label>1,69</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000052 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000052">
+        <rdf:type rdf:resource="&obo;CMO_0000106"/>
+        <rdfs:label>1,70</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000053 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000053">
+        <rdfs:label>V.B.</rdfs:label>
+        <obo:IAO_0020012 rdf:resource="&obo;ontoneo/ONTONEO_90000000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000054 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000054">
+        <rdfs:label>C.K.</rdfs:label>
+        <obo:IAO_0020012 rdf:resource="&obo;ontoneo/ONTONEO_90000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000055 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000055">
+        <rdfs:label>J.S.</rdfs:label>
+        <obo:IAO_0020012 rdf:resource="&obo;ontoneo/ONTONEO_90000002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000056 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000056">
+        <rdfs:label>White</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000057 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000057">
+        <rdfs:label>Black</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000058 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000058">
+        <rdfs:label>Hispanic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000059 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000059">
+        <rdfs:label>Non-Hispanic</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000060 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000060">
+        <rdf:type rdf:resource="&obo;OMIABIS_0001026"/>
+        <rdfs:label>EHR of woman 2</rdfs:label>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000063"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000065"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000068"/>
+        <obo:OBI_0000312 rdf:resource="&obo;ontoneo/ONTONEO_90000129"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000061 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000061">
+        <rdf:type rdf:resource="&obo;OMIABIS_0001026"/>
+        <rdfs:label>EHR of woman 3</rdfs:label>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000064"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000066"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000069"/>
+        <obo:OBI_0000312 rdf:resource="&obo;ontoneo/ONTONEO_90000130"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000062 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000062">
+        <rdfs:label>demographic of woman 1</rdfs:label>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000091"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000063 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000063">
+        <rdfs:label>demographic of woman 2</rdfs:label>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000092"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000064 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000064">
+        <rdfs:label>demographic of woman 3</rdfs:label>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000093"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000065 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000065">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000012"/>
+        <rdfs:label>physical examination section of woman 2s medical record</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000014"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000047"/>
+        <obo:BFO_0000050 rdf:resource="&obo;ontoneo/ONTONEO_90000060"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000066 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000066">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000012"/>
+        <rdfs:label>physical examination section of woman 3s medical record</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000015"/>
+        <obo:BFO_0000051 rdf:resource="&obo;ontoneo/ONTONEO_90000048"/>
+        <obo:BFO_0000050 rdf:resource="&obo;ontoneo/ONTONEO_90000061"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000067 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000067">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000056"/>
+        <rdfs:label>vital signs of woman 1</rdfs:label>
+        <obo:BFO_0000050 rdf:resource="&obo;ontoneo/ONTONEO_90000039"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000094"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000124"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000133"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000136"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000068 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000068">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000056"/>
+        <rdfs:label>vital signs of woman 2</rdfs:label>
+        <obo:BFO_0000050 rdf:resource="&obo;ontoneo/ONTONEO_90000060"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000095"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000125"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000134"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000137"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000069 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000069">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000056"/>
+        <rdfs:label>vital signs of woman 3</rdfs:label>
+        <obo:BFO_0000050 rdf:resource="&obo;ontoneo/ONTONEO_90000061"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000096"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000126"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000135"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000138"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000070 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000070">
+        <rdf:type rdf:resource="&obo;FMA_67812"/>
+        <rdfs:label>woman 1 body</rdfs:label>
+        <sio:SIO_001242 rdf:resource="&obo;ontoneo/ONTONEO_90000000"/>
+        <obo:RO_0002150 rdf:resource="&obo;ontoneo/ONTONEO_90000000"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000026"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000050"/>
+        <obo:IAO_0020018 rdf:resource="&obo;ontoneo/ONTONEO_90000053"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000071 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000071">
+        <rdf:type rdf:resource="&obo;FMA_67812"/>
+        <rdfs:label>woman 2 body</rdfs:label>
+        <obo:RO_0002150 rdf:resource="&obo;ontoneo/ONTONEO_90000002"/>
+        <sio:SIO_001242 rdf:resource="&obo;ontoneo/ONTONEO_90000002"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000027"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000051"/>
+        <obo:IAO_0020018 rdf:resource="&obo;ontoneo/ONTONEO_90000055"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000072 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000072">
+        <rdf:type rdf:resource="&obo;FMA_67812"/>
+        <rdfs:label>woman 3 body</rdfs:label>
+        <sio:SIO_001242 rdf:resource="&obo;ontoneo/ONTONEO_90000001"/>
+        <obo:RO_0002150 rdf:resource="&obo;ontoneo/ONTONEO_90000001"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000028"/>
+        <obo:RO_0000086 rdf:resource="&obo;ontoneo/ONTONEO_90000052"/>
+        <obo:IAO_0020018 rdf:resource="&obo;ontoneo/ONTONEO_90000054"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000073 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000073">
+        <rdfs:label>Female</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000074 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000074">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000052"/>
+        <rdfs:label xml:lang="en">body weight measurement data of woman 1</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000026"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000075 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000075">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000052"/>
+        <rdfs:label xml:lang="en">body weight measurement data of woman 2</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000027"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000076 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000076">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000052"/>
+        <rdfs:label xml:lang="en">body weight measurement data of woman 3</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000028"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000077 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000077">
+        <rdfs:label xml:lang="en">vital sign TS of woman 1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000078 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000078">
+        <rdfs:label xml:lang="en">vital sign TS of woman 2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000079 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000079">
+        <rdfs:label xml:lang="en">vital sign TS of woman 3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000080 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000080">
+        <rdf:type rdf:resource="&obo;VSO_0000004"/>
+        <rdfs:label>120:80</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000081 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000081">
+        <rdf:type rdf:resource="&obo;VSO_0000004"/>
+        <rdfs:label>110:85</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000082 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000082">
+        <rdf:type rdf:resource="&obo;VSO_0000004"/>
+        <rdfs:label>100:75</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000083 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000083">
+        <rdf:type rdf:resource="&obo;VSO_0000015"/>
+        <rdfs:label>90</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000084 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000084">
+        <rdf:type rdf:resource="&obo;VSO_0000015"/>
+        <rdfs:label>110</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000085 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000085">
+        <rdf:type rdf:resource="&obo;VSO_0000015"/>
+        <rdfs:label>60</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000086 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000086">
+        <rdf:type rdf:resource="&obo;VSO_0000015"/>
+        <rdfs:label>70</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000087 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000087">
+        <rdf:type rdf:resource="&obo;VSO_0000015"/>
+        <rdfs:label>80</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000088 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000088">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>90</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000089 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000089">
+        <rdf:type rdf:resource="&obo;VSO_0000015"/>
+        <rdfs:label>100</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000091 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000091">
+        <rdfs:label xml:lang="en">age w1</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000023"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000092 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000092">
+        <rdfs:label xml:lang="en">age w2</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000024"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000093 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000093">
+        <rdfs:label xml:lang="en">age w3</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000025"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000094 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000094">
+        <rdf:type rdf:resource="&obo;VSO_0000005"/>
+        <rdfs:label xml:lang="en">BP1 w1</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000082"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000095 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000095">
+        <rdf:type rdf:resource="&obo;VSO_0000005"/>
+        <rdfs:label xml:lang="en">BP1 w2</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000119"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000096 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000096">
+        <rdf:type rdf:resource="&obo;VSO_0000005"/>
+        <rdfs:label xml:lang="en">BP1 w3</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000122"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000097 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000097">
+        <rdf:type rdf:resource="&obo;VSO_0000005"/>
+        <rdfs:label xml:lang="en">BP2 w1</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000081"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000098 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000098">
+        <rdf:type rdf:resource="&obo;VSO_0000005"/>
+        <rdfs:label xml:lang="en">BP3 w1</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000080"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000099 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000099">
+        <rdf:type rdf:resource="&obo;VSO_0000015"/>
+        <rdfs:label>50</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000100 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000100">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>100</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000101 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000101">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>110</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000102 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000102">
+        <rdf:type rdf:resource="&obo;VSO_0000015"/>
+        <rdfs:label>120</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000103 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000103">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>150</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000104 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000104">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>80</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000105 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000105">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>160</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000106 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000106">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>180</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000107 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000107">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>190</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000108 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000108">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>70</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000109 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000109">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>170</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000110 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000110">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>120</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000111 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000111">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>130</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000112 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000112">
+        <rdf:type rdf:resource="&obo;VSO_0000038"/>
+        <rdfs:label>140</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000113 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000113">
+        <rdf:type rdf:resource="&obo;VSO_0000013"/>
+        <rdfs:label>97</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000114 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000114">
+        <rdf:type rdf:resource="&obo;VSO_0000029"/>
+        <rdfs:label>88</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000115 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000115">
+        <rdf:type rdf:resource="&obo;VSO_0000034"/>
+        <rdfs:label>15</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000000"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000116 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000116">
+        <rdf:type rdf:resource="&obo;VSO_0000013"/>
+        <rdfs:label>96.9</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000117 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000117">
+        <rdf:type rdf:resource="&obo;VSO_0000029"/>
+        <rdfs:label>85</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000118 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000118">
+        <rdf:type rdf:resource="&obo;VSO_0000034"/>
+        <rdfs:label>13</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000119 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000119">
+        <rdf:type rdf:resource="&obo;VSO_0000004"/>
+        <rdfs:label>105:80</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000120 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000120">
+        <rdf:type rdf:resource="&obo;VSO_0000029"/>
+        <rdfs:label>95</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000121 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000121">
+        <rdf:type rdf:resource="&obo;VSO_0000034"/>
+        <rdfs:label>18</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000001"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000122 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000122">
+        <rdf:type rdf:resource="&obo;VSO_0000004"/>
+        <rdfs:label>106:82</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000123 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000123">
+        <rdf:type rdf:resource="&obo;VSO_0000013"/>
+        <rdfs:label>97.1</rdfs:label>
+        <obo:RO_0000052 rdf:resource="&obo;ontoneo/ONTONEO_90000002"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000124 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000124">
+        <rdf:type rdf:resource="&obo;VSO_0000008"/>
+        <rdfs:label xml:lang="en">BT w1</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000113"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000125 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000125">
+        <rdf:type rdf:resource="&obo;VSO_0000008"/>
+        <rdfs:label xml:lang="en">BT w2</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000123"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000126 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000126">
+        <rdf:type rdf:resource="&obo;VSO_0000008"/>
+        <rdfs:label xml:lang="en">BT w3</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000116"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000127 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000127">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000057"/>
+        <rdfs:label xml:lang="en">vsf w1</rdfs:label>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000094"/>
+        <obo:IAO_0000583 rdf:resource="&obo;ontoneo/ONTONEO_90000124"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000128 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000128">
+        <rdf:type rdf:resource="&obo;OGMS_0000097"/>
+        <rdfs:label xml:lang="en">health care encounter 1 of woman 1</rdfs:label>
+        <obo:BFO_0000055 rdf:resource="&obo;ontoneo/ONTONEO_90000010"/>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000039"/>
+        <obo:BFO_0000066 rdf:resource="&obo;ontoneo/ONTONEO_90000041"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000129 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000129">
+        <rdf:type rdf:resource="&obo;OGMS_0000097"/>
+        <rdfs:label xml:lang="en">health care encounter 1 of woman 2</rdfs:label>
+        <obo:BFO_0000055 rdf:resource="&obo;ontoneo/ONTONEO_90000012"/>
+        <obo:BFO_0000066 rdf:resource="&obo;ontoneo/ONTONEO_90000042"/>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000060"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000130 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000130">
+        <rdf:type rdf:resource="&obo;OGMS_0000097"/>
+        <rdfs:label xml:lang="en">health care encounter 1 of woman 3</rdfs:label>
+        <obo:BFO_0000055 rdf:resource="&obo;ontoneo/ONTONEO_90000013"/>
+        <obo:BFO_0000066 rdf:resource="&obo;ontoneo/ONTONEO_90000043"/>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000061"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000131 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000131">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000057"/>
+        <rdfs:label xml:lang="en">vsf w2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000132 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000132">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000057"/>
+        <rdfs:label xml:lang="en">vsf w3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000133 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000133">
+        <rdf:type rdf:resource="&obo;VSO_0000030"/>
+        <rdfs:label xml:lang="en">PR w1</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000114"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000134 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000134">
+        <rdf:type rdf:resource="&obo;VSO_0000030"/>
+        <rdfs:label xml:lang="en">PR w2</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000117"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000135 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000135">
+        <rdf:type rdf:resource="&obo;VSO_0000030"/>
+        <rdfs:label xml:lang="en">PR w3</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000120"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000136 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000136">
+        <rdf:type rdf:resource="&obo;VSO_0000035"/>
+        <rdfs:label xml:lang="en">RR w1</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000115"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000137 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000137">
+        <rdf:type rdf:resource="&obo;VSO_0000035"/>
+        <rdfs:label xml:lang="en">RR w2</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000118"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000138 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000138">
+        <rdf:type rdf:resource="&obo;VSO_0000035"/>
+        <rdfs:label xml:lang="en">RR w3</rdfs:label>
+        <obo:IAO_0000221 rdf:resource="&obo;ontoneo/ONTONEO_90000121"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000139 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000139">
+        <rdf:type rdf:resource="&obo;OGMS_0000097"/>
+        <rdfs:label xml:lang="en">health care encounter 2 of woman 1</rdfs:label>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000010"/>
+        <obo:BFO_0000055 rdf:resource="&obo;ontoneo/ONTONEO_90000039"/>
+        <obo:BFO_0000066 rdf:resource="&obo;ontoneo/ONTONEO_90000143"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000140 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000140">
+        <rdf:type rdf:resource="&obo;OGMS_0000097"/>
+        <rdfs:label xml:lang="en">health care encounter 3 of woman 1</rdfs:label>
+        <obo:BFO_0000055 rdf:resource="&obo;ontoneo/ONTONEO_90000010"/>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000039"/>
+        <obo:BFO_0000066 rdf:resource="&obo;ontoneo/ONTONEO_90000144"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000141 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000141">
+        <rdf:type rdf:resource="&obo;OGMS_0000097"/>
+        <rdfs:label xml:lang="en">health care encounter 2 of woman 3</rdfs:label>
+        <obo:BFO_0000055 rdf:resource="&obo;ontoneo/ONTONEO_90000013"/>
+        <obo:OBI_0000299 rdf:resource="&obo;ontoneo/ONTONEO_90000061"/>
+        <obo:BFO_0000066 rdf:resource="&obo;ontoneo/ONTONEO_90000142"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000142 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000142">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000055"/>
+        <rdfs:label xml:lang="en">March 16, 2013</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000143 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000143">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000055"/>
+        <rdfs:label xml:lang="en">October 07, 2012</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000144 -->
+
+    <owl:NamedIndividual rdf:about="&obo;ontoneo/ONTONEO_90000144">
+        <rdf:type rdf:resource="&obo;ontoneo/ONTONEO_00000055"/>
+        <rdfs:label xml:lang="en">September 24, 2014</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="&obo;IAO_0000572">
+        <rdfs:label xml:lang="pt">documentação</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
