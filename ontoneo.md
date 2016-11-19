@@ -9,7 +9,7 @@ license:
   url: http://creativecommons.org/licenses/by/3.0/
   label: CC-BY
 domain: biomedical, health
-homepage: ontoneo.wordpress.com 
+homepage: ontoneo.com 
 mailing_list: http://groups.google.com/group/ontoneo-discuss
 products: 
   - id: ontoneo.owl
