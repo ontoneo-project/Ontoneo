@@ -4,7 +4,7 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
     <!ENTITY cito "http://purl.org/spar/cito/" >
-    <!ENTITY bio "http://purl.obolibrary.org/obo/" >
+    <!ENTITY bio "http://purl.bioontology.org/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
@@ -15,26 +15,22 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;ontoneo/import/RO_import.owl#"
-     xml:base="&obo;ontoneo/import/RO_import.owl"
+<rdf:RDF xmlns="&obo;ro.owl#"
+     xml:base="&obo;ro.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
-     xmlns:bio="http://purl.obolibrary.org/obo/"
+     xmlns:bio="http://purl.bioontology.org/"
      xmlns:cito="http://purl.org/spar/cito/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/RO_import.owl">
-        <xsd:title rdf:datatype="&xsd;string">OBO Relations Ontology (RO)</xsd:title>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ro/releases/2016-10-28/ro.owl"/>
-        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
-This owl file represents the necessary entities of RO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <rdfs:comment xml:lang="en">RO subset applied to OntONeo ontology.</rdfs:comment>
-
-		</owl:Ontology>
+    <owl:Ontology rdf:about="&obo;ro.owl">
+        <xsd:title rdf:datatype="&xsd;string">Relations Ontology Module for OntONeo</xsd:title>
+        <owl:versionIRI rdf:resource="&bio;OntONeo/releases/2016-04-01/RO_import.owl"/>
+    </owl:Ontology>
     
 
 
@@ -46,46 +42,6 @@ This owl file represents the necessary entities of RO that are reused in OntONeo
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;BFO_0000054">
-        <rdfs:label xml:lang="en">realized in</rdfs:label>
-        <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
-        <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
-        <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
-        <obo:IAO_0000111 xml:lang="en">realized in</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
-        <obo:IAO_0000112 xml:lang="en">this disease is realized in this disease course</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this fragility is realized in this shattering</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;BFO_0000063">
-        <rdfs:label xml:lang="en">precedes</rdfs:label>
-        <obo:IAO_0000115 xml:lang="en"> X precedes y if and only if the time point at which x ends is before or equivalent to the time point at which y starts. Formally: x precedes y iff ω(x) &lt;= α(y), where α is a function that maps a process to a start point, and ω is a function that maps a process to an end point.</obo:IAO_0000115>
-        <rdfs:subPropertyOf rdf:resource="&obo;RO_0002222"/>
-        <oboInOwl:inSubset rdf:resource="&obo;ro/subsets#ro-eco"/>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000112 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000112"/>
     
 
 
@@ -124,10 +80,6 @@ This owl file represents the necessary entities of RO that are reused in OntONeo
     </owl:AnnotationProperty>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
     
 
 
@@ -140,12 +92,6 @@ This owl file represents the necessary entities of RO that are reused in OntONeo
     
 
 
-    <!-- http://purl.obolibrary.org/obo/IAO_0000232 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000232"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
 
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
@@ -154,25 +100,7 @@ This owl file represents the necessary entities of RO that are reused in OntONeo
     </owl:AnnotationProperty>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000424 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000424"/>
     
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000425 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000425"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000426 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000426"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/IAO_0000589 -->
 
     <rdf:Description rdf:about="&obo;IAO_0000589">
@@ -181,33 +109,6 @@ This owl file represents the necessary entities of RO that are reused in OntONeo
     </rdf:Description>
     
 
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000600 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;IAO_0000600"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;RO_0000058">
-        <rdfs:label xml:lang="en">is concretized as</rdfs:label>
-        <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
-    </owl:AnnotationProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;RO_0000059">
-        <rdfs:label xml:lang="en">concretizes</rdfs:label>
-        <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The quality (a specifically dependent continuant) concretizes the journal article (a generically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A relationship between a specifically dependent continuant and a generically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. Multiple specifically dependent continuants can concretize the same generically dependent continuant.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
-    </owl:AnnotationProperty>
-    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0001900 -->
@@ -828,20 +729,6 @@ where
     
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0002573 -->
-
-    <owl:AnnotationProperty rdf:about="&obo;RO_0002573">
-        <rdfs:label>has modifier</rdfs:label>
-        <obo:IAO_0000115>A relation that holds between an attribute or a qualifier and another attribute.</obo:IAO_0000115>
-        <obo:IAO_0000117>Chris Mungall</obo:IAO_0000117>
-        <obo:IAO_0000232>This relation is intended to be used in combination with PATO, to be able to refine PATO quality classes using modifiers such as &apos;abnormal&apos; and &apos;normal&apos;. It has yet to be formally aligned into an ontological framework; it&apos;s not clear what the ontological status of the &quot;modifiers&quot; are.</obo:IAO_0000232>
-        <rdfs:domain rdf:resource="&obo;PATO_0000001"/>
-        <oboInOwl:inSubset rdf:resource="&obo;ro/subsets#ro-eco"/>
-        <obo:IAO_0000119 rdf:resource="http://www.ncbi.nlm.nih.gov/pubmed/20064205"/>
-    </owl:AnnotationProperty>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/RO_0002575 -->
 
     <owl:AnnotationProperty rdf:about="&obo;RO_0002575">
@@ -1086,84 +973,6 @@ Where we have an annotation assertion
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
-
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000050">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label xml:lang="en">part of</rdfs:label>
-        <rdfs:seeAlso>http://www.obofoundry.org/ro/#OBO_REL:part_of</rdfs:seeAlso>
-        <obo:IAO_0000116 xml:lang="en">Everything is part of itself. Any part of any part of a thing is itself part of that thing. Two distinct things cannot be part of each other.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent can be part of an occurrent; only a process can be part of a process; only a continuant can be part of a continuant; only an independent continuant can be part of an independent continuant; only an immaterial entity can be part of an immaterial entity; only a specifically dependent continuant can be part of a specifically dependent continuant; only a generically dependent continuant can be part of a generically dependent continuant. (This list is not exhaustive.) A continuant cannot be part of an occurrent: use &apos;participates in&apos;. An occurrent cannot be part of a continuant: use &apos;has participant&apos;. A material entity cannot be part of an immaterial entity: use &apos;has location&apos;. A specifically dependent continuant cannot be part of an independent continuant: use &apos;inheres in&apos;. An independent continuant cannot be part of a specifically dependent continuant: use &apos;bearer of&apos;.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a part and its whole</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">is part of</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">my brain is part of my body (continuant parthood, two material entities)</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">my stomach cavity is part of my stomach (continuant parthood, immaterial entity is part of material entity)</obo:IAO_0000112>
-        <obo:IAO_0000118 xml:lang="en">part_of</obo:IAO_0000118>
-        <obo:IAO_0000112 xml:lang="en">this day is part of this year (occurrent parthood)</obo:IAO_0000112>
-        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Community:Parts_and_Collections"/>
-        <rdfs:seeAlso rdf:resource="http://ontologydesignpatterns.org/wiki/Submissions:PartOf"/>
-        <owl:inverseOf rdf:resource="&obo;BFO_0000051"/>
-        <obo:RO_0001900 rdf:resource="&obo;RO_0001901"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;RO_0002131"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
-
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000051">
-        <rdf:type rdf:resource="&owl;TransitiveProperty"/>
-        <rdfs:label xml:lang="en">has part</rdfs:label>
-        <rdfs:label xml:lang="en">part of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part.</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
-        <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.) A continuant cannot have an occurrent as part: use &apos;participates in&apos;. An occurrent cannot have a continuant as part: use &apos;has participant&apos;. An immaterial entity cannot have a material entity as part: use &apos;location of&apos;. An independent continuant cannot have a specifically dependent continuant as part: use &apos;bearer of&apos;. A specifically dependent continuant cannot have an independent continuant as part: use &apos;inheres in&apos;.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">a core relation that holds between a whole and its part</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">has part</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">my body has part my brain (continuant parthood, two material entities)</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">my stomach has part my stomach cavity (continuant parthood, material entity has part immaterial entity)</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this year has part this day (occurrent parthood)</obo:IAO_0000112>
-        <obo:RO_0001900 rdf:resource="&obo;RO_0001901"/>
-        <rdfs:subPropertyOf rdf:resource="&obo;RO_0002131"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
-
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000054">
-        <rdfs:label xml:lang="en">realized in</rdfs:label>
-        <rdfs:comment>Paraphrase of elucidation: a relation between a realizable entity and a process, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
-        <obo:IAO_0000600 xml:lang="en">[copied from inverse property &apos;realizes&apos;] to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
-        <obo:IAO_0000118 xml:lang="en">is realized by</obo:IAO_0000118>
-        <obo:IAO_0000111 xml:lang="en">realized in</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">realized_in</obo:IAO_0000118>
-        <obo:IAO_0000112 xml:lang="en">this disease is realized in this disease course</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this fragility is realized in this shattering</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this investigator role is realized in this investigation</obo:IAO_0000112>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
-
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000055">
-        <rdfs:label xml:lang="en">realizes</rdfs:label>
-        <rdfs:comment>Paraphrase of elucidation: a relation between a process and a realizable entity, where there is some material entity that is bearer of the realizable entity and participates in the process, and the realizable entity comes to be realized in the course of the process</rdfs:comment>
-        <obo:IAO_0000111 xml:lang="en">realizes</obo:IAO_0000111>
-        <obo:IAO_0000112 xml:lang="en">this disease course realizes this disease</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this investigation realizes this investigator role</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this shattering realizes this fragility</obo:IAO_0000112>
-        <obo:IAO_0000600 xml:lang="en">to say that b realizes c at t is to assert that there is some material entity d &amp; b is a process which has participant d at t &amp; c is a disposition or role of which d is bearer_of at t&amp; the type instantiated by b is correlated with the type instantiated by c. (axiom label in BFO2 Reference: [059-003])</obo:IAO_0000600>
-        <owl:inverseOf rdf:resource="&obo;BFO_0000054"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
-    </owl:ObjectProperty>
-    
 
 
     <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
@@ -1196,58 +1005,7 @@ Where we have an annotation assertion
             <rdf:Description rdf:about="&obo;BFO_0000063"/>
         </owl:propertyChainAxiom>
     </owl:ObjectProperty>
-    
 
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
-
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000066">
-        <rdfs:label xml:lang="en">occurs in</rdfs:label>
-        <rdfs:comment>Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant</rdfs:comment>
-        <obo:IAO_0000115 xml:lang="en">b occurs_in c =def b is a process and c is a material entity or immaterial entity&amp; there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.&amp; forall(t) if b exists_at t then c exists_at t &amp; there exist spatial regions s and s’ where &amp; b spatially_projects_onto s at t&amp; c is occupies_spatial_region s’ at t&amp; s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">occurs in</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">occurs_in</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">unfolds in</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">unfolds_in</obo:IAO_0000118>
-        <owl:inverseOf rdf:resource="&obo;BFO_0000067"/>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000066"/>
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
-        </owl:propertyChainAxiom>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="&obo;BFO_0000050"/>
-            <rdf:Description rdf:about="&obo;BFO_0000066"/>
-        </owl:propertyChainAxiom>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000067 -->
-
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000067">
-        <rdfs:label xml:lang="en">contains process</rdfs:label>
-        <rdfs:comment>Paraphrase of definition: a relation between an independent continuant and a process, in which the process takes place entirely within the independent continuant</rdfs:comment>
-        <obo:IAO_0000115 xml:lang="en">[copied from inverse property &apos;occurs in&apos;] b occurs_in c =def b is a process and c is a material entity or immaterial entity&amp; there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.&amp; forall(t) if b exists_at t then c exists_at t &amp; there exist spatial regions s and s’ where &amp; b spatially_projects_onto s at t&amp; c is occupies_spatial_region s’ at t&amp; s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">site of</obo:IAO_0000111>
-        <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
-
-    <owl:ObjectProperty rdf:about="&obo;RO_0000052">
-        <rdfs:label xml:lang="en">inheres in</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">A dependent inheres in its bearer at all times for which the dependent exists.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">a relation between a specifically dependent continuant (the dependent) and an independent continuant (the bearer), in which the dependent specifically depends on the bearer for its existence</obo:IAO_0000115>
-        <obo:IAO_0000111 xml:lang="en">inheres in</obo:IAO_0000111>
-        <obo:IAO_0000118 xml:lang="en">inheres_in</obo:IAO_0000118>
-        <obo:IAO_0000112 xml:lang="en">this fragility inheres in this vase</obo:IAO_0000112>
-        <obo:IAO_0000112 xml:lang="en">this red color inheres in this apple</obo:IAO_0000112>
-        <obo:RO_0001900 rdf:resource="&obo;RO_0001901"/>
-    </owl:ObjectProperty>
-    
 
 
     <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
@@ -1295,19 +1053,6 @@ Where we have an annotation assertion
         <obo:IAO_0000112 xml:lang="en">this process has participant this input material (or this output material)</obo:IAO_0000112>
         <owl:inverseOf rdf:resource="&obo;RO_0000056"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000058 -->
-
-    <owl:ObjectProperty rdf:about="&obo;RO_0000058">
-        <rdfs:label xml:lang="en">is concretized as</rdfs:label>
-        <obo:IAO_0000112 xml:lang="en">A journal article is an information artifact that inheres in some number of printed journals. For each copy of the printed journal there is some quality that carries the journal article, such as a pattern of ink. The journal article (a generically dependent continuant) is concretized as the quality (a specifically dependent continuant), and both depend on that copy of the printed journal (an independent continuant).</obo:IAO_0000112>
-        <obo:IAO_0000115 xml:lang="en">A relationship between a generically dependent continuant and a specifically dependent continuant, in which the generically dependent continuant depends on some independent continuant in virtue of the fact that the specifically dependent continuant also depends on that same independent continuant. A generically dependent continuant may be concretized as multiple specifically dependent continuants.</obo:IAO_0000115>
-        <obo:IAO_0000112 xml:lang="en">An investigator reads a protocol and forms a plan to carry out an assay. The plan is a realizable entity (a specifically dependent continuant) that concretizes the protocol (a generically dependent continuant), and both depend on the investigator (an independent continuant). The plan is then realized by the assay (a process).</obo:IAO_0000112>
-    </owl:ObjectProperty>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
 
@@ -1348,63 +1093,10 @@ Where we have an annotation assertion
         <rdfs:subPropertyOf rdf:resource="&obo;RO_0000052"/>
         <owl:inverseOf rdf:resource="&obo;RO_0000086"/>
     </owl:ObjectProperty>
-    
 
 
-    <!-- http://purl.obolibrary.org/obo/RO_0000081 -->
 
-    <owl:ObjectProperty rdf:about="&obo;RO_0000081">
-        <rdfs:label xml:lang="en">role of</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">A role inheres in its bearer at all times for which the role exists, however the role need not be realized at all the times that the role exists.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">a relation between a role and an independent continuant (the bearer), in which the role specifically depends on the bearer for its existence</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">is role of</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="en">role_of</obo:IAO_0000118>
-        <obo:IAO_0000112 xml:lang="en">this investigator role is a role of this person</obo:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="&obo;RO_0000052"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000085 -->
-
-    <owl:ObjectProperty rdf:about="&obo;RO_0000085">
-        <rdfs:label xml:lang="en">has function</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">A bearer can have many functions, and its functions can exist for different periods of time, but none of its functions can exist when the bearer does not exist. A function need not be realized at all the times that the function exists.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a function, in which the function specifically depends on the bearer for its existence</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">has_function</obo:IAO_0000118>
-        <obo:IAO_0000112 xml:lang="en">this enzyme has function this catalysis function (more colloquially: this enzyme has this catalysis function)</obo:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="&obo;RO_0000053"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
-
-    <owl:ObjectProperty rdf:about="&obo;RO_0000086">
-        <rdfs:label xml:lang="en">has quality</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">A bearer can have many qualities, and its qualities can exist for different periods of time, but none of its qualities can exist when the bearer does not exist.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a quality, in which the quality specifically depends on the bearer for its existence</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">has_quality</obo:IAO_0000118>
-        <obo:IAO_0000112 xml:lang="en">this apple has quality this red color</obo:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="&obo;RO_0000053"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
-
-    <owl:ObjectProperty rdf:about="&obo;RO_0000087">
-        <rdfs:label xml:lang="en">has role</rdfs:label>
-        <obo:IAO_0000116 xml:lang="en">A bearer can have many roles, and its roles can exist for different periods of time, but none of its roles can exist when the bearer does not exist. A role need not be realized at all the times that the role exists.</obo:IAO_0000116>
-        <obo:IAO_0000115 xml:lang="en">a relation between an independent continuant (the bearer) and a role, in which the role specifically depends on the bearer for its existence</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="en">has_role</obo:IAO_0000118>
-        <obo:IAO_0000112 xml:lang="en">this person has role this investigator role (more colloquially: this person has this role of investigator)</obo:IAO_0000112>
-        <rdfs:subPropertyOf rdf:resource="&obo;RO_0000053"/>
-        <owl:inverseOf rdf:resource="&obo;RO_0000081"/>
-    </owl:ObjectProperty>
-    
-
-
+ 
     <!-- http://purl.obolibrary.org/obo/RO_0000091 -->
 
     <owl:ObjectProperty rdf:about="&obo;RO_0000091">
