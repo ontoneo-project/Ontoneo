@@ -12,10 +12,9 @@ domain: biomedical, health
 homepage: ontoneo.com 
 mailing_list: http://groups.google.com/group/ontoneo-discuss
 products: 
-  - id: ontoneo.owl
 build:
-  source_url: 
-  method: owl2obo
+ url soure: http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl
+  - id: ontoneo.owl
 tracker: https://github.com/ontoneo-project/Ontoneo/issues
 browsers:
   - label: BioPortal
