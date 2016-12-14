@@ -19,7 +19,7 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/BFO_import.owl">
+    <owl:Ontology rdf:about="&obo;bfo.owl">
         <xsd:title rdf:datatype="&xsd;string">Basic Formal Ontology Module for ontoneo</xsd:title>
         <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-04-01/BFO_import.owl"/>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
