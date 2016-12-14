@@ -8,28 +8,21 @@
     <!ENTITY pato "http://purl.obolibrary.org/obo/pato#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
 
 
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ontoneo/import/PATO_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/ontoneo/import/PATO_import.owl"
+<rdf:RDF xmlns="&obo;pato.owl#"
+     xml:base="&obo;pato.owl"
      xmlns:pato="&obo;pato#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ontoneo/import/PATO_import.owl">
-        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
-This owl file represents the necessary entities of PATO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <rdfs:comment xml:lang="en">PATO subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/pato/releases/2016-05-22/pato.owl"/>
-        <xsd:title rdf:datatype="&xsd;string">Phenotypic quality</xsd:title>
-	</owl:Ontology>    
+    <owl:Ontology rdf:about="&obo;pato.owl"/>
+    
 
 
     <!-- 
@@ -203,12 +196,6 @@ This owl file represents the necessary entities of PATO that are reused in OntON
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
-
-    <owl:ObjectProperty rdf:about="&obo;RO_0000052"/>
     
 
 
@@ -612,6 +599,27 @@ This owl file represents the necessary entities of PATO that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000646 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000646">
+        <rdfs:label rdf:datatype="&xsd;string">malformed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0001617"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A morphological quality inhering in a bearer by virtue of the bearer&apos;s being distorted during formation.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0000646</oboInOwl:id>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">malformation</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#mpath_slim"/>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A morphological quality inhering in a bearer by virtue of the bearer&apos;s being distorted during formation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PATOC:MAH</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0000646"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000915 -->
 
     <owl:Class rdf:about="&obo;PATO_0000915">
@@ -752,6 +760,27 @@ This owl file represents the necessary entities of PATO that are reused in OntON
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">relational protruding quality</oboInOwl:hasExactSynonym>
         <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001617 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001617">
+        <rdfs:label rdf:datatype="&xsd;string">deformed</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;PATO_0000051"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A morphological quality inhering in a bearer by virtue of the bearer&apos;s being distorted in form.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">PATO:0001617</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">disfigured</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">distorted</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">quality</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;pato#value_slim"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A morphological quality inhering in a bearer by virtue of the bearer&apos;s being distorted in form.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">thefreedictionary.com:thefreedictionary.com</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;PATO_0001617"/>
+    </owl:Axiom>
     
 
 

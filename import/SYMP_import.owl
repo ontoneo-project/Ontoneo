@@ -6,30 +6,23 @@
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
 
 
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ontoneo/import/SYMP_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/ontoneo/import/SYMP_import.owl"
+<rdf:RDF xmlns="&obo;SYMP.owl#"
+     xml:base="&obo;SYMP.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ontoneo/import/SYMP_import.owl">
-        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
-This owl file represents the necessary entities of SYMP that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <rdfs:comment xml:lang="en">SYMP subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/symp/releases/2013-06-03/symp.owl"/>
-        <xsd:title rdf:datatype="&xsd;string">Symptom Ontology</xsd:title>
-	</owl:Ontology>
-	
-	
+    <owl:Ontology rdf:about="&obo;SYMP.owl"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -305,6 +298,18 @@ This owl file represents the necessary entities of SYMP that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000116 -->
+
+    <owl:Class rdf:about="&obo;SYMP_0000116">
+        <rdfs:label rdf:datatype="&xsd;string">prostration</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SYMP_0000567"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Prostration is a general symptom characterized by complete physical or mental exhaustion.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">SYMP:0000116</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SYMP_0000121 -->
 
     <owl:Class rdf:about="&obo;SYMP_0000121">
@@ -501,6 +506,61 @@ This owl file represents the necessary entities of SYMP that are reused in OntON
         <oboInOwl:id rdf:datatype="&xsd;string">SYMP:0000196</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000197 -->
+
+    <owl:Class rdf:about="&obo;SYMP_0000197">
+        <rdfs:label rdf:datatype="&xsd;string">abortion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SYMP_0000196"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Abortion is a reproductive system symptom resulting in the expulsion of a fetus of a domestic animal often due to infection at any time before completion of pregnancy.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">SYMP:0000197</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">infectious abortion</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Abortion is a reproductive system symptom resulting in the expulsion of a fetus of a domestic animal often due to infection at any time before completion of pregnancy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=abortion</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;SYMP_0000197"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000198 -->
+
+    <owl:Class rdf:about="&obo;SYMP_0000198">
+        <rdfs:label rdf:datatype="&xsd;string">miscarriage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SYMP_0000196"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Miscarriage is a reproductive system symptom characterized by the spontaneous expulsion of a human fetus before it is viable and especially between the 12th and 28th weeks of gestation.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">SYMP:0000198</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Miscarriage is a reproductive system symptom characterized by the spontaneous expulsion of a human fetus before it is viable and especially between the 12th and 28th weeks of gestation.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=miscarriage</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;SYMP_0000198"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000199 -->
+
+    <owl:Class rdf:about="&obo;SYMP_0000199">
+        <rdfs:label rdf:datatype="&xsd;string">spontaneous abortion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SYMP_0000197"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">SYMP:0000199</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Spontaneous abortion is a abortion characterized by the naturally occurring expulsion of a nonviable fetus.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Spontaneous abortion is a abortion characterized by the naturally occurring expulsion of a nonviable fetus.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=spontaneous%20abortion</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;SYMP_0000199"/>
+    </owl:Axiom>
     
 
 
@@ -723,6 +783,37 @@ This owl file represents the necessary entities of SYMP that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000263 -->
+
+    <owl:Class rdf:about="&obo;SYMP_0000263">
+        <rdfs:label rdf:datatype="&xsd;string">epididymitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SYMP_0000196"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Epididymitis is a reproductive system symptom characterized by an inflammation of the epididymis.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">SYMP:0000263</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">inflammation of the epididymis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Epididymitis is a reproductive system symptom characterized by an inflammation of the epididymis.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=epididymitis</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;SYMP_0000263"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000264 -->
+
+    <owl:Class rdf:about="&obo;SYMP_0000264">
+        <rdfs:label rdf:datatype="&xsd;string">epididymorchitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SYMP_0000196"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">SYMP:0000264</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">epididymo-orchitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SYMP_0000279 -->
 
     <owl:Class rdf:about="&obo;SYMP_0000279">
@@ -932,6 +1023,24 @@ This owl file represents the necessary entities of SYMP that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000358 -->
+
+    <owl:Class rdf:about="&obo;SYMP_0000358">
+        <rdfs:label rdf:datatype="&xsd;string">premature labor</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SYMP_0000196"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Premature labor is a reproductive system symptom characterized by labor occurring before 37 full weeks of pregnancy.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">SYMP:0000358</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Premature labor is a reproductive system symptom characterized by labor occurring before 37 full weeks of pregnancy.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">URL:http://www.ehealthmd.com/library/amniocentesis/AMO_glossary.html</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;SYMP_0000358"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SYMP_0000372 -->
 
     <owl:Class rdf:about="&obo;SYMP_0000372">
@@ -1115,6 +1224,25 @@ This owl file represents the necessary entities of SYMP that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000405 -->
+
+    <owl:Class rdf:about="&obo;SYMP_0000405">
+        <rdfs:label rdf:datatype="&xsd;string">vaginismus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SYMP_0000196"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">SYMP:0000405</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Vaginismus is a reproductive system symptom characterized by a painful spasmodic contraction of the vagina.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">painful spasmodic vagina contractions</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=vaginismus</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Vaginismus is a reproductive system symptom characterized by a painful spasmodic contraction of the vagina.</owl:annotatedTarget>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;SYMP_0000405"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/SYMP_0000406 -->
 
     <owl:Class rdf:about="&obo;SYMP_0000406">
@@ -1140,6 +1268,26 @@ This owl file represents the necessary entities of SYMP that are reused in OntON
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">loss of consciousness due to insuffiecient blood flow to the brain</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000849 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/SYMP_0000849">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">stillbirth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000196"/>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SYMP:0000849</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stillbirth is a reproductive system symptom characterized by the birth of a dead fetus, occurs when a fetus which has died in the uterus or during labor or delivery exits a woman&apos;s body.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">symptoms</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stillbirth is a reproductive system symptom characterized by the birth of a dead fetus, occurs when a fetus which has died in the uterus or during labor or delivery exits a woman&apos;s body.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">URL:http://www2.merriam-webster.com/cgi-bin/mwmednlm?book=Medical&amp;va=stillbirth</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wiki:http://en.wikipedia.org/wiki/Still_birth</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/SYMP_0000849"/>
+    </owl:Axiom>
+    
     
 
 
@@ -1271,7 +1419,7 @@ by raised red skin wheals (welts) commonly caused by an allergic reaction with w
     <!-- http://purl.obolibrary.org/obo/SYMP_0000436 -->
 
     <owl:Class rdf:about="&obo;SYMP_0000436">
-        <rdfs:label rdf:datatype="&xsd;string">abnormal vaginal bleeding</rdfs:label>
+        <rdfs:label xml:lang="en">abnormal vaginal bleeding</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;SYMP_0000196"/>
         <oboInOwl:id rdf:datatype="&xsd;string">SYMP:0000436</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal menstruation</oboInOwl:hasExactSynonym>
@@ -2189,6 +2337,24 @@ by raised red skin wheals (welts) commonly caused by an allergic reaction with w
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="&obo;symp.owl"/>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000712 -->
+
+    <owl:Class rdf:about="&obo;SYMP_0000712">
+        <rdfs:label rdf:datatype="&xsd;string">infertility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SYMP_0000196"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Infertility is a reproductive system symptom characterized as the biological inability of a man or a woman to contribute to conception or the state of a woman who is unable to carry a pregnancy to full term.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">SYMP:0000712</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">symptoms</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Infertility is a reproductive system symptom characterized as the biological inability of a man or a woman to contribute to conception or the state of a woman who is unable to carry a pregnancy to full term.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">wiki:http://en.wikipedia.org/wiki/Infertility</oboInOwl:hasDbXref>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+        <owl:annotatedSource rdf:resource="&obo;SYMP_0000712"/>
+    </owl:Axiom>
     
 
 

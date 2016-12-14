@@ -2,7 +2,7 @@
 
 
 <!DOCTYPE rdf:RDF [
-    <!ENTITY bio "http://purl.obolibrary.org/obo/" >
+    <!ENTITY bio "http://purl.bioontology.org/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
@@ -13,23 +13,18 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;ontoneo/import/OBI_import.owl#"
-     xml:base="&obo;ontoneo/import/OBI_import.owl"
+<rdf:RDF xmlns="&obo;obi.owl#"
+     xml:base="&obo;obi.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:bio="http://purl.obolibrary.org/obo/"
+     xmlns:bio="http://purl.bioontology.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/OBI_import.owl">
-        <xsd:title rdf:datatype="&xsd;string">The Ontology for Biomedical Investigations (OBI)</xsd:title>	
-		<owl:versionInfo rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2016-06-30</owl:versionInfo>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/obi/2016-06-30/obi.owl"/>
-        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
-This owl file represents the necessary entities of OBI that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <rdfs:comment xml:lang="en">OBI subset applied to OntONeo ontology.</rdfs:comment>		
+    <owl:Ontology rdf:about="&obo;obi.owl">
+        <owl:versionIRI rdf:resource="&bio;OntONeo/releases/2016-04-01/OBI_import.owl"/>
     </owl:Ontology>
     
 
@@ -121,52 +116,11 @@ This owl file represents the necessary entities of OBI that are reused in OntONe
     
 
 
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
-
-    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
-
-    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
-    
-
-
     <!-- http://www.w3.org/2000/01/rdf-schema#label -->
 
     <owl:AnnotationProperty rdf:about="&rdfs;label">
         <rdfs:label>label</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Datatypes
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#float -->
-
-    <rdfs:Datatype rdf:about="&xsd;float"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#integer -->
-
-    <rdfs:Datatype rdf:about="&xsd;integer"/>
-    
-
-
-    <!-- http://www.w3.org/2001/XMLSchema#nonNegativeInteger -->
-
-    <rdfs:Datatype rdf:about="&xsd;nonNegativeInteger"/>
     
 
 
@@ -403,6 +357,12 @@ This owl file represents the necessary entities of OBI that are reused in OntONe
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000023 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000023"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000030 -->
 
     <owl:Class rdf:about="&obo;BFO_0000030"/>
@@ -412,6 +372,112 @@ This owl file represents the necessary entities of OBI that are reused in OntONe
     <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
 
     <owl:Class rdf:about="&obo;BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="&obo;GO_0008150"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000033 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000033"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000104 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000104"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000416 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000416"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10239 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10239">
+        <rdfs:label xml:lang="en">Viruses</rdfs:label>
+        <rdfs:label xml:lang="pt">vírus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">Viruses</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">virus</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_10407 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_10407">
+        <rdfs:label xml:lang="en">Hepatitis B virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10239"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_11103 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_11103">
+        <rdfs:label xml:lang="en">Hepatitis C virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10239"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_12092 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_12092">
+        <rdfs:label xml:lang="en">Hepatitis A virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10239"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2">
+        <rdfs:label xml:lang="en">Bacteria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">Bacteria</obo:IAO_0000111>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">eubacteria</obo:IAO_0000118>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_2157 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_2157">
+        <rdfs:label xml:lang="en">Archaea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">Archaea</obo:IAO_0000111>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/NCBITaxon_64320 -->
+
+    <owl:Class rdf:about="&obo;NCBITaxon_64320">
+        <rdfs:label xml:lang="en">Zika virus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;NCBITaxon_10239"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ncbitaxon.owl"/>
+    </owl:Class>
     
 
 
@@ -433,6 +499,17 @@ This owl file represents the necessary entities of OBI that are reused in OntONe
 
     <owl:Class rdf:about="&obo;OBI_0000011">
         <rdfs:label xml:lang="en">planned process</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000104"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)</obo:IAO_0000116>
         <obo:IAO_0000232 rdf:datatype="&xsd;string">6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
@@ -446,6 +523,76 @@ objectives is a planned process.</obo:IAO_0000116>
         <obo:IAO_0000111 xml:lang="en">planned process</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000047">
+        <rdfs:label xml:lang="en">processed material</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0000094"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <obo:IAO_0000112 xml:lang="en">Examples include gel matrices, filter paper, parafilm and buffer solutions, mass spectrometer, tissue samples</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">Is a material entity that is created or changed during material processing.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Alan Ruttenberg</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">processed material</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000094 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000094">
+        <rdfs:label xml:lang="en">material processing</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&obo;OBI_0600010"/>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">A cell lysis, production of a cloning vector, creating a buffer.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Frank Gibson</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Jennifer Fostel</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Melanie Courtot</obo:IAO_0000117>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Philippe Rocca Serra</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A planned process which results in physical changes in a specified input material</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI branch derived</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">material processing</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">material transformation</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
     </owl:Class>
     
 
@@ -495,6 +642,133 @@ for now.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000725 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000725">
+        <rdfs:label rdf:datatype="&xsd;string">host role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">30 Mar09 submitted by vaccine community</obo:IAO_0000119>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">30Mar09 virus reproducing inside a cell; bacteria causing a disease, host can be harmed or not.  we want to avoid a cat sitting on my lap and an animal care technician; these are not examples or hosts; dental cares = on tooth, but part of outer layer of tooth, so covered by &quot;within&quot; in the definition</obo:IAO_0000116>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">GROUP: Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">In biology, a host is an organism that harbors a virus or parasite, or a mutual or commensal symbiont, typically providing nourishment and shelter.  http://en.wikipedia.org/wiki/Host_(biology)  30 March 09</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI</obo:IAO_0000119>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">host role</obo:IAO_0000111>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">host role is a role played by an organism and realized by providing nourishment, shelter or a means of reproduction to another organism within the organism playing the host role</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Host_(biology)</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001167 -->
+
+    <owl:Class rdf:about="&obo;OBI_0001167">
+        <rdfs:label xml:lang="en">age measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000416"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;IAO_0000221"/>
+                <owl:someValuesFrom rdf:resource="&obo;PATO_0000011"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A time measurement datum that is the result of measurement of age of an organism</obo:IAO_0000115>
+        <obo:IAO_0000232 rdf:datatype="&xsd;string">In MageTab file, we use
+initialTimePoint (a process) + age (a number expected) + TimeUnit (definied in UO, such as year, hour, day, etc.)
+Now we use the term label indicating the start time point of measuring the age, (number + TimeUnit) are expected instances of the class</obo:IAO_0000232>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">MO_178 Age</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Alan Ruttenberg, Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000232 rdf:datatype="&xsd;string">discussed on Nov 15, dev call
+All subtype will be defined by textual definition now.</obo:IAO_0000232>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">note that we are currently defining subtypes of age measurement datum that specify when the age is relative to, e.g. planting, as we don&apos;t have adequate temporal predicates yet.
+life of bearer doesn&apos;t imply organism
+this assay measures time not developmental stage. we recognize that development can take different time periods under different conditions such as media / temperature
+age as a quality is dubious; we plan to revisit
+stages in development are currently handled with controlled vocabulary, such as 2-somite stage </obo:IAO_0000116>
+        <obo:IAO_0000111 xml:lang="en">age measurement datum</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001168 -->
+
+    <owl:Class rdf:about="&obo;OBI_0001168">
+        <rdfs:label xml:lang="en">age since fertilization measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001167"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An age measurement datum that is the result of the measurement of the age of an organism since fertilization, the process of the union of gametes of opposite sexes during the process of sexual reproduction to form a zygote.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">Definition of fertilization comes from GO.</obo:IAO_0000116>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">MO_701 fertilization</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON:Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">age since fertilization measurement datum</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001169 -->
+
+    <owl:Class rdf:about="&obo;OBI_0001169">
+        <rdfs:label xml:lang="en">age since birth measurement datum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001167"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An age measurement datum that is the result of the measurement of the age of an organism since birth, the process of emergence and separation of offspring from the mother.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">MO_710 birth</obo:IAO_0000119>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON:Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">age since birth measurement datum</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001755 -->
+
+    <owl:Class rdf:about="&obo;OBI_0001755">
+        <rdfs:label xml:lang="en">selection criterion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000033"/>
+        <obo:IAO_0000115 xml:lang="en">A directive information entity which defines and states a principle of standard by which selection process may take place.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI discussion summarized under the following tracker item : http://sourceforge.net/p/obi/obi-terms/678/</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">Person: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000112 xml:lang="en">rats should be aged between 6 and 8 weeks and weight between 180-250grams</obo:IAO_0000112>
+        <obo:IAO_0000111 xml:lang="en">selection criterion</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">selection rule</obo:IAO_0000118>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001928 -->
+
+    <owl:Class rdf:about="&obo;OBI_0001928">
+        <rdfs:label xml:lang="en">selection</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0001755"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <obo:IAO_0000115 xml:lang="en">A planned process which results in the creation of group of entity from a larger group by the application of predefined criteria.</obo:IAO_0000115>
+        <obo:IAO_0000119 xml:lang="en">OBI</obo:IAO_0000119>
+        <obo:IAO_0000112 xml:lang="en">PMID: 24023800.  In this study, a set of eleven genes (VATP16, 60 S, UQCC, SMD3, EF1α, UBQ, SAND, GAPDH, ACT, PsaB, PTB2) was evaluated to identify reference genes during the first hours of interaction (6, 12, 18 and 24 hpi) between two V. vinifera genotypes and P. viticola. Two analyses were used for the selection of reference genes: direct comparison of susceptible, Trincadeira, and resistant, Regent, V. vinifera cultivars at 0 h, 6, 12, 18 and 24 hours post inoculation with P. viticola (genotype effect); and comparison of each genotype with mock inoculated samples during inoculation time-course (biotic stress effect). Three statistical methods were used, GeNorm, NormFinder, and BestKeeper, allowing to identify UBQ, EF1α and GAPDH as the most stable genes for the genotype effect.</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">Person: Philippe Rocca-Serra</obo:IAO_0000117>
+        <obo:IAO_0000111 xml:lang="en">selection</obo:IAO_0000111>
+        <obo:IAO_0000118 xml:lang="en">selection process</obo:IAO_0000118>
+        <obo:IAO_0000116 xml:lang="en">this term refers to  a planned process and therefore is distinct from the notion of &apos;natural selection&apos;, a process covering the operation of natural causes by which those individuals of a species that are best adapted to the environment tend to be preserved and to transmit their characters, while those less adapted die out, so that in the course of generations the degree of adaptation to the environment tends progressively to increase. (as defined by Oxford English Dictionary)</obo:IAO_0000116>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
 
     <owl:Class rdf:about="&obo;OBI_0100026">
@@ -514,6 +788,89 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000112 xml:lang="en">virus</obo:IAO_0000112>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
         <obo:IAO_0000412 rdf:resource="&obo;obi.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600008 -->
+
+    <owl:Class rdf:about="&obo;OBI_0600008">
+        <rdfs:label xml:lang="en">acquisition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0001928"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000040"/>
+                            <rdf:Description rdf:about="&obo;IAO_0000030"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0001755"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">5/31/2012 - OBI workshop: This process is not implying ownership of the material / information. </obo:IAO_0000116>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">Downloading a 3D structure from the PDB. Purchasing antibodies from sigma. </obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">Bjoern Peters</obo:IAO_0000117>
+        <obo:IAO_0000116 xml:lang="en">Following OBI call November 2012,5th:
+addition of a restriction to acquisition class to capture the need of having selection criteria
+Relates to the creation of a class &apos;selection rule&apos;</obo:IAO_0000116>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
+        <obo:IAO_0000232 xml:lang="en">This needs to be fleshed out and logical definitions added that will allow to place the children terms automatically under acquisition</obo:IAO_0000232>
+        <obo:IAO_0000111 xml:lang="en">acquisition</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">the planned process of gaining possession of a continuant </obo:IAO_0000115>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0600010 -->
+
+    <owl:Class rdf:about="&obo;OBI_0600010">
+        <rdfs:label xml:lang="en">material acquisition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0600008"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">The assumption is that the object already exists in its current state, e.g, an available mouse strain purchased from the Jackson Lab, this is the differentia from specimen creation</obo:IAO_0000116>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">material procurement</obo:IAO_0000118>
+        <obo:IAO_0000116>This excludes processes that create or change materials, such as material transformations.</obo:IAO_0000116>
+        <obo:IAO_0000112 xml:lang="en">Acquiring 50 C57BL/6 mice bred in the animal facility of the institute as a service to investigators. Purchasing 1 mg of peptides synthesized by Mimotopes at 80% purity. Getting a gift of purified CD4+ specific antibodies presented by Stephen Schoenberger at LIAI.</obo:IAO_0000112>
+        <obo:IAO_0000115 xml:lang="en">An acquisition in which possession of a material entity is gained.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">Bjoern Peters, Alan Ruttenberg, Helen Parkinson</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
+        <obo:IAO_0000111 xml:lang="en">material acquisition</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000122"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110094 -->
+
+    <owl:Class rdf:about="&obo;OBI_1110094">
+        <rdfs:label xml:lang="en">immunization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">Infection with influenza (the immunogen) leading to B cells producing antibodies (the effector function) against surface regions of the HA protein (the epitope).</obo:IAO_0000112>
+        <obo:IAO_0000117 xml:lang="en">IEDB</obo:IAO_0000117>
+        <obo:IAO_0000119 xml:lang="en">IEDB</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">The process of an epitope that is part of or derived from an immunogen coming into contact with adaptive immune cells resulting in these cells acquiring immune effector functions specific for the epitope.</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">immunization</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000123"/>
     </owl:Class>
     
 

@@ -3,6 +3,7 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY bio "http://purl.bioontology.org/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
@@ -14,24 +15,25 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;ontoneo/import/OGMS_import.owl#"
-     xml:base="&obo;ontoneo/import/OGMS_import.owl"
+<rdf:RDF xmlns="&obo;ogms.owl#"
+     xml:base="&obo;ogms.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:bio="http://purl.bioontology.org/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/OGMS_import.owl">
+    <owl:Ontology rdf:about="&obo;ogms.owl">
         <xsd:title rdf:datatype="&xsd;string">The Ontology for General Medical Science (OGMS)</xsd:title>
         <owl:versionInfo>2011-09-20</owl:versionInfo>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of OGMS that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Ontology for General Medical Science (OGMS) subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-04-01/OGMS_import.owl"/>
+        <owl:versionIRI rdf:resource="&bio;OntONeo/releases/2016-04-01/OGMS_import.owl"/>
     </owl:Ontology>
     
 
@@ -290,19 +292,6 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
 
     
 
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
-
-    <owl:ObjectProperty rdf:about="&obo;BFO_0000051"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
-
-    <owl:ObjectProperty rdf:about="&obo;IAO_0000136"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -312,73 +301,6 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
      -->
 
     
-
-
-    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000015 -->
-
-    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000015"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000016 -->
-
-    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000016"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000017 -->
-
-    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000017"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000018 -->
-
-    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000018"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000019 -->
-
-    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000019"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
-
-    <owl:Class rdf:about="&obo;BFO_0000015"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
-
-    <owl:Class rdf:about="&obo;BFO_0000016"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
-
-    <owl:Class rdf:about="&obo;BFO_0000019"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
-
-    <owl:Class rdf:about="&obo;BFO_0000031"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000027"/>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
-
-    <owl:Class rdf:about="&obo;IAO_0000030"/>
-    
-
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000014 -->
 
@@ -397,7 +319,7 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/OGMS_0000020 -->
 
     <owl:Class rdf:about="&obo;OGMS_0000020">
-        <rdfs:label>symptom</rdfs:label>
+        <rdfs:label xml:lang="en">symptom</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SYMP:0000462</oboInOwl:hasDbXref>
         <obo:IAO_0000116>note: defined class</obo:IAO_0000116>
@@ -408,6 +330,18 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
     </owl:Class>
     
 
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000056 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000056">
+        <rdfs:label>laboratory test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2009-06-23T11:49:49Z</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">A measurement assay that has as input a patient-derived specimen, and as output a result that represents a quality of the specimen.</obo:IAO_0000115>
+    </owl:Class>
+    
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000024 -->
 
@@ -444,6 +378,19 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
         <obo:IAO_0000115 xml:lang="en">A disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2009-06-23T11:21:20Z</obo:IAO_0000232>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000045 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000045">
+        <rdfs:label>disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <obo:IAO_0000232>creation date: 2009-06-23T11:39:44Z</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">A material entity which is clinically abnormal and part of an extended organism. Disorders are the physical basis of disease.</obo:IAO_0000115>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
     </owl:Class>
     
 
@@ -485,6 +432,34 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">TODO: Define.</obo:IAO_0000115>
         <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=26</obo:IAO_0000119>
+        <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000088 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000088">
+        <rdfs:label>patient symptom report</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000030"/>
+        <obo:IAO_0000115 xml:lang="en">A communication from a patient about something they perceive as being abnormal about their body or life.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=12</obo:IAO_0000119>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000232>creation date: 2010-01-25T04:51:11Z</obo:IAO_0000232>
+        <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000092 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000092">
+        <rdfs:label>life course</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=38</obo:IAO_0000119>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A processual entity which has as parts all the processes in which a given organism is participant.</obo:IAO_0000115>
+        <obo:IAO_0000232>creation date: 2010-03-31T04:51:11Z</obo:IAO_0000232>
         <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
     </owl:Class>
     
