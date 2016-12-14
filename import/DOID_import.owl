@@ -4,32 +4,33 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY doid "http://purl.obolibrary.org/obo/doid#" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
 
 
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ontoneo/import/DOID_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/ontoneo/import/DOID_import.owl"
+<rdf:RDF xmlns="&obo;doid.owl#"
+     xml:base="&obo;doid.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:doid="&obo;doid#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"	 
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ontoneo/import/DOID_import.owl">
+    <owl:Ontology rdf:about="&obo;doid.owl">
         <xsd:title rdf:datatype="&xsd;string">Human Disease Ontology</xsd:title>
-	<rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
-This owl file represents the necessary entities of DOID that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <rdfs:comment xml:lang="en">DOID subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/doid/releases/2016-09-01/doid.owl"/>
-    </owl:Ontology>    
+        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
+This owl file represents the necessary entities of DOID that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
+        <owl:versionIRI rdf:resource="&obo;doid/releases/2016-09-01/doid.owl"/>
+    </owl:Ontology>
+    
 
 
     <!-- 
@@ -223,6 +224,117 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_0050700 -->
+
+    <owl:Class rdf:about="&obo;DOID_0050700">
+        <rdfs:label rdf:datatype="&xsd;string">cardiomyopathy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_114"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-01-03T02:54:11Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A heart disease and a myopathy that is characterized by deterioration of the function of the heart muscle.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Cardiomyopathies</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:0050700</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I42</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I42.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I51.5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:425</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:425.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D009202</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">MSH:D009202 added from NeuroDevNet [WAK].</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C34830</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C53654</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155351008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155353006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:195035002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:195037005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:20072003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266244008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266301006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:57809008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:85898001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:89461002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:89600009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0033141</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0036529</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0878544</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">lschriml</oboInOwl:created_by>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#DO_FlyBase_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050741 -->
+
+    <owl:Class rdf:about="&obo;DOID_0050741">
+        <rdfs:label xml:lang="en">alcohol dependence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_9973"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-09-05T11:48:42Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A substance dependence that involves the continued use of alcohol  despite problems related to use of the substance.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:0050741</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0003829</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">KEGG:05034</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D010610</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C93040</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:103780</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:66590003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0001973</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">alcoholism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">lschriml</oboInOwl:created_by>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#DO_FlyBase_slim"/>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A substance dependence that involves the continued use of alcohol  despite problems related to use of the substance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&amp;version=16.07d&amp;ns=NCI_Thesaurus&amp;code=C93040&amp;key=-1381701764&amp;b=1&amp;n=null</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_0050741"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050742 -->
+
+    <owl:Class rdf:about="&obo;DOID_0050742">
+        <rdfs:label xml:lang="en">nicotine dependence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_9973"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-09-05T11:48:42Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:0050742</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0003768</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:F17</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:F17.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:F17.20</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D014029</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C54203</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:188890</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:56294008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0028043</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">lschriml</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">tobacco use disorder</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NSH:D014029</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">tobacco use disorder</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;DOID_0050742"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0050825 -->
+
+    <owl:Class rdf:about="&obo;DOID_0050825">
+        <rdfs:label rdf:datatype="&xsd;string">endocardium disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_114"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-02-12T01:53:42Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A heart disease that is located_in the innermost layer of tissue that lines the chambers of the heart.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:0050825</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">lschriml</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_0060056 -->
 
     <owl:Class rdf:about="&obo;DOID_0060056">
@@ -340,6 +452,19 @@ This owl file represents the necessary entities of DOID that are reused in OntON
         <obo:IAO_0000412 rdf:resource="&obo;doid.owl"/>
         <oboInOwl:inSubset rdf:resource="&obo;doid#DO_MGI_slim"/>
         <oboInOwl:inSubset rdf:resource="&obo;doid#DO_rare_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0060478 -->
+
+    <owl:Class rdf:about="&obo;DOID_0060478">
+        <rdfs:label xml:lang="en">Zika fever</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_934"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A viral infectious disease that has_material_basis in Zika virus, which is transmitted_by Aedes aegypti mosquitoes.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:0060478</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:A92.8</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     
 
@@ -825,6 +950,53 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_0080001 -->
+
+    <owl:Class rdf:about="&obo;DOID_0080001">
+        <rdfs:label rdf:datatype="&xsd;string">bone disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_17"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A connective tissue disease that affects the structure or development of bone or causes an impairment of normal bone function.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:0080001</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:1290</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:M89.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D001847</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:156814002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:203524000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:268126004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:274145000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:308147009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:76069003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0005940</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">skeletal disease</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0080006 -->
+
+    <owl:Class rdf:about="&obo;DOID_0080006">
+        <rdfs:label rdf:datatype="&xsd;string">bone development disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_0080001"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A bone disease that results_in abnormal growth and development located_in bone or located_in cartilage.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:0080006</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_0080015 -->
+
+    <owl:Class rdf:about="&obo;DOID_0080015">
+        <rdfs:label rdf:datatype="&xsd;string">physical disorder</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_4"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A disease that has_material_basis_in a genetic abnormality, error with embryonic development, infection or compromised intrauterine environment.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:0080015</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_10177 -->
 
     <owl:Class rdf:about="&obo;DOID_10177">
@@ -855,6 +1027,31 @@ This owl file represents the necessary entities of DOID that are reused in OntON
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0011871</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="&obo;doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_104 -->
+
+    <owl:Class rdf:about="&obo;DOID_104">
+        <rdfs:label xml:lang="en">bacterial infectious disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_4"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A disease by infectious agent that results_in infection, has_material_basis_in Bacteria.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:104</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:A49</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:A49.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D001424</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C2890</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:154318005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:186470002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:187347000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266182006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266187000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:301811001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:87628006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0004623</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#DO_FlyBase_slim"/>
     </owl:Class>
     
 
@@ -952,6 +1149,50 @@ This owl file represents the necessary entities of DOID that are reused in OntON
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0271650</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="&obo;doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_10608 -->
+
+    <owl:Class rdf:about="&obo;DOID_10608">
+        <rdfs:label xml:lang="en">celiac disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_2914"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An autoimmune disease of gastrointestinal tract that is caused by a reaction located_in small intestine to gliadin, a prolamin (gluten protein) found in wheat, and similar proteins found in the crops of the tribe Triticeae. The disease is associated with HLA-DQ gene. It has_symptom abdominal pain, has_symptom constipation, has_symptom diarrhea, has_symptom nausea and vomiting, and has_symptom loss of appetite.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:10608</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0001060</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:K90.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:579.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D002446</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C26714</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:212750</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:607202</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:609753</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:609754</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:609755</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:611598</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:612005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:612006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:612007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:612008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:612009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:612011</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:612110</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ORDO:555</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155842007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:197477005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:197481005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:23829007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266478000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:396331005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0007570</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">Xref MGI.
+OMIM mapping confirmed by DO. [SN].</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">celiac sprue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">coeliac disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">idiopathic steatorrhea</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#DO_MGI_slim"/>
     </owl:Class>
     
 
@@ -1186,6 +1427,36 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_10907 -->
+
+    <owl:Class rdf:about="&obo;DOID_10907">
+        <rdfs:label rdf:datatype="&xsd;string">microcephaly</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_2490"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:10907</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:Q02</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:742.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D008831</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Microcephalus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C85874</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">OMIM mapping confirmed by DO. [SN].</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:251200</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:604321</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:604804</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:608393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:608716</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:612703</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:156893009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:1829003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:204030002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:204031003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0025958</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">microencephaly</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#DO_FlyBase_slim"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_10913 -->
 
     <owl:Class rdf:about="&obo;DOID_10913">
@@ -1223,6 +1494,51 @@ This owl file represents the necessary entities of DOID that are reused in OntON
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0155616</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:resource="&obo;doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_114 -->
+
+    <owl:Class rdf:about="&obo;DOID_114">
+        <rdfs:label rdf:datatype="&xsd;string">heart disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_1287"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A cardiovascular system disease that involves the heart.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:114</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I51.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:429.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D006331</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C3079</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155263000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:194707003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:195152001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266275004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266311004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:56265001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0018799</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#DO_FlyBase_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_11516 -->
+
+    <owl:Class rdf:about="&obo;DOID_11516">
+        <rdfs:label rdf:datatype="&xsd;string">hypertensive heart disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_114"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A heart disease that is caused by high blood pressure.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:11516</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I11</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I11.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:402</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:402.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155297007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:194769003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:194772005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:64715009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0152105</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     
 
@@ -1290,7 +1606,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_11714 -->
 
     <owl:Class rdf:about="&obo;DOID_11714">
-        <rdfs:label rdf:datatype="&xsd;string">gestational diabetes</rdfs:label>
+        <rdfs:label xml:lang="en">gestational diabetes</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_9351"/>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:11714</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0004593</oboInOwl:hasDbXref>
@@ -1349,6 +1665,41 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_11836 -->
+
+    <owl:Class rdf:about="&obo;DOID_11836">
+        <rdfs:label rdf:datatype="&xsd;string">clubfoot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_0080006"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A bone development disease where one or both are inclined inwards, axially rotated outwards, and pointing downwards with concomitant soft tissue abnormalities.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Congenital equinovarus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:0001874</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:11836</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Equinovarus deformity of foot (finding)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:Q66.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:Q66.89</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:754.51</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D003025</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C84641</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">OMIM mapping confirmed by DO. [SN].</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OMIM:119800</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:15169008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:156985005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:156987002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:205089003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:249808002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:253957000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:268340009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:268341008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:33163000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:397932003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0009081</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">congenital clubfoot</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">congenital talipes equinovarus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_1205 -->
 
     <owl:Class rdf:about="&obo;DOID_1205">
@@ -1387,6 +1738,26 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_12549 -->
+
+    <owl:Class rdf:about="&obo;DOID_12549">
+        <rdfs:label xml:lang="en">hepatitis A</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_934"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A viral infectious disease that results_in inflammation located_in liver, has_material_basis_in Hepatitis A virus, which is transmitted_by ingestion of contaminated food or water, or transmitted_by direct contact with an infected person. The infection has_symptom fever, has_symptom fatigue, has_symptom loss of appetite, has_symptom nausea, has_symptom vomiting, has_symptom abdominal pain, has_symptom clay-colored bowel movements, has_symptom joint pain, and has_symptom jaundice.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:12547</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:12549</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D006506</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C3096</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:154347003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:40468003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0019159</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Viral hepatitis A</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Viral hepatitis, type A (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_12642 -->
 
     <owl:Class rdf:about="&obo;DOID_12642">
@@ -1415,6 +1786,31 @@ This owl file represents the necessary entities of DOID that are reused in OntON
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C3489393</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">hiatal hernia</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1287 -->
+
+    <owl:Class rdf:about="&obo;DOID_1287">
+        <rdfs:label rdf:datatype="&xsd;string">cardiovascular system disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_4"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A disease of anatomical entity which occurs in the blood, heart, blood vessels or the lymphatic system that passes nutrients (such as amino acids and electrolytes), gases, hormones, blood cells or lymph to and from cells in the body to help fight diseases and help stabilize body temperature and pH to maintain homeostasis.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:1287</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:73</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:429.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D002318</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C2931</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155263000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:194707003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:195139006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:195594006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266275004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266336005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:49601007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0007222</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">disease of subdivision of hemolymphoid system</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     
 
@@ -1545,6 +1941,29 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_13336 -->
+
+    <owl:Class rdf:about="&obo;DOID_13336">
+        <rdfs:label xml:lang="en">congenital toxoplasmosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_9965"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A toxoplasmosis that involves a reactivated infection of the mother transmitted to the fetus during pregnancy. Spontaneous abortion and stillbirth may occur.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Congenital toxoplasmosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Congenital toxoplasmosis (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:13336</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:P37.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D014125</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C50503</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:157118007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:206335001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:268875000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:73893000</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Toxoplasmosis - congen.</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0040560</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_13593 -->
 
     <owl:Class rdf:about="&obo;DOID_13593">
@@ -1602,6 +2021,39 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_1398 -->
+
+    <owl:Class rdf:about="&obo;DOID_1398">
+        <rdfs:label xml:lang="en">parasitic infectious disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_4"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A disease by infectious agent that is carried out by a parasite which by definition is a pathogen that simultaneously injures and derives sustenance from its host.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:11681</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:13509</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:1396</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:1398</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:1494</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:2114</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:2293</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:2922</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:3564</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:4191</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:886</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:948</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:9639</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:9644</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Ectoparasitic disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:H44.12</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:360.13</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C34587</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:193273005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:57100005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0014238</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">parasitemia</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_14225 -->
 
     <owl:Class rdf:about="&obo;DOID_14225">
@@ -1649,6 +2101,36 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_150 -->
+
+    <owl:Class rdf:about="&obo;DOID_150">
+        <rdfs:label xml:lang="en">disease of mental health</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_4"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A disease that involves a psychological or behavioral pattern generally associated with subjective distress or disability that occurs in an individual, and which are not a part of normal development or culture.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:150</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:F99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:F99-F99</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D001523</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C2893</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:154843007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:154971002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:154972009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:154980002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:192637001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:192639003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:74732009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0004936</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A disease that involves a psychological or behavioral pattern generally associated with subjective distress or disability that occurs in an individual, and which are not a part of normal development or culture.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Mental_disorder</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_150"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_1579 -->
 
     <owl:Class rdf:about="&obo;DOID_1579">
@@ -1691,6 +2173,57 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_1682 -->
+
+    <owl:Class rdf:about="&obo;DOID_1682">
+        <rdfs:label rdf:datatype="&xsd;string">congenital heart disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_114"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Congenital Heart Defects</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Congenital anomaly of heart</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:1682</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Heart Malformation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Heart-congenital defect</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:Q24.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:746.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D006330</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C34666</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">OMIM mapping confirmed by DO. [SN].</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:13213009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:156911006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:156926008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:204405005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:204413006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:268315002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:268318000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0018798</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">congenital heart defect</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">heart defect</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#DO_FlyBase_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_17 -->
+
+    <owl:Class rdf:about="&obo;DOID_17">
+        <rdfs:label rdf:datatype="&xsd;string">musculoskeletal system disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_4"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A disease of anatomical entity that occurs in the muscular and/or skeletal system.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:17</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D009140</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C107377</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:156881000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:268047003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:268142006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:274149006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:928000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0026857</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_1837 -->
 
     <owl:Class rdf:about="&obo;DOID_1837">
@@ -1712,6 +2245,134 @@ This owl file represents the necessary entities of DOID that are reused in OntON
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">ketosis-prone diabetes mellitus</oboInOwl:hasExactSynonym>
         <obo:IAO_0000412 rdf:resource="&obo;doid.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1849 -->
+
+    <owl:Class rdf:about="&obo;DOID_1849">
+        <rdfs:label xml:lang="en">cannabis dependence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_9977"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A drug dependence that involves the continued use of cannabis despite problems related to use of the substance.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:1849</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:F12.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:304.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D002189</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C34445</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191835009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191836005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:268766005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:85005007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0006870</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A drug dependence that involves the continued use of cannabis despite problems related to use of the substance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Cannabis_dependence</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_1849"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1883 -->
+
+    <owl:Class rdf:about="&obo;DOID_1883">
+        <rdfs:label xml:lang="en">hepatitis C</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_934"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A viral infectious disease that results_in inflammation located_in liver, has_material_basis_in Hepatitis C virus, which is transmitted_by blood from an infected person enters the body of an uninfected person. The infection has_symptom fever, has_symptom fatigue, has_symptom loss of appetite, has_symptom nausea, has_symptom vomiting, has_symptom abdominal pain, has_symptom clay-colored bowel movements, has_symptom joint pain, and has_symptom jaundice.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:12430</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:12432</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:1883</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:2049</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0003047</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:B19.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:B19.20</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:070.7</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D006526</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">NANBH</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C3098</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:123324009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:154349000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:186634008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:186643004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:50711007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0019196</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Viral hepatitis C</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">chronic hepatitis C</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">hepatitis C infection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">hepatitis nonA nonB</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_1884 -->
+
+    <owl:Class rdf:about="&obo;DOID_1884">
+        <rdfs:label xml:lang="en">viral hepatitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_2237"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A hepatitis that involves viral infection causing inflammation of the liver.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:12548</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:1331</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:1884</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:1885</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D006524</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0019194</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Unspecified viral hepatitis with hepatic coma</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Viral hepatitis with hepatic coma (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">animal viral hepatitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">human viral hepatitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">viral hepatitis with hepatic coma</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_2043 -->
+
+    <owl:Class rdf:about="&obo;DOID_2043">
+        <rdfs:label xml:lang="en">hepatitis B</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_934"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A viral infectious disease that results_in inflammation located_in liver, has_material_basis_in Hepatitis B virus, which is transmitted_by sexual contact, transmitted_by blood transfusions, and transmitted_by fomites like needles or syringes. The infection has_symptom fever, has_symptom fatigue, has_symptom loss of appetite, has_symptom nausea, has_symptom vomiting, has_symptom abdominal pain, has_symptom clay-colored bowel movements, has_symptom joint pain, and has_symptom jaundice.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:12591</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:12592</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:2042</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:2043</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Serum hepatitis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">chronic hepatitis B</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">hepatitis B infection</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#sexually_transmitted_infectious_disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_2048 -->
+
+    <owl:Class rdf:about="&obo;DOID_2048">
+        <rdfs:label xml:lang="en">autoimmune hepatitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_2914"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An autoimmune disease of gastrointestinal tract that results_in inflammation located_in liver caused by the body&apos;s immune system attacking the liver cells.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Autoimmune Hepatitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Autoimmune chronic active hepatitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Autoimmune hepatitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Autoimmune hepatitis (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:2048</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:4745</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:K75.4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:571.42</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D019693</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C27029</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C27778</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:197284004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:408335007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:68784009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0241910</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C1332355</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">autoimmune hepatitis with centrilobular necrosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
     
 
@@ -1754,6 +2415,75 @@ This owl file represents the necessary entities of DOID that are reused in OntON
         <obo:IAO_0000412 rdf:resource="&obo;doid.owl"/>
     </owl:Class>
     
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_2575 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/DOID_2575">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/DOID_9974"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A drug dependence that involves the continued use of barbiturates despite problems related to use of the substance.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ICD9CM:304.11</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SNOMEDCT:231472009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS_CUI:C0154482</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">DOID:2575</oboInOwl:id>
+        <rdfs:label xml:lang="en">barbiturate dependence</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/DOID_2575"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A drug dependence that involves the continued use of barbiturates despite problems related to use of the substance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">url:http://en.wikipedia.org/wiki/Barbiturate_dependence</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    
+
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_2237 -->
+
+    <owl:Class rdf:about="&obo;DOID_2237">
+        <rdfs:label xml:lang="en">hepatitis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_409"/>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:12352</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:14551</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:1706</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:1707</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:2237</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:2238</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:K73.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:570</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:571.4</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:571.40</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:571.41</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D006521</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C82978</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155808003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155813004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:197268000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:197278002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:197288001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:197289009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266536009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266539002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:41889008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:76783007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0001308</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0019189</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0149519</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">acute and subacute liver necrosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">acute and subacute liver necrosis (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">acute and subacute liver necrosis NOS (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">acute and subacute necrosis of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">acute hepatitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">acute hepatitis (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">acute/subac. necrosis of liver</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">animal hepatitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">chronic hepatitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">chronic persistent hepatitis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
 
 
     <!-- http://purl.obolibrary.org/obo/DOID_229 -->
@@ -1775,6 +2505,78 @@ This owl file represents the necessary entities of DOID that are reused in OntON
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0017411</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_2490 -->
+
+    <owl:Class rdf:about="&obo;DOID_2490">
+        <rdfs:label rdf:datatype="&xsd;string">congenital nervous system abnormality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_0080015"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:2490</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:742</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:204018008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0158538</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">congenital neurologic anomaly</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_2559 -->
+
+    <owl:Class rdf:about="&obo;DOID_2559">
+        <rdfs:label xml:lang="en">opiate dependence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_9974"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A drug dependence that involves the continued use of opiate drugs despite despite problems related to use of the substance.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:2559</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:F11.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:304.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:304.00</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D009293</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Opioid type dependence</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191817000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191818005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:192220003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:75544000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0524662</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A drug dependence that involves the continued use of opiate drugs despite despite problems related to use of the substance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Opiate_dependency</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_2559"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM_2006:304.0</oboInOwl:hasDbXref>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">Opioid type dependence</owl:annotatedTarget>
+        <owl:annotatedSource rdf:resource="&obo;DOID_2559"/>
+        <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_2560 -->
+
+    <owl:Class rdf:about="&obo;DOID_2560">
+        <rdfs:label xml:lang="en">morphine dependence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_2559"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An opiate dependence that involves the continued use of morphine despite despite problems related to use of the substance.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:2560</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D009021</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191817000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:231479000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:286934009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0026552</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">An opiate dependence that involves the continued use of morphine despite despite problems related to use of the substance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Opioid_dependence</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_2560"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
     
 
 
@@ -1810,7 +2612,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_2914 -->
 
     <owl:Class rdf:about="&obo;DOID_2914">
-        <rdfs:label rdf:datatype="&xsd;string">immune system disease</rdfs:label>
+        <rdfs:label xml:lang="en">immune system disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_4"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A disease of anatomical entity that is located_in the immune system.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:2914</oboInOwl:id>
@@ -1832,7 +2634,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_3044 -->
 
     <owl:Class rdf:about="&obo;DOID_3044">
-        <rdfs:label rdf:datatype="&xsd;string">food allergy</rdfs:label>
+        <rdfs:label xml:lang="en">food allergy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_1205"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A hypersensitivity reaction type I disease that is an abnormal response to a food, triggered by the body&apos;s immune system.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:3044</oboInOwl:id>
@@ -1851,7 +2653,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_3660 -->
 
     <owl:Class rdf:about="&obo;DOID_3660">
-        <rdfs:label rdf:datatype="&xsd;string">wheat allergy</rdfs:label>
+        <rdfs:label xml:lang="en">wheat allergy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_3044"/>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:3660</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D021182</oboInOwl:hasDbXref>
@@ -1867,7 +2669,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_4 -->
 
     <owl:Class rdf:about="&obo;DOID_4">
-        <rdfs:label rdf:datatype="&xsd;string">disease</rdfs:label>
+        <rdfs:label xml:lang="en">disease</rdfs:label>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A disease is a disposition (i) to undergo pathological processes that (ii) exists in an organism because of one or more disorders in that organism.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:4</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D004194</oboInOwl:hasDbXref>
@@ -1880,10 +2682,83 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_4079 -->
+
+    <owl:Class rdf:about="&obo;DOID_4079">
+        <rdfs:label xml:lang="en">heart valve disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_114"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A heart disease involving one or more of the four valves of the heart (the aortic and mitral valves on the left and the pulmonary and tricuspid valves on the right).</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:4079</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:989</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D006349</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D016127</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C45525</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:195013005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:368009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:398995000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0018824</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0079485</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Valvular heart disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_409 -->
+
+    <owl:Class rdf:about="&obo;DOID_409">
+        <rdfs:label xml:lang="en">liver disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_77"/>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:2164</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:2165</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:409</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:46</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:K70-K77</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:K76.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:573.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D008107</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C3196</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155807008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155817003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155822003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:197375001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:197551000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:235856003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266535008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:62857009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0023895</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">disorder of liver (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">hepatic disorder</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_4166 -->
+
+    <owl:Class rdf:about="&obo;DOID_4166">
+        <rdfs:label xml:lang="en">syphilis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_104"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A primary bacterial infectious disease that is a sexually transmitted systemic disease, has_material_basis_in Treponema pallidum subsp pallidum, which is transmitted_by sexual contact, transmitted_by blood product transfusion, transmitted_by congenital method from mother to fetus or transmitted_by contact with infectious lesions. If left untreated, produces chancres, rashes, and systemic lesions in a clinical course with three stages continued over many years.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:11095</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:4166</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:A51.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D002601</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266127002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:58433006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0007939</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">syphilitic chancre</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#gram-negative_bacterial_infectious_disease"/>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#sexually_transmitted_infectious_disease"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_4195 -->
 
     <owl:Class rdf:about="&obo;DOID_4195">
-        <rdfs:label rdf:datatype="&xsd;string">hyperglycemia</rdfs:label>
+        <rdfs:label xml:lang="en">hyperglycemia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_0014667"/>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:4195</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:R73.9</oboInOwl:hasDbXref>
@@ -1908,7 +2783,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_4376 -->
 
     <owl:Class rdf:about="&obo;DOID_4376">
-        <rdfs:label rdf:datatype="&xsd;string">milk allergy</rdfs:label>
+        <rdfs:label xml:lang="en">milk allergy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_3044"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A food allergy that results in adverse immune reaction to one or more of the proteins in cow&apos;s milk and/or the milk of other animals, which are normally harmless to the non-allergic individual.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:4376</oboInOwl:id>
@@ -1923,7 +2798,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_4377 -->
 
     <owl:Class rdf:about="&obo;DOID_4377">
-        <rdfs:label rdf:datatype="&xsd;string">egg allergy</rdfs:label>
+        <rdfs:label xml:lang="en">egg allergy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_3044"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A food allergy that is an allergy or hypersensitivity to dietary substances from the yolk or whites of eggs, causing an overreaction of the immune system which may lead to severe physical symptoms.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Allergy to eggs (disorder)</oboInOwl:hasExactSynonym>
@@ -1941,7 +2816,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_4378 -->
 
     <owl:Class rdf:about="&obo;DOID_4378">
-        <rdfs:label rdf:datatype="&xsd;string">peanut allergy</rdfs:label>
+        <rdfs:label xml:lang="en">peanut allergy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_4379"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A food allergy that is an allergy or hypersensitivity to dietary substances from peanuts causing an overreaction of the immune system which in a small percentage of people may lead to severe physical symptoms.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:4378</oboInOwl:id>
@@ -1959,7 +2834,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_4379 -->
 
     <owl:Class rdf:about="&obo;DOID_4379">
-        <rdfs:label rdf:datatype="&xsd;string">nut allergy</rdfs:label>
+        <rdfs:label xml:lang="en">nut allergy</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_3044"/>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Allergy to nuts (disorder)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Allergy to nuts other than peanuts</oboInOwl:hasExactSynonym>
@@ -1978,7 +2853,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_4977 -->
 
     <owl:Class rdf:about="&obo;DOID_4977">
-        <rdfs:label rdf:datatype="&xsd;string">lymphedema</rdfs:label>
+        <rdfs:label xml:lang="en">lymphedema</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_75"/>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:4977</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Lymphatic edema (morphologic abnormality)</oboInOwl:hasExactSynonym>
@@ -1996,10 +2871,24 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_526 -->
+
+    <owl:Class rdf:about="&obo;DOID_526">
+        <rdfs:label xml:lang="en">human immunodeficiency virus infectious disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_934"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A viral infectious disease that results_in destruction of immune system, leading to life-threatening opportunistic infections and cancers, has_material_basis_in Human immunodeficiency virus 1 or has_material_basis_in Human immunodeficiency virus 2, which are transmitted_by sexual contact, transmitted_by transfer of blood, semen, vaginal fluid, pre-ejaculate, or breast milk, transmitted_by congenital method, and transmitted_by contaminated needles. The virus infects helper T cells (CD4+ T cells) which are directly or indirectly destroyed, macrophages, and dendritic cells. The infection has_symptom diarrhea, has_symptom fatigue, has_symptom fever, has_symptom vaginal yeast infection, has_symptom headache, has_symptom mouth sores, has_symptom muscle aches, has_symptom sore throat, and has_symptom swollen lymph glands.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:526</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">HIV infection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#zoonotic_infectious_disease"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_5453 -->
 
     <owl:Class rdf:about="&obo;DOID_5453">
-        <rdfs:label rdf:datatype="&xsd;string">pulmonary venoocclusive disease</rdfs:label>
+        <rdfs:label xml:lang="en">pulmonary venoocclusive disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_6432"/>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:5453</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D011668</oboInOwl:hasDbXref>
@@ -2015,10 +2904,108 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_5749 -->
+
+    <owl:Class rdf:about="&obo;DOID_5749">
+        <rdfs:label xml:lang="en">pulmonary valve disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_4079"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:5749</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:424.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C78579</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:195001000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:76267008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0034087</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">pulmonary valve disorder</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_6000 -->
+
+    <owl:Class rdf:about="&obo;DOID_6000">
+        <rdfs:label xml:lang="en">congestive heart failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_114"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A heart disease that is characterized by any structural or functional cardiac disorder that impairs the ability of the heart to fill with or pump a sufficient amount of blood throughout the body.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CHF</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Cardiac Failure Congestive</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Congestive heart disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:395</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:6000</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I50</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I50.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:428</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:428.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:428.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D006333</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C3080</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C50577</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155374007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155375008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155377000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:195108009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:195117009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266248006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266308000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:42343007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:84114007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0018801</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0018802</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Weak heart</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_61 -->
+
+    <owl:Class rdf:about="&obo;DOID_61">
+        <rdfs:label xml:lang="en">mitral valve disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_4079"/>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:11505</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:58</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:59</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:61</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I05</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I05.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I05.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:394</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:394.1</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:424.0</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Mitral RH valve dis.</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C78446</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Rheumatic disease of mitral valve (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Rheumatic mitral insufficiency</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Rheumatic mitral valve changes</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Rheumatic mitral valve regurgitation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:11851006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155276006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155278007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155279004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:194724009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:194729004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:194982000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:250998008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266278002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266279005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:31085000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:83898004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0026265</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0155563</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0264765</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">chronic rheumatic mitral valve (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">disease of mitral valve</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">rheumatic disease of mitral valve</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">rheumatic mitral valve incompetence</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_6432 -->
 
     <owl:Class rdf:about="&obo;DOID_6432">
-        <rdfs:label rdf:datatype="&xsd;string">pulmonary hypertension</rdfs:label>
+        <rdfs:label xml:lang="en">pulmonary hypertension</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_10763"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A hypertension characterized by an increase of blood pressure in the pulmonary artery, pulmonary vein or pulmonary capillaries.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:6432</oboInOwl:id>
@@ -2038,7 +3025,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_727 -->
 
     <owl:Class rdf:about="&obo;DOID_727">
-        <rdfs:label rdf:datatype="&xsd;string">premenstrual tension</rdfs:label>
+        <rdfs:label xml:lang="en">premenstrual tension</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_229"/>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:727</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:N94.3</oboInOwl:hasDbXref>
@@ -2057,7 +3044,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_75 -->
 
     <owl:Class rdf:about="&obo;DOID_75">
-        <rdfs:label rdf:datatype="&xsd;string">lymphatic system disease</rdfs:label>
+        <rdfs:label xml:lang="en">lymphatic system disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_2914"/>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Adenopathy</oboInOwl:hasExactSynonym>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">An immune system disease that is located_in the lymphatic system.</obo:IAO_0000115>
@@ -2087,7 +3074,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_77 -->
 
     <owl:Class rdf:about="&obo;DOID_77">
-        <rdfs:label rdf:datatype="&xsd;string">gastrointestinal system disease</rdfs:label>
+        <rdfs:label xml:lang="en">gastrointestinal system disease</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_4"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A disease of anatomical entity that is located_in the gastrointestinal tract.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:27</oboInOwl:hasAlternativeId>
@@ -2116,7 +3103,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_7998 -->
 
     <owl:Class rdf:about="&obo;DOID_7998">
-        <rdfs:label rdf:datatype="&xsd;string">hyperthyroidism</rdfs:label>
+        <rdfs:label xml:lang="en">hyperthyroidism</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_28"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A thyroid gland disease that involves an over production of thyroid hormone.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:7998</oboInOwl:id>
@@ -2142,7 +3129,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_9312 -->
 
     <owl:Class rdf:about="&obo;DOID_9312">
-        <rdfs:label rdf:datatype="&xsd;string">chronic ethmoiditis</rdfs:label>
+        <rdfs:label xml:lang="en">chronic ethmoiditis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_9507"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A ethmoid sinusitis which lasts for 12 weeks or more.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:9312</oboInOwl:id>
@@ -2162,10 +3149,32 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_934 -->
+
+    <owl:Class rdf:about="&obo;DOID_934">
+        <rdfs:label xml:lang="en">viral infectious disease</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_4"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A disease by infectious agent that results_in infection, has_material_basis_in Viruses.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:1329</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:934</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Viral Infection</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Viral disease</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Viral disease (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Viral infection NOS</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Viral infection NOS (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Viral infection, unspecified (disorder)</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Viral: [infection NOS] or [illness]</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">arthropod-borne viruses</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">virus infection</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&obo;doid#DO_FlyBase_slim"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_9351 -->
 
     <owl:Class rdf:about="&obo;DOID_9351">
-        <rdfs:label rdf:datatype="&xsd;string">diabetes mellitus</rdfs:label>
+        <rdfs:label xml:lang="en">diabetes mellitus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_0014667"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A glucose metabolism disease characterized  by chronic hyperglycaemia with disturbances of carbohydrate, fat and protein metabolism resulting from defects in insulin secretion, insulin action, or both.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:9351</oboInOwl:id>
@@ -2188,7 +3197,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_9352 -->
 
     <owl:Class rdf:about="&obo;DOID_9352">
-        <rdfs:label rdf:datatype="&xsd;string">type 2 diabetes mellitus</rdfs:label>
+        <rdfs:label xml:lang="en">type 2 diabetes mellitus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_9351"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A diabetes mellitus that involves high blood glucose resulting from cells fail to use insulin properly.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:9352</oboInOwl:id>
@@ -2221,7 +3230,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_9506 -->
 
     <owl:Class rdf:about="&obo;DOID_9506">
-        <rdfs:label rdf:datatype="&xsd;string">acute ethmoiditis</rdfs:label>
+        <rdfs:label xml:lang="en">acute ethmoiditis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_9507"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A ethmoid sinusitis which lasts for less than 4 weeks.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:9506</oboInOwl:id>
@@ -2244,7 +3253,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_9507 -->
 
     <owl:Class rdf:about="&obo;DOID_9507">
-        <rdfs:label rdf:datatype="&xsd;string">ethmoid sinusitis</rdfs:label>
+        <rdfs:label xml:lang="en">ethmoid sinusitis</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_0050127"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A sinusitis which involves infection of ethmoid sinuses that causes pain or pressure behind and between the eyes, tearing, and headache over the forehead.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:9507</oboInOwl:id>
@@ -2264,7 +3273,7 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/DOID_9744 -->
 
     <owl:Class rdf:about="&obo;DOID_9744">
-        <rdfs:label rdf:datatype="&xsd;string">type 1 diabetes mellitus</rdfs:label>
+        <rdfs:label xml:lang="en">type 1 diabetes mellitus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_9351"/>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">A diabetes mellitus that results from the body&apos;s failure to produce insulin and has_material_basis_in autoimmune destruction of insulin-producing beta cells of the pancreas.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:9744</oboInOwl:id>
@@ -2311,10 +3320,187 @@ This owl file represents the necessary entities of DOID that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/DOID_9768 -->
+
+    <owl:Class rdf:about="&obo;DOID_9768">
+        <rdfs:label xml:lang="en">heart aneurysm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_114"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:9768</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:I25.3</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D006322</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:155317009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:194847002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:65340007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0018789</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cardiac aneurysm</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9965 -->
+
+    <owl:Class rdf:about="&obo;DOID_9965">
+        <rdfs:label xml:lang="en">toxoplasmosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_1398"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A coccidiosis that has_material_basis_in protozoan Toxoplasma gondii. The parasite effects most genera of warm-blooded animals, including humans, but the primary host is the felid (cat) family. Animals are infected by eating infected meat, by ingestion of feces of a cat that has itself recently been infected, or transmission_by mother to fetus. The symptoms include bilateral, nontender cervical or axillary lymphadenopathy, fever, malaise, myalgia, hepatosplenomegaly, anemia and leukopenia.</obo:IAO_0000115>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:13334</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:13339</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">DOID:13344</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:9965</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:B58</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:B58.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:130</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:130.9</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D014123</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C3418</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:154423006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:187192000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:187200007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:187515009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:266225001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:276203008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:9399000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0040558</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">disseminated toxoplasmosis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9973 -->
+
+    <owl:Class rdf:about="&obo;DOID_9973">
+        <rdfs:label xml:lang="en">substance dependence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_150"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A substance-related disorder that involves the continued use of alcohol or other drugs despite problems related to use of the substance.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:9973</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C35458</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:103326000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:255338002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0439857</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A substance-related disorder that involves the continued use of alcohol or other drugs despite problems related to use of the substance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Drug_dependence</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_9973"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9974 -->
+
+    <owl:Class rdf:about="&obo;DOID_9974">
+        <rdfs:label xml:lang="en">drug dependence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_9973"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A substance dependence that involves the continued use of drugs despite problems related to use of the substance.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:9974</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:304.6</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:304.60</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191859004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191860009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191864000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:268644006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0029792</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A substance dependence that involves the continued use of drugs despite problems related to use of the substance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Drug_dependence</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_9974"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9975 -->
+
+    <owl:Class rdf:about="&obo;DOID_9975">
+        <rdfs:label xml:lang="en">cocaine dependence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_9974"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A drug dependence that is a psychological dependency on the regular use of cocaine.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:9975</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:F14.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:304.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:304.20</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D019970</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C34492</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191829009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191830004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191834008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:192254002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:286934009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:31956009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0600427</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A drug dependence that is a psychological dependency on the regular use of cocaine.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Cocaine_dependence</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_9975"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9976 -->
+
+    <owl:Class rdf:about="&obo;DOID_9976">
+        <rdfs:label xml:lang="en">heroin dependence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_2559"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An opiate dependence that involves the continued use of heroin despite problems related to use of the substance.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:9976</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MSH:D006556</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C34694</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191817000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:192220003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:231477003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0019337</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">An opiate dependence that involves the continued use of heroin despite problems related to use of the substance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Opioid_dependence</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_9976"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/DOID_9977 -->
+
+    <owl:Class rdf:about="&obo;DOID_9977">
+        <rdfs:label xml:lang="en">hallucinogen dependence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;DOID_9974"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A drug dependence that involves the continued use of hallucinogenic drugs despite problems related to use of the substance.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">DOID:9977</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD10CM:F16.2</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:304.5</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ICD9CM:304.50</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NCI:C34657</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191847003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191848008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:191852008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:268643000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT_US_2016_03_01:38247002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS_CUI:C0018528</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">disease_ontology</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedTarget rdf:datatype="&xsd;string">A drug dependence that involves the continued use of hallucinogenic drugs despite problems related to use of the substance.</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">url:http://en.wikipedia.org/wiki/Hallucinogenic_drugs</oboInOwl:hasDbXref>
+        <owl:annotatedSource rdf:resource="&obo;DOID_9977"/>
+        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
+    </owl:Axiom>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/DOID_9993 -->
 
     <owl:Class rdf:about="&obo;DOID_9993">
-        <rdfs:label rdf:datatype="&xsd;string">hypoglycemia</rdfs:label>
+        <rdfs:label xml:lang="en">hypoglycemia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;DOID_0014667"/>
         <oboInOwl:id rdf:datatype="&xsd;string">DOID:9993</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Hypoglycaemia</oboInOwl:hasExactSynonym>
