@@ -3,7 +3,6 @@
 
 <!DOCTYPE rdf:RDF [
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
-    <!ENTITY bio "http://purl.obolibrary.org/obo/" >
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
@@ -16,28 +15,27 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;ontoneo/import/FMA_import.owl#"
-     xml:base="&obo;ontoneo/import/FMA_import.owl"
+<rdf:RDF xmlns="&obo;fma.owl#"
+     xml:base="&obo;fma.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:bio="http://purl.obolibrary.org/obo/"
+     xmlns:protege="http://protege.stanford.edu/plugins/owl/protege#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:sio="http://semanticscience.org/resource/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/FMA_import.owl">
-        <xsd:title rdf:datatype="&xsd;string">Foundational Model of Anatomy (subset)</xsd:title>	
+    <owl:Ontology rdf:about="&obo;fma.owl">
         <oboInOwl:hasOBOFormatVersion rdf:datatype="&xsd;string">1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:date rdf:datatype="&xsd;string">24:07:2008 15:29</oboInOwl:date>
+        <xsd:title rdf:datatype="&xsd;string">Foundational Model of Anatomy (subset)</xsd:title>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of FMA that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <rdfs:comment xml:lang="en">FMA subset applied to OntONeo ontology.</rdfs:comment>
         <obo:IAO_0000412>versionIRI: http://purl.obolibrary.org/obo/fma/releases/2016-05-25/fma.owl</obo:IAO_0000412>
-        <owl:versionIRI rdf:resource="&bio;ontoneo/releases/2016-10-27/FMA_import.owl"/>
+        <rdfs:comment xml:lang="en">FMA subset applied to OntONeo ontology.</rdfs:comment>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-10-27/FMA_import.owl"/>
     </owl:Ontology>
     
 
@@ -66,24 +64,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000412">
         <rdfs:label xml:lang="en">imported from</rdfs:label>
     </owl:AnnotationProperty>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#date -->
-
-    <owl:AnnotationProperty rdf:about="&oboInOwl;date"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#default-namespace -->
-
-    <owl:AnnotationProperty rdf:about="&oboInOwl;default-namespace"/>
-    
-
-
-    <!-- http://www.geneontology.org/formats/oboInOwl#hasDate -->
-
-    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDate"/>
     
 
 
@@ -117,12 +97,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     
 
 
-    <!-- http://www.w3.org/2000/01/rdf-schema#label -->
-
-    <owl:AnnotationProperty rdf:about="&rdfs;label"/>
-    
-
-
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -136,7 +110,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
 
     <!-- http://purl.obolibrary.org/obo/fma#attaches_to -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#attaches_to">
+    <owl:ObjectProperty rdf:about="&obo;fma#attaches_to">
         <rdfs:label rdf:datatype="&xsd;string">attaches_to</rdfs:label>
         <oboInOwl:id rdf:datatype="&xsd;string">attaches_to</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
@@ -146,7 +120,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
 
     <!-- http://purl.obolibrary.org/obo/fma#bounds -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#bounds">
+    <owl:ObjectProperty rdf:about="&obo;fma#bounds">
         <rdfs:label rdf:datatype="&xsd;string">bounds</rdfs:label>
         <oboInOwl:id rdf:datatype="&xsd;string">bounds</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
@@ -156,7 +130,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
 
     <!-- http://purl.obolibrary.org/obo/fma#branch_of -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#branch_of">
+    <owl:ObjectProperty rdf:about="&obo;fma#branch_of">
         <rdfs:label rdf:datatype="&xsd;string">branch_of</rdfs:label>
         <oboInOwl:id rdf:datatype="&xsd;string">branch_of</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
@@ -166,18 +140,18 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
 
     <!-- http://purl.obolibrary.org/obo/fma#constitutional_part_of -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#constitutional_part_of">
+    <owl:ObjectProperty rdf:about="&obo;fma#constitutional_part_of">
         <rdfs:label rdf:datatype="&xsd;string">constitutional_part_of</rdfs:label>
         <oboInOwl:id rdf:datatype="&xsd;string">constitutional_part_of</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/fma#part_of"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;fma#part_of"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/fma#part_of -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#part_of">
+    <owl:ObjectProperty rdf:about="&obo;fma#part_of">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label rdf:datatype="&xsd;string">part_of</rdfs:label>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
@@ -188,22 +162,22 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
 
     <!-- http://purl.obolibrary.org/obo/fma#regional_part_of -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#regional_part_of">
+    <owl:ObjectProperty rdf:about="&obo;fma#regional_part_of">
         <rdfs:label rdf:datatype="&xsd;string">regional_part_of</rdfs:label>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="&xsd;string">regional_part_of</oboInOwl:id>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/fma#part_of"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;fma#part_of"/>
     </owl:ObjectProperty>
     
 
 
     <!-- http://purl.obolibrary.org/obo/fma#systemic_part_of -->
 
-    <owl:ObjectProperty rdf:about="http://purl.obolibrary.org/obo/fma#systemic_part_of">
+    <owl:ObjectProperty rdf:about="&obo;fma#systemic_part_of">
         <rdfs:label rdf:datatype="&xsd;string">systemic_part_of</rdfs:label>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
         <oboInOwl:id rdf:datatype="&xsd;string">systemic_part_of</oboInOwl:id>
-        <rdfs:subPropertyOf rdf:resource="http://purl.obolibrary.org/obo/fma#part_of"/>
+        <rdfs:subPropertyOf rdf:resource="&obo;fma#part_of"/>
     </owl:ObjectProperty>
     
 
@@ -243,12 +217,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     
 
 
-    <!-- http://purl.obolibrary.org/obo/BFO_0000146 -->
-
-    <owl:Class rdf:about="&obo;BFO_0000146"/>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FMA_10430 -->
 
     <owl:Class rdf:about="&obo;FMA_10430">
@@ -256,13 +224,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9578"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -280,14 +248,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_86166"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_19898"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_19898"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Breast skin</oboInOwl:hasExactSynonym>
@@ -316,7 +284,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_10464"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_50048"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -334,7 +302,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_10464"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_50049"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -365,14 +333,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_86166"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67771"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67771"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:12828</oboInOwl:id>
@@ -389,7 +357,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_85544"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_14181"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -478,20 +446,20 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_14540"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7201"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:14544</oboInOwl:id>
@@ -507,7 +475,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20357"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20365"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -577,38 +545,38 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45659"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_7159"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_222946"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45659"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_222946"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_7159"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_222946"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45659"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45659"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Bladder</oboInOwl:hasExactSynonym>
@@ -626,26 +594,26 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_5018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_10430"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_72062"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16580"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_13478"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_10430"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_72062"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_13478"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:16202</oboInOwl:id>
@@ -663,7 +631,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_14065"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -696,7 +664,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_9578"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259094"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -714,14 +682,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_85544"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_259054"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_9578"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_9578"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_259054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:16580</oboInOwl:id>
@@ -737,7 +705,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -767,7 +735,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_82482"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -785,7 +753,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_17559"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -803,7 +771,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_17559"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -822,7 +790,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_55268"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -843,7 +811,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_14065"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_17560"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -861,7 +829,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_14065"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_17560"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -894,7 +862,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_12237"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -924,7 +892,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_17559"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_17739"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -943,13 +911,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45663"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45663"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -983,7 +951,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_82482"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_18245"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1003,7 +971,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18302"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_18245"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1022,7 +990,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18302"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_18245"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1042,7 +1010,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18302"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_18245"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1062,7 +1030,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18302"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_18245"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1082,7 +1050,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18302"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_18245"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1102,7 +1070,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18302"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_18245"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1125,19 +1093,19 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18245"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1156,19 +1124,19 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18245"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1187,7 +1155,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18304"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_18483"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1206,13 +1174,46 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18304"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_18484"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:18486</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Left fallopian tube proper</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Left oviduct proper</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_18820 -->
+
+    <owl:Class rdf:about="&obo;FMA_18820">
+        <rdfs:label rdf:datatype="&xsd;string">Umbilical artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_66464"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:18820</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_18821 -->
+
+    <owl:Class rdf:about="&obo;FMA_18821">
+        <rdfs:label rdf:datatype="&xsd;string">Right umbilical artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_18820"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:18821</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_18822 -->
+
+    <owl:Class rdf:about="&obo;FMA_18822">
+        <rdfs:label rdf:datatype="&xsd;string">Left umbilical artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_18820"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:18822</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -1384,13 +1385,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45659"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45659"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1408,20 +1409,20 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_19667"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_222946"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_222946"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_222946"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_222946"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:19669</oboInOwl:id>
@@ -1459,7 +1460,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_19815"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16516"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1476,7 +1477,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_19815"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16516"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1493,7 +1494,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_19816"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16516"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1510,7 +1511,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_19816"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16516"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1540,7 +1541,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_19822"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1558,7 +1559,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_19822"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1635,13 +1636,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1671,19 +1672,19 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20192"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1701,7 +1702,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20221"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9909"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1719,14 +1720,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_19969"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_19949"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_27975"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_27975"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_19949"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:20005</oboInOwl:id>
@@ -1744,7 +1745,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20346"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9909"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1797,26 +1798,26 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_24226"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9578"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:20218</oboInOwl:id>
@@ -1845,26 +1846,26 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_5018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_10430"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_13478"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16580"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_72062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_10430"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_13478"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Coccyx [coccygeal vertebrae I-IV]</oboInOwl:hasExactSynonym>
@@ -1882,7 +1883,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_9579"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_222944"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1911,7 +1912,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20346"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9579"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1930,13 +1931,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20348"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20343"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2005,20 +2006,20 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20367"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:20369</oboInOwl:id>
@@ -2034,19 +2035,19 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20367"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2140,19 +2141,19 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20374"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2169,20 +2170,20 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20374"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:20381</oboInOwl:id>
@@ -2198,7 +2199,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20357"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20364"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2231,7 +2232,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20390"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20364"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2250,7 +2251,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20390"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20364"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2350,13 +2351,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_45659"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_222948"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_222948"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2407,7 +2408,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_223659"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19908"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2424,7 +2425,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_223659"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19910"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2452,7 +2453,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_223675"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19908"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2469,7 +2470,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_223675"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19910"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2508,7 +2509,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_24040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20365"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2528,7 +2529,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_24040"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20365"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2590,7 +2591,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_24226"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9578"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2671,7 +2672,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20357"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2710,7 +2711,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259248"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2727,7 +2728,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_259278"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_260484"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2756,7 +2757,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_259248"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_260462"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2773,7 +2774,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_19969"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2873,7 +2874,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_45619"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2913,13 +2914,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_45643"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45663"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45663"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2947,13 +2948,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_45652"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45663"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45663"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -2982,13 +2983,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_45657"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7159"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7159"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3006,7 +3007,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_7160"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3023,7 +3024,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_54393"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24728"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3064,7 +3065,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_10430"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_16564"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3082,20 +3083,20 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_45619"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45615"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:49177</oboInOwl:id>
@@ -3134,14 +3135,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_86166"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67796"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67796"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Areola skin</oboInOwl:hasExactSynonym>
@@ -3158,7 +3159,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_50050"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_12172"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3176,7 +3177,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_50050"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_12173"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3194,7 +3195,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67773"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19910"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3211,7 +3212,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67773"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19908"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3305,7 +3306,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_54393"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_52780"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3324,7 +3325,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_52780"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_54546"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3341,7 +3342,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_52780"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_54547"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3358,7 +3359,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_52781"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53641"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3376,7 +3377,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_52781"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_53642"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3421,7 +3422,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_54448"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24728"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3440,7 +3441,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_54448"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24728"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3531,7 +3532,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_55422"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3548,7 +3549,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_55422"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3565,7 +3566,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20420"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3582,7 +3583,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20420"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3599,32 +3600,32 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_86193"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67807"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_62088"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_73269"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67806"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_62088"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_73270"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67806"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67807"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:58005</oboInOwl:id>
@@ -3651,7 +3652,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_14065"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_67719"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3670,14 +3671,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61418"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_73104"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_73104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Breast proper skin</oboInOwl:hasExactSynonym>
@@ -3694,7 +3695,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_58058"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_12172"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3712,7 +3713,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_58058"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_12173"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3768,7 +3769,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_50050"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3788,7 +3789,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_62112"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3806,7 +3807,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61373"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3824,7 +3825,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61373"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3842,7 +3843,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61373"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3860,7 +3861,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61373"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3878,7 +3879,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61377"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19908"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3895,7 +3896,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61377"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19910"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3912,7 +3913,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61376"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19908"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3929,7 +3930,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61376"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19910"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3946,7 +3947,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61375"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19908"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3963,7 +3964,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61375"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19910"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3980,7 +3981,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61380"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19908"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3997,7 +3998,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61380"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19910"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4092,7 +4093,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61425"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_58059"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4153,7 +4154,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20357"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_258963"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4192,6 +4193,120 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_62871 -->
+
+    <owl:Class rdf:about="&obo;FMA_62871">
+        <rdfs:label rdf:datatype="&xsd;string">Immunoglobulin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_67257"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Antibody</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:62871</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_62872 -->
+
+    <owl:Class rdf:about="&obo;FMA_62872">
+        <rdfs:label rdf:datatype="&xsd;string">Immunoglobulin G</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_62871"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:62872</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">IgG</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_62873 -->
+
+    <owl:Class rdf:about="&obo;FMA_62873">
+        <rdfs:label rdf:datatype="&xsd;string">Immunoglobulin M</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_62871"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:62873</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">IgM</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_62874 -->
+
+    <owl:Class rdf:about="&obo;FMA_62874">
+        <rdfs:label rdf:datatype="&xsd;string">Immunoglobulin A</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_62871"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:62874</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">IgA</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_62875 -->
+
+    <owl:Class rdf:about="&obo;FMA_62875">
+        <rdfs:label rdf:datatype="&xsd;string">Immunoglobulin E</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_62871"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:62875</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">IgE</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_62876 -->
+
+    <owl:Class rdf:about="&obo;FMA_62876">
+        <rdfs:label rdf:datatype="&xsd;string">Immunoglobulin D</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_62871"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:62876</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">IgD</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_63917 -->
+
+    <owl:Class rdf:about="&obo;FMA_63917">
+        <rdfs:label rdf:datatype="&xsd;string">Gestational structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Anatomical structure, which is the developmental form of a vertebrate animal or any of its parts at any given time from fertilization of the egg by the sperm to parturition. Examples: embryo, embryonic structure, fetus, fetal heart.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:63917</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_63919 -->
+
+    <owl:Class rdf:about="&obo;FMA_63919">
+        <rdfs:label rdf:datatype="&xsd;string">Fetus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_63920"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:63919</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Fetal structure, which is a developmental form of a vertebrate animal at any given time point from 8 weeks of gestation to birth (or hatching). Examples: There is only one fetus.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_63920 -->
+
+    <owl:Class rdf:about="&obo;FMA_63920">
+        <rdfs:label rdf:datatype="&xsd;string">Fetal structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_63917"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:63920</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Gestational structure, which is the developmental form of a vertebrate animal or any of its parts at any given time point from 8 weeks of gestation to parturition. Examples: fetus, fetal organ, fetal body part, placenta.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_65075 -->
 
     <owl:Class rdf:about="&obo;FMA_65075">
@@ -4199,7 +4314,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20186"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19855"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4231,6 +4346,146 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67257 -->
+
+    <owl:Class rdf:about="&obo;FMA_67257">
+        <rdfs:label rdf:datatype="&xsd;string">Protein</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_63887"/>		
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:67257</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000412 rdf:resource="&obo;fma.owl"/>
+    </owl:Class>
+    
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_12278 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_12278">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_63887"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:12278</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hormone</rdfs:label>
+    </owl:Class>
+    
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67264 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_67264">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_63887"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67264</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lipid</rdfs:label>
+    </owl:Class>
+    
+   
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_74641 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_74641">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12278"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FSH</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:74641</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Follicular stimulating hormone</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_74642 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_74642">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12278"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LH</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:74642</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Luteinizing hormone</rdfs:label>
+    </owl:Class>
+    
+
+    <!-- http://purl.obolibrary.org/obo/FMA_82743 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_82743">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_63887"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:82743</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Glucose</rdfs:label>
+    </owl:Class>
+ 
+ 
+ 
+    <!-- http://purl.obolibrary.org/obo/FMA_83353 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_83353">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12278"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:83353</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steroid hormone</rdfs:label>
+    </owl:Class>
+   
+   
+ 
+    <!-- http://purl.obolibrary.org/obo/FMA_83375 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_83375">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_83353"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:83375</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Androgen</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_83376 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_83376">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_83353"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:83376</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Estrogen</rdfs:label>
+    </owl:Class>
+    
+  
+
+    <!-- http://purl.obolibrary.org/obo/FMA_63169 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_63169">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_63887"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:63169</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Lipoprotein</rdfs:label>
+    </owl:Class>
+    
+
+    <!-- http://purl.obolibrary.org/obo/FMA_63170 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_63170">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_63169"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">LDL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:63170</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Low density lipoprotein</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_63171 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_63171">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_63169"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HDL</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:63171</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">High densitiy lipoprotein</rdfs:label>
+    </owl:Class>
+    
+
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_67473 -->
@@ -4312,13 +4567,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_62112"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19898"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4338,7 +4593,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67771"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_19898"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4355,14 +4610,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_62112"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_19898"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_19898"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:67796</oboInOwl:id>
@@ -4445,13 +4700,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7161"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7161"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4482,13 +4737,13 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_71131"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7152"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7152"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4507,25 +4762,25 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_49177"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_49177"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_49177"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4555,14 +4810,14 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7149"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Digestive system</oboInOwl:hasExactSynonym>
@@ -4592,13 +4847,13 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7149"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4615,13 +4870,13 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7149"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4640,13 +4895,13 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7149"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4664,7 +4919,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7149"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4682,14 +4937,14 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7149"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7161</oboInOwl:id>
@@ -4706,26 +4961,26 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_74657"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_74657"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7163</oboInOwl:id>
@@ -4779,7 +5034,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4797,7 +5052,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4815,7 +5070,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_45619"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45615"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4833,26 +5088,26 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45615"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7199"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7199"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7200</oboInOwl:id>
@@ -4870,26 +5125,26 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_7199"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45615"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7199"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45615"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_7199"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7201</oboInOwl:id>
@@ -4907,7 +5162,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4959,19 +5214,19 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7209"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -4988,19 +5243,19 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7209"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5017,14 +5272,14 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7149"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:72979</oboInOwl:id>
@@ -5041,7 +5296,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_62112"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5092,7 +5347,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_73292"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_258963"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5110,7 +5365,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_73292"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_258963"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5128,13 +5383,13 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_67509"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_72979"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_72979"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5144,6 +5399,20 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_63887 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_63887">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000040"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical structure which has as its parts one or more ordered aggregates of nucleotide, amino acid fatty acid or sugar molecules bonded to one another.  Examples: collagen, DNA, neurotransmitter, troponin.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:63887</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Biological macromolecule</rdfs:label>
+    </owl:Class>
+    
+
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_7482 -->
@@ -5153,14 +5422,14 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7149"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7482</oboInOwl:id>
@@ -5226,7 +5495,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_77054"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_17740"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5243,7 +5512,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_77054"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_17740"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5294,14 +5563,14 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7149"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:79063</oboInOwl:id>
@@ -5473,7 +5742,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_12828"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_67773"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5490,7 +5759,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_87573"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_50058"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5507,7 +5776,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_87573"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#constitutional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_50056"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5551,7 +5820,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_20357"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9577"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5571,7 +5840,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_20357"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7181"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5604,7 +5873,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9668"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5646,14 +5915,14 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9668</oboInOwl:id>
@@ -5683,13 +5952,13 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_9669"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9667"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9667"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5719,19 +5988,19 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_20346"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
