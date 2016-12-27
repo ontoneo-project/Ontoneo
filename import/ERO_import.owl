@@ -1,0 +1,140 @@
+<?xml version="1.0"?>
+<!DOCTYPE rdf:RDF [
+    <!ENTITY ns "http://www.w3.org/2003/06/sw-vocab-status/ns#" >
+    <!ENTITY iao "http://purl.obolibrary.org/obo/iao/" >
+    <!ENTITY bio "http://purl.bioontology.org/" >	
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+    <!ENTITY app "http://eagle-i.org/ont/app/1.0/#" >
+]>
+	
+<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ero.owl#"
+     xml:base="http://purl.obolibrary.org/obo/ero.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:app="http://eagle-i.org/ont/app/1.0/"
+     xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
+     xmlns:iao="http://purl.obolibrary.org/obo/iao/"
+     xmlns:statistics="http://purl.org/net/OCRe/statistics.owl#"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:study_protocol="http://purl.org/net/OCRe/study_protocol.owl#"
+     xmlns:bio="http://purl.bioontology.org/"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
+     xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ero.owl">
+        <owl:versionInfo></owl:versionInfo>
+        <rdfs:comment xml:lang="en">An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.</rdfs:comment>
+        <owl:versionIRI rdf:resource="&bio;OntONeo/releases/2016-12-12/ERO_import.owl"/>		
+    </owl:Ontology>
+	
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000378 -->
+
+    <owl:Class rdf:about="&obo;ERO_0000378">
+        <rdfs:label xml:lang="en">surgery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000094"/>
+        <obo:IAO_0000115 xml:lang="en">A material processing technique that uses operative manual and instrumental techniques on a patient to investigate and/or treat a pathological condition such as disease or injury or to help improve bodily function or appearance.</obo:IAO_0000115>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Karen Corday</obo:IAO_0000117>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">Surgical removal of a mole.</obo:IAO_0000112>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Surgery</obo:IAO_0000119>
+        <obo:IAO_0000111 rdf:datatype="&xsd;string">surgery</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+        <obo:IAO_0000412 rdf:resource="&obo;ero.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001109 -->
+
+    <owl:Class rdf:about="&obo;ERO_0001109">
+        <rdfs:label xml:lang="en">ovarectomy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ERO_0000378"/>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">An ovaectomy may be performed for a patient with ovarian cancer.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">Surgical removal of one or both ovaries.</obo:IAO_0000115>
+        <obo:IAO_0000119 rdf:datatype="&xsd;string">http://cancer-symptoms.org/cancer-treatments/ovariectomy.htm</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0000007 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0000007">
+        <rdfs:label xml:lang="en">technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/OBI_0000011"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique is a planned process used to accomplish a specific activity or task.</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Flow cytometry is a technique.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Melissa Haendel</obo:IAO_0000117>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Protocol is added to eagle-i temporarily until a relationship between the informatio entity &quot;protocol&quot; and these planned processes is created. This class refers to the axtual process not the document</rdfs:comment>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Technique</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001312 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001312">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imaging technique</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0000007"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">A technique used to create a representation or reproduction of an object&apos;s outward form; especially a visual representation (i.e., the formation of an image).</obo:IAO_0000115>
+        <obo:IAO_0000112 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MRI.</obo:IAO_0000112>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Imaging</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000120"/>
+    </owl:Class>    
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ERO_0001325 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/ERO_0001325">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ultrasonography</rdfs:label>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ERO_0001312"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">An imaging technique used for visualizing subcutaneous body structures including tendons, muscles, joints, vessels and internal organs for possible pathology or lesions. Obstetric sonography is commonly used during pregnancy for fetal imaging.</obo:IAO_0000115>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Medical sonography</obo:IAO_0000118>
+        <obo:IAO_0000117 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">PERSON: Nicole Vasilevsky</obo:IAO_0000117>
+        <obo:IAO_0000118 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ultrasound</obo:IAO_0000118>
+        <obo:IAO_0000119 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">http://en.wikipedia.org/wiki/Sonography</obo:IAO_0000119>
+        <obo:IAO_0000114 rdf:resource="http://purl.obolibrary.org/obo/IAO_0000123"/>
+    </owl:Class>
+    
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->	

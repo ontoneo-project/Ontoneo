@@ -285,22 +285,55 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
     
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000016 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000016"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000031 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000031"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000040 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000040"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000027 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000027"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000030"/>
+    
+
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000014 -->
 
@@ -312,6 +345,19 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A representation that is either the output of a clinical history taking or a physical examination or an image finding, or some combination thereof.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="&obo;ogms.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000073 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000073">
+        <rdfs:label>diagnosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;IAO_0000027"/>
+        <obo:IAO_0000232>creation date: 2009-06-23T12:42:23Z</obo:IAO_0000232>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">The representation of a conclusion of a diagnostic process.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -331,18 +377,6 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
     
 
 
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000056 -->
-
-    <owl:Class rdf:about="&obo;OGMS_0000056">
-        <rdfs:label>laboratory test</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
-        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
-        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
-        <obo:IAO_0000232>creation date: 2009-06-23T11:49:49Z</obo:IAO_0000232>
-        <obo:IAO_0000115 xml:lang="en">A measurement assay that has as input a patient-derived specimen, and as output a result that represents a quality of the specimen.</obo:IAO_0000115>
-    </owl:Class>
-    
-
     <!-- http://purl.obolibrary.org/obo/OGMS_0000024 -->
 
     <owl:Class rdf:about="&obo;OGMS_0000024">
@@ -352,6 +386,30 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
         <obo:IAO_0000115 xml:lang="en">A quality of a patient, a material entity that is part of a patient, or a processual entity that a patient participates in, any one of which is observed in a physical examination and is deemed by the clinician to be of clinical significance.</obo:IAO_0000115>
         <obo:IAO_0000116>note: defined class</obo:IAO_0000116>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000060 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000060">
+        <rdfs:label>bodily process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000232>creation date: 2009-06-23T11:53:49Z</obo:IAO_0000232>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000061 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000061">
+        <rdfs:label>pathological bodily process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000060"/>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A bodily process that is clinically abnormal.</obo:IAO_0000115>
+        <obo:IAO_0000232>creation date: 2009-06-23T11:54:29Z</obo:IAO_0000232>
     </owl:Class>
     
 
@@ -395,11 +453,76 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000056 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000056">
+        <rdfs:label>laboratory test</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000232>creation date: 2009-06-23T11:49:49Z</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">A measurement assay that has as input a patient-derived specimen, and as output a result that represents a quality of the specimen.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000018 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000018">
+        <rdfs:label>laboratory finding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000014"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">A representation of a quality of a specimen that is the output of a laboratory test and that can support an inference to an assertion about some quality of the patient.</obo:IAO_0000115>
+        <obo:IAO_0000232>creation date: 2009-06-23T10:21:58Z</obo:IAO_0000232>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000017 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000017">
+        <rdfs:label>image finding</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000014"/>
+        <obo:IAO_0000115 xml:lang="en">A representation of an image that supports an inference to an assertion about some quality of a patient.</obo:IAO_0000115>
+        <obo:IAO_0000232>creation date: 2009-06-23T10:21:10Z</obo:IAO_0000232>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000015 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000015">
+        <rdfs:label>clinical history</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000014"/>
+        <obo:IAO_0000232>creation date: 2010-07-19T10:18:59Z</obo:IAO_0000232>
+        <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">A series of statements representing health-relevant qualities of a patient and of a patient&apos;s family.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000086 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000086">
+        <rdfs:label>syndrome</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
+        <obo:IAO_0000232>creation date: 2009-11-24T04:51:11Z</obo:IAO_0000232>
+        <obo:IAO_0000115 xml:lang="en">A pattern of signs and symptoms that typically co-occur.</obo:IAO_0000115>
+        <obo:IAO_0000119>http://code.google.com/p/ogms/issues/detail?id=32</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OGMS_0000057 -->
 
     <owl:Class rdf:about="&obo;OGMS_0000057">
         <rdfs:label xml:lang="en">physical examination</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <rdfs:subClassOf rdf:resource="&obo;OGMS_0000097"/>
         <obo:IAO_0000117>Albert Goldfain</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">A sequence of acts of observing and measuring qualities of a patient performed by a clinician; measurements may occur with and without elicitation.</obo:IAO_0000115>
         <obo:IAO_0000119>http://ontology.buffalo.edu/medo/Disease_and_Diagnosis.pdf</obo:IAO_0000119>
@@ -468,7 +591,7 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/OGMS_0000096 -->
 
     <owl:Class rdf:about="&obo;OGMS_0000096">
-        <rdfs:label>health care process</rdfs:label>
+        <rdfs:label xml:lang="en">health care process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <obo:IAO_0000119>http://groups.google.com/group/ogms-discuss/browse_thread/thread/a2dbc2ed1dff99d6</obo:IAO_0000119>
         <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>
@@ -482,7 +605,7 @@ This owl file represents the necessary entities of OGMS that are reused in OntON
     <!-- http://purl.obolibrary.org/obo/OGMS_0000097 -->
 
     <owl:Class rdf:about="&obo;OGMS_0000097">
-        <rdfs:label>health care encounter</rdfs:label>
+        <rdfs:label xml:lang="en">health care encounter</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000096"/>
         <obo:IAO_0000115 xml:lang="en">A temporally-connected health care process that has as participants an organization or person realizing the health care provider role and a person realizing the patient role.  The health care provider role and patient are realized during the health care encounter</obo:IAO_0000115>
         <obo:IAO_0000232>creation date: 2011-02-21T09:57:44Z</obo:IAO_0000232>

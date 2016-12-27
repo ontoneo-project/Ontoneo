@@ -122,7 +122,7 @@
     <!-- http://purl.obolibrary.org/obo/cl#has_completed -->
 
     <owl:ObjectProperty rdf:about="&obo;cl#has_completed">
-        <rdfs:label rdf:datatype="&xsd;string">has_completed</rdfs:label>
+        <rdfs:label xml:lang="en">has_completed</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -130,8 +130,8 @@
     <!-- http://purl.obolibrary.org/obo/cl#has_high_plasma_membrane_amount -->
 
     <owl:ObjectProperty rdf:about="&obo;cl#has_high_plasma_membrane_amount">
-        <rdfs:label rdf:datatype="&xsd;string">has_high_plasma_membrane_amount</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A relation between a cell and molecule or complex such that every instance of the cell has a high number of instances of that molecule expressed on the cell surface. For the formal definition, see Masci et al (PMID:19243617).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has_high_plasma_membrane_amount</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A relation between a cell and molecule or complex such that every instance of the cell has a high number of instances of that molecule expressed on the cell surface. For the formal definition, see Masci et al (PMID:19243617).</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&obo;RO_0002104"/>
     </owl:ObjectProperty>
     
@@ -140,8 +140,8 @@
     <!-- http://purl.obolibrary.org/obo/cl#has_low_plasma_membrane_amount -->
 
     <owl:ObjectProperty rdf:about="&obo;cl#has_low_plasma_membrane_amount">
-        <rdfs:label rdf:datatype="&xsd;string">has_low_plasma_membrane_amount</rdfs:label>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A relation between a cell and molecule or complex such that every instance of the cell has a low number of instances of that molecule expressed on the cell surface. For the formal definition, see Masci et al (PMID:19243617).</obo:IAO_0000115>
+        <rdfs:label xml:lang="en">has_low_plasma_membrane_amount</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">A relation between a cell and molecule or complex such that every instance of the cell has a low number of instances of that molecule expressed on the cell surface. For the formal definition, see Masci et al (PMID:19243617).</obo:IAO_0000115>
         <rdfs:subPropertyOf rdf:resource="&obo;RO_0002104"/>
     </owl:ObjectProperty>
     
@@ -150,7 +150,7 @@
     <!-- http://purl.obolibrary.org/obo/cl#has_not_completed -->
 
     <owl:ObjectProperty rdf:about="&obo;cl#has_not_completed">
-        <rdfs:label rdf:datatype="&xsd;string">has_not_completed</rdfs:label>
+        <rdfs:label xml:lang="en">has_not_completed</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -158,7 +158,7 @@
     <!-- http://purl.obolibrary.org/obo/cl#lacks_part -->
 
     <owl:ObjectProperty rdf:about="&obo;cl#lacks_part">
-        <rdfs:label rdf:datatype="&xsd;string">lacks_part</rdfs:label>
+        <rdfs:label xml:lang="en">lacks_part</rdfs:label>
         <obo:IAO_0000424 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/BFO_0000051 exactly 0 ?Y</obo:IAO_0000424>
     </owl:ObjectProperty>
     
@@ -167,7 +167,7 @@
     <!-- http://purl.obolibrary.org/obo/cl#lacks_plasma_membrane_part -->
 
     <owl:ObjectProperty rdf:about="&obo;cl#lacks_plasma_membrane_part">
-        <rdfs:label rdf:datatype="&xsd;string">lacks_plasma_membrane_part</rdfs:label>
+        <rdfs:label xml:lang="en">lacks_plasma_membrane_part</rdfs:label>
         <obo:IAO_0000424 rdf:datatype="&xsd;string">http://purl.obolibrary.org/obo/BFO_0000051 exactly 0 (http://purl.obolibrary.org/obo/GO_0005886 and http://purl.obolibrary.org/obo/BFO_0000051 some ?Y)</obo:IAO_0000424>
     </owl:ObjectProperty>
     
@@ -193,9 +193,9 @@
     <!-- http://purl.obolibrary.org/obo/CL_0000000 -->
 
     <owl:Class rdf:about="&obo;CL_0000000">
-        <rdfs:label rdf:datatype="&xsd;string">cell</rdfs:label>
+        <rdfs:label xml:lang="en">cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000030"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A material entity of anatomical origin (part of or deriving from an organism) that has as its parts a maximally connected cell compartment surrounded by a plasma membrane.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CALOHA:TS-2035</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:68646</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GO:0005623</oboInOwl:hasDbXref>
@@ -213,7 +213,7 @@
     <!-- http://purl.obolibrary.org/obo/CL_0000081 -->
 
     <owl:Class rdf:about="&obo;CL_0000081">
-        <rdfs:label rdf:datatype="&xsd;string">blood cell</rdfs:label>
+        <rdfs:label xml:lang="en">blood cell</rdfs:label>
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -232,7 +232,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;GO_0008015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A cell found predominately in the blood.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A cell found predominately in the blood.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:62844</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cell</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -249,7 +249,7 @@
     <!-- http://purl.obolibrary.org/obo/CL_0000232 -->
 
     <owl:Class rdf:about="&obo;CL_0000232">
-        <rdfs:label rdf:datatype="&xsd;string">erythrocyte</rdfs:label>
+        <rdfs:label xml:lang="en">erythrocyte</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CL_0000081"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -257,7 +257,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;GO_0008015"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A red blood cell. In mammals, mature erythrocytes are biconcave disks containing hemoglobin whose function is to transport oxygen.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A red blood cell. In mammals, mature erythrocytes are biconcave disks containing hemoglobin whose function is to transport oxygen.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000424</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CALOHA:TS-0290</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:81100</oboInOwl:hasDbXref>
@@ -278,7 +278,7 @@
     <!-- http://purl.obolibrary.org/obo/CL_0000233 -->
 
     <owl:Class rdf:about="&obo;CL_0000233">
-        <rdfs:label rdf:datatype="&xsd;string">platelet</rdfs:label>
+        <rdfs:label xml:lang="en">platelet</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CL_0000081"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -292,7 +292,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;GO_0007596"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A non-nucleated disk-shaped cell formed by extrusion from megakaryocytes, found in the blood of all mammals, and mainly involved in blood coagulation.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A non-nucleated disk-shaped cell formed by extrusion from megakaryocytes, found in the blood of all mammals, and mainly involved in blood coagulation.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000132</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CALOHA:TS-0803</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:62851</oboInOwl:hasDbXref>
@@ -324,9 +324,9 @@
     <!-- http://purl.obolibrary.org/obo/CL_0000542 -->
 
     <owl:Class rdf:about="&obo;CL_0000542">
-        <rdfs:label rdf:datatype="&xsd;string">lymphocyte</rdfs:label>
+        <rdfs:label xml:lang="en">lymphocyte</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CL_0000738"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A lymphocyte is a leukocyte commonly found in the blood and lymph that has the characteristics of a large nucleus, a neutral staining cytoplasm, and prominent heterochromatin.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A lymphocyte is a leukocyte commonly found in the blood and lymph that has the characteristics of a large nucleus, a neutral staining cytoplasm, and prominent heterochromatin.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000775</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CALOHA:TS-0583</oboInOwl:hasDbXref>
         <rdfs:comment rdf:datatype="&xsd;string">Editors note: consider adding taxon constraint to vertebrata (PMID:18025161)</rdfs:comment>
@@ -348,7 +348,7 @@
     <!-- http://purl.obolibrary.org/obo/CL_0000738 -->
 
     <owl:Class rdf:about="&obo;CL_0000738">
-        <rdfs:label rdf:datatype="&xsd;string">leukocyte</rdfs:label>
+        <rdfs:label xml:lang="en">leukocyte</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CL_0000988"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -356,7 +356,7 @@
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9825"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">An achromatic cell of the myeloid or lymphoid lineages capable of ameboid movement, found in blood or other tissue.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An achromatic cell of the myeloid or lymphoid lineages capable of ameboid movement, found in blood or other tissue.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000751</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CALOHA:TS-0549</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:62852</oboInOwl:hasDbXref>
@@ -379,9 +379,9 @@
     <!-- http://purl.obolibrary.org/obo/CL_0000763 -->
 
     <owl:Class rdf:about="&obo;CL_0000763">
-        <rdfs:label rdf:datatype="&xsd;string">myeloid cell</rdfs:label>
+        <rdfs:label xml:lang="en">myeloid cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CL_0000988"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A cell of the monocyte, granulocyte, mast cell, megakaryocyte, or erythroid lineage.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A cell of the monocyte, granulocyte, mast cell, megakaryocyte, or erythroid lineage.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001441</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CALOHA:TS-0647</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">cell</oboInOwl:hasOBONamespace>
@@ -398,9 +398,9 @@
     <!-- http://purl.obolibrary.org/obo/CL_0000988 -->
 
     <owl:Class rdf:about="&obo;CL_0000988">
-        <rdfs:label rdf:datatype="&xsd;string">hematopoietic cell</rdfs:label>
+        <rdfs:label xml:lang="en">hematopoietic cell</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CL_0000000"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A cell of a hematopoietic lineage.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A cell of a hematopoietic lineage.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000574</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CALOHA:TS-2017</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:70366</oboInOwl:hasDbXref>

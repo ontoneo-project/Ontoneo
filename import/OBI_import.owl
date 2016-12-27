@@ -150,7 +150,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000107 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000107">
-        <rdfs:label rdf:datatype="&xsd;string">provides_service_consumer_with</rdfs:label>
+        <rdfs:label xml:lang="en">provides_service_consumer_with</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -158,7 +158,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000124 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000124">
-        <rdfs:label rdf:datatype="&xsd;string">is_supported_by_data</rdfs:label>
+        <rdfs:label xml:lang="en">is_supported_by_data</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -214,7 +214,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000417">
-        <rdfs:label rdf:datatype="&xsd;string">achieves_planned_objective</rdfs:label>
+        <rdfs:label xml:lang="en">achieves_planned_objective</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -222,7 +222,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000643 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000643">
-        <rdfs:label rdf:datatype="&xsd;string">has grain</rdfs:label>
+        <rdfs:label xml:lang="en">has grain</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -230,7 +230,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000646 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000646">
-        <rdfs:label rdf:datatype="&xsd;string">supplies</rdfs:label>
+        <rdfs:label xml:lang="en">supplies</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -238,7 +238,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000647 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000647">
-        <rdfs:label rdf:datatype="&xsd;string">has_supplier</rdfs:label>
+        <rdfs:label xml:lang="en">has_supplier</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -246,7 +246,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000833 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000833">
-        <rdfs:label rdf:datatype="&xsd;string">objective_achieved_by</rdfs:label>
+        <rdfs:label xml:lang="en">objective_achieved_by</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -254,13 +254,13 @@
     <!-- http://purl.obolibrary.org/obo/OBI_0000846 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_0000846">
-        <rdfs:label rdf:datatype="&xsd;string">is member of organization</rdfs:label>
+        <rdfs:label xml:lang="en">is member of organization</rdfs:label>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">2009/10/01 Alan Ruttenberg. Barry prefers generic is-member-of. Question of what the range should be. For now organization. Is organization a population? Would the same relation be used to record members of a population</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">Person:Helen Parkinson</obo:IAO_0000119>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">Relating a legal person to an organization in the case where the legal person has a role as member of the organization</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">Relating a legal person to an organization in the case where the legal person has a role as member of the organization</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">is member of organization</obo:IAO_0000111>
         <rdfs:range rdf:resource="&obo;OBI_0000245"/>
         <owl:inverseOf rdf:resource="&obo;OBI_0001688"/>
@@ -288,7 +288,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_1110060 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_1110060">
-        <rdfs:label rdf:datatype="&xsd;string">process is result of</rdfs:label>
+        <rdfs:label xml:lang="en">process is result of</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -296,7 +296,7 @@
     <!-- http://purl.obolibrary.org/obo/OBI_1110119 -->
 
     <owl:ObjectProperty rdf:about="&obo;OBI_1110119">
-        <rdfs:label rdf:datatype="&xsd;string">bound_to</rdfs:label>
+        <rdfs:label xml:lang="en">bound_to</rdfs:label>
     </owl:ObjectProperty>
     
 
@@ -484,7 +484,7 @@
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
     <owl:Class rdf:about="&obo;NCBITaxon_9606">
-        <rdfs:label rdf:datatype="&xsd;string">Homo sapiens</rdfs:label>
+        <rdfs:label xml:lang="en">Homo sapiens</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">Homo sapiens</obo:IAO_0000111>
         <obo:IAO_0000118 rdf:datatype="&xsd;string">human</obo:IAO_0000118>
@@ -527,6 +527,24 @@ objectives is a planned process.</obo:IAO_0000116>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OBI_0000040 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000040">
+        <rdfs:label xml:lang="en">drug role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">drug</obo:IAO_0000118>
+        <obo:IAO_0000112 rdf:datatype="&xsd;string">http://www.answers.com/topic/drug
+   1. A substance used in the diagnosis, treatment, or prevention of a disease or as a component of a medication.
+   2. Such a substance as recognized or defined by the U.S. Food, Drug, and Cosmetic Act.</obo:IAO_0000112>
+        <obo:IAO_0000119 xml:lang="en">OBI, CDISC</obo:IAO_0000119>
+        <obo:IAO_0000117 xml:lang="en">Role Branch</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">a role borne by a molecular entity and is realized in a process of absorption by an organism  alters, or effects  (or is assumed to effect) a function(s) which inhere in an organism</obo:IAO_0000115>
+        <obo:IAO_0000111 xml:lang="en">drug role</obo:IAO_0000111>
+        <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
 
     <owl:Class rdf:about="&obo;OBI_0000047">
@@ -560,6 +578,12 @@ objectives is a planned process.</obo:IAO_0000116>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:someValuesFrom rdf:resource="&obo;BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -573,12 +597,6 @@ objectives is a planned process.</obo:IAO_0000116>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom rdf:resource="&obo;OBI_0000047"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="&obo;OBI_0600010"/>
@@ -645,7 +663,7 @@ for now.</obo:IAO_0000116>
     <!-- http://purl.obolibrary.org/obo/OBI_0000725 -->
 
     <owl:Class rdf:about="&obo;OBI_0000725">
-        <rdfs:label rdf:datatype="&xsd;string">host role</rdfs:label>
+        <rdfs:label xml:lang="en">host role</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000023"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -659,7 +677,7 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000112 rdf:datatype="&xsd;string">In biology, a host is an organism that harbors a virus or parasite, or a mutual or commensal symbiont, typically providing nourishment and shelter.  http://en.wikipedia.org/wiki/Host_(biology)  30 March 09</obo:IAO_0000112>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">host role</obo:IAO_0000111>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">host role is a role played by an organism and realized by providing nourishment, shelter or a means of reproduction to another organism within the organism playing the host role</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">host role is a role played by an organism and realized by providing nourishment, shelter or a means of reproduction to another organism within the organism playing the host role</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Host_(biology)</obo:IAO_0000119>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
     </owl:Class>
@@ -677,7 +695,7 @@ for now.</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="&obo;PATO_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">A time measurement datum that is the result of measurement of age of an organism</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">A time measurement datum that is the result of measurement of age of an organism</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="&xsd;string">In MageTab file, we use
 initialTimePoint (a process) + age (a number expected) + TimeUnit (definied in UO, such as year, hour, day, etc.)
 Now we use the term label indicating the start time point of measuring the age, (number + TimeUnit) are expected instances of the class</obo:IAO_0000232>
@@ -701,7 +719,7 @@ stages in development are currently handled with controlled vocabulary, such as 
     <owl:Class rdf:about="&obo;OBI_0001168">
         <rdfs:label xml:lang="en">age since fertilization measurement datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0001167"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">An age measurement datum that is the result of the measurement of the age of an organism since fertilization, the process of the union of gametes of opposite sexes during the process of sexual reproduction to form a zygote.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An age measurement datum that is the result of the measurement of the age of an organism since fertilization, the process of the union of gametes of opposite sexes during the process of sexual reproduction to form a zygote.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">Definition of fertilization comes from GO.</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">MO_701 fertilization</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON:Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
@@ -716,7 +734,7 @@ stages in development are currently handled with controlled vocabulary, such as 
     <owl:Class rdf:about="&obo;OBI_0001169">
         <rdfs:label xml:lang="en">age since birth measurement datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0001167"/>
-        <obo:IAO_0000115 rdf:datatype="&xsd;string">An age measurement datum that is the result of the measurement of the age of an organism since birth, the process of emergence and separation of offspring from the mother.</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">An age measurement datum that is the result of the measurement of the age of an organism since birth, the process of emergence and separation of offspring from the mother.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">MO_710 birth</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON:Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
         <obo:IAO_0000111 xml:lang="en">age since birth measurement datum</obo:IAO_0000111>
