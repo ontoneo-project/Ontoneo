@@ -68,6 +68,12 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -180,6 +186,18 @@
     
 
 
+    <!-- http://purl.obolibrary.org/obo/OAE_0000002 -->
+
+    <owl:Class rdf:about="&obo;OAE_0000002"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OAE_0000227 -->
+
+    <owl:Class rdf:about="&obo;OAE_0000227"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
 
     <owl:Class rdf:about="&obo;OBI_0000011"/>
@@ -252,14 +270,9 @@
     <!-- http://purl.obolibrary.org/obo/VO_0000002 -->
 
     <owl:Class rdf:about="&obo;VO_0000002">
+        <rdfs:label>vaccination</rdfs:label>
         <rdfs:label xml:lang="en">vaccination</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
-                <owl:someValuesFrom rdf:resource="&obo;VO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
+        <rdfs:subClassOf rdf:resource="&obo;OAE_0000002"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;RO_0000057"/>
@@ -276,9 +289,18 @@
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;VO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a medical intervention that involves in adding vaccine into a host (e.g., human, mouse) in vivo with the intent to invoke an adaptive immune response.</obo:IAO_0000115>
         <obo:IAO_0000118>vaccine administration</obo:IAO_0000118>
         <obo:IAO_0000115>a process of administering substance in vivo that involves in adding a vaccine into a host (e.g., human) in vivo with the intent to invoke a protective or therapeutic adaptive immune response.</obo:IAO_0000115>
         <obo:IAO_0000117>YH, BP</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
+        <obo:IAO_0000412 rdf:resource="&obo;vo.owl"/>
     </owl:Class>
     
 
@@ -291,6 +313,18 @@
         <obo:IAO_0000116>PERSPN: Oliver He: There has been hot discussion about whether we use &apos;vaccine function&apos; or &apos;vaccine role&apos;. Vaccine role may not be the good term to use. Vaccine is designed to be &apos;vaccine&apos;, so it should be vaccine function. One special case is cowpox virus. The cowpox virus can be mixed with some liquid like water and used as a smallpox vaccine. In this case, people often say: the cowpox virus has a &apos;vaccine role&apos;. However, the cowpox virus vaccine is a processed material of a mix of the virus with water. The virus is a virus, it is not a vaccine per se. Therefore, vaccine role may not be an accurate term.</obo:IAO_0000116>
         <obo:IAO_0000117>YH, MC, XZ, and AR</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">vaccine function is a function that inheres in a vaccine that induces protective immune response against a disease. It is realized in the immunization process in the host.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000300 -->
+
+    <owl:Class rdf:about="&obo;VO_0000300">
+        <rdfs:label>injection site</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OAE_0000227"/>
+        <obo:IAO_0000115>a medical intervention site that is used for injection of a substance.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, SS, ZX</obo:IAO_0000117>
+        <obo:IAO_0000412 rdf:resource="&obo;oae.owl"/>
     </owl:Class>
     
 
@@ -330,12 +364,6 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
         <rdfs:subClassOf rdf:resource="&obo;VO_0000491"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
-                <owl:someValuesFrom rdf:resource="&obo;VO_0000001"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -348,6 +376,12 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
                         </owl:intersectionOf>
                     </owl:Class>
                 </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;VO_0000001"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>artificial active immunization is an active immunization that occurs when a person or animal is vaccinated with a specific vaccine.</obo:IAO_0000115>
@@ -400,14 +434,14 @@ Artificial active immunization is where the microbe, or parts of it, are injecte
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000725"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;inheres_in"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_1110094"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_1110094"/>
+                <owl:onProperty rdf:resource="&obo;inheres_in"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>a role of host that contains vaccine. It is a role that inheres in an organism that is the target of a vaccine administration (vaccination process).</obo:IAO_0000115>
