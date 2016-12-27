@@ -1,0 +1,186 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;UBERON.owl#"
+     xml:base="&obo;UBERON.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="&obo;UBERON.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000001 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;UBPROP_0000001">
+        <rdfs:label rdf:datatype="&xsd;string">external_definition</rdfs:label>
+        <oboInOwl:is_metadata_tag rdf:datatype="&xsd;integer">1</oboInOwl:is_metadata_tag>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UBPROP:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:shorthand rdf:datatype="&xsd;string">external_definition</oboInOwl:shorthand>
+        <oboInOwl:id rdf:datatype="&xsd;string">external_definition</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000003 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;UBPROP_0000003">
+        <rdfs:label rdf:datatype="&xsd;string">homology_notes</rdfs:label>
+        <oboInOwl:is_metadata_tag rdf:datatype="&xsd;integer">1</oboInOwl:is_metadata_tag>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Notes on the homology status of this class.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UBPROP:0000003</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">homology_notes</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="&xsd;string">homology_notes</oboInOwl:shorthand>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000008 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;UBPROP_0000008">
+        <rdfs:label rdf:datatype="&xsd;string">taxon_notes</rdfs:label>
+        <oboInOwl:is_metadata_tag rdf:datatype="&xsd;integer">1</oboInOwl:is_metadata_tag>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Notes on the how instances of this class vary across species.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UBPROP:0000008</oboInOwl:hasDbXref>
+        <oboInOwl:shorthand rdf:datatype="&xsd;string">taxon_notes</oboInOwl:shorthand>
+        <oboInOwl:id rdf:datatype="&xsd;string">taxon_notes</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000012 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;UBPROP_0000012">
+        <rdfs:label rdf:datatype="&xsd;string">external_ontology_notes</rdfs:label>
+        <oboInOwl:is_metadata_tag rdf:datatype="&xsd;integer">1</oboInOwl:is_metadata_tag>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Notes on how similar or equivalent classes are represented in other ontologies.</obo:IAO_0000115>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UBPROP:0000012</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">external_ontology_notes</oboInOwl:id>
+        <oboInOwl:shorthand rdf:datatype="&xsd;string">external_ontology_notes</oboInOwl:shorthand>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+  
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->  
+
+	 
+   
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0012168 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0012168">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FMA_9670"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
+                        <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_18820"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9670"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_63919"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood that remains in the placenta and in the attached umbilical cord after childbirth[WP].</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Cord_blood"/>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004053</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-1079</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EFO:0001942</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D005312</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cord blood</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fetal blood</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">umbilical cord blood</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0012168</oboInOwl:id>
+        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#efo_slim"/>
+        <rdfs:comment rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Cord blood is collected because it contains stem cells, which can be used to treat hematopoietic and genetic disorders.[WP]</rdfs:comment>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">umbilical cord blood</rdfs:label>
+    </owl:Class>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012168"/>
+        <owl:annotatedProperty rdf:resource="http://purl.obolibrary.org/obo/IAO_0000115"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">blood that remains in the placenta and in the attached umbilical cord after childbirth[WP].</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Cord_blood"/>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012168"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cord blood</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0004053</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012168"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fetal blood</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:A12.207.152.200</oboInOwl:hasDbXref>
+    </owl:Axiom>
+    <owl:Axiom>
+        <owl:annotatedSource rdf:resource="http://purl.obolibrary.org/obo/UBERON_0012168"/>
+        <owl:annotatedProperty rdf:resource="http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym"/>
+        <owl:annotatedTarget rdf:datatype="http://www.w3.org/2001/XMLSchema#string">umbilical cord blood</owl:annotatedTarget>
+        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:A12.207.152.200</oboInOwl:hasDbXref>
+    </owl:Axiom>	 
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
