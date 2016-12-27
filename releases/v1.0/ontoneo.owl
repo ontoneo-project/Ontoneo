@@ -59,17 +59,17 @@ The default language of this ontology is English mainly because the reusable ont
         <dc:contributor xml:lang="en">Zilma Silveira Nogueira Reis</dc:contributor>
         <ontoneo:ONTONEO_1000000 xml:lang="pt">pt</ontoneo:ONTONEO_1000000>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:imports rdf:resource="&obo;ontoneo/import/BFO_import.owl"/>
-        <owl:imports rdf:resource="&obo;ontoneo/import/DOID_import.owl"/>
-        <owl:imports rdf:resource="&obo;ontoneo/import/FMA_import.owl"/>
-        <owl:imports rdf:resource="&obo;ontoneo/import/HP_import.owl"/>
-        <owl:imports rdf:resource="&obo;ontoneo/import/IAO_import.owl"/>
-        <owl:imports rdf:resource="&obo;ontoneo/import/OBI_import.owl"/>
-        <owl:imports rdf:resource="&obo;ontoneo/import/OGMS_import.owl"/>
-        <owl:imports rdf:resource="&obo;ontoneo/import/PATO_import.owl"/>
-        <owl:imports rdf:resource="&obo;ontoneo/import/RO_import.owl"/>
-        <owl:imports rdf:resource="&obo;ontoneo/import/SYMP_import.owl"/>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/v1/ontoneo.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/BFO_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/DOID_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/FMA_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/HP_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/IAO_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/OBI_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/OGMS_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/PATO_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/RO_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/SYMP_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/v1.0/ontoneo.owl"/>
     </owl:Ontology>
     
 
@@ -188,6 +188,7 @@ The default language of this ontology is English mainly because the reusable ont
 
     <owl:Class rdf:about="&obo;CMO_0000012">
         <rdfs:label rdf:datatype="&xsd;string">body weight</rdfs:label>
+        <rdfs:label xml:lang="pt">peso do corpo</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;PATO_0000128"/>
         <oboInOwl:id rdf:datatype="&xsd;string">CMO:0000012</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
@@ -230,7 +231,7 @@ The default language of this ontology is English mainly because the reusable ont
 
     <owl:Class rdf:about="&obo;CMO_0001331">
         <rdfs:label rdf:datatype="&xsd;string">body height at withers</rdfs:label>
-        <rdfs:label xml:lang="pt">Altura do corpo na cernelha</rdfs:label>
+        <rdfs:label xml:lang="pt">altura do corpo na cernelha</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CMO_0000106"/>
         <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-01-09T17:28:13Z</oboInOwl:creation_date>
         <oboInOwl:id rdf:datatype="&xsd;string">CMO:0001331</oboInOwl:id>
@@ -283,13 +284,13 @@ The default language of this ontology is English mainly because the reusable ont
         <rdfs:label xml:lang="pt">utero</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -659,7 +660,7 @@ The default language of this ontology is English mainly because the reusable ont
     <!-- http://purl.obolibrary.org/obo/FMA_9670 -->
 
     <owl:Class rdf:about="&obo;FMA_9670">
-        <rdfs:label xml:lang="pt">orção de sangue</rdfs:label>
+        <rdfs:label xml:lang="pt">porção de sangue</rdfs:label>
     </owl:Class>
     
 
@@ -1190,7 +1191,7 @@ A process that has participant some human body and realizes some patient role, i
 
     <owl:Class rdf:about="&obo;VSO_0000015">
         <rdfs:label xml:lang="en">diastolic blood pressure</rdfs:label>
-        <rdfs:label xml:lang="pt">pressão areterial diastólica</rdfs:label>
+        <rdfs:label xml:lang="pt">pressão arterial diastólica</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;VSO_0000004"/>
         <obo:IAO_0000115>The blood pressure during diastole.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">Pad, pressão sanguínea diastólica</obo:IAO_0000118>
@@ -1566,6 +1567,10 @@ A process that has participant some human body and realizes some patient role, i
                         <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
                         <owl:someValuesFrom rdf:resource="&obo;OMIABIS_0001026"/>
                     </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OGMS_0000083"/>
+                    </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
@@ -1787,6 +1792,17 @@ A process that has participant some human body and realizes some patient role, i
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;OGMS_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <owl:Class>
@@ -1812,17 +1828,6 @@ A process that has participant some human body and realizes some patient role, i
                             </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                         <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
@@ -2213,9 +2218,9 @@ A process that has participant some human body and realizes some patient role, i
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000090 -->
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000060 -->
 
-    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_90000090">
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000060">
         <rdfs:label xml:lang="en">systolic blood pressure measurement datum</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
@@ -2232,18 +2237,18 @@ A process that has participant some human body and realizes some patient role, i
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000145 -->
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000061 -->
 
-    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_90000145">
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000061">
         <rdfs:label xml:lang="en">static breast inspection</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000008"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_90000146 -->
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000062 -->
 
-    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_90000146">
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000062">
         <rdfs:label xml:lang="en">dinamic breast inspection</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000008"/>
     </owl:Class>
