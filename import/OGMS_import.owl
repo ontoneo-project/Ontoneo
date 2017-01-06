@@ -15,8 +15,8 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;ogms.owl#"
-     xml:base="&obo;ogms.owl"
+<rdf:RDF xmlns="&obo;ontoneo/import/ogms_import.owl#"
+     xml:base="&obo;ontoneo/import/ogms_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -27,7 +27,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;ogms.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/import/ogms_import.owl">
         <xsd:title rdf:datatype="&xsd;string">The Ontology for General Medical Science (OGMS)</xsd:title>
         <owl:versionInfo>2011-09-20</owl:versionInfo>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli

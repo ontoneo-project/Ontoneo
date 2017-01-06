@@ -13,8 +13,8 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;cl.owl#"
-     xml:base="&obo;cl.owl"
+<rdf:RDF xmlns="&obo;ontoneo/import/cl.owl#"
+     xml:base="&obo;ontoneo/import/cl.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -23,7 +23,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;cl.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/import/cl.owl">
         <rdfs:comment rdf:datatype="&xsd;string">See PMID:15693950, PMID:12799354, PMID:20123131, PMID:21208450; Contact Alexander Diehl, addiehl@buffalo.edu, University at Buffalo.</rdfs:comment>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
         <owl:versionIRI rdf:resource="&obo;cl/releases/2016-09-02/cl.owl"/>
