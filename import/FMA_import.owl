@@ -15,8 +15,8 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;fma.owl#"
-     xml:base="&obo;fma.owl"
+<rdf:RDF xmlns="&obo;ontoneo/import/fma_import.owl#"
+     xml:base="&obo;ontoneo/import/fma_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -27,7 +27,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;fma.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/import/fma_import.owl">
         <oboInOwl:hasOBOFormatVersion rdf:datatype="&xsd;string">1.2</oboInOwl:hasOBOFormatVersion>
         <oboInOwl:date rdf:datatype="&xsd;string">24:07:2008 15:29</oboInOwl:date>
         <xsd:title rdf:datatype="&xsd;string">Foundational Model of Anatomy (subset)</xsd:title>

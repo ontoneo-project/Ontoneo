@@ -12,8 +12,8 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;go.owl#"
-     xml:base="&obo;go.owl"
+<rdf:RDF xmlns="&obo;ontoneo/import/go_import.owl#"
+     xml:base="&obo;ontoneo/import/go_import.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -21,7 +21,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:go="&obo;go#">
-    <owl:Ontology rdf:about="&obo;go.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/import/go_import.owl">
         <owl:versionIRI rdf:resource="&obo;go/releases/2016-11-18/go.owl"/>
     </owl:Ontology>
     

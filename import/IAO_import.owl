@@ -12,8 +12,8 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;iao.owl#"
-     xml:base="&obo;iao.owl"
+<rdf:RDF xmlns="&obo;ontoneo/import/iao_import.owl#"
+     xml:base="&obo;ontoneo/import/iao_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -21,7 +21,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;iao.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/import/iao_import.owl">
         <dc:date rdf:datatype="&xsd;date">2009-07-31</dc:date>
         <owl:versionInfo rdf:datatype="&xsd;string">2015-02-23</owl:versionInfo>
         <xsd:title rdf:datatype="&xsd;string">Information Artifact Ontology</xsd:title>

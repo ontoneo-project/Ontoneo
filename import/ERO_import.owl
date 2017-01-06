@@ -13,8 +13,8 @@
     <!ENTITY app "http://eagle-i.org/ont/app/1.0/#" >
 ]>
 	
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ero.owl#"
-     xml:base="http://purl.obolibrary.org/obo/ero.owl"
+<rdf:RDF xmlns="&obo;ontoneo/import/ero_import.owl#"
+     xml:base="&obo;ontoneo/import/ero_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:app="http://eagle-i.org/ont/app/1.0/"
      xmlns:ns="http://www.w3.org/2003/06/sw-vocab-status/ns#"
@@ -29,7 +29,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ero.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/import/ero_import.owl">
         <owl:versionInfo></owl:versionInfo>
         <rdfs:comment xml:lang="en">An ontology of research resources such as instruments. protocols, reagents, animal models and biospecimens.</rdfs:comment>
         <owl:versionIRI rdf:resource="&bio;OntONeo/releases/2016-12-12/ERO_import.owl"/>		

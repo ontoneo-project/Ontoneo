@@ -13,8 +13,8 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;obi.owl#"
-     xml:base="&obo;obi.owl"
+<rdf:RDF xmlns="&obo;ontoneo/import/obi_import.owl#"
+     xml:base="&obo;ontoneo/import/obi_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -23,7 +23,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;obi.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/import/obi_import.owl">
         <owl:versionIRI rdf:resource="&bio;OntONeo/releases/2016-04-01/OBI_import.owl"/>
     </owl:Ontology>
     

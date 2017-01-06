@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/vo_import.owl" uri="import/VO_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/uberon_import.owl" uri="import/UBERON_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/symp_import.owl" uri="import/SYMP_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/sio_import.owl" uri="import/SIO_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/ro_import.owl" uri="import/RO_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/pato_import.owl" uri="import/PATO_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/omrse_import.owl" uri="import/OMRSE_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/ogms_import.owl" uri="import/OGMS_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/obi_import.owl" uri="import/OBI_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/oae_import.owl" uri="import/OAE_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/iao_import.owl" uri="import/IAO_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/hp_import.owl" uri="import/HP_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/go_import.owl" uri="import/GO_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/fma_import.owl" uri="import/FMA_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/ero_import.owl" uri="import/ERO_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/efo_import.owl" uri="import/EFO_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ontoneo/import/cl_import.owl" uri="import/CL_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ontoneo/import/bfo_import.owl" uri="import/BFO_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/doid_import.owl" uri="import/DOID_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/d-acts_import.owl" uri="import/d-acts_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/cl.owl" uri="import/CL_import.owl"/>
+    <uri id="User Entered Import Resolution" name="http://purl.obolibrary.org/obo/ontoneo/import/BFO_import.owl" uri="import/BFO_import.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/bfo.owl" uri="import/BFO_import.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/SYMP.owl" uri="releases/v1.1/SYMP_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/UBERON.owl" uri="releases/v1.1/UBERON_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/bfo.owl" uri="releases/v1.0/BFO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/cl.owl" uri="releases/v1.1/CL_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/doid.owl" uri="releases/v1.1/DOID_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/fma.owl" uri="releases/v1.1/FMA_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/go.owl" uri="releases/v1.1/GO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/hp.owl" uri="releases/v1.1/HP_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/iao.owl" uri="releases/v1.1/IAO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/iao/d-acts.owl/" uri="releases/v1.1/d-acts_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/obi.owl" uri="releases/v1.1/OBI_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ogms.owl" uri="releases/v1.1/OGMS_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/omrse.owl" uri="releases/v1.1/OMRSE_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/BFO_import.owl" uri="import/BFO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/DOID_import.owl" uri="releases/v1.0/DOID_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/FMA_import.owl" uri="releases/v1.0/FMA_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/HP_import.owl" uri="releases/v1.0/HP_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/IAO_import.owl" uri="releases/v1.0/IAO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/OBI_import.owl" uri="releases/v1.0/OBI_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/OGMS_import.owl" uri="releases/v1.0/OGMS_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/PATO_import.owl" uri="releases/v1.0/PATO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/RO_import.owl" uri="releases/v1.0/RO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/SYMP_import.owl" uri="releases/v1.0/SYMP_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/cl.owl" uri="import/CL_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/d-acts_import.owl/" uri="import/d-acts_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/doid_import.owl" uri="import/DOID_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/efo_import.owl" uri="import/EFO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/ero_import.owl" uri="import/ERO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/fma_import.owl" uri="import/FMA_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/go_import.owl" uri="import/GO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/hp_import.owl" uri="import/HP_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/iao_import.owl" uri="import/IAO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/oae_import.owl" uri="import/OAE_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/obi_import.owl" uri="import/OBI_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/ogms_import.owl" uri="import/OGMS_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/omrse_import.owl" uri="import/OMRSE_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/pato_import.owl" uri="import/PATO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/ro_import.owl" uri="import/RO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/sio_import.owl" uri="import/SIO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/symp_import.owl" uri="import/SYMP_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/uberon_import.owl" uri="import/UBERON_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/import/vo_import.owl" uri="import/VO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl" uri="ontoneo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/pato.owl" uri="releases/v1.1/PATO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/ro.owl" uri="releases/v1.1/RO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="http://purl.obolibrary.org/obo/vo.owl" uri="releases/v1.1/VO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="shadowed:http://purl.obolibrary.org/obo/bfo.owl" uri="releases/v1.1/BFO_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="shadowed:http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl" uri="releases/v1.0/ontoneo.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1483725079884" name="shadowed:http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl" uri="releases/v1.1/ontoneo.owl"/>
+    </group>
+</catalog>

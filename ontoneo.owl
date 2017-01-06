@@ -37,7 +37,6 @@
         <rdfs:label xml:lang="en">The Ontology of Obstetric and Neonatal domain</rdfs:label>
         <rdfs:label xml:lang="pt">A Ontologia do Domínio Obstétrico e Neonatal</rdfs:label>
         <owl:versionInfo rdf:datatype="&xsd;dateTime">2016-12-26</owl:versionInfo>
-        <owl:versionIRI rdf:datatype="&xsd;string">v1.2</owl:versionInfo>		
         <dc:source rdf:datatype="&xsd;string">ISBN:9780262527811 - Building Ontologies with Basic Formal Ontology. By Robert Arp, Barry Smith and Andrew D. Spear</dc:source>
         <rdfs:comment rdf:datatype="&xsd;string">PERSON: Fernanda Farinelli
 OntONeo development prioritizes the reuse of classes and entities from FMA ontology to deal with human anatomy approaches. Every class reference of others ontology for the anatomy domain, for example, UBERON and CARO, in which has the cross-reference annotation to some FMA class are replaced by the FMA class referred.</rdfs:comment>
@@ -50,37 +49,38 @@ Ontoneo is a ontology that the development is in progress, then take in mind for
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
         <dc:creator xml:lang="en">Fernanda Farinelli</dc:creator>
         <rdfs:comment xml:lang="en">IDs allocated to individuals: ONTONEO_90000000 - ONTONEO_99999999</rdfs:comment>
-        <rdfs:comment xml:lang="en">OntoNeo, is developed by Fernanda Farinelli and her contributor group is licensed under CC BY 4.0.</rdfs:comment>
-        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
-The default language of this ontology is English mainly because the reusable ontologies are conceived in English. However, this ontology intends to be bilingual in order to attend the necessities of Brazilian issues. Then, every relevant term we defined in Portuguese (Brazilian portuguese) using the tag xml:lang=&quot;pt&quot; the follow annotations: label, definition, alternative term.</rdfs:comment>
+        <dc:contributor xml:lang="en">Mauricio B. de Almeida</dc:contributor>
         <dc:contributor xml:lang="en">Peter L. Elkin</dc:contributor>
         <dc:contributor xml:lang="en">Zilma Silveira Nogueira Reis</dc:contributor>
         <protege:defaultLanguage xml:lang="en">en</protege:defaultLanguage>
         <foaf:homepage>https://ontoneo.com/</foaf:homepage>
-        <dc:contributor xml:lang="en">Mauricio B. de Almeida</dc:contributor>
         <ontoneo:ONTONEO_1000000 xml:lang="pt">pt</ontoneo:ONTONEO_1000000>
+        <owl:versionInfo>v1.2</owl:versionInfo>
+        <rdfs:comment xml:lang="en">OntoNeo, is developed by Fernanda Farinelli and her contributor group is licensed under CC BY 4.0.</rdfs:comment>
+        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
+The default language of this ontology is English mainly because the reusable ontologies are conceived in English. However, this ontology intends to be bilingual in order to attend the necessities of Brazilian issues. Then, every relevant term we defined in Portuguese (Brazilian portuguese) using the tag xml:lang=&quot;pt&quot; the follow annotations: label, definition, alternative term.</rdfs:comment>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/4.0/"/>
-        <owl:imports rdf:resource="&obo;SYMP.owl"/>
-        <owl:imports rdf:resource="&obo;UBERON.owl"/>
-        <owl:imports rdf:resource="&obo;bfo.owl"/>
-        <owl:imports rdf:resource="&obo;cl.owl"/>
-        <owl:imports rdf:resource="&obo;doid.owl"/>
-        <owl:imports rdf:resource="&obo;ero.owl"/>
-        <owl:imports rdf:resource="&obo;fma.owl"/>
-        <owl:imports rdf:resource="&obo;go.owl"/>
-        <owl:imports rdf:resource="&obo;hp.owl"/>
-        <owl:imports rdf:resource="&obo;iao.owl"/>
-        <owl:imports rdf:resource="&obo;oae.owl"/>
-        <owl:imports rdf:resource="&obo;obi.owl"/>
-        <owl:imports rdf:resource="&obo;ogms.owl"/>
-        <owl:imports rdf:resource="&obo;omrse.owl"/>
-        <owl:imports rdf:resource="&obo;pato.owl"/>
-        <owl:imports rdf:resource="&obo;ro.owl"/>
-        <owl:imports rdf:resource="&obo;vo.owl"/>
-        <owl:imports rdf:resource="&obo;iao/d-acts.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/bfo_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/cl_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/d-acts_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/doid_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/efo_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/ero_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/fma_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/go_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/hp_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/iao_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/oae_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/obi_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/ogms_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/omrse_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/pato_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/ro_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/sio_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/symp_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/uberon_import.owl"/>
+        <owl:imports rdf:resource="&obo;ontoneo/import/vo_import.owl"/>
         <owl:versionIRI rdf:resource="&obo;ontoneo/releases/v1.2/ontoneo.owl"/>
-        <owl:imports rdf:resource="&sio;sio.owl"/>
-        <owl:imports rdf:resource="http://www.ebi.ac.uk/efo/efo.owl"/>
     </owl:Ontology>
     
 
@@ -93,6 +93,24 @@ The default language of this ontology is English mainly because the reusable ont
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000111 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000111"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000114 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000114"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
     
 
 
@@ -130,6 +148,12 @@ The default language of this ontology is English mainly because the reusable ont
     
 
 
+    <!-- http://purl.org/dc/elements/1.1/source -->
+
+    <owl:AnnotationProperty rdf:about="&dc;source"/>
+    
+
+
     <!-- http://semanticscience.org/resource/equivalentTo -->
 
     <owl:AnnotationProperty rdf:about="&sio;equivalentTo"/>
@@ -145,6 +169,60 @@ The default language of this ontology is English mainly because the reusable ont
     <!-- http://semanticscience.org/resource/hasSynonym -->
 
     <owl:AnnotationProperty rdf:about="&sio;hasSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset"/>
     
 
 
@@ -172,9 +250,206 @@ The default language of this ontology is English mainly because the reusable ont
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000055"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000066"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000082 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000082"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000156 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000156"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000167 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000167"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000136 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000136"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000221 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000221"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000581 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000581"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000583 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0000583"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020012 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0020012"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0020018 -->
+
+    <owl:ObjectProperty rdf:about="&obo;IAO_0020018"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000293"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000056 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000056"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000080 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000080"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000081 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000081"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000086 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000086"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000087"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002218 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002218"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002503 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002503"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002573 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002573"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fma#regional_part_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;fma#regional_part_of"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/fma#systemic_part_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;fma#systemic_part_of"/>
+    
+
+
     <!-- http://purl.org/obo/owl/OBO_REL#exists_during -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/obo/owl/OBO_REL#exists_during"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000364 -->
+
+    <owl:ObjectProperty rdf:about="&sio;SIO_000364"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_001242 -->
+
+    <owl:ObjectProperty rdf:about="&sio;SIO_001242"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0001937 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;OBI_0001937"/>
     
 
 
@@ -193,6 +468,7 @@ The default language of this ontology is English mainly because the reusable ont
 
     <owl:Class rdf:about="http://purl.bioontology.org/OntONeo/ONTONEO_00000065">
         <rdfs:label xml:lang="en">patient partner data set</rdfs:label>
+        <rdfs:label xml:lang="pt">TO DO</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -252,12 +528,11 @@ The default language of this ontology is English mainly because the reusable ont
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="pt">TO DO</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl</rdfs:isDefinedBy>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="en">TO DO</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl</rdfs:isDefinedBy>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </owl:Class>
     
 
@@ -266,6 +541,7 @@ The default language of this ontology is English mainly because the reusable ont
 
     <owl:Class rdf:about="http://purl.bioontology.org/OntONeo/ONTONEO_00000066">
         <rdfs:label xml:lang="en">emergency contact data set</rdfs:label>
+        <rdfs:label xml:lang="pt">TO DO</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -285,12 +561,11 @@ The default language of this ontology is English mainly because the reusable ont
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:label xml:lang="pt">TO DO</rdfs:label>
+        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl</rdfs:isDefinedBy>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="en">TO DO</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl</rdfs:isDefinedBy>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </owl:Class>
     
 
@@ -302,8 +577,8 @@ The default language of this ontology is English mainly because the reusable ont
         <rdfs:label xml:lang="pt">acompanhamento pré-natal</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000097"/>
         <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl</rdfs:isDefinedBy>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>	
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="en">prenatal care, prenatal monitoring</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">cuidado pré-natal, consulta pré-natal, monitoramento pré-natal</obo:IAO_0000118>
     </owl:Class>
@@ -336,11 +611,11 @@ The default language of this ontology is English mainly because the reusable ont
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A part of the female body formed by the cervix, vagina, and vulva through which the fetus passes during birth.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="pt">Uma parte do corpo feminino formado pelo colo do útero, vagina e vulva através do qual o feto passa durante o nascimento.</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl</rdfs:isDefinedBy>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="en">A part of the female body formed by the cervix, vagina, and vulva through which the fetus passes during birth.</obo:IAO_0000115>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="pt">Uma parte do corpo feminino formado pelo colo do útero, vagina e vulva através do qual o feto passa durante o nascimento.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -357,11 +632,11 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;BFO_0000030"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">An information content entity that is the result of an enrollment process and is used to refer to a single occurrence of a certain entity instance in the context of the enrollment made.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="pt">Uma entidade de conteúdo de informação que é o resultado de um processo de cadastramento e é usada para se referir a uma uma única ocorrência de certa instância de entidade no contexto do cadastro realizado.</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl</rdfs:isDefinedBy>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="en">An information content entity that is the result of an enrollment process and is used to refer to a single occurrence of a certain entity instance in the context of the enrollment made.</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">Uma entidade de conteúdo de informação que é o resultado de um processo de cadastramento e é usada para se referir a uma uma única ocorrência de certa instância de entidade no contexto do cadastro realizado.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -388,11 +663,11 @@ The default language of this ontology is English mainly because the reusable ont
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A document created by an organism which has role health care provider with the plan of care instructions to another organism which has role patient and included the indication of medicines in which this organism should take.</obo:IAO_0000115>
-		<obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl</rdfs:isDefinedBy>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="en">A document created by an organism which has role health care provider with the plan of care instructions to another organism which has role patient and included the indication of medicines in which this organism should take.</obo:IAO_0000115>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -401,7 +676,7 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;BFO_0000015">
         <rdfs:label xml:lang="pt">processo</rdfs:label>
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
     </rdf:Description>
     
 
@@ -410,7 +685,7 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;BFO_0000019">
         <rdfs:label xml:lang="pt">qualidade</rdfs:label>
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
     </rdf:Description>
     
 
@@ -432,10 +707,10 @@ The default language of this ontology is English mainly because the reusable ont
         <oboInOwl:id rdf:datatype="&xsd;string">CMO:0000012</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cmo.owl</obo:IAO_0000412>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="en">The heaviness or degree to which an entire organism&apos;s body is drawn to the earth by gravity.</obo:IAO_0000115>
-        <obo:IAO_0000118 xml:lang="pt">peso corporal</obo:IAO_0000118>	
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">peso corporal</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -450,8 +725,8 @@ The default language of this ontology is English mainly because the reusable ont
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cmo.owl</obo:IAO_0000412>
         <obo:IAO_0000115 xml:lang="en">A measurement of the longest dimension of a body, typically between two distinct ends of the body.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -465,9 +740,9 @@ The default language of this ontology is English mainly because the reusable ont
         <oboInOwl:id rdf:datatype="&xsd;string">CMO:0000106</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cmo.owl</obo:IAO_0000412>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="en">The vertical measurement of a body.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -483,9 +758,9 @@ The default language of this ontology is English mainly because the reusable ont
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="&xsd;string">JSmith</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cmo.owl</obo:IAO_0000412>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="en">The vertical measurement of the body of a four-legged animal, from the ground to the high part of the back between the shoulder blades.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -501,9 +776,9 @@ The default language of this ontology is English mainly because the reusable ont
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">Clinical_Measurement.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="&xsd;string">JSmith</oboInOwl:created_by>
         <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cmo.owl</obo:IAO_0000412>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="en">The vertical measurement of the body of a four-legged animal, from the ground to the point of the hip.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -512,6 +787,7 @@ The default language of this ontology is English mainly because the reusable ont
 
     <owl:Class rdf:about="&obo;CVDO_0000217">
         <rdfs:label xml:lang="en">thrombosis</rdfs:label>
+        <rdfs:label xml:lang="pt">TO DO</rdfs:label>
         <owl:equivalentClass rdf:resource="&obo;MP_0005048"/>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000061"/>
         <rdfs:subClassOf>
@@ -521,9 +797,8 @@ The default language of this ontology is English mainly because the reusable ont
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cvdo.owl</obo:IAO_0000412>
-        <rdfs:label xml:lang="pt">TO DO</rdfs:label>	
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -532,11 +807,11 @@ The default language of this ontology is English mainly because the reusable ont
 
     <owl:Class rdf:about="&obo;CVDO_0000220">
         <rdfs:label xml:lang="en">deep vein thrombosis</rdfs:label>
+        <rdfs:label xml:lang="pt">TO DO</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;CVDO_0000217"/>
         <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cvdo.owl</obo:IAO_0000412>
-        <rdfs:label xml:lang="pt">TO DO</rdfs:label>	
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -545,6 +820,7 @@ The default language of this ontology is English mainly because the reusable ont
 
     <owl:Class rdf:about="&obo;CVDO_0000225">
         <rdfs:label xml:lang="en">embolism</rdfs:label>
+        <rdfs:label xml:lang="pt">TO DO</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000061"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -559,9 +835,8 @@ The default language of this ontology is English mainly because the reusable ont
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000412 rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/cvdo.owl</obo:IAO_0000412>
-        <rdfs:label xml:lang="pt">TO DO</rdfs:label>	
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -570,6 +845,7 @@ The default language of this ontology is English mainly because the reusable ont
 
     <owl:Class rdf:about="&obo;CVDO_0000545">
         <rdfs:label xml:lang="en">embolus</rdfs:label>
+        <rdfs:label xml:lang="pt">TO DO</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000045"/>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -578,34 +854,22 @@ The default language of this ontology is English mainly because the reusable ont
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">A disorder made of a detached, traveling intravascular matter (solid, liquid, or gaseous) carried by circulation. It is capable of creating an arterial occlusion at a site distant from its point of origin.</rdfs:comment>
-        <rdfs:label xml:lang="pt">TO DO</rdfs:label>	
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/DOID_225 -->
-
-    <rdf:Description rdf:about="&obo;DOID_225">
-        <rdfs:label xml:lang="pt">síndrome</rdfs:label>
-        <owl:equivalentClass rdf:resource="&obo;OGMS_0000086"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-    </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/DOID_4 -->
 
-    <rdf:Description rdf:about="&obo;DOID_4">
+    <owl:Class rdf:about="&obo;DOID_4">
         <rdfs:label xml:lang="pt">doença</rdfs:label>
         <owl:equivalentClass rdf:resource="&obo;OGMS_0000031"/>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000016"/>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <oboInOwl:hasDbXref>Term IRI: http://purl.obolibrary.org/obo/OGMS_0000031</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -614,8 +878,8 @@ The default language of this ontology is English mainly because the reusable ont
     <owl:Class rdf:about="&obo;ERO_0000378">
         <rdfs:label xml:lang="pt">cirurgia</rdfs:label>
         <owl:equivalentClass rdf:resource="&obo;OAE_0000067"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -624,15 +888,15 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_16564">
         <rdfs:label xml:lang="pt">pelve feminina</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_17558 -->
 
-    <rdf:Description rdf:about="&obo;FMA_17558">
+    <owl:Class rdf:about="&obo;FMA_17558">
         <rdfs:label xml:lang="pt">utero</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -646,15 +910,21 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_17740 -->
+
+    <owl:Class rdf:about="&obo;FMA_17740"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_19898 -->
 
-    <rdf:Description rdf:about="&obo;FMA_19898">
+    <owl:Class rdf:about="&obo;FMA_19898">
         <rdfs:label xml:lang="pt">seio feminino</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -662,16 +932,16 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_223655"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">mama feminina, seio da mulher</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_19908 -->
 
-    <rdf:Description rdf:about="&obo;FMA_19908">
+    <owl:Class rdf:about="&obo;FMA_19908">
         <rdfs:label xml:lang="pt">seio femnino esquerdo</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -679,15 +949,15 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_223655"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_19910 -->
 
-    <rdf:Description rdf:about="&obo;FMA_19910">
+    <owl:Class rdf:about="&obo;FMA_19910">
         <rdfs:label xml:lang="pt">seio femnino direito</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -695,9 +965,9 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_223655"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -705,15 +975,15 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_19949">
         <rdfs:label xml:lang="pt">vagina</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_19970 -->
 
-    <rdf:Description rdf:about="&obo;FMA_19970">
+    <owl:Class rdf:about="&obo;FMA_19970">
         <rdfs:label xml:lang="pt">vestíbulo da vagina</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -721,15 +991,15 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_20367 -->
 
-    <rdf:Description rdf:about="&obo;FMA_20367">
+    <owl:Class rdf:about="&obo;FMA_20367">
         <rdfs:label xml:lang="pt">lábios maiores</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -737,15 +1007,15 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_20374 -->
 
-    <rdf:Description rdf:about="&obo;FMA_20374">
+    <owl:Class rdf:about="&obo;FMA_20374">
         <rdfs:label xml:lang="pt">lábios menores</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -753,15 +1023,15 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_20394 -->
 
-    <rdf:Description rdf:about="&obo;FMA_20394">
+    <owl:Class rdf:about="&obo;FMA_20394">
         <rdfs:label xml:lang="pt">corpo humano</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
@@ -785,15 +1055,15 @@ The default language of this ontology is English mainly because the reusable ont
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_20462 -->
 
-    <rdf:Description rdf:about="&obo;FMA_20462">
+    <owl:Class rdf:about="&obo;FMA_20462">
         <rdfs:label xml:lang="pt">vulva</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -801,15 +1071,15 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_222944 -->
 
-    <rdf:Description rdf:about="&obo;FMA_222944">
+    <owl:Class rdf:about="&obo;FMA_222944">
         <rdfs:label xml:lang="pt">tronco feminino</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -817,15 +1087,15 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_223655 -->
 
-    <rdf:Description rdf:about="&obo;FMA_223655">
+    <owl:Class rdf:about="&obo;FMA_223655">
         <rdfs:label xml:lang="pt">tórax feminino</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -833,24 +1103,25 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_222944"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
+    
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_228738 -->
 
     <rdf:Description rdf:about="&obo;FMA_228738">
         <rdfs:label xml:lang="pt">garganta</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_259094 -->
 
-    <rdf:Description rdf:about="&obo;FMA_259094">
+    <owl:Class rdf:about="&obo;FMA_259094">
         <rdfs:label xml:lang="pt">abdômen feminino</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -858,10 +1129,16 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">abdômen da mulher</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_3710 -->
+
+    <owl:Class rdf:about="&obo;FMA_3710"/>
     
 
 
@@ -869,8 +1146,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_45649">
         <rdfs:label xml:lang="pt">genitália externa feminina</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -879,8 +1156,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_45654">
         <rdfs:label xml:lang="pt">genitália interna feminina</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -889,8 +1166,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_46472">
         <rdfs:label xml:lang="pt">nariz</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -899,8 +1176,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_50720">
         <rdfs:label xml:lang="pt">artéria</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -909,8 +1186,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_52780">
         <rdfs:label xml:lang="pt">ouvido</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -919,8 +1196,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_53641">
         <rdfs:label xml:lang="pt">ouvido esquerdo</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -929,8 +1206,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_53642">
         <rdfs:label xml:lang="pt">ouvido esquerdo</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -939,8 +1216,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_54448">
         <rdfs:label xml:lang="pt">olho</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -949,8 +1226,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_54449">
         <rdfs:label xml:lang="pt">olho esquerdo</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -959,8 +1236,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_54450">
         <rdfs:label xml:lang="pt">olho esquedo</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -975,7 +1252,7 @@ The default language of this ontology is English mainly because the reusable ont
 
     <!-- http://purl.obolibrary.org/obo/FMA_67812 -->
 
-    <rdf:Description rdf:about="&obo;FMA_67812">
+    <owl:Class rdf:about="&obo;FMA_67812">
         <rdfs:label xml:lang="pt">corpo humano feminino</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1004,9 +1281,9 @@ The default language of this ontology is English mainly because the reusable ont
             </owl:Class>
         </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Anatomical structure which is the aggregate material substance of an individual member of the Homo sapiens species which is a woman?</rdfs:comment>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -1014,8 +1291,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_7149">
         <rdfs:label xml:lang="pt">sistemas do corpo humano</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1024,16 +1301,16 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_7160">
         <rdfs:label xml:lang="pt">sistema reprodutivo</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">sistema genital</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_7181 -->
 
-    <rdf:Description rdf:about="&obo;FMA_7181">
+    <owl:Class rdf:about="&obo;FMA_7181">
         <rdfs:label xml:lang="pt">tronco</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1041,15 +1318,15 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_9576 -->
 
-    <rdf:Description rdf:about="&obo;FMA_9576">
+    <owl:Class rdf:about="&obo;FMA_9576">
         <rdfs:label xml:lang="pt">tórax</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1057,9 +1334,9 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7181"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -1067,8 +1344,8 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_9577">
         <rdfs:label xml:lang="pt">abdômen</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1077,16 +1354,16 @@ The default language of this ontology is English mainly because the reusable ont
 
     <rdf:Description rdf:about="&obo;FMA_9578">
         <rdfs:label xml:lang="pt">pélvis</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">bacia</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_9601 -->
 
-    <rdf:Description rdf:about="&obo;FMA_9601">
+    <owl:Class rdf:about="&obo;FMA_9601">
         <rdfs:label xml:lang="pt">seio</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1094,10 +1371,10 @@ The default language of this ontology is English mainly because the reusable ont
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9576"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">mama</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+    </owl:Class>
     
 
 
@@ -1115,7 +1392,7 @@ A portion of body substance in a liquid state, produced by the bone marrow, made
 
     <!-- http://purl.obolibrary.org/obo/FMA_9909 -->
 
-    <rdf:Description rdf:about="&obo;FMA_9909">
+    <owl:Class rdf:about="&obo;FMA_9909">
         <rdfs:label xml:lang="pt">clitóris</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1123,9 +1400,9 @@ A portion of body substance in a liquid state, produced by the bone marrow, made
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -1133,8 +1410,8 @@ A portion of body substance in a liquid state, produced by the bone marrow, made
 
     <rdf:Description rdf:about="&obo;GO_0007596">
         <rdfs:label xml:lang="pt">coagulação sanguínea</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1143,9 +1420,27 @@ A portion of body substance in a liquid state, produced by the bone marrow, made
 
     <rdf:Description rdf:about="&obo;GO_0007610">
         <rdfs:label xml:lang="pt">comportamento</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008015 -->
+
+    <owl:Class rdf:about="&obo;GO_0008015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008150 -->
+
+    <owl:Class rdf:about="&obo;GO_0008150"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000118 -->
+
+    <owl:Class rdf:about="&obo;HP_0000118"/>
     
 
 
@@ -1153,9 +1448,27 @@ A portion of body substance in a liquid state, produced by the bone marrow, made
 
     <rdf:Description rdf:about="&obo;IAO_0000003">
         <rdfs:label xml:lang="pt">unidade de medida</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000030 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000030"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000032 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000032"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000100 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000100"/>
     
 
 
@@ -1163,9 +1476,33 @@ A portion of body substance in a liquid state, produced by the bone marrow, made
 
     <rdf:Description rdf:about="&obo;IAO_0000109">
         <rdfs:label xml:lang="pt">dado de medição</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000300"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000310 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000310"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000314 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000314"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000416 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000416"/>
     
 
 
@@ -1173,10 +1510,16 @@ A portion of body substance in a liquid state, produced by the bone marrow, made
 
     <rdf:Description rdf:about="&obo;IAO_0000429">
         <rdfs:label xml:lang="pt">endereço de email</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">email</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000582 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000582"/>
     
 
 
@@ -1184,9 +1527,9 @@ A portion of body substance in a liquid state, produced by the bone marrow, made
 
     <owl:Class rdf:about="&obo;IAO_0020000">
         <rdfs:label xml:lang="pt">nome próprio</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="pt">Uma entidade de conteúdo de informação que é o resultado de um processo de identificação e é usada para se referir a uma instância de entidade compartilhada por um grupo de pessoas para se referir a essa entidade individual.</obo:IAO_0000115>
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-	</owl:Class>
+    </owl:Class>
     
 
 
@@ -1212,11 +1555,10 @@ A portion of body substance in a liquid state, produced by the bone marrow, made
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="pt">Um nome próprio que identifica uma pessoa específica.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">nome completo</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">nome da pessoa</obo:IAO_0000118>
-	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </owl:Class>
     
 
@@ -1225,9 +1567,8 @@ A portion of body substance in a liquid state, produced by the bone marrow, made
 
     <owl:Class rdf:about="&obo;IAO_0020016">
         <rdfs:label xml:lang="pt">primeiro nome</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="pt">nome</obo:IAO_0000118>
-	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </owl:Class>
     
 
@@ -1236,10 +1577,10 @@ A portion of body substance in a liquid state, produced by the bone marrow, made
 
     <owl:Class rdf:about="&obo;IAO_0020017">
         <rdfs:label xml:lang="pt">nome de família</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="pt">sobrenome</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">último nome</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="pt">último sobrenome</obo:IAO_0000118>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000118 xml:lang="pt">último sobrenome</obo:IAO_0000118>
     </owl:Class>
     
 
@@ -1297,17 +1638,16 @@ A laboratory test that has as input a portion of blood from an organism, and as 
 
     <owl:Class rdf:about="&obo;MP_0000001">
         <rdfs:label xml:lang="en">mammalian phenotype</rdfs:label>
+        <rdfs:label xml:lang="pt">TO DO</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
         <oboInOwl:id rdf:datatype="&xsd;string">MP:0000001</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">the observable morphological, physiological, behavioral and other characteristics of mammalian organisms that are manifested through development and lifespan</obo:IAO_0000115>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">the observable morphological, physiological, behavioral and other characteristics of mammalian organisms that are manifested through development and lifespan</obo:IAO_0000115>
-        <rdfs:label xml:lang="pt">TO DO</rdfs:label>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </owl:Class>
-
     
 
 
@@ -1341,11 +1681,11 @@ A laboratory test that has as input a portion of blood from an organism, and as 
         <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">MP:0001582</oboInOwl:hasAlternativeId>
         <oboInOwl:id rdf:datatype="&xsd;string">MP:0002551</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal clotting</oboInOwl:hasExactSynonym>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">altered ability or inability of the blood to clot</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="&obo;mp.owl"/>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000412 rdf:resource="&obo;mp.owl"/>
     </owl:Class>
     
 
@@ -1359,12 +1699,11 @@ A laboratory test that has as input a portion of blood from an organism, and as 
         <oboInOwl:id rdf:datatype="&xsd;string">MP:0002555</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">strong dependence on an addictive compound such as alcohol or narcotics that results in uncontrollable cravings for such compounds</obo:IAO_0000115>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
         <obo:IAO_0000115 xml:lang="en">strong dependence on an addictive compound such as alcohol or narcotics that results in uncontrollable cravings for such compounds</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </owl:Class>
-
     
 
 
@@ -1398,15 +1737,14 @@ A laboratory test that has as input a portion of blood from an organism, and as 
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">abnormal general behavior</oboInOwl:hasRelatedSynonym>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">any anomaly in the actions, reactions, or performance of an organism in response to external or internal stimuli compared to controls</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="en">any anomaly in the actions, reactions, or performance of an organism in response to external or internal stimuli compared to controls</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">comportamento indequado</obo:IAO_0000118>
         <oboInOwl:inSubset rdf:resource="&obo;mp-edit#IMPC"/>
         <oboInOwl:inSubset rdf:resource="&obo;mp-edit#Sanger_Terms"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </owl:Class>
-
     
 
 
@@ -1417,10 +1755,10 @@ A laboratory test that has as input a portion of blood from an organism, and as 
         <rdfs:label xml:lang="pt">trombose</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;MP_0002551"/>
         <obo:IAO_0000115>Formation within a tissue or the vascular lumen of a thrombus, an aggregation of coagulated blood containing platelets, fibrin, and entrapped cellular elements [database_cross_reference: MGI:cwg][database_cross_reference: ISBN:0-397-51047-0]</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="&obo;mp.owl"/>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000412 rdf:resource="&obo;mp.owl"/>
     </owl:Class>
     
 
@@ -1450,12 +1788,11 @@ A laboratory test that has as input a portion of blood from an organism, and as 
         <oboInOwl:id rdf:datatype="&xsd;string">MP:0005386</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 rdf:datatype="&xsd;string">the observable actions or reactions of mammalian organisms that are manifested through development and lifespan</obo:IAO_0000115>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="en">the observable actions or reactions of mammalian organisms that are manifested through development and lifespan</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </owl:Class>
-
     
 
 
@@ -1463,16 +1800,16 @@ A laboratory test that has as input a portion of blood from an organism, and as 
 
     <owl:Class rdf:about="&obo;NCBITaxon_10239">
         <rdfs:label xml:lang="pt">vírus</rdfs:label>
+        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>		
-        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/NCBITaxon_9606 -->
 
-    <rdf:Description rdf:about="&obo;NCBITaxon_9606">
+    <owl:Class rdf:about="&obo;NCBITaxon_9606">
         <rdfs:label xml:lang="pt">Homo sapiens</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1488,16 +1825,16 @@ A laboratory test that has as input a portion of blood from an organism, and as 
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">humano, ser humano</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OAE_0000067 -->
 
-    <rdf:Description rdf:about="&obo;OAE_0000067"/>
+    <owl:Class rdf:about="&obo;OAE_0000067"/>
     
 
 
@@ -1505,9 +1842,9 @@ A laboratory test that has as input a portion of blood from an organism, and as 
 
     <rdf:Description rdf:about="&obo;OAE_0002807">
         <rdfs:label xml:lang="pt">procedimento médico</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">Uma intervenção médica que se refere a qualquer série de etapas pré-definidas que devem ser seguidas para alcançar um resultado desejado.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     
 
@@ -1516,9 +1853,15 @@ A laboratory test that has as input a portion of blood from an organism, and as 
 
     <rdf:Description rdf:about="&obo;OBI_0000011">
         <rdfs:label xml:lang="pt">processo planejado</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000245 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000245"/>
     
 
 
@@ -1526,8 +1869,8 @@ A laboratory test that has as input a portion of blood from an organism, and as 
 
     <rdf:Description rdf:about="&obo;OBI_0001169">
         <rdfs:label xml:lang="pt">idade desde o nascimento</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1536,8 +1879,8 @@ A laboratory test that has as input a portion of blood from an organism, and as 
 
     <rdf:Description rdf:about="&obo;OBI_0100026">
         <rdfs:label xml:lang="pt">organismo</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1546,8 +1889,8 @@ A laboratory test that has as input a portion of blood from an organism, and as 
 
     <rdf:Description rdf:about="&obo;OGMS_0000014">
         <rdfs:label xml:lang="pt">descobertas clínicas</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1556,20 +1899,20 @@ A laboratory test that has as input a portion of blood from an organism, and as 
 
     <rdf:Description rdf:about="&obo;OGMS_0000020">
         <rdfs:label xml:lang="pt">sintoma</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000024 -->
 
-    <rdf:Description rdf:about="&obo;OGMS_0000024">
+    <owl:Class rdf:about="&obo;OGMS_0000024">
         <rdfs:label xml:lang="pt">sinal</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -1577,21 +1920,21 @@ A laboratory test that has as input a portion of blood from an organism, and as 
 
     <rdf:Description rdf:about="&obo;OGMS_0000029">
         <rdfs:label xml:lang="pt">sinal vital</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="pt">SSVV</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000031 -->
 
-    <rdf:Description rdf:about="&obo;OGMS_0000031">
+    <owl:Class rdf:about="&obo;OGMS_0000031">
         <rdfs:label xml:lang="pt">doença</rdfs:label>
         <oboInOwl:hasDbXref>DOID:4</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -1599,8 +1942,8 @@ A laboratory test that has as input a portion of blood from an organism, and as 
 
     <rdf:Description rdf:about="&obo;OGMS_0000045">
         <rdfs:label xml:lang="pt">disordem</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1609,16 +1952,16 @@ A laboratory test that has as input a portion of blood from an organism, and as 
 
     <rdf:Description rdf:about="&obo;OGMS_0000056">
         <rdfs:label xml:lang="pt">teste de laboratório</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000115 xml:lang="pt">Um ensaio de medição que tem como entrada uma amostra derivada do paciente, e como saída um resultado que representa uma qualidade da amostra.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">exame laboratorial</obo:IAO_0000118>
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000057 -->
 
-    <rdf:Description rdf:about="&obo;OGMS_0000057">
+    <owl:Class rdf:about="&obo;OGMS_0000057">
         <rdfs:label xml:lang="pt">exame físico</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1662,17 +2005,29 @@ A laboratory test that has as input a portion of blood from an organism, and as 
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 A process that has participant some human body and realizes some patient role, inhering to some Homo sapiens which has a genotypic sex quality.</rdfs:comment>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000061 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000061"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000073 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000073"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000083 -->
 
-    <rdf:Description rdf:about="&obo;OGMS_0000083">
+    <owl:Class rdf:about="&obo;OGMS_0000083">
         <rdfs:label xml:lang="pt">achados do exame físico</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1708,22 +2063,16 @@ A process that has participant some human body and realizes some patient role, i
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">achados diagnósticos do exame físico</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/OGMS_0000086 -->
-
-    <rdf:Description rdf:about="&obo;OGMS_0000086"/>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000088 -->
 
-    <rdf:Description rdf:about="&obo;OGMS_0000088">
+    <owl:Class rdf:about="&obo;OGMS_0000088">
         <rdfs:label xml:lang="pt">sintomas reportados pelo paciente</rdfs:label>
         <rdfs:subClassOf>
             <owl:Restriction>
@@ -1731,15 +2080,21 @@ A process that has participant some human body and realizes some patient role, i
                 <owl:someValuesFrom rdf:resource="&obo;OGMS_0000020"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OGMS_0000096 -->
+
+    <owl:Class rdf:about="&obo;OGMS_0000096"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OGMS_0000097 -->
 
-    <rdf:Description rdf:about="&obo;OGMS_0000097">
+    <owl:Class rdf:about="&obo;OGMS_0000097">
         <rdfs:label xml:lang="pt">consulta médica</rdfs:label>
         <rdfs:subClassOf>
             <owl:Class>
@@ -1769,17 +2124,31 @@ A process that has participant some human body and realizes some patient role, i
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">atendimento médico</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMIABIS_0001026 -->
 
-    <rdf:Description rdf:about="&obo;OMIABIS_0001026">
+    <owl:Class rdf:about="&obo;OMIABIS_0001026">
         <rdfs:label xml:lang="pt">prontuário médico</rdfs:label>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000011"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OGMS_0000097"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -1834,24 +2203,16 @@ A process that has participant some human body and realizes some patient role, i
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
-                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000011"/>
-                    </owl:Restriction>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OGMS_0000097"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">prontuário do paciente, registro do paciente, registro médico</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000010 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000010"/>
     
 
 
@@ -1859,8 +2220,8 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;OMRSE_00000011">
         <rdfs:label xml:lang="pt">papel de paciente</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1869,9 +2230,15 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;OMRSE_00000012">
         <rdfs:label xml:lang="pt">papel de prestador de cuidados de saúde</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000015 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000015"/>
     
 
 
@@ -1879,19 +2246,19 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;OMRSE_00000030">
         <rdfs:label xml:lang="pt">papel de paciente humano</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/OMRSE_00000056 -->
 
-    <rdf:Description rdf:about="&obo;OMRSE_00000056">
+    <owl:Class rdf:about="&obo;OMRSE_00000056">
         <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000095"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -1899,8 +2266,8 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;OMRSE_00000098">
         <rdfs:label xml:lang="pt">dado de identificação racial</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1909,9 +2276,15 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;OMRSE_00000100">
         <rdfs:label xml:lang="pt">dado de identificação étnica</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000132 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000132"/>
     
 
 
@@ -1919,21 +2292,27 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;OMRSE_00000133">
         <rdfs:label xml:lang="pt">dado de identificação do gênero</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">dado de identificação do gênero</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000134 -->
+
+    <owl:Class rdf:about="&obo;OMRSE_00000134"/>
     
 
 
     <!-- http://purl.obolibrary.org/obo/PATO_0000011 -->
 
-    <rdf:Description rdf:about="&obo;PATO_0000011">
+    <owl:Class rdf:about="&obo;PATO_0000011">
         <rdfs:label xml:lang="pt">idade</rdfs:label>
         <owl:equivalentClass rdf:resource="http://www.ebi.ac.uk/efo/EFO_0000246"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -1941,8 +2320,8 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;PATO_0000119">
         <rdfs:label xml:lang="pt">altura</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1951,8 +2330,8 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;PATO_0000122">
         <rdfs:label xml:lang="pt">comprimento</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1970,8 +2349,8 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;PATO_0000146">
         <rdfs:label xml:lang="pt">temperatura</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -1980,9 +2359,15 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;PATO_0000161">
         <rdfs:label xml:lang="pt">rate</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000460 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000460"/>
     
 
 
@@ -1996,8 +2381,8 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;PATO_0001025">
         <rdfs:label xml:lang="pt">pressão</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -2022,8 +2407,8 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;PATO_0020000">
         <rdfs:label xml:lang="pt">genótipo do sexo</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -2032,8 +2417,8 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;PATO_0020002">
         <rdfs:label xml:lang="pt">genótipo para sexo feminino</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
@@ -2042,19 +2427,19 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;SYMP_0000178">
         <rdfs:label xml:lang="pt">perda de peso</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000196 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000196">
+    <owl:Class rdf:about="&obo;SYMP_0000196">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -2062,140 +2447,140 @@ A process that has participant some human body and realizes some patient role, i
 
     <rdf:Description rdf:about="&obo;SYMP_0000403">
         <rdfs:label xml:lang="pt">ganho de peso</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000410 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000410">
+    <owl:Class rdf:about="&obo;SYMP_0000410">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000459 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000459">
+    <owl:Class rdf:about="&obo;SYMP_0000459">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000461 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000461">
+    <owl:Class rdf:about="&obo;SYMP_0000461">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000473 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000473">
+    <owl:Class rdf:about="&obo;SYMP_0000473">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000480 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000480">
+    <owl:Class rdf:about="&obo;SYMP_0000480">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000486 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000486">
+    <owl:Class rdf:about="&obo;SYMP_0000486">
         <rdfs:label xml:lang="pt">sintoma do sistema urinário</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000488 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000488">
+    <owl:Class rdf:about="&obo;SYMP_0000488">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000514 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000514">
+    <owl:Class rdf:about="&obo;SYMP_0000514">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000528 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000528">
+    <owl:Class rdf:about="&obo;SYMP_0000528">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000567 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000567">
+    <owl:Class rdf:about="&obo;SYMP_0000567">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000597 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000597">
+    <owl:Class rdf:about="&obo;SYMP_0000597">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0000891 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0000891">
+    <owl:Class rdf:about="&obo;SYMP_0000891">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
     <!-- http://purl.obolibrary.org/obo/SYMP_0019141 -->
 
-    <rdf:Description rdf:about="&obo;SYMP_0019141">
+    <owl:Class rdf:about="&obo;SYMP_0019141">
         <rdfs:subClassOf rdf:resource="&obo;OGMS_0000020"/>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </owl:Class>
     
 
 
@@ -3189,17 +3574,6 @@ A process that has participant some human body and realizes some patient role, i
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;OGMS_0000057"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <owl:Class>
@@ -3225,6 +3599,17 @@ A process that has participant some human body and realizes some patient role, i
                             </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                         <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
@@ -5692,6 +6077,12 @@ The IRI of this term is provisory because it was submitted to be part of OMRSE o
     
 
 
+    <!-- http://semanticscience.org/resource/SIO_000570 -->
+
+    <owl:Class rdf:about="&sio;SIO_000570"/>
+    
+
+
     <!-- http://semanticscience.org/resource/SIO_001317 -->
 
     <owl:Class rdf:about="&sio;SIO_001317">
@@ -5766,7 +6157,7 @@ The IRI of this term is provisory because it was submitted to be part of OMRSE o
 
     <!-- http://www.ebi.ac.uk/efo/EFO_0000246 -->
 
-    <rdf:Description rdf:about="http://www.ebi.ac.uk/efo/EFO_0000246"/>
+    <owl:Class rdf:about="http://www.ebi.ac.uk/efo/EFO_0000246"/>
     
 
 
@@ -5788,774 +6179,779 @@ The IRI of this term is provisory because it was submitted to be part of OMRSE o
 
     <rdf:Description rdf:about="&obo;FMA_83353">
         <rdfs:label xml:lang="pt">hormônio esteróide</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_9744">
         <rdfs:label xml:lang="pt">diabetes mellitus tipo 1</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">diabetes tipo 1</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_82743">
         <rdfs:label xml:lang="pt">glicose</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000485">
         <rdfs:label xml:lang="pt">disúria</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_9352">
         <rdfs:label xml:lang="pt">diabetes mellitus tipo 2</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">diabetes  tipo 2</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;GO_0050817">
         <rdfs:label xml:lang="pt">coagulação</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000177">
         <rdfs:label xml:lang="pt">fraqueza</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000651">
         <rdfs:label xml:lang="pt">secreção</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_2043">
         <rdfs:label xml:lang="pt">hepatite B</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;DOID_2237">
-        <rdfs:label xml:lang="pt">hepatite</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000849">
         <rdfs:label xml:lang="pt">natimorto</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;DOID_2237">
+        <rdfs:label xml:lang="pt">hepatite</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_2048">
         <rdfs:label xml:lang="pt">hepatite autoimune</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_2560">
         <rdfs:label xml:lang="pt">dependência da morfina</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_11103">
         <rdfs:label xml:lang="pt">Vírus da hepatite C</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OAE_0001041">
         <rdfs:label xml:lang="pt">operação cesariana</rdfs:label>
         <obo:IAO_0000118 xml:lang="en">C-section</obo:IAO_0000118>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">cesariana</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">cesárea</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CL_0000542">
         <rdfs:label xml:lang="pt">linfócito</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OAE_0000002">
         <rdfs:label xml:lang="pt">intervenção médica</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">Um processo planejado que tem o objetivo de diagnosticar, prevenir ou aliviar tanto doenças quanto lesões.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_67257">
         <rdfs:label xml:lang="pt">proteína</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;DOID_9351">
-        <rdfs:label xml:lang="pt">diabetes mellitus</rdfs:label>
-        <obo:IAO_0000118 xml:lang="en">diabetes</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="pt">diabetes</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_2559">
         <rdfs:label xml:lang="pt">dependência de opiáceos</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;DOID_9351">
+        <rdfs:label xml:lang="pt">diabetes mellitus</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000118 xml:lang="en">diabetes</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">diabetes</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_4079">
         <rdfs:label xml:lang="pt">doença da válvula cardíaca</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;PATO_0020001">
         <rdfs:label xml:lang="pt">genótipo para sexo masculino</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;DOID_1398">
-        <rdfs:label xml:lang="pt">doença parasitária infecciosa</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_409">
         <rdfs:label xml:lang="pt">doença hepática</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;DOID_1398">
+        <rdfs:label xml:lang="pt">doença parasitária infecciosa</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_5749">
         <rdfs:label xml:lang="pt">doença valvar pulmonar</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000007">
         <rdfs:label xml:lang="pt">sangramento</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_3572">
         <rdfs:label xml:lang="pt">trombose do seio intracraniano</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_3575">
         <rdfs:label xml:lang="pt">trombose do seio cavernoso</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;DOID_3574">
-        <rdfs:label xml:lang="pt">trombose do seio lateral</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;GO_0022601">
         <rdfs:label xml:lang="pt">fase do ciclo menstrual</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;DOID_3574">
+        <rdfs:label xml:lang="pt">trombose do seio lateral</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_3576">
         <rdfs:label xml:lang="pt">trombose do seio sagital</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000264">
         <rdfs:label xml:lang="pt">epididimorquite</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_83376">
         <rdfs:label xml:lang="pt">estrogênio</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;GO_0042696">
-        <rdfs:label xml:lang="pt">menarca</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;FMA_83375">
-        <rdfs:label xml:lang="pt">andrógeno</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000263">
         <rdfs:label xml:lang="pt">epididimite</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;FMA_83375">
+        <rdfs:label xml:lang="pt">andrógeno</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;GO_0042696">
+        <rdfs:label xml:lang="pt">menarca</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;GO_0042697">
         <rdfs:label xml:lang="pt">menopausa</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;IAO_0000572">
-        <rdfs:label xml:lang="pt">documentação</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_11516">
         <rdfs:label xml:lang="pt">doença cardíaca hipertensiva</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;IAO_0000572">
+        <rdfs:label xml:lang="pt">documentação</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_1884">
         <rdfs:label xml:lang="pt">hepatite viral</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_67264">
         <rdfs:label xml:lang="pt">lipídio</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_934">
         <rdfs:label xml:lang="pt">doença infecciosa viral</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CL_0000000">
         <rdfs:label xml:lang="pt">célula</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0001374">
         <rdfs:label xml:lang="pt">vacinado</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">organismo vacinado</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;FMA_12278">
-        <rdfs:label xml:lang="pt">hormônio</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000197">
         <rdfs:label xml:lang="pt">aborto</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">abortamento</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;FMA_12278">
+        <rdfs:label xml:lang="pt">hormônio</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CL_0000081">
         <rdfs:label xml:lang="pt">células sanguíneas</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_2490">
         <rdfs:label xml:lang="pt">anormalidade congênita do sistema nervoso</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000199">
         <rdfs:label xml:lang="pt">aborto espontâneo</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;SYMP_0000198">
-        <rdfs:label xml:lang="pt">aborto espontâneo</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_13576">
         <rdfs:label xml:lang="pt">síndrome da transfusão intergemelar</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="pt">Síndrome intergemelar</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;CL_0000988">
-        <rdfs:label xml:lang="pt">célula hematopoiética</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+    <rdf:Description rdf:about="&obo;SYMP_0000198">
+        <rdfs:label xml:lang="pt">aborto espontâneo</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_0050697">
         <obo:IAO_0000118 xml:lang="en"> IAI</obo:IAO_0000118>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="en">amnionitis</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">intra-amniotic infection</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;CL_0000988">
+        <rdfs:label xml:lang="pt">célula hematopoiética</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_2914">
         <rdfs:label xml:lang="pt">doença do sistema imunológico</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_11714">
         <rdfs:label xml:lang="pt">diabetes gestacional</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_67498">
         <rdfs:label xml:lang="pt">orgão</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000116">
         <rdfs:label xml:lang="pt">prostração</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000504">
         <rdfs:label xml:lang="pt">dor de cabeça</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000398">
         <rdfs:label xml:lang="pt">corrimento vaginal</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;SYMP_0000689">
-        <rdfs:label xml:lang="pt">cólica</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;OBI_1110094">
         <rdfs:label xml:lang="pt">imunização</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;SYMP_0000689">
+        <rdfs:label xml:lang="pt">cólica</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_114">
         <rdfs:label xml:lang="pt">doença cardíaca</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="en">cardiopathy</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">cardiopatia</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_9669">
         <rdfs:label xml:lang="pt">porção de substância corporal</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">substância corporal</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;SYMP_0000061">
-        <rdfs:label xml:lang="pt">inflamação</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CL_0000763">
         <rdfs:label xml:lang="pt">célula mielóide</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;SYMP_0000061">
+        <rdfs:label xml:lang="pt">inflamação</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;GO_0042703">
         <rdfs:label xml:lang="pt">menstruação</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="en">menses</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000712">
         <rdfs:label xml:lang="pt">infertilidade</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_150">
         <rdfs:label xml:lang="pt">doença da saúde mental</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0001383">
         <rdfs:label xml:lang="pt">organismo não vacinado</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_526">
         <rdfs:label xml:lang="pt">Doença infecciosa do vírus da imunodeficiência humana</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0001381">
         <rdfs:label xml:lang="pt">organismo imunizado</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_7154">
         <rdfs:label xml:lang="pt">cabeça</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_61">
         <rdfs:label xml:lang="pt">doença da válvula mitral</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="en">heart valve insufficiency</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">insuficiência da válvula cardíaca</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">insuficiência da válvula mitral</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">valvopatia mitral</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">valvulopatia</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_62">
         <rdfs:label xml:lang="pt">doença da valva aórtica</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_63919">
         <rdfs:label xml:lang="pt">feto</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_63917">
         <rdfs:label xml:lang="pt">estrutura gestacional</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_63170">
         <rdfs:label xml:lang="pt">lipoproteína de baixa densidade</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="pt">LDL</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_63171">
         <rdfs:label xml:lang="pt">lipoproteína de alta densidade</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="pt">HDL</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_256135">
         <rdfs:label xml:lang="pt">corpo</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_63169">
         <rdfs:label xml:lang="pt">lipoproteína</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_13593">
         <rdfs:label xml:lang="pt">eclampsia</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_10591">
         <rdfs:label xml:lang="pt">pré-eclâmpsia</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">hipertensão gestacional, hipertensão arterial na gestação</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_1073">
         <rdfs:label xml:lang="pt">hipertensão renal</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_11130">
         <rdfs:label xml:lang="pt">hipertensão secundária</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000002">
         <rdfs:label xml:lang="pt">vacinação</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">administração de vacinas, administração de vacina</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000001">
         <rdfs:label xml:lang="pt">vacina</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_11836">
         <rdfs:label xml:lang="pt">pé torto</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_62871">
         <rdfs:label xml:lang="pt">imunoglobulina</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">anticorpo</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_63920">
         <rdfs:label xml:lang="pt">estrutura fetal</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_0050827">
         <rdfs:label xml:lang="pt">doença cardíaca reumática</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">cardiopatia reumática</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_0050826">
         <rdfs:label xml:lang="pt">doença da valva tricúspide</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_1682">
         <rdfs:label xml:lang="pt">doença cardíaca congênita</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">anomalia congênita do coração</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">cardiopatia congênita</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">defeito congênito do coração</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">defeito do coração</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">defeitos cardíacos congênitos</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">malformação cardíaca</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;HP_0001788">
-        <rdfs:label xml:lang="pt">ruptura prematura de membranas</rdfs:label>
-        <obo:IAO_0000118 xml:lang="en">PROM</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">Uma ruptura das membranas que ocorre na gravidez quando o saco amniótico rompe mais de uma hora antes do início do parto.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_10608">
         <rdfs:label xml:lang="pt">doença celíaca</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
-    <rdf:Description rdf:about="&obo;DOID_0050811">
-        <rdfs:label xml:lang="pt">hiperplasia adrenal congênita</rdfs:label>
-        <obo:IAO_0000118 xml:lang="pt">H.A.C</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="pt">HAC</obo:IAO_0000118>
-        <obo:IAO_0000118 xml:lang="pt">cardiopatia HAC</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+    <rdf:Description rdf:about="&obo;HP_0001788">
+        <rdfs:label xml:lang="pt">ruptura prematura de membranas</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000118 xml:lang="en">PROM</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="pt">Uma ruptura das membranas que ocorre na gravidez quando o saco amniótico rompe mais de uma hora antes do início do parto.</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000040">
         <rdfs:label xml:lang="pt">hematúria</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;DOID_0050811">
+        <rdfs:label xml:lang="pt">hiperplasia adrenal congênita</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000118 xml:lang="pt">H.A.C</obo:IAO_0000118>
+        <obo:IAO_0000118 xml:lang="pt">HAC</obo:IAO_0000118>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">cardiopatia HAC</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;PATO_0000646">
         <rdfs:label xml:lang="pt">malformado</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">malformação</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000436">
         <rdfs:label xml:lang="pt">sangramento vaginal anormal</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">sangramento uterino anormal, SUA</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;CL_0000738">
         <rdfs:label xml:lang="pt">leucócito</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_12092">
         <rdfs:label xml:lang="pt">Vírus da hepatite A</rdfs:label>
         <obo:IAO_0000118 xml:lang="en">Hepatovirus A</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_64320">
         <rdfs:label xml:lang="pt">vírus Zika</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">Zika vírus</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_1849">
         <rdfs:label xml:lang="pt">dependência da cannabis</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">dependência da maconha</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_74642">
         <rdfs:label xml:lang="pt">hormônio luteinizante</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="pt">LH</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;CL_0000232">
-        <rdfs:label xml:lang="pt">eritrócitos</rdfs:label>
-        <obo:IAO_0000118 xml:lang="pt">hemácias, glóbulos vermelhos</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;UBERON_0012168">
         <rdfs:label xml:lang="pt">sangue do cordão umbilical</rdfs:label>
         <rdfs:comment xml:lang="en">DEFINITON CHANGE PROPOSAL:
 A portion of blood that remains in the placenta and in the attached umbilical cord after childbirth.
 Source: https://en.wikipedia.org/wiki/Cord_blood</rdfs:comment>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">Uma porção de sangue que permanece na placenta e no cordão umbilical anexado após o parto.</obo:IAO_0000115>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;CL_0000232">
+        <rdfs:label xml:lang="pt">eritrócitos</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">hemácias, glóbulos vermelhos</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_74641">
         <rdfs:label xml:lang="pt">hormônio estimulante folicular</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="pt">FSH</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;CL_0000233">
-        <rdfs:label xml:lang="pt">plaqueta</rdfs:label>
-        <obo:IAO_0000118 xml:lang="pt">plaquetas, plaquetas sanguíneas</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;DOID_9965">
-        <rdfs:label xml:lang="pt">toxoplasmose</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;FMA_74647">
-        <obo:IAO_0000115 xml:lang="en">A hormone that stimulates the uterine muscles and increases the intensity and frequency of contractions. A similar chemical substance is administered during labor to intensify uterine contractions and speed delivery.</obo:IAO_0000115>
-        <obo:IAO_0000119 xml:lang="en">http://www.genico.ch/en/childbirth_glossary</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000544">
         <rdfs:label xml:lang="pt">humano vacinado</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">organismo humano vacinado</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;CL_0000233">
+        <rdfs:label xml:lang="pt">plaqueta</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">plaquetas, plaquetas sanguíneas</obo:IAO_0000118>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;FMA_74647">
+        <obo:IAO_0000115 xml:lang="en">A hormone that stimulates the uterine muscles and increases the intensity and frequency of contractions. A similar chemical substance is administered during labor to intensify uterine contractions and speed delivery.</obo:IAO_0000115>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000119 xml:lang="en">http://www.genico.ch/en/childbirth_glossary</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;DOID_9965">
+        <rdfs:label xml:lang="pt">toxoplasmose</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_6432">
         <rdfs:label xml:lang="pt">hipertensão pulmonar</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;HP_0002308">
         <rdfs:label xml:lang="pt">malformação de Arnold-Chiari</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
         <obo:IAO_0000118 xml:lang="pt">Síndrome Arnold-Chiari</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;HP_0010959">
         <rdfs:label xml:lang="pt">malformação adenomatóide cística congênita do pulmão</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">malformação adenomatóide cística congênita, MAC </obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_13336">
         <rdfs:label xml:lang="pt">toxoplasmose congênita</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000494">
         <rdfs:label xml:lang="pt">imunização por vacina</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">imunização artificial ativa</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000491">
         <rdfs:label xml:lang="pt">imunização ativa</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000492">
         <rdfs:label xml:lang="pt">imunização passiva</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;VO_0000490">
         <rdfs:label xml:lang="pt">imunização</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_0050741">
         <rdfs:label xml:lang="pt">dependência do álcool</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">dependência do álcoolica, etilismo, alcoolismo</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_0050742">
         <rdfs:label xml:lang="pt">dependência da nicotina</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">tabagismo</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_2">
         <rdfs:label xml:lang="pt">bactéria</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;DOID_225">
+        <rdfs:label xml:lang="pt">síndrome</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000358">
         <rdfs:label xml:lang="pt">parto prematuro</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;DOID_13133">
-        <rdfs:label xml:lang="pt">síndrome de HELLP</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_9975">
         <rdfs:label xml:lang="pt">dependência da cocaína</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;DOID_1184">
-        <rdfs:label xml:lang="pt">síndrome nefrótica</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000756">
         <rdfs:label xml:lang="pt">menorragia</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">menstruação pesada, fluxo menstrual intenso</obo:IAO_0000118>
         <oboInOwl:hasExactSynonym xml:lang="pt">sangramento vaginal anormal</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;DOID_1184">
+        <rdfs:label xml:lang="pt">síndrome nefrótica</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;DOID_13133">
+        <rdfs:label xml:lang="pt">síndrome de HELLP</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_9974">
         <rdfs:label xml:lang="pt">dependência de drogas</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">drogadição, toxicodependência</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_9973">
         <rdfs:label xml:lang="pt">dependência de substâncias</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_0060478">
         <rdfs:label xml:lang="pt">febre zika</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_229">
         <rdfs:label xml:lang="pt">doença do sistema reprodutor feminino</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;FMA_24728">
         <rdfs:label xml:lang="pt">rosto</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">cara</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000405">
         <rdfs:label xml:lang="pt">vaginismo</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_2575">
         <rdfs:label xml:lang="pt">dependência de barbitúricos</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;DOID_10763">
-        <rdfs:label xml:lang="pt">hipertensão</rdfs:label>
-        <obo:IAO_0000118 xml:lang="pt">hipertensão arterial</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000855">
         <rdfs:label xml:lang="pt">metrorragia</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">sangramento uterino</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;DOID_10763">
+        <rdfs:label xml:lang="pt">hipertensão</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">hipertensão arterial</obo:IAO_0000118>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_10407">
         <rdfs:label xml:lang="pt">Vírus da hepatite B</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;SYMP_0000492">
         <rdfs:label xml:lang="pt">incontinência urinaria</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;DOID_9977">
         <rdfs:label xml:lang="pt">dependência alucinógenos</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;SYMP_0000854">
-        <rdfs:label xml:lang="pt">hipermenorreia</rdfs:label>
-        <obo:IAO_0000118 xml:lang="pt">sangramento prolongado, menstruação anormalmente longa, menstruação prolongada</obo:IAO_0000118>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
-    </rdf:Description>
-    <rdf:Description rdf:about="&obo;DOID_9976">
-        <rdfs:label xml:lang="pt">dependência da heroína</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="&obo;NCBITaxon_2157">
         <rdfs:label xml:lang="pt">arquea</rdfs:label>
-        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>	
-	    <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>		
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;DOID_9976">
+        <rdfs:label xml:lang="pt">dependência da heroína</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+    </rdf:Description>
+    <rdf:Description rdf:about="&obo;SYMP_0000854">
+        <rdfs:label xml:lang="pt">hipermenorreia</rdfs:label>
+        <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
+        <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
+        <obo:IAO_0000118 xml:lang="pt">sangramento prolongado, menstruação anormalmente longa, menstruação prolongada</obo:IAO_0000118>
     </rdf:Description>
 </rdf:RDF>
 
