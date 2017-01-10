@@ -69,7 +69,7 @@ The default language of this ontology is English mainly because the reusable ont
         <owl:imports rdf:resource="&obo;ontoneo/import/pato_import.owl"/>
         <owl:imports rdf:resource="&obo;ontoneo/import/ro_import.owl"/>
         <owl:imports rdf:resource="&obo;ontoneo/import/symp_import.owl"/>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/v1.0/ontoneo.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-11-07/ontoneo.owl"/>
     </owl:Ontology>
     
 
