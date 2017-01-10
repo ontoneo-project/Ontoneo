@@ -24,7 +24,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;ontoneo/import/obi_import.owl">
-        <owl:versionIRI rdf:resource="&bio;OntONeo/releases/2016-04-01/obi_import.owl"/>
+	     <xsd:title rdf:datatype="&xsd;string">The Ontology for Biomedical Investigations (OBI)</xsd:title>	
+        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
+This owl file represents the necessary entities of OBI that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
+        <rdfs:comment xml:lang="en">OBI subset applied to OntONeo ontology.</rdfs:comment>	
+        <owl:versionIRI rdf:resource="&bio;ontoneo/releases/2016-12-26/obi_import.owl"/>
     </owl:Ontology>
     
 

@@ -6,6 +6,7 @@
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY hp "http://purl.obolibrary.org/obo/hp#" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
@@ -15,13 +16,22 @@
 <rdf:RDF xmlns="&obo;ontoneo/import/hp_import.owl#"
      xml:base="&obo;ontoneo/import/hp_import.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"	 	 
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:hp="&obo;hp#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/hp_import.owl"/>
+    <owl:Ontology rdf:about="&obo;ontoneo/import/hp_import.owl">
+        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
+This owl file represents the necessary entities of HP that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
+        <rdfs:comment xml:lang="en">HP subset applied to OntONeo ontology.</rdfs:comment>
+        <dc:creator>The Human Phenotype Ontology Consortium</dc:creator>
+        <dc:license>see http://www.human-phenotype-ontology.org</dc:license>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/hp_import.owl"/>
+        <xsd:title rdf:datatype="&xsd;string">Human Phenotype Ontology</xsd:title>
+	</owl:Ontology>    
     
 
 

@@ -28,7 +28,7 @@
         <rdfs:comment xml:lang="en">DOID subset applied to OntONeo ontology.</rdfs:comment>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of DOID that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;doid/releases/2016-09-01/doid.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/doid_import.owl"/>
     </owl:Ontology>
     
 

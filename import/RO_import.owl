@@ -28,8 +28,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;ontoneo/import/ro_import.owl">
-        <xsd:title rdf:datatype="&xsd;string">Relations Ontology Module for OntONeo</xsd:title>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/import/ro_import.owl"/>
+        <xsd:title rdf:datatype="&xsd;string">OBO Relations Ontology (RO)</xsd:title>
+        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
+This owl file represents the necessary entities of RO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RO subset applied to OntONeo ontology.</rdfs:comment>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/ro_import.owl"/>
     </owl:Ontology>
     
 

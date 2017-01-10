@@ -22,13 +22,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;ontoneo/import/iao_import.owl">
-        <dc:date rdf:datatype="&xsd;date">2009-07-31</dc:date>
-        <owl:versionInfo rdf:datatype="&xsd;string">2015-02-23</owl:versionInfo>
         <xsd:title rdf:datatype="&xsd;string">Information Artifact Ontology</xsd:title>
         <rdfs:comment xml:lang="en">IAO subset applied to OntONeo ontology.</rdfs:comment>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of IAO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;iao/2015-02-23/iao.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/iao_import.owl"/>	
     </owl:Ontology>
     
 

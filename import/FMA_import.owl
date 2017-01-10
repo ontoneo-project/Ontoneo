@@ -28,14 +28,12 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;ontoneo/import/fma_import.owl">
-        <oboInOwl:hasOBOFormatVersion rdf:datatype="&xsd;string">1.2</oboInOwl:hasOBOFormatVersion>
-        <oboInOwl:date rdf:datatype="&xsd;string">24:07:2008 15:29</oboInOwl:date>
         <xsd:title rdf:datatype="&xsd;string">Foundational Model of Anatomy (subset)</xsd:title>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of FMA that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <obo:IAO_0000412>versionIRI: http://purl.obolibrary.org/obo/fma/releases/2016-05-25/fma.owl</obo:IAO_0000412>
         <rdfs:comment xml:lang="en">FMA subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-10-27/FMA_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/FMA_import.owl"/>
     </owl:Ontology>
     
 

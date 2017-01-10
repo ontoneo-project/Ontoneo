@@ -21,7 +21,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;ontoneo/import/d-acts_import.owl">
-        <owl:versionInfo>release 3 (2016-06-22)</owl:versionInfo>
+        <xsd:title rdf:datatype="&xsd;string">Ontology of Document Acts</xsd:title>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/d-acts_import.owl"/>
+        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
+This owl file represents the necessary entities of d-acts that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
+        <rdfs:comment xml:lang="en">d-acts subset applied to OntONeo ontology.</rdfs:comment>
     </owl:Ontology>
 	
     

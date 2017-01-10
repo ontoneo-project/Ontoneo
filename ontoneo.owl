@@ -34,8 +34,8 @@
      xmlns:fma="&obo;fma#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;ontoneo/ontoneo.owl">
-        <rdfs:label xml:lang="en">The Ontology of Obstetric and Neonatal domain</rdfs:label>
-        <rdfs:label xml:lang="pt">A Ontologia do Domínio Obstétrico e Neonatal</rdfs:label>
+        <rdfs:label xml:lang="en">Ontology of Obstetric and Neonatal Domain</rdfs:label>
+        <rdfs:label xml:lang="pt">Ontologia do Domínio Obstétrico e Neonatal</rdfs:label>
         <owl:versionInfo rdf:datatype="&xsd;dateTime">2016-12-26</owl:versionInfo>
         <dc:source rdf:datatype="&xsd;string">ISBN:9780262527811 - Building Ontologies with Basic Formal Ontology. By Robert Arp, Barry Smith and Andrew D. Spear</dc:source>
         <rdfs:comment rdf:datatype="&xsd;string">PERSON: Fernanda Farinelli
@@ -80,7 +80,7 @@ The default language of this ontology is English mainly because the reusable ont
         <owl:imports rdf:resource="&obo;ontoneo/import/symp_import.owl"/>
         <owl:imports rdf:resource="&obo;ontoneo/import/uberon_import.owl"/>
         <owl:imports rdf:resource="&obo;ontoneo/import/vo_import.owl"/>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/v1.2/ontoneo.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/ontoneo.owl"/>
     </owl:Ontology>
     
 
@@ -3574,6 +3574,17 @@ A process that has participant some human body and realizes some patient role, i
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="&obo;OGMS_0000057"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
                     <owl:Class>
                         <owl:intersectionOf rdf:parseType="Collection">
                             <owl:Class>
@@ -3599,17 +3610,6 @@ A process that has participant some human body and realizes some patient role, i
                             </owl:Restriction>
                         </owl:unionOf>
                     </owl:Class>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>
-                    </owl:Restriction>
-                </owl:intersectionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Class>
-                <owl:intersectionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="&obo;OGMS_0000057"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                         <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000017"/>

@@ -21,7 +21,7 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
     <owl:Ontology rdf:about="&obo;ontoneo/import/bfo_import.owl">
         <xsd:title rdf:datatype="&xsd;string">Basic Formal Ontology Module for ontoneo</xsd:title>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/import/bfo_import.owl"/>		
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/bfo_import.owl"/>		
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of BFO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <rdfs:comment xml:lang="en">BFO subset applied to OntONeo ontology.</rdfs:comment>
