@@ -1,0 +1,499 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY bio "http://purl.bioontology.org/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;ontoneo/import/vo_import.owl#"
+     xml:base="&obo;ontoneo/import/vo_import.owl"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:bio="http://purl.bioontology.org/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="&obo;ontoneo/import/vo_import.owl">
+        <xsd:title rdf:datatype="&xsd;string">Vaccine Ontology</xsd:title>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-14/vo_import.owl"/>
+        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
+This owl file represents the necessary entities of VO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
+        <rdfs:comment xml:lang="en">VO subset applied to OntONeo ontology.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000116 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000116"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000117 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000118 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000118"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000119 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000119"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000054 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000054"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000055 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000055"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000293 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000293"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000299 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000299"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000312 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000312"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000417 -->
+
+    <owl:ObjectProperty rdf:about="&obo;OBI_0000417"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000057 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000057"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000059 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000059"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000085 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000085"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000087 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000087"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/inheres_in -->
+
+    <owl:ObjectProperty rdf:about="&obo;inheres_in"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/role_of -->
+
+    <owl:ObjectProperty rdf:about="&obo;role_of"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000034 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000034"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000011 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000047 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000047"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0000725 -->
+
+    <owl:Class rdf:about="&obo;OBI_0000725"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_0100026 -->
+
+    <owl:Class rdf:about="&obo;OBI_0100026"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OBI_1110094 -->
+
+    <owl:Class rdf:about="&obo;OBI_1110094"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000001 -->
+
+    <owl:Class rdf:about="&obo;VO_0000001">
+        <rdfs:label>vaccine</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OBI_0000047"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;OBI_0000312"/>
+                        <owl:someValuesFrom rdf:resource="&obo;VO_0000590"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000085"/>
+                        <owl:someValuesFrom>
+                            <owl:Class>
+                                <owl:intersectionOf rdf:parseType="Collection">
+                                    <rdf:Description rdf:about="&obo;VO_0000278"/>
+                                    <owl:Restriction>
+                                        <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                                        <owl:someValuesFrom rdf:resource="&obo;VO_0000494"/>
+                                    </owl:Restriction>
+                                </owl:intersectionOf>
+                            </owl:Class>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000047"/>
+        <rdfs:seeAlso>MeSH: D014612</rdfs:seeAlso>
+        <obo:IAO_0000117>a role that inheres in a prepared material entity that is designed to induce protection or treament for a diease or infection in vivo.</obo:IAO_0000117>
+        <obo:IAO_0000115>A vaccine is a processed material with the function that when administered, it prevents or ameliorates a disorder in a target organism by inducing or modifying adaptive immune responses specific to the antigens in the vaccine.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, BP, BS, MC, LC, XZ, RS</obo:IAO_0000117>
+        <obo:IAO_0000116>Many vaccines are developed to protect against infectious pathogens. Many vaccines are also being developed against some diseases such as cancer and autoimmune diseases. Vaccine is developed against a disease. Allergy.</obo:IAO_0000116>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000002 -->
+
+    <owl:Class rdf:about="&obo;VO_0000002">
+        <rdfs:label xml:lang="en">vaccination</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom rdf:resource="&obo;VO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0000057"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;OBI_0100026"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000087"/>
+                                <owl:someValuesFrom rdf:resource="&obo;VO_0001274"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118>vaccine administration</obo:IAO_0000118>
+        <obo:IAO_0000115>a process of administering substance in vivo that involves in adding a vaccine into a host (e.g., human) in vivo with the intent to invoke a protective or therapeutic adaptive immune response.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, BP</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000278 -->
+
+    <owl:Class rdf:about="&obo;VO_0000278">
+        <rdfs:label>vaccine function</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000034"/>
+        <obo:IAO_0000116>PERSPN: Oliver He: There has been hot discussion about whether we use &apos;vaccine function&apos; or &apos;vaccine role&apos;. Vaccine role may not be the good term to use. Vaccine is designed to be &apos;vaccine&apos;, so it should be vaccine function. One special case is cowpox virus. The cowpox virus can be mixed with some liquid like water and used as a smallpox vaccine. In this case, people often say: the cowpox virus has a &apos;vaccine role&apos;. However, the cowpox virus vaccine is a processed material of a mix of the virus with water. The virus is a virus, it is not a vaccine per se. Therefore, vaccine role may not be an accurate term.</obo:IAO_0000116>
+        <obo:IAO_0000117>YH, MC, XZ, and AR</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">vaccine function is a function that inheres in a vaccine that induces protective immune response against a disease. It is realized in the immunization process in the host.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000491 -->
+
+    <owl:Class rdf:about="&obo;VO_0000491">
+        <rdfs:label>active immunization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_1110094"/>
+        <obo:IAO_0000117>YH, XZ</obo:IAO_0000117>
+        <obo:IAO_0000115>Active immunization is an immunization process that entails the introduction of a foreign molecule into the body, which causes the body itself to generate adaptive immunity against the target.</obo:IAO_0000115>
+        <rdfs:comment xml:lang="en">Active immunization entails the introduction of a foreign molecule into the body, which causes the body itself to generate immunity against the target. This immunity comes from the T cells and the B cells with their antibodies.
+Active immunization can occur naturally when a person comes in contact with, for example, a microbe. If the person has not yet come into contact with the microbe and has no pre-made antibodies for defense (like in passive immunization), the person becomes immunized. The immune system will eventually create antibodies and other defenses against the microbe. The next time, the immune response against this microbe can be very efficient; this is the case in many of the childhood infections that a person only contracts once, but then is immune.
+Artificial active immunization is where the microbe, or parts of it, are injected into the person before they are able to take it in naturally. If whole microbes are used, they are pre-treated, Attenuated vaccine. (Wikipedia)</rdfs:comment>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Immunization</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000492 -->
+
+    <owl:Class rdf:about="&obo;VO_0000492">
+        <rdfs:label>passive immunization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_1110094"/>
+        <obo:IAO_0000115>Passive immunization is an immunization process where pre-synthesized elements of the immune system are transferred to an organism so that the body does not need to produce these elements itself.</obo:IAO_0000115>
+        <obo:IAO_0000117>Currently, antibodies can be used for passive immunization. This method of immunization works very quickly. However, it is short lasting. The antibodies are naturally broken down. If there are no B cells to produce more antibodies, they will disappear.</obo:IAO_0000117>
+        <obo:IAO_0000117>YH, XZ</obo:IAO_0000117>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Immunization</obo:IAO_0000119>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000494 -->
+
+    <owl:Class rdf:about="&obo;VO_0000494">
+        <rdfs:label>vaccine immunization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VO_0000491"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:someValuesFrom rdf:resource="&obo;VO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;VO_0001274"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;inheres_in"/>
+                                <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>artificial active immunization is an active immunization that occurs when a person or animal is vaccinated with a specific vaccine.</obo:IAO_0000115>
+        <obo:IAO_0000118>artificial active immunization</obo:IAO_0000118>
+        <obo:IAO_0000119>WEB: http://en.wikipedia.org/wiki/Immunization</obo:IAO_0000119>
+        <obo:IAO_0000117>YH, XZ</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000544 -->
+
+    <owl:Class rdf:about="&obo;VO_0000544">
+        <rdfs:label>human vaccinee</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VO_0001374"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;VO_0000544"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a vaccinee that is a human being</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0000590 -->
+
+    <owl:Class rdf:about="&obo;VO_0000590">
+        <rdfs:label>vaccine preparation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;VO_0000001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000118 rdf:datatype="&xsd;string">vaccine production</obo:IAO_0000118>
+        <obo:IAO_0000118>vaccine generation</obo:IAO_0000118>
+        <obo:IAO_0000115>vaccine preparation is a manufacturing process to produce a vaccine.</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, BP</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0001274 -->
+
+    <owl:Class rdf:about="&obo;VO_0001274">
+        <rdfs:label>vaccine host role</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0000725"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;inheres_in"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0100026"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000054"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_1110094"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115>a role of host that contains vaccine. It is a role that inheres in an organism that is the target of a vaccine administration (vaccination process).</obo:IAO_0000115>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0001276 -->
+
+    <owl:Class rdf:about="&obo;VO_0001276">
+        <rdfs:label>bacterial vaccine immunization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VO_0000494"/>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0001277 -->
+
+    <owl:Class rdf:about="&obo;VO_0001277">
+        <rdfs:label>viral vaccine immunization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VO_0000494"/>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0001278 -->
+
+    <owl:Class rdf:about="&obo;VO_0001278">
+        <rdfs:label>cancer vaccine immunization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VO_0000494"/>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0001279 -->
+
+    <owl:Class rdf:about="&obo;VO_0001279">
+        <rdfs:label>parasite vaccine immunization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;VO_0000494"/>
+        <obo:IAO_0000117>YH, ZX</obo:IAO_0000117>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0001374 -->
+
+    <owl:Class rdf:about="&obo;VO_0001374">
+        <rdfs:label>vaccinee</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
+        <rdfs:comment>YH, YL, MC</rdfs:comment>
+        <obo:IAO_0000118>vaccinated organism</obo:IAO_0000118>
+        <obo:IAO_0000115>an organism that is vaccinated with a vaccine</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0001381 -->
+
+    <owl:Class rdf:about="&obo;VO_0001381">
+        <rdfs:label xml:lang="en">immunized organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
+        <rdfs:comment>YH, YL, MC</rdfs:comment>
+        <obo:IAO_0000115>an organism that is immunized for a disease</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/VO_0001383 -->
+
+    <owl:Class rdf:about="&obo;VO_0001383">
+        <rdfs:label xml:lang="en">unvaccinated organism</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;OBI_0100026"/>
+        <rdfs:comment>YH, YL, MC</rdfs:comment>
+        <obo:IAO_0000115>an organism that is unvaccinated with a vaccine</obo:IAO_0000115>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+

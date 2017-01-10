@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
+    <uri id="Imports Wizard Entry" name="http://purl.obolibrary.org/obo/ontoneo/import/bfo_import.owl" uri="bfo_import.owl"/>
+    <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
+        <uri id="Automatically generated entry, Timestamp=1484075891269" name="http://purl.obolibrary.org/obo/bfo.owl" uri="bfo_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1484075891269" name="http://purl.obolibrary.org/obo/ontoneo/import/doid_import.owl" uri="doid_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1484075891269" name="http://purl.obolibrary.org/obo/ontoneo/import/fma_import.owl" uri="fma_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1484075891269" name="http://purl.obolibrary.org/obo/ontoneo/import/hp_import.owl" uri="hp_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1484075891269" name="http://purl.obolibrary.org/obo/ontoneo/import/iao_import.owl" uri="iao_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1484075891269" name="http://purl.obolibrary.org/obo/ontoneo/import/obi_import.owl" uri="obi_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1484075891269" name="http://purl.obolibrary.org/obo/ontoneo/import/ogms_import.owl" uri="ogms_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1484075891269" name="http://purl.obolibrary.org/obo/ontoneo/import/pato_import.owl" uri="pato_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1484075891269" name="http://purl.obolibrary.org/obo/ontoneo/import/ro_import.owl" uri="ro_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1484075891269" name="http://purl.obolibrary.org/obo/ontoneo/import/symp_import.owl" uri="symp_import.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1484075891269" name="http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl" uri="ontoneo.owl"/>
+    </group>
+</catalog>
