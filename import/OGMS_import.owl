@@ -33,7 +33,7 @@
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of OGMS that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Ontology for General Medical Science (OGMS) subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&bio;OntONeo/releases/2016-04-01/OGMS_import.owl"/>
+        <owl:versionIRI rdf:resource="&bio;OntONeo/releases/2016-04-01/ogms_import.owl"/>
     </owl:Ontology>
     
 
