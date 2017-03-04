@@ -1,0 +1,1503 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY terms "http://purl.org/dc/terms/" >
+    <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY mp-edit "http://purl.obolibrary.org/obo/mp-edit#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
+]>
+
+
+<rdf:RDF xmlns="&obo;ontoneo/import/mp_import.owl#"
+     xml:base="&obo;ontoneo/import/mp_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:obo="http://purl.obolibrary.org/obo/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:mp-edit="&obo;mp-edit#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="&obo;ontoneo/import/mp_import.owl">
+        <xsd:title rdf:datatype="&xsd;string">Mammalian phenotype</xsd:title>
+        <rdfs:comment xml:lang="en">MP subset applied to OntONeo ontology.</rdfs:comment>
+        <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
+This owl file represents the necessary entities of MP that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/mp_import.owl"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000115 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000115"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000412 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;IAO_0000412"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#created_by -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;created_by"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#creation_date -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;creation_date"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasAlternativeId -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasNarrowSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasOBONamespace -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasOBONamespace"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasRelatedSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasRelatedSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#id -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;id"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#inSubset -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;inSubset"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000050"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000052"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002314 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002314"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002573 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002573"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000019 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000019"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_17558 -->
+
+    <owl:Class rdf:about="&obo;FMA_17558"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_17742 -->
+
+    <owl:Class rdf:about="&obo;FMA_17742"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_17743 -->
+
+    <owl:Class rdf:about="&obo;FMA_17743"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_45663 -->
+
+    <owl:Class rdf:about="&obo;FMA_45663"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_7160 -->
+
+    <owl:Class rdf:about="&obo;FMA_7160"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001542 -->
+
+    <owl:Class rdf:about="&obo;GO_0001542"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007566 -->
+
+    <owl:Class rdf:about="&obo;GO_0007566"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007567 -->
+
+    <owl:Class rdf:about="&obo;GO_0007567"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007596 -->
+
+    <owl:Class rdf:about="&obo;GO_0007596"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007610 -->
+
+    <owl:Class rdf:about="&obo;GO_0007610"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0030728 -->
+
+    <owl:Class rdf:about="&obo;GO_0030728"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060065 -->
+
+    <owl:Class rdf:about="&obo;GO_0060065"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MPATH_181 -->
+
+    <owl:Class rdf:about="&obo;MPATH_181"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0000001 -->
+
+    <owl:Class rdf:about="&obo;MP_0000001">
+        <rdfs:label xml:lang="en">mammalian phenotype</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0000001</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">the observable morphological, physiological, behavioral and other characteristics of mammalian organisms that are manifested through development and lifespan</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">the observable morphological, physiological, behavioral and other characteristics of mammalian organisms that are manifested through development and lifespan</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0001120 -->
+
+    <owl:Class rdf:about="&obo;MP_0001120">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal uterus morphology</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000051"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0002160"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0001120</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal metra morphology</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal uterine morphology</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">any structural anomaly of the female muscular organ of gestation in which the developing embryo or fetus is nourished until birth</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">uterine dysplasia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">uterus dysplasia</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0001123 -->
+
+    <owl:Class rdf:about="&obo;MP_0001123">
+        <rdfs:label rdf:datatype="&xsd;string">dilated uterus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0001571"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0001123</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">dilated metra</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">stretched or widened luminal space of the female muscular organ of gestation</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">uterine dilation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">uterus dilation</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0001727 -->
+
+    <owl:Class rdf:about="&obo;MP_0001727">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal embryo implantation</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0007566"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0009661"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0001727</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">anomaly in the process in which the blastocyst and/or the uterine environment to successfully synchronize allowing attachment of the blastocyst to the epithelial lining of the uterus, its penetration through the epithelium and any subsequent physiological interactions necessary to sustain embryonic development</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0001728 -->
+
+    <owl:Class rdf:about="&obo;MP_0001728">
+        <rdfs:label rdf:datatype="&xsd;string">failure of embryo implantation</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000462"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0007566"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001727"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0001728</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">failure of implantation</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">inability of the blastocyst and/or the uterine environment to successfully synchronize allowing attachment of the blastocyst to the epithelial lining of the uterus, its penetration through the epithelium and any subsequent physiological interactions necessary to sustain embryonic development</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0001919 -->
+
+    <owl:Class rdf:about="&obo;MP_0001919">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal reproductive system physiology</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0001509"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_7160"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0005389"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0001919</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">any functional anomaly of the organs associated with producing offspring</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">reproductive system physiology anomalies</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0001928 -->
+
+    <owl:Class rdf:about="&obo;MP_0001928">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal ovulation</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0001542"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001919"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0001928</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">aberration in the release of an ovum from a rupturing Graafian follicle, normally regulated by a surge in luteinizing hormone</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0002160 -->
+
+    <owl:Class rdf:about="&obo;MP_0002160">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal reproductive system morphology</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000051"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_7160"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0005389"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MGI:2173620</oboInOwl:hasDbXref>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">MP:0001114</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">MP:0001115</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0002160</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal reproductive anatomy</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">abnormal reproductive system</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">reproductive system abnormalities</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">reproductive system defects</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">reproductive system dysplasia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">reproductive system: dysmorphology</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">structural or developmental anomaly of any of the tissues involved in the reproductive system</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0002551 -->
+
+    <owl:Class rdf:about="&obo;MP_0002551">
+        <rdfs:label xml:lang="en">abnormal blood coagulation</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0007596"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0000001"/>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">MP:0000210</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">MP:0001582</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0002551</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal clotting</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">altered ability or inability of the blood to clot</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="&obo;mp.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0002555 -->
+
+    <owl:Class rdf:about="&obo;MP_0002555">
+        <rdfs:label xml:lang="en">addiction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0004924"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0002555</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">strong dependence on an addictive compound such as alcohol or narcotics that results in uncontrollable cravings for such compounds</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">strong dependence on an addictive compound such as alcohol or narcotics that results in uncontrollable cravings for such compounds</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0002907 -->
+
+    <owl:Class rdf:about="&obo;MP_0002907">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal parturition</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0007567"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0009661"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0002907</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">abnormal childbirth</oboInOwl:hasNarrowSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">defect in the process of labor and delivery in female animals</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0003355 -->
+
+    <owl:Class rdf:about="&obo;MP_0003355">
+        <rdfs:label rdf:datatype="&xsd;string">decreased ovulation rate</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000911"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0030728"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001928"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0003355</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">decreased ovulation frequency</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">reduced ovulation</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">reduction in the frequency in which an ovum (or ova) is/are released from a rupturing ovarian follicle(s)</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0003558 -->
+
+    <owl:Class rdf:about="&obo;MP_0003558">
+        <rdfs:label rdf:datatype="&xsd;string">absent uterus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000462"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;FMA_17558"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;FMA_45663"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0003558</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">absence of metra</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">absence of the female muscular organ of gestation</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">absence of uterus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">absent metra</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0003559 -->
+
+    <owl:Class rdf:about="&obo;MP_0003559">
+        <rdfs:label rdf:datatype="&xsd;string">bifid uterus</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000403"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0003559</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">bifid metra</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">cleft of the female muscular organ of gestation into two parts or branches, often having the appearance of two lobes</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0003568 -->
+
+    <owl:Class rdf:about="&obo;MP_0003568">
+        <rdfs:label rdf:datatype="&xsd;string">uterus atresia</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0001819"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0003568</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">congenital absence of the normal opening or lumen of the uterus</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">metra atresia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">metral atresia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">uterine atresia</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0003571 -->
+
+    <owl:Class rdf:about="&obo;MP_0003571">
+        <rdfs:label rdf:datatype="&xsd;string">uterus rupture</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0001444"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0003571</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">metra rupture</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">metral rupture</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">rupture of uterus</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">tearing of the uterine tissue; may be due to trauma or pregnancy complications</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">uterine rupture</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0003572 -->
+
+    <owl:Class rdf:about="&obo;MP_0003572">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal uterus development</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002314"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0060065"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0003572</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal metra development</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">abnormal morphogenesis of the female muscular organ of gestation</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0004514 -->
+
+    <owl:Class rdf:about="&obo;MP_0004514">
+        <rdfs:label rdf:datatype="&xsd;string">dystocia</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000499"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0007567"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0002907"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0004514</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">slow or difficult delivery of offspring and/or placenta</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0004896 -->
+
+    <owl:Class rdf:about="&obo;MP_0004896">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal endometrium morphology</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000051"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_17742"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0004896</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">any structural anomaly of the glandular mucous membrane lining of the uterine cavity that is hormonally responsive during the estrous/menstrual cycle and during pregnancy</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">endometrium dysplasia</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0004902 -->
+
+    <owl:Class rdf:about="&obo;MP_0004902">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal uterus size</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000117"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0004902</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal metra size</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal metral size</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal uterine size</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">anomaly in the size of the female organ of gestation</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0004924 -->
+
+    <owl:Class rdf:about="&obo;MP_0004924">
+        <rdfs:label xml:lang="en">abnormal behavior</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0007610"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0005386"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0004924</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">abnormal general behavior</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">any anomaly in the actions, reactions, or performance of an organism in response to external or internal stimuli compared to controls</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">any anomaly in the actions, reactions, or performance of an organism in response to external or internal stimuli compared to controls</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="&obo;mp-edit#IMPC"/>
+        <oboInOwl:inSubset rdf:resource="&obo;mp-edit#Sanger_Terms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0005048 -->
+
+    <owl:Class rdf:about="&obo;MP_0005048">
+        <rdfs:label xml:lang="en">thrombosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0002551"/>
+        <obo:IAO_0000115>Formation within a tissue or the vascular lumen of a thrombus, an aggregation of coagulated blood containing platelets, fibrin, and entrapped cellular elements [database_cross_reference: MGI:cwg][database_cross_reference: ISBN:0-397-51047-0]</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="&obo;mp.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0005386 -->
+
+    <owl:Class rdf:about="&obo;MP_0005386">
+        <rdfs:label xml:lang="en">behavior/neurological phenotype</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0007610"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0000001"/>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">MP:0001350</oboInOwl:hasAlternativeId>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0005386</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">the observable actions or reactions of mammalian organisms that are manifested through development and lifespan</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">the observable actions or reactions of mammalian organisms that are manifested through development and lifespan</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0005389 -->
+
+    <owl:Class rdf:about="&obo;MP_0005389">
+        <rdfs:label rdf:datatype="&xsd;string">reproductive system phenotype</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002314"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_7160"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0000001"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0005389</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">reproduction phenotype</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0005577 -->
+
+    <owl:Class rdf:about="&obo;MP_0005577">
+        <rdfs:label rdf:datatype="&xsd;string">uterus prolapse</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000623"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0005577</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">downward movement, and possible external appearance, of the uterus through the vagina</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">metra prolapse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">metral prolapse</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">uterine prolapse</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0008256 -->
+
+    <owl:Class rdf:about="&obo;MP_0008256">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal myometrium morphology</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000051"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_17743"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0008256</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal uterine smooth muscle morphology</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">abnormal uterus smooth muscle morphology</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">any structural anomaly of the smooth muscle coat of the uterus, which forms the main mass of the organ and surrounds and supports the endometrium</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">myometrium dysplasia</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0008869 -->
+
+    <owl:Class rdf:about="&obo;MP_0008869">
+        <rdfs:label rdf:datatype="&xsd;string">anovulation</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000462"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0030728"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001928"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0008869</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">absence of ovulation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">absent ovulation</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">complete failure of ovum to be released from an ovarian follicle</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0009082 -->
+
+    <owl:Class rdf:about="&obo;MP_0009082">
+        <rdfs:label rdf:datatype="&xsd;string">uterus cysts</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0001673"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0009082</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cystic metra</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cystic uterus</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">metral cysts</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">presence of fluid-filled structures inside the lumen of the uterus; usually refers to benign growths</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">uterine cysts</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0009084 -->
+
+    <owl:Class rdf:about="&obo;MP_0009084">
+        <rdfs:label rdf:datatype="&xsd;string">blind uterus</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0009084</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">blind metra</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">blind uterine body</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">blind-ended uterus</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">presence of a female muscular organ of gestation that ends in a blind segment or sac and does not communicate with the cervix or vagina</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0009085 -->
+
+    <owl:Class rdf:about="&obo;MP_0009085">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal uterine horn morphology</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0009085</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal cornu uteri</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">abnormal metral horn morphology</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">any structural anomaly of either one of the pair of tubular extensions from the uterine body where the uterus and the uterine tubes meet; uterine horns are anterior Mullerian duct-derived structures</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0009221 -->
+
+    <owl:Class rdf:about="&obo;MP_0009221">
+        <rdfs:label rdf:datatype="&xsd;string">uterus adenomyosis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0009221</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">a benign invasion of myometrium by endometrial tissue</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">adenomyometritis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">adenomyosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">adenomyosis uteri</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">endometriosis interna</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">endometriosis of myometrium</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">endometriosis uterina</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">uterine adenomyosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">uterus corpus adenomyosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">uterus endometriosis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0009648 -->
+
+    <owl:Class rdf:about="&obo;MP_0009648">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal superovulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001928"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0009648</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">altered ability of a female to be induced to ovulate an expected number of ova after treatment with specific gonadotrophic hormones</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0009649 -->
+
+    <owl:Class rdf:about="&obo;MP_0009649">
+        <rdfs:label rdf:datatype="&xsd;string">delayed embryo implantation</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000502"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0007566"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001727"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0009649</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">any lag in the normal time course necessary for the attachment of the blastocyst to the endometrium</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0009661 -->
+
+    <owl:Class rdf:about="&obo;MP_0009661">
+        <rdfs:label rdf:datatype="&xsd;string">abnormal pregnancy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001919"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0009661</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">any anomaly in the process of maintaining a developing embryo or fetus within the female body from conception to birth</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0009668 -->
+
+    <owl:Class rdf:about="&obo;MP_0009668">
+        <rdfs:label rdf:datatype="&xsd;string">ectopic pregnancy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0009661"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0009668</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">a fertilized egg attaches and begins development in a location other than in the inner lining of the uterus, most commonly in the Fallopian tube</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0012008 -->
+
+    <owl:Class rdf:about="&obo;MP_0012008">
+        <rdfs:label rdf:datatype="&xsd;string">delayed parturition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0002907"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-08-07T10:28:07Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0012008</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">csmith</oboInOwl:created_by>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">the process of labor and delivery in female animals occurs later in gestation than expected or lack of progress in a labor already initiated</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0012009 -->
+
+    <owl:Class rdf:about="&obo;MP_0012009">
+        <rdfs:label rdf:datatype="&xsd;string">early parturition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0002907"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-08-07T10:28:07Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0012009</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">csmith</oboInOwl:created_by>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">preterm labor</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">the process of labor and delivery in female animals occurs earlier in gestation than expected</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0012010 -->
+
+    <owl:Class rdf:about="&obo;MP_0012010">
+        <rdfs:label rdf:datatype="&xsd;string">parturition failure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0002907"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-08-07T10:28:07Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0012010</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">MPheno.ontology</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">csmith</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">failure of parturition</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">the process of labor and delivery in female animals does not initiate or complete</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0013398 -->
+
+    <owl:Class rdf:about="&obo;MP_0013398">
+        <rdfs:label rdf:datatype="&xsd;string">uterus fibrosis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000470"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MPATH_181"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;FMA_17558"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0001120"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0013398</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">invasion of fibrous connective tissue into the uterus, often resulting from inflammation or injury</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">metra fibrosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">metral fibrosis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">uterine fibrosis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/MP_0013399 -->
+
+    <owl:Class rdf:about="&obo;MP_0013399">
+        <rdfs:label rdf:datatype="&xsd;string">endometrium fibrosis</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000470"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MPATH_181"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;FMA_17742"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0004896"/>
+        <rdfs:subClassOf rdf:resource="&obo;MP_0013398"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">MP:0013399</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">endometrial fibrosis</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">invasion of fibrous connective tissue into the endometrium, often resulting from inflammation or injury</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000117 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000117"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000403 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000403"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000460 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000460"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000462 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000462"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000470 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000470"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000499 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000499"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000502 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000502"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000623 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000623"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000911 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000911"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001444 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001444"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001509 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001509"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001571 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001571"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001673 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001673"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001819 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001819"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.4.2) http://owlapi.sourceforge.net -->
+
