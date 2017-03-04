@@ -6,6 +6,6 @@ This ontology has been created to provide a consensus representation of salient 
 
 OntONeo  is a collection of entities related to anatomy, embryology and medical specialties related to care of woman and child (gynecology, obstetric, pediatric, neonatology).
 
-The current version of OntONeo is version 1.2. The previous versions are located at releases folder according to the version number.
+The current version of OntONeo is version 1.4 alpha. The previous versions are located at releases folder according to the version number.
 
 There is a Google Group for discussing the project at http://groups.google.com/group/ontoneo-discuss. Click the "Apply for Membership" link to join.
