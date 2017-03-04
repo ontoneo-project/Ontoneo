@@ -23,11 +23,11 @@
      xmlns:go="&obo;go#">
     <owl:Ontology rdf:about="&obo;ontoneo/import/go_import.owl">
         <xsd:title rdf:datatype="&xsd;string">Gene Ontology</xsd:title>
-		<rdfs:comment xml:lang="en">An ontology for describing the function of genes and gene products.</rdfs:comment>
+        <rdfs:comment xml:lang="en">An ontology for describing the function of genes and gene products.</rdfs:comment>
+        <rdfs:comment xml:lang="en">GO subset applied to OntONeo ontology.</rdfs:comment>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of GO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <rdfs:comment xml:lang="en">GO subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/go_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/go_import.owl"/>
     </owl:Ontology>
     
 
@@ -76,6 +76,12 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
     <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId">
         <rdfs:label xml:lang="en">has_alternative_id</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym"/>
     
 
 
@@ -150,6 +156,24 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000062"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000063"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0000052 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0000052"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -174,9 +198,568 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
         <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
         <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0019952</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0050876</oboInOwl:hasAlternativeId>
-        <obo:IAO_0000115 xml:lang="en">The production of new individuals that contain some portion of genetic material inherited from one or more parent organisms.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Reproduction</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">reproductive physiological process</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">The production of new individuals that contain some portion of genetic material inherited from one or more parent organisms.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001501 -->
+
+    <owl:Class rdf:about="&obo;GO_0001501">
+        <rdfs:label rdf:datatype="&xsd;string">skeletal system development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048731"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001501</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the skeleton over time, from its formation to the mature structure. The skeleton is the bony framework of the body in vertebrates (endoskeleton) or the hard outer envelope of insects (exoskeleton or dermoskeleton).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">skeletal development</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001541 -->
+
+    <owl:Class rdf:about="&obo;GO_0001541">
+        <rdfs:label rdf:datatype="&xsd;string">ovarian follicle development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0022602"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048608"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0008585"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001541</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the ovarian follicle over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">follicular phase</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001542 -->
+
+    <owl:Class rdf:about="&obo;GO_0001542">
+        <rdfs:label rdf:datatype="&xsd;string">ovulation from ovarian follicle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0022602"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0030728"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0008585"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001542</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process leading to the rupture of the follicle, releasing the centrally located oocyte into the oviduct. An example of this is found in Mus musculus.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001568 -->
+
+    <owl:Class rdf:about="&obo;GO_0001568">
+        <rdfs:label rdf:datatype="&xsd;string">blood vessel development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0001944"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001568</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of a blood vessel over time, from its formation to the mature structure. The blood vessel is the vasculature carrying blood.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001654 -->
+
+    <owl:Class rdf:about="&obo;GO_0001654">
+        <rdfs:label rdf:datatype="&xsd;string">eye development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007423"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001654</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0042460</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the eye over time, from its formation to the mature structure. The eye is the organ of sight.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Eye_development</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001655 -->
+
+    <owl:Class rdf:about="&obo;GO_0001655">
+        <rdfs:label rdf:datatype="&xsd;string">urogenital system development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048731"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001655</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the urogenital system over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001822 -->
+
+    <owl:Class rdf:about="&obo;GO_0001822">
+        <rdfs:label rdf:datatype="&xsd;string">kidney development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0072001"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001822</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the kidney over time, from its formation to the mature structure. The kidney is an organ that filters the blood and/or excretes the end products of body metabolism in the form of urine.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Kidney_development</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">nephrogenesis</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001824 -->
+
+    <owl:Class rdf:about="&obo;GO_0001824">
+        <rdfs:label rdf:datatype="&xsd;string">blastocyst development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001824</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">See also the Anatomical Dictionary for Mouse Development ontology terms &apos;TS5, embryo ; EMAP:23&apos;, &apos;TS5, inner cell mass ; EMAP:24&apos; and &apos;TS5, trophectoderm; EMAP:28&apos;.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the blastocyst over time, from its formation to the mature structure. The mammalian blastocyst is a hollow ball of cells containing two cell types, the inner cell mass and the trophectoderm.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001825 -->
+
+    <owl:Class rdf:about="&obo;GO_0001825">
+        <rdfs:label rdf:datatype="&xsd;string">blastocyst formation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0001824"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001825</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">See also the Anatomical Dictionary for Mouse Development ontology term &apos;TS3, compacted morula ; EMAP:9&apos;.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The initial formation of a blastocyst from a solid ball of cells known as a morula.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001832 -->
+
+    <owl:Class rdf:about="&obo;GO_0001832">
+        <rdfs:label rdf:datatype="&xsd;string">blastocyst growth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048589"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0001824"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An increase in size of a blastocyst due to expansion of the blastocoelic cavity cell shape changes and cell proliferation.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001832</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">See also the Anatomical Dictionary for Mouse Development ontology terms &apos;TS4, blastocoelic cavity ; EMAP:17&apos;, &apos;TS5, blastocoelic cavity ; EMAP:27&apos; and &apos;TS6, blastocoelic cavity ; EMAP:36&apos;.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001835 -->
+
+    <owl:Class rdf:about="&obo;GO_0001835">
+        <rdfs:label rdf:datatype="&xsd;string">blastocyst hatching</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0001824"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001835</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">See also the Anatomical Dictionary for Mouse Development ontology terms &apos;TS4, zona pellucida ; EMAP:22&apos; and &apos;TS5, embryo ; EMAP:23&apos;.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The hatching of the cellular blastocyst from the zona pellucida.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001889 -->
+
+    <owl:Class rdf:about="&obo;GO_0001889">
+        <rdfs:label rdf:datatype="&xsd;string">liver development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048732"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001889</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the liver over time, from its formation to the mature structure. The liver is an exocrine gland which secretes bile and functions in metabolism of protein and carbohydrate and fat, synthesizes substances involved in the clotting of the blood, synthesizes vitamin A, detoxifies poisonous substances, stores glycogen, and breaks down worn-out erythrocytes.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001890 -->
+
+    <owl:Class rdf:about="&obo;GO_0001890">
+        <rdfs:label rdf:datatype="&xsd;string">placenta development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048608"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001890</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the placenta over time, from its formation to the mature structure. The placenta is an organ of metabolic interchange between fetus and mother, partly of embryonic origin and partly of maternal origin.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">placental development</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">placentation</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001892 -->
+
+    <owl:Class rdf:about="&obo;GO_0001892">
+        <rdfs:label rdf:datatype="&xsd;string">embryonic placenta development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048568"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0001890"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001892</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The embryonically driven process whose specific outcome is the progression of the placenta over time, from its formation to the mature structure. The placenta is an organ of metabolic interchange between fetus and mother, partly of embryonic origin and partly of maternal origin.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">fetal placenta development</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001893 -->
+
+    <owl:Class rdf:about="&obo;GO_0001893">
+        <rdfs:label rdf:datatype="&xsd;string">maternal placenta development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048608"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0060135"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0001890"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001893</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Maternally driven process whose specific outcome is the progression of the placenta over time, from its formation to the mature structure. The placenta is an organ of metabolic interchange between fetus and mother, partly of embryonic origin and partly of maternal origin.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">decidua development</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001944 -->
+
+    <owl:Class rdf:about="&obo;GO_0001944">
+        <rdfs:label rdf:datatype="&xsd;string">vasculature development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048731"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0072358"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001944</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the vasculature over time, from its formation to the mature structure. The vasculature is an interconnected tubular multi-tissue structure that contains fluid that is actively transported around the organism.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">vascular system development</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0001945 -->
+
+    <owl:Class rdf:about="&obo;GO_0001945">
+        <rdfs:label rdf:datatype="&xsd;string">lymph vessel development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0001944"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0001945</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of a lymph vessel over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0002520 -->
+
+    <owl:Class rdf:about="&obo;GO_0002520">
+        <rdfs:label rdf:datatype="&xsd;string">immune system development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048731"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0002520</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of an organismal system whose objective is to provide calibrated responses by an organism to a potential internal or invasive threat, over time, from its formation to the mature structure. A system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a given biological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003170 -->
+
+    <owl:Class rdf:about="&obo;GO_0003170">
+        <rdfs:label rdf:datatype="&xsd;string">heart valve development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0007507"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-10-08T10:50:09Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003170</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The progression of a heart valve over time, from its formation to the mature structure. A heart valve is a structure that restricts the flow of blood to different regions of the heart and forms from an endocardial cushion.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">cardiac valve development</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003171 -->
+
+    <owl:Class rdf:about="&obo;GO_0003171">
+        <rdfs:label rdf:datatype="&xsd;string">atrioventricular valve development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003170"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-10-08T11:14:21Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">AV valve development</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003171</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The progression of the atrioventricular valve over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003174 -->
+
+    <owl:Class rdf:about="&obo;GO_0003174">
+        <rdfs:label rdf:datatype="&xsd;string">mitral valve development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003171"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-10-08T11:17:22Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003174</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The progression of the mitral valve over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003175 -->
+
+    <owl:Class rdf:about="&obo;GO_0003175">
+        <rdfs:label rdf:datatype="&xsd;string">tricuspid valve development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003171"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-10-08T11:18:12Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003175</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The progression of the tricuspid valve over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003176 -->
+
+    <owl:Class rdf:about="&obo;GO_0003176">
+        <rdfs:label rdf:datatype="&xsd;string">aortic valve development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003170"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-10-08T11:18:55Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003176</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The progression of the aortic valve over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003177 -->
+
+    <owl:Class rdf:about="&obo;GO_0003177">
+        <rdfs:label rdf:datatype="&xsd;string">pulmonary valve development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003170"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-10-08T11:19:44Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003177</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The progression of the pulmonary valve over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0003178 -->
+
+    <owl:Class rdf:about="&obo;GO_0003178">
+        <rdfs:label rdf:datatype="&xsd;string">coronary sinus valve development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0003170"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-10-08T11:21:43Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0003178</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The progression of the valve of the coronary sinus over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007276 -->
+
+    <owl:Class rdf:about="&obo;GO_0007276">
+        <rdfs:label rdf:datatype="&xsd;string">gamete generation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0019953"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007276</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0009552</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The generation and maintenance of gametes in a multicellular organism. A gamete is a haploid reproductive cell.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">gametogenesis</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007292 -->
+
+    <owl:Class rdf:about="&obo;GO_0007292">
+        <rdfs:label rdf:datatype="&xsd;string">female gamete generation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007276"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007292</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Generation of the female gamete; specialised haploid cells produced by meiosis and along with a male gamete takes part in sexual reproduction.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007399 -->
+
+    <owl:Class rdf:about="&obo;GO_0007399">
+        <rdfs:label rdf:datatype="&xsd;string">nervous system development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048731"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007399</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of nervous tissue over time, from its formation to its mature state.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">pan-neural process</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007417 -->
+
+    <owl:Class rdf:about="&obo;GO_0007417">
+        <rdfs:label rdf:datatype="&xsd;string">central nervous system development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048731"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0007399"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">CNS development</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007417</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the central nervous system over time, from its formation to the mature structure. The central nervous system is the core nervous system that serves an integrating and coordinating function. In vertebrates it consists of the brain and spinal cord. In those invertebrates with a central nervous system it typically consists of a brain, cerebral ganglia and a nerve cord.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Neural_development</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007420 -->
+
+    <owl:Class rdf:about="&obo;GO_0007420">
+        <rdfs:label rdf:datatype="&xsd;string">brain development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0060322"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0007417"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007420</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the brain over time, from its formation to the mature structure. Brain development begins with patterning events in the neural tube and ends with the mature structure that is the center of thought and emotion. The brain is responsible for the coordination and control of bodily activities and the interpretation of information from the senses (sight, hearing, smell, etc.).</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007423 -->
+
+    <owl:Class rdf:about="&obo;GO_0007423">
+        <rdfs:label rdf:datatype="&xsd;string">sensory organ development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007423</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of sensory organs over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">sense organ development</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007507 -->
+
+    <owl:Class rdf:about="&obo;GO_0007507">
+        <rdfs:label rdf:datatype="&xsd;string">heart development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0072358"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007507</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0007511</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the heart over time, from its formation to the mature structure. The heart is a hollow, muscular organ, which, by contracting rhythmically, keeps up the circulation of the blood.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Heart_development</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">cardiac development</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">dorsal vessel development</oboInOwl:hasNarrowSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007517 -->
+
+    <owl:Class rdf:about="&obo;GO_0007517">
+        <rdfs:label rdf:datatype="&xsd;string">muscle organ development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0061061"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007517</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the muscle over time, from its formation to the mature structure. The muscle is an organ consisting of a tissue made up of various elongated cells that are specialized to contract and thus to produce movement and mechanical work.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007548 -->
+
+    <owl:Class rdf:about="&obo;GO_0007548">
+        <rdfs:label rdf:datatype="&xsd;string">sex differentiation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0022414"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007548</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The establishment of the sex of an organism by physical differentiation.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Sexual_differentiation</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
     </owl:Class>
     
 
@@ -185,15 +768,52 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
 
     <owl:Class rdf:about="&obo;GO_0007565">
         <rdfs:label xml:lang="en">female pregnancy</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0022414"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0022414"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0009566"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0007567"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                        <owl:someValuesFrom rdf:resource="&obo;ontoneo/ONTONEO_00000157"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0007565</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">The set of physiological processes that allow an embryo or foetus to develop within the body of a female animal. It covers the time from fertilization of a female ovum by a male spermatozoon until birth.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Gestation</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">carrying of young</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">gestation</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">The set of physiological processes that allow an embryo or foetus to develop within the body of a female animal. It covers the time from fertilization of a female ovum by a male spermatozoon until birth.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
         <oboInOwl:inSubset rdf:resource="&obo;go#goslim_chembl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007566 -->
+
+    <owl:Class rdf:about="&obo;GO_0007566">
+        <rdfs:label rdf:datatype="&xsd;string">embryo implantation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0007565"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Attachment of the blastocyst to the uterine lining.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0007566</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">blastocyst implantation</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -219,10 +839,10 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
         <rdfs:label xml:lang="en">blood coagulation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;GO_0050817"/>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0007596</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">The sequential process in which the multiple coagulation factors of the blood interact, ultimately resulting in the formation of an insoluble fibrin clot; it may be divided into three stages: stage 1, the formation of intrinsic and extrinsic prothrombin converting principle; stage 2, the formation of thrombin; stage 3, the formation of stable fibrin polymers.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Coagulation</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">blood clotting</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">The sequential process in which the multiple coagulation factors of the blood interact, ultimately resulting in the formation of an insoluble fibrin clot; it may be divided into three stages: stage 1, the formation of intrinsic and extrinsic prothrombin converting principle; stage 2, the formation of thrombin; stage 3, the formation of stable fibrin polymers.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -234,12 +854,13 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
         <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0007610</oboInOwl:id>
         <rdfs:comment rdf:datatype="&xsd;string">Note that this term is in the subset of terms that should not be used for direct gene product annotation. Instead, select a child term or, if no appropriate child term exists, please request a new term. Direct annotations to this term may be amended during annotation QC.</rdfs:comment>
-        <obo:IAO_0000115 xml:lang="en">The internally coordinated responses (actions or inactions) of whole living organisms (individuals or groups) to internal or external stimuli.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The internally coordinated responses (actions or inactions) of whole living organisms (individuals or groups) to internal or external stimuli.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Behavior</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioral response to stimulus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behaviour</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">behavioural response to stimulus</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">The internally coordinated responses (actions or inactions) of whole living organisms (individuals or groups) to internal or external stimuli.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="&obo;go#gocheck_do_not_manually_annotate"/>
         <oboInOwl:inSubset rdf:resource="&obo;go#goslim_plant"/>
         <oboInOwl:inSubset rdf:resource="&obo;go#gosubset_prok"/>
@@ -273,7 +894,6 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
     <owl:Class rdf:about="&obo;GO_0008150">
         <rdfs:label xml:lang="en">biological_process</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
-        <obo:IAO_0000115 xml:lang="en">Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.</obo:IAO_0000115>
         <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0000004</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0007582</oboInOwl:hasAlternativeId>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0008150</oboInOwl:id>
@@ -282,7 +902,177 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">biological process</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">physiological process</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">Any process specifically pertinent to the functioning of integrated living units: cells, tissues, organs, and organisms. A process is a collection of molecular events with a defined beginning and end.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008406 -->
+
+    <owl:Class rdf:about="&obo;GO_0008406">
+        <rdfs:label rdf:datatype="&xsd;string">gonad development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048608"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0008406</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the gonad over time, from its formation to the mature structure. The gonad is an animal organ that produces gametes; in some species it also produces hormones.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">gonadogenesis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008584 -->
+
+    <owl:Class rdf:about="&obo;GO_0008584">
+        <rdfs:label rdf:datatype="&xsd;string">male gonad development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008406"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0008584</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the male gonad over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">testicular development</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">testis development</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0008585 -->
+
+    <owl:Class rdf:about="&obo;GO_0008585">
+        <rdfs:label rdf:datatype="&xsd;string">female gonad development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008406"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0008585</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0061039</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the female gonad over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">ovarian development</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">ovary development</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009566 -->
+
+    <owl:Class rdf:about="&obo;GO_0009566">
+        <rdfs:label rdf:datatype="&xsd;string">fertilization</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0019953"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0009566</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The union of gametes of opposite sexes during the process of sexual reproduction to form a zygote. It involves the fusion of the gametic nuclei (karyogamy) and cytoplasm (plasmogamy).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Fertilisation</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">syngamy</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009790 -->
+
+    <owl:Class rdf:about="&obo;GO_0009790">
+        <rdfs:label rdf:datatype="&xsd;string">embryo development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0009790</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0009795</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of an embryo from its formation until the end of its embryonic life stage. The end of the embryonic stage is organism-specific. For example, for mammals, the process would begin with zygote formation and end with birth. For insects, the process would begin at zygote formation and end with larval hatching. For plant zygotic embryos, this would be from zygote formation to the end of seed dormancy. For plant vegetative embryos, this would be from the initial determination of the cell or group of cells to form an embryo until the point when the embryo becomes independent of the parent plant.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Embryogenesis</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">embryogenesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">embryogenesis and morphogenesis</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">embryonal development</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&obo;go#gocheck_do_not_manually_annotate"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#goslim_plant"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0009792 -->
+
+    <owl:Class rdf:about="&obo;GO_0009792">
+        <rdfs:label rdf:datatype="&xsd;string">embryo development ending in birth or egg hatching</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0009790"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0009792</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of an embryo over time, from zygote formation until the end of the embryonic life stage. The end of the embryonic life stage is organism-specific and may be somewhat arbitrary; for mammals it is usually considered to be birth, for insects the hatching of the first instar larva from the eggshell.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">embryogenesis</oboInOwl:hasBroadSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0019953 -->
+
+    <owl:Class rdf:about="&obo;GO_0019953">
+        <rdfs:label rdf:datatype="&xsd;string">sexual reproduction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0000003"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A reproduction process that creates a new organism by combining the genetic material of two organisms. It occurs both in eukaryotes and prokaryotes: in multicellular eukaryotic organisms, an individual is created anew; in prokaryotes, the initial cell has additional or transformed genetic material. In a process called genetic recombination, genetic material (DNA) originating from two different individuals (parents) join up so that homologous sequences are aligned with each other, and this is followed by exchange of genetic information. After the new recombinant chromosome is formed, it is passed on to progeny.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0019953</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Sexual reproduction may be seen as the regular alternation, in the life cycle of haplontic, diplontic and diplohaplontic organisms, of meiosis and fertilization which provides for the production offspring. In diplontic organisms there is a life cycle in which the products of meiosis behave directly as gametes, fusing to form a zygote from which the diploid, or sexually reproductive polyploid, adult organism will develop. In diplohaplontic organisms a haploid phase (gametophyte) exists in the life cycle between meiosis and fertilization (e.g. higher plants, many algae and Fungi); the products of meiosis are spores that develop as haploid individuals from which haploid gametes develop to form a diploid zygote; diplohaplontic organisms show an alternation of haploid and diploid generations. In haplontic organisms meiosis occurs in the zygote, giving rise to four haploid cells (e.g. many algae and protozoa), only the zygote is diploid and this may form a resistant spore, tiding organisms over hard times.</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Sexual_reproduction</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0021510 -->
+
+    <owl:Class rdf:about="&obo;GO_0021510">
+        <rdfs:label rdf:datatype="&xsd;string">spinal cord development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0007417"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0021510</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the spinal cord over time, from its formation to the mature structure. The spinal cord primarily conducts sensory and motor nerve impulses between the brain and the peripheral nervous tissues.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">This term was added by GO_REF:0000021.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0021516 -->
+
+    <owl:Class rdf:about="&obo;GO_0021516">
+        <rdfs:label rdf:datatype="&xsd;string">dorsal spinal cord development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0021510"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0021516</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the dorsal region of the spinal cord over time, from its formation to the mature structure. The dorsal region of the mature spinal cord contains neurons that process and relay sensory input.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">This term was added by GO_REF:0000021.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0021517 -->
+
+    <owl:Class rdf:about="&obo;GO_0021517">
+        <rdfs:label rdf:datatype="&xsd;string">ventral spinal cord development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0021510"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0021517</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the ventral region of the spinal cord over time, from its formation to the mature structure. The neurons of the ventral region of the mature spinal cord participate in motor output.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">This term was added by GO_REF:0000021.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
     </owl:Class>
     
 
@@ -309,9 +1099,9 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
                 <owl:someValuesFrom rdf:resource="&obo;GO_0000003"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A biological process that directly contributes to the process of producing new individuals by one or two organisms. The new individuals inherit some proportion of their genetic material from the parent or parents.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0022414</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">A biological process that directly contributes to the process of producing new individuals by one or two organisms. The new individuals inherit some proportion of their genetic material from the parent or parents.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="&obo;go.owl"/>
     </owl:Class>
     
@@ -323,8 +1113,9 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
         <rdfs:label xml:lang="en">menstrual cycle phase</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0022601</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">The progression of physiological phases, occurring in the endometrium during the menstrual cycle that recur at regular intervals during the reproductive years. The menstrual cycle is an ovulation cycle where the endometrium is shed if pregnancy does not occur.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The progression of physiological phases, occurring in the endometrium during the menstrual cycle that recur at regular intervals during the reproductive years. The menstrual cycle is an ovulation cycle where the endometrium is shed if pregnancy does not occur.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">The progression of physiological phases, occurring in the endometrium during the menstrual cycle that recur at regular intervals during the reproductive years. The menstrual cycle is an ovulation cycle where the endometrium is shed if pregnancy does not occur.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GOC:dph</oboInOwl:hasDbXref>
@@ -337,15 +1128,105 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0022602 -->
+
+    <owl:Class rdf:about="&obo;GO_0022602">
+        <rdfs:label rdf:datatype="&xsd;string">ovulation cycle process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0042698"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A process involved in the sexual cycle seen in females, often with physiologic changes in the endometrium that recur at regular intervals during the reproductive years.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0022602</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">estrous cycle process</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">menstrual cycle process</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0030728 -->
+
+    <owl:Class rdf:about="&obo;GO_0030728">
+        <rdfs:label rdf:datatype="&xsd;string">ovulation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0007292"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0030728</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The release of a mature ovum/oocyte from an ovary.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Ovulation</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0032502 -->
+
+    <owl:Class rdf:about="&obo;GO_0032502">
+        <rdfs:label rdf:datatype="&xsd;string">developmental process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological process whose specific outcome is the progression of an integrated living unit: an anatomical structure (which may be a subcellular structure, cell, tissue, or organ), or organism over time from an initial condition to a later condition.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0032502</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">development</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:inSubset rdf:resource="&obo;go#goslim_aspergillus"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#gosubset_prok"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0040007 -->
+
+    <owl:Class rdf:about="&obo;GO_0040007">
+        <rdfs:label rdf:datatype="&xsd;string">growth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0040007</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">GO:0048590</oboInOwl:hasAlternativeId>
+        <rdfs:comment rdf:datatype="&xsd;string">See also the biological process term &apos;cell growth ; GO:0016049&apos;.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The increase in size or mass of an entire organism, a part of an organism or a cell.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">growth pattern</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">non-developmental growth</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:inSubset rdf:resource="&obo;go#goslim_chembl"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#goslim_generic"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#goslim_pir"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#goslim_plant"/>
+        <oboInOwl:inSubset rdf:resource="&obo;go#gosubset_prok"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0040035 -->
+
+    <owl:Class rdf:about="&obo;GO_0040035">
+        <rdfs:label rdf:datatype="&xsd;string">hermaphrodite genitalia development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0008406"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048806"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0040035</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the hermaphrodite genitalia over time, from formation to the mature structures.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0042696 -->
 
     <owl:Class rdf:about="&obo;GO_0042696">
         <rdfs:label xml:lang="en">menarche</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;GO_0022601"/>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0042696</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">The beginning of the menstrual cycle; the first menstrual cycle in an individual.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The beginning of the menstrual cycle; the first menstrual cycle in an individual.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Menarche</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">The beginning of the menstrual cycle; the first menstrual cycle in an individual.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GOC:curators</oboInOwl:hasDbXref>
@@ -362,10 +1243,11 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
     <owl:Class rdf:about="&obo;GO_0042697">
         <rdfs:label xml:lang="en">menopause</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;GO_0022601"/>
-        <obo:IAO_0000115 xml:lang="en">Cessation of menstruation, occurring in (e.g.) the human female usually around the age of 50.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Cessation of menstruation, occurring in (e.g.) the human female usually around the age of 50.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0042697</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Menopause</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Cessation of menstruation, occurring in (e.g.) the human female usually around the age of 50.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Cessation of menstruation, occurring in (e.g.) the human female usually around the age of 50.</owl:annotatedTarget>
@@ -380,10 +1262,10 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
     <!-- http://purl.obolibrary.org/obo/GO_0042698 -->
 
     <owl:Class rdf:about="&obo;GO_0042698">
-        <rdfs:label xml:lang="en">ovulation cycle</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0022414"/>
+        <rdfs:label rdf:datatype="&xsd;string">ovulation cycle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0042698</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">The type of sexual cycle seen in females, often with physiologic changes in the endometrium that recur at regular intervals during the reproductive years.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The type of sexual cycle seen in females, often with physiologic changes in the endometrium that recur at regular intervals during the reproductive years.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
     </owl:Class>
     <owl:Axiom>
@@ -399,11 +1281,22 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
 
     <owl:Class rdf:about="&obo;GO_0042703">
         <rdfs:label xml:lang="en">menstruation</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0022601"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;GO_0022601"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0030728"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0042703</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">The cyclic, physiologic discharge through the vagina of blood and endometrial tissues from the nonpregnant uterus.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The cyclic, physiologic discharge through the vagina of blood and endometrial tissues from the nonpregnant uterus.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Menstruation</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">The cyclic, physiologic discharge through the vagina of blood and endometrial tissues from the nonpregnant uterus.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GOC:curators</oboInOwl:hasDbXref>
@@ -415,24 +1308,196 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
     
 
 
+    <!-- http://purl.obolibrary.org/obo/GO_0043588 -->
+
+    <owl:Class rdf:about="&obo;GO_0043588">
+        <rdfs:label rdf:datatype="&xsd;string">skin development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0043588</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the skin over time, from its formation to the mature structure. The skin is the external membranous integument of an animal. In vertebrates the skin generally consists of two layers, an outer nonsensitive and nonvascular epidermis (cuticle or skarfskin) composed of cells which are constantly growing and multiplying in the deeper, and being thrown off in the superficial layers, as well as an inner vascular dermis (cutis, corium or true skin) composed mostly of connective tissue.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">animal skin development</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0044702 -->
+
+    <owl:Class rdf:about="&obo;GO_0044702">
+        <rdfs:label rdf:datatype="&xsd;string">single organism reproductive process</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0022414"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-09-19T15:56:06Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A biological process that directly contributes to the process of producing new individuals, involving a single organism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0044702</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">janelomax</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/GO_0044850 -->
 
     <owl:Class rdf:about="&obo;GO_0044850">
         <rdfs:label xml:lang="en">menstrual cycle</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;GO_0042698"/>
         <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-07-16T13:51:29Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 xml:lang="en">A type of ovulation cycle where the endometrium is shed if pregnancy does not occur.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0044850</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Menstrual_cycle</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="&xsd;string">janelomax</oboInOwl:created_by>
+        <obo:IAO_0000115 xml:lang="en">A type of ovulation cycle where the endometrium is shed if pregnancy does not occur.</obo:IAO_0000115>
     </owl:Class>
-    <owl:Axiom>
-        <owl:annotatedTarget rdf:datatype="&xsd;string">A type of ovulation cycle where the endometrium is shed if pregnancy does not occur.</owl:annotatedTarget>
-        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GOC:jl</oboInOwl:hasDbXref>
-        <owl:annotatedSource rdf:resource="&obo;GO_0044850"/>
-        <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
-    </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046660 -->
+
+    <owl:Class rdf:about="&obo;GO_0046660">
+        <rdfs:label rdf:datatype="&xsd;string">female sex differentiation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007548"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0046660</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The establishment of the sex of a female organism by physical differentiation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0046661 -->
+
+    <owl:Class rdf:about="&obo;GO_0046661">
+        <rdfs:label rdf:datatype="&xsd;string">male sex differentiation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0007548"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0046661</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The establishment of the sex of a male organism by physical differentiation.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048513 -->
+
+    <owl:Class rdf:about="&obo;GO_0048513">
+        <rdfs:label rdf:datatype="&xsd;string">animal organ development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0048731"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Development of a tissue or tissues that work together to perform a specific function or functions. Development pertains to the process whose specific outcome is the progression of a structure over time, from its formation to the mature structure. Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048513</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">Wikipedia:Organogenesis</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">development of an organ</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">organogenesis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048568 -->
+
+    <owl:Class rdf:about="&obo;GO_0048568">
+        <rdfs:label rdf:datatype="&xsd;string">embryonic organ development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0009790"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Development, taking place during the embryonic phase, of a tissue or tissues that work together to perform a specific function or functions. Development pertains to the process whose specific outcome is the progression of a structure over time, from its formation to the mature structure. Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048568</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">embryonic organogenesis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048569 -->
+
+    <owl:Class rdf:about="&obo;GO_0048569">
+        <rdfs:label rdf:datatype="&xsd;string">post-embryonic animal organ development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Development, taking place during the post-embryonic phase of an animal tissue or tissues that work together to perform a specific function or functions. Development pertains to the process whose specific outcome is the progression of a structure over time, from its formation to the mature structure. Organs are commonly observed as visibly distinct structures, but may also exist as loosely associated clusters of cells that work together to perform a specific function or functions.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048569</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">post-embryonic animal organogenesis</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048589 -->
+
+    <owl:Class rdf:about="&obo;GO_0048589">
+        <rdfs:label rdf:datatype="&xsd;string">developmental growth</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0040007"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048589</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The increase in size or mass of an entire organism, a part of an organism or a cell, where the increase in size or mass has the specific outcome of the progression of the organism over time from one condition to another.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048608 -->
+
+    <owl:Class rdf:about="&obo;GO_0048608">
+        <rdfs:label rdf:datatype="&xsd;string">reproductive structure development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0022414"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0061458"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048608</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The reproductive developmental process whose specific outcome is the progression of structures that will be used in the process of creating new individuals from one or more parents, from their formation to the mature structures.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048731 -->
+
+    <owl:Class rdf:about="&obo;GO_0048731">
+        <rdfs:label rdf:datatype="&xsd;string">system development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048731</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of an organismal system over time, from its formation to the mature structure. A system is a regularly interacting or interdependent group of organs or tissues that work together to carry out a given biological process.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048732 -->
+
+    <owl:Class rdf:about="&obo;GO_0048732">
+        <rdfs:label rdf:datatype="&xsd;string">gland development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048732</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of a gland over time, from its formation to the mature structure. A gland is an organ specialised for secretion.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0048806 -->
+
+    <owl:Class rdf:about="&obo;GO_0048806">
+        <rdfs:label rdf:datatype="&xsd;string">genitalia development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048608"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0007548"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0048806</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the genitalia over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">genital development</oboInOwl:hasExactSynonym>
+    </owl:Class>
     
 
 
@@ -442,10 +1507,187 @@ This owl file represents the necessary entities of GO that are reused in OntONeo
         <rdfs:label xml:lang="en">coagulation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
         <oboInOwl:id rdf:datatype="&xsd;string">GO:0050817</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">The process in which a fluid solution, or part of it, changes into a solid or semisolid mass.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">clotting</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">The process in which a fluid solution, or part of it, changes into a solid or semisolid mass.</obo:IAO_0000115>
     </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060065 -->
+
+    <owl:Class rdf:about="&obo;GO_0060065">
+        <rdfs:label rdf:datatype="&xsd;string">uterus development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048513"/>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048608"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060065</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Mullerian tract development</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The reproductive developmental process whose specific outcome is the progression of the uterus over time, from its formation to the mature structure.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060135 -->
+
+    <owl:Class rdf:about="&obo;GO_0060135">
+        <rdfs:label rdf:datatype="&xsd;string">maternal process involved in female pregnancy</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0007565"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A reproductive process occurring in the mother that allows an embryo or fetus to develop within it.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060135</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060137 -->
+
+    <owl:Class rdf:about="&obo;GO_0060137">
+        <rdfs:label rdf:datatype="&xsd;string">maternal process involved in parturition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0007567"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A reproductive process occurring in the mother that results in birth.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060137</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060138 -->
+
+    <owl:Class rdf:about="&obo;GO_0060138">
+        <rdfs:label rdf:datatype="&xsd;string">fetal process involved in parturition</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0044702"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0007567"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0009792"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A reproductive process occurring in the embryo that results in birth.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060138</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0060322 -->
+
+    <owl:Class rdf:about="&obo;GO_0060322">
+        <rdfs:label rdf:datatype="&xsd;string">head development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0060322</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The biological process whose specific outcome is the progression of a head from an initial condition to its mature state. The head is the anterior-most division of the body.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0061061 -->
+
+    <owl:Class rdf:about="&obo;GO_0061061">
+        <rdfs:label rdf:datatype="&xsd;string">muscle structure development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0032502"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-03-09T08:55:14Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0061061</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The progression of a muscle structure over time, from its formation to its mature state. Muscle structures are contractile cells, tissues or organs that are found in multicellular organisms.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0061458 -->
+
+    <owl:Class rdf:about="&obo;GO_0061458">
+        <rdfs:label rdf:datatype="&xsd;string">reproductive system development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048731"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-08-22T17:47:53Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0061458</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The progression of the reproductive system over time from its formation to the mature structure. The reproductive system consists of the organs that function in reproduction.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">dph</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0072001 -->
+
+    <owl:Class rdf:about="&obo;GO_0072001">
+        <rdfs:label rdf:datatype="&xsd;string">renal system development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048731"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0001655"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-01-25T10:31:00Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0072001</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the renal system over time, from its formation to the mature structure. The renal system maintains fluid balance and contributes to electrolyte balance, acid/base balance, and disposal of nitrogenous waste products. In humans, the renal system comprises a pair of kidneys, a pair of ureters, urinary bladder, urethra, sphincter muscle and associated blood vessels.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">urinary system development</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">urinary tract development</oboInOwl:hasBroadSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0072358 -->
+
+    <owl:Class rdf:about="&obo;GO_0072358">
+        <rdfs:label rdf:datatype="&xsd;string">cardiovascular system development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048731"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;GO_0072359"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-11-16T11:25:49Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0072358</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the cardiovascular system over time, from its formation to the mature structure. The cardiovascular system is the anatomical system that has as its parts the heart and blood vessels.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0072359 -->
+
+    <owl:Class rdf:about="&obo;GO_0072359">
+        <rdfs:label rdf:datatype="&xsd;string">circulatory system development</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;GO_0048731"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-11-16T11:27:39Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">GO:0072359</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The process whose specific outcome is the progression of the circulatory system over time, from its formation to the mature structure. The circulatory system is the organ system that passes nutrients (such as amino acids and electrolytes), gases, hormones, blood cells, etc. to and from cells in the body to help fight diseases and help stabilize body temperature and pH to maintain homeostasis.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">biological_process</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">midori</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000157 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000157"/>
 </rdf:RDF>
 
 

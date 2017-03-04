@@ -4,9 +4,9 @@
 <!DOCTYPE rdf:RDF [
     <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
     <!ENTITY obo "http://purl.obolibrary.org/obo/" >
+    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
     <!ENTITY hp "http://purl.obolibrary.org/obo/hp#" >
-    <!ENTITY dc "http://purl.org/dc/elements/1.1/" >
     <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
     <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
@@ -15,8 +15,8 @@
 
 <rdf:RDF xmlns="&obo;ontoneo/import/hp_import.owl#"
      xml:base="&obo;ontoneo/import/hp_import.owl"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:dc="http://purl.org/dc/elements/1.1/"	 	 
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:hp="&obo;hp#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
@@ -24,14 +24,13 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;ontoneo/import/hp_import.owl">
+        <xsd:title rdf:datatype="&xsd;string">Human Phenotype Ontology</xsd:title>
+        <rdfs:comment xml:lang="en">HP subset applied to OntONeo ontology.</rdfs:comment>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of HP that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <rdfs:comment xml:lang="en">HP subset applied to OntONeo ontology.</rdfs:comment>
         <dc:creator>The Human Phenotype Ontology Consortium</dc:creator>
-        <dc:license>see http://www.human-phenotype-ontology.org</dc:license>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/hp_import.owl"/>
-        <xsd:title rdf:datatype="&xsd;string">Human Phenotype Ontology</xsd:title>
-	</owl:Ontology>    
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/hp_import.owl"/>
+    </owl:Ontology>
     
 
 
@@ -88,6 +87,12 @@ This owl file represents the necessary entities of HP that are reused in OntONeo
     <owl:AnnotationProperty rdf:about="&oboInOwl;hasAlternativeId">
         <rdfs:label xml:lang="en">has_alternative_id</rdfs:label>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym"/>
     
 
 
@@ -148,6 +153,12 @@ This owl file represents the necessary entities of HP that are reused in OntONeo
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000050"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000051"/>
@@ -183,6 +194,12 @@ This owl file represents the necessary entities of HP that are reused in OntONeo
     <owl:ObjectProperty rdf:about="&obo;UPHENO_0000001">
         <rdfs:label>has phenotype affecting</rdfs:label>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/hp/hp-logical-definitions-subq#during -->
+
+    <owl:ObjectProperty rdf:about="&obo;hp/hp-logical-definitions-subq#during"/>
     
 
 
@@ -233,6 +250,18 @@ This owl file represents the necessary entities of HP that are reused in OntONeo
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_63919 -->
+
+    <owl:Class rdf:about="&obo;FMA_63919"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_63934 -->
+
+    <owl:Class rdf:about="&obo;FMA_63934"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_65075 -->
 
     <owl:Class rdf:about="&obo;FMA_65075"/>
@@ -251,15 +280,57 @@ This owl file represents the necessary entities of HP that are reused in OntONeo
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_7160 -->
+
+    <owl:Class rdf:about="&obo;FMA_7160"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_7195 -->
 
     <owl:Class rdf:about="&obo;FMA_7195"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_85541 -->
+
+    <owl:Class rdf:about="&obo;FMA_85541"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_9577 -->
 
     <owl:Class rdf:about="&obo;FMA_9577"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9673 -->
+
+    <owl:Class rdf:about="&obo;FMA_9673"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007565 -->
+
+    <owl:Class rdf:about="&obo;GO_0007565"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007567 -->
+
+    <owl:Class rdf:about="&obo;GO_0007567"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0042696 -->
+
+    <owl:Class rdf:about="&obo;GO_0042696"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0042703 -->
+
+    <owl:Class rdf:about="&obo;GO_0042703"/>
     
 
 
@@ -296,11 +367,85 @@ This owl file represents the necessary entities of HP that are reused in OntONeo
         <rdfs:comment rdf:datatype="&xsd;string">Inguinal hernia appears as a bulge in the groin.</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MEDDRA:10022016</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D006552</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 xml:lang="en">Protrusion of the contents of the abdominal cavity through the inguinal canal.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT:396232000</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0019294</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Protrusion of the contents of the abdominal cavity through the inguinal canal.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="&obo;hp#hposlim_core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000078 -->
+
+    <owl:Class rdf:about="&obo;HP_0000078">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormality of the genital system</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_7160"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000118"/>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Abnormality of the reproductive system</oboInOwl:hasRelatedSynonym>
+        <obo:HP_0040005 rdf:datatype="&xsd;string">An abnormality of the `genital system` (FMA:7160).</obo:HP_0040005>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormality of the genital system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Genital abnormalities</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Genital abnormality</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Genital anomalies</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Genital defects</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0000078</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0744356</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000080 -->
+
+    <owl:Class rdf:about="&obo;HP_0000080">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormality of reproductive system physiology</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0001509"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_7160"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000078"/>
+        <obo:HP_0040005 rdf:datatype="&xsd;string">An `abnormal` (PATO:0000460) `functionality` (PATO:0001509) of the `genital system` (FMA:7160).</obo:HP_0040005>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormal functionality of the genital system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Genital functional abnormality</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0000080</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasBroadSynonym>Abnormality of genital physiology</oboInOwl:hasBroadSynonym>
     </owl:Class>
     
 
@@ -330,13 +475,30 @@ This owl file represents the necessary entities of HP that are reused in OntONeo
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000019"/>
-        <obo:IAO_0000115 xml:lang="en">A phenotypic abnormality.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0000118</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Organ abnormality</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="&xsd;string">PERSON: Fernanda Farinelli
 OntONeo development prioritizes the reuse of classes and entities from FMA ontology to deal with human anatomy approaches. Originally this class has reference to UBERON:0000468. UBERON ontology has cross-reference annotation (database_cross_reference) of UBERON: 0000468 to FMA_256135. Due this cross-reference annotation we opted to replace the UBERON:0000468 by FMA_256135.</rdfs:comment>
         <rdfs:comment rdf:datatype="&xsd;string">This is the root of the phenotypic abnormality subontology of the HPO.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">A phenotypic abnormality.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000132 -->
+
+    <owl:Class rdf:about="&obo;HP_0000132">
+        <rdfs:label rdf:datatype="&xsd;string">Menorrhagia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000140"/>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001892"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0000132</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Prolonged and excessive menses at regular intervals in excess of 80 mL or lasting longer than 7 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0025323</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym>Abnormally heaving bleeding during menstruation</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasAlternativeId>HP:0100609</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym>Hypermenorrhea</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -370,11 +532,80 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0100824</oboInOwl:hasAlternativeId>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D014596</oboInOwl:hasDbXref>
         <obo:HP_0040005 rdf:datatype="&xsd;string">The presence of `prolapse` (MPATH:626) of the `uterus` (FMA:17558).</obo:HP_0040005>
-        <obo:IAO_0000115 xml:lang="en">The presence of prolapse of the uterus.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="&xsd;string">The uterus (womb) is normally held in place by a muscles, tissue and ligaments. If these tissues can no longer support the uterus it can slip down from its normal position.</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0042140</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
         <oboInOwl:hasExactSynonym>Sagging uterus</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">The presence of prolapse of the uterus.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000140 -->
+
+    <owl:Class rdf:about="&obo;HP_0000140">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormality of the menstrual cycle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0042703"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0012243"/>
+        <obo:HP_0040005 rdf:datatype="&xsd;string">An abnormality of the `ovulation cycle` (GO:0042698).</obo:HP_0040005>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormality of the ovulation cycle.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0000140</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Menstrual abnormalities</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000141 -->
+
+    <owl:Class rdf:about="&obo;HP_0000141">
+        <rdfs:label rdf:datatype="&xsd;string">Amenorrhea</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000462"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0042703"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000140"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0000141</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D000568</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C2219717</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>Absence of menses for an interval of time equivalent to a total of more than (or equal to) 3 previous cycles or 6 months.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Abnormal absence of menstruation</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -405,13 +636,134 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;HP_0000118"/>
         <obo:HP_0040005 rdf:datatype="&xsd;string">An abnormality of the `nervous system` (FMA:7157).</obo:HP_0040005>
-        <obo:IAO_0000115 xml:lang="en">An abnormality of the nervous system.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0000707</oboInOwl:id>
         <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0001333</oboInOwl:hasAlternativeId>
         <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0006987</oboInOwl:hasAlternativeId>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Neurologic abnormalities</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Neurological abnormality</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="&xsd;string">The nervous system comprises the neuraxis (brain, spinal cord, and ventricles), the autonomic nervous system, the enteric nervous system, and the peripheral nervous system.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">An abnormality of the nervous system.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000786 -->
+
+    <owl:Class rdf:about="&obo;HP_0000786">
+        <rdfs:label rdf:datatype="&xsd;string">Primary amenorrhea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000141"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0000786</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0232939</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000869 -->
+
+    <owl:Class rdf:about="&obo;HP_0000869">
+        <rdfs:label rdf:datatype="&xsd;string">Secondary amenorrhea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000141"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0000869</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0232940</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0000876 -->
+
+    <owl:Class rdf:about="&obo;HP_0000876">
+        <rdfs:label rdf:datatype="&xsd;string">Oligomenorrhea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000140"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0000876</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Infrequent menses (less than 6 per year or more than 35 days between cycles).</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D009839</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C2057730</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001195 -->
+
+    <owl:Class rdf:about="&obo;HP_0001195">
+        <rdfs:label rdf:datatype="&xsd;string">Single umbilical artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0010948"/>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0011403"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001195</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D058529</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Single umbilical artery (SUA) is the absence of one of the two umbilical arteries surrounding the fetal bladder and in the fetal umbilical cord.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">The umbilical cord normally has two arteries and one vein.</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C1384670</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001196 -->
+
+    <owl:Class rdf:about="&obo;HP_0001196">
+        <rdfs:label rdf:datatype="&xsd;string">Short umbilical cord</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000574"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_85541"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0010881"/>
+        <obo:HP_0040005 rdf:datatype="&xsd;string">Decreased length of the `umbilical cord` (FMA:85541).</obo:HP_0040005>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Decreased length of the umbilical cord.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001196</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0266786</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001197 -->
+
+    <owl:Class rdf:about="&obo;HP_0001197">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormality of prenatal development or birth</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_63919"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000118"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormality of the fetus or the birth of the fetus, excluding structural abnormalities.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">Because of the close link between prenatal developmental abnormalities and abnormalities of the birth process, a single term is chosen to subsume both classes of abnormality.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001197</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -443,7 +795,6 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;HP_0012443"/>
         <obo:HP_0040005 rdf:datatype="&xsd;string">An abnormality of the `cerebellum` (FMA:67944).</obo:HP_0040005>
-        <obo:IAO_0000115 xml:lang="en">An abnormality of the cerebellum.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Cerebellar abnormalities</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Cerebellar abnormality</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Cerebellar anomaly</oboInOwl:hasExactSynonym>
@@ -451,6 +802,7 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0001317</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0007760</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">An abnormality of the cerebellum.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -484,13 +836,13 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
             </owl:Restriction>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;HP_0004324"/>
-        <obo:IAO_0000115 xml:lang="en">Body weight that is grossly above the acceptable or desirable weight, usually due to accumulation of excess fats in the body. The standards may vary with age, sex, genetic or cultural background. In the body mass index (BMI), a BMI greater than 30.0 kg/m2 is considered obese, and a BMI greater than 40.0 kg/m2 is considered morbidly obese.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0001513</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D009765</oboInOwl:hasDbXref>
         <rdfs:comment rdf:datatype="&xsd;string">PERSON: Fernanda Farinelli
 OntONeo development prioritizes the reuse of classes and entities from FMA ontology to deal with human anatomy approaches. Originally this class has reference to UBERON:0000468. UBERON ontology has cross-reference annotation (database_cross_reference) of UBERON: 0000468 to FMA_256135. Due this cross-reference annotation we opted to replace the UBERON:0000468 by FMA_256135.</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C1963185</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Body weight that is grossly above the acceptable or desirable weight, usually due to accumulation of excess fats in the body. The standards may vary with age, sex, genetic or cultural background. In the body mass index (BMI), a BMI greater than 30.0 kg/m2 is considered obese, and a BMI greater than 40.0 kg/m2 is considered morbidly obese.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -502,10 +854,317 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <rdfs:subClassOf rdf:resource="&obo;HP_0100790"/>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0001537</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D006554</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 xml:lang="en">Protrusion of abdominal contents through a defect in the abdominal wall musculature around the umbilicus. Skin and subcutaneous tissue overlie the defect.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT:396347007</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0019322</oboInOwl:hasDbXref>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Umbilical hernias</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Protrusion of abdominal contents through a defect in the abdominal wall musculature around the umbilicus. Skin and subcutaneous tissue overlie the defect.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="&obo;hp#hposlim_core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001557 -->
+
+    <owl:Class rdf:about="&obo;HP_0001557">
+        <rdfs:label rdf:datatype="&xsd;string">Prenatal movement abnormality</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001197"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Abnormal intrauterine movements</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormality of fetal movement.</obo:IAO_0000115>
+        <rdfs:comment rdf:datatype="&xsd;string">Fetal movements generally become apparent during the second trimester of pregnancy around the 20th week but occasionally up to the 25th week. The initiation of perceptible fetal movements is referred to as &apos;quickening&apos;.</rdfs:comment>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001557</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0007629</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C1849510</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001558 -->
+
+    <owl:Class rdf:about="&obo;HP_0001558">
+        <rdfs:label rdf:datatype="&xsd;string">Decreased fetal movement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001557"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormal reduction in quantity or strength of fetal movements.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Decreased fetal activity</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Decreased fetal movements</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Decreased movement in utero</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Fetal hypokinesia</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001558</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0001559</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0006840</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0007630</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0007631</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Reduced fetal movement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Reduced fetal movements</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0235659</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001560 -->
+
+    <owl:Class rdf:about="&obo;HP_0001560">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormality of the amniotic fluid</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000173"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001197"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Abnormal amniotic fluid</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Abnormality of the amniotic fluid, which is the fluid contained in the amniotic sac surrounding the developing fetus.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001560</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001561 -->
+
+    <owl:Class rdf:about="&obo;HP_0001561">
+        <rdfs:label rdf:datatype="&xsd;string">Polyhydramnios</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000595"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000173"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;hp/hp-logical-definitions-subq#during"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0007565"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001560"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001561</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0005098</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Hydramnios</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D006831</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">Polyhydramnios is diagnosed if the deepest vertical pool of amniotic fluid is more than 8 cm or amniotic fluid index is more than 95th percentile for the corresponding gestational age.</rdfs:comment>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The presence of excess amniotic fluid in the uterus during pregnancy.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0020224</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001562 -->
+
+    <owl:Class rdf:about="&obo;HP_0001562">
+        <rdfs:label rdf:datatype="&xsd;string">Oligohydramnios</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001560"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Diminished amniotic fluid volume in pregnancy.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001562</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0004638</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Maternal oligohydramnios</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D016104</oboInOwl:hasDbXref>
+        <rdfs:comment rdf:datatype="&xsd;string">Oligohydramnios is the opposite of polyhydramnios. In normal pregnancy the amniotic fluid volume increases by about 10 ml/day until the 34th, after which it slowly diminishes. A normal amniotic fluid volume at term is about 500-2,000 ml. Oligohydramnios is defined as an AFI (amniotic fluid index) less than 5 cm or smallest vertical pocket of fluid less than 2 cm.</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0079924</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001563 -->
+
+    <owl:Class rdf:about="&obo;HP_0001563">
+        <rdfs:label rdf:datatype="&xsd;string">Fetal polyuria</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001560"/>
+        <obo:HP_0040005 rdf:datatype="&xsd;string">Abnormally increased production of urine by the fetus resulting in `polyhydramnios` (HP:0001561).</obo:HP_0040005>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Abnormally increased production of urine by the fetus resulting in polyhydramnios.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001563</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">The fetal urine production rate can be measured by ultrasonography.</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C1865279</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001622 -->
+
+    <owl:Class rdf:about="&obo;HP_0001622">
+        <rdfs:label rdf:datatype="&xsd;string">Premature birth</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000694"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0007567"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001197"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001622</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D047928</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Premature delivery</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Premature delivery of affected infants</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Preterm delivery</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Shortened gestation time</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The birth of a baby of less than 37 weeks of gestational age.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C2028283</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001788 -->
+
+    <owl:Class rdf:about="&obo;HP_0001788">
+        <rdfs:label rdf:datatype="&xsd;string">Premature rupture of membranes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000160"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001788</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0002163</oboInOwl:hasAlternativeId>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Premature rupture of membranes (PROM) is a condition which occurs in pregnancy when the amniotic sac ruptures more than an hour before the onset of labor.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001791 -->
+
+    <owl:Class rdf:about="&obo;HP_0001791">
+        <rdfs:label rdf:datatype="&xsd;string">Fetal ascites</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000470"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;FMA_9673"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                                <owl:someValuesFrom>
+                                                    <owl:Class>
+                                                        <owl:intersectionOf rdf:parseType="Collection">
+                                                            <rdf:Description rdf:about="&obo;UBERON_0001179"/>
+                                                            <owl:Restriction>
+                                                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                                                <owl:someValuesFrom rdf:resource="&obo;FMA_63919"/>
+                                                            </owl:Restriction>
+                                                        </owl:intersectionOf>
+                                                    </owl:Class>
+                                                </owl:someValuesFrom>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001197"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Accumulation of fluid in the peritoneal cavity during the fetal period.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001791</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C1285291</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001892 -->
+
+    <owl:Class rdf:about="&obo;HP_0001892">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormal bleeding</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000470"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;SYMP_0000041"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000118"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormal susceptibility to bleeding, often referred to as a bleeding diathesis. A bleeding diathesis may be related to vascular, platelet and coagulation defects.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Bleeding diathesis</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Bleeding tendency</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001892</oboInOwl:id>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0004830</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0004834</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0004849</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0004862</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0004865</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasAlternativeId rdf:datatype="&xsd;string">HP:0008183</oboInOwl:hasAlternativeId>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Hemorrhagic diathesis</oboInOwl:hasExactSynonym>
+        <rdfs:comment rdf:datatype="&xsd;string">This term is kept for historical reasons. If possible, a more exact description of the phenotype (i.e., whether there is a vascular, platelet and coagulation defect) should be attempted.</rdfs:comment>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C1458140</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0001989 -->
+
+    <owl:Class rdf:about="&obo;HP_0001989">
+        <rdfs:label rdf:datatype="&xsd;string">Fetal akinesia sequence</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001558"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Decreases fetal activity associated with multiple joint contractures, facial anomalies and pulmonary hypoplasia. Ultrasound examination may reveal polyhydramnios, ankylosis, scalp edema, and decreased chest movements (reflecting pulmonary hypoplasia).</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Early severe fetal akinesia sequence</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Fetal akinesia</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0001989</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
         <oboInOwl:inSubset rdf:resource="&obo;hp#hposlim_core"/>
     </owl:Class>
@@ -525,11 +1184,11 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D006551</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">SNOMEDCT:84089009</oboInOwl:hasDbXref>
         <obo:HP_0040005 rdf:datatype="&xsd;string">The presence of a `hernia` (MPATH:75) in which the upper part of the stomach, i.e., mainly the `gastric cardia` (FMA:14561) protrudes through the diaphragmatic `esophageal hiatus` (FMA:58289).</obo:HP_0040005>
-        <obo:IAO_0000115 xml:lang="en">The presence of a hernia in which the upper part of the stomach, i.e., mainly the gastric cardia protrudes through the diaphragmatic esophageal hiatus.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0019291</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
         <oboInOwl:hasExactSynonym>Stomach hernia</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">The presence of a hernia in which the upper part of the stomach, i.e., mainly the gastric cardia protrudes through the diaphragmatic esophageal hiatus.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="&obo;hp#hposlim_core"/>
     </owl:Class>
     
@@ -562,10 +1221,11 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <rdfs:subClassOf rdf:resource="&obo;HP_0000118"/>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Abnormality of the lungs</oboInOwl:hasExactSynonym>
         <obo:HP_0040005 rdf:datatype="&xsd;string">An abnormality of the `lung` (FMA:7195).</obo:HP_0040005>
-        <obo:IAO_0000115 xml:lang="en">Any structural anomaly of the lung.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Any structural anomaly of the lung.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0002088</oboInOwl:id>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Lung disease</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Any structural anomaly of the lung.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
         <owl:annotatedTarget rdf:datatype="&xsd;string">Any structural anomaly of the lung.</owl:annotatedTarget>
@@ -588,12 +1248,12 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <rdfs:label xml:lang="en">Arnold-Chiari malformation</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;HP_0001317"/>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Arnola-Chiari malformation</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="en">Arnold-Chiari malformation consists of a downward displacement of the cerebellar tonsils and the medulla through the foramen magnum, sometimes causing hydrocephalus as a result of obstruction of CSF outflow.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Chiari malformation</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0002308</oboInOwl:id>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D001139</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0555206</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Arnold-Chiari malformation consists of a downward displacement of the cerebellar tonsils and the medulla through the foramen magnum, sometimes causing hydrocephalus as a result of obstruction of CSF outflow.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -608,21 +1268,8 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <rdfs:comment rdf:datatype="&xsd;string">PERSON: Fernanda Farinelli
 OntONeo development prioritizes the reuse of classes and entities from FMA ontology to deal with human anatomy approaches. Originally this class has reference to UBERON:0000468. UBERON ontology has cross-reference annotation (database_cross_reference) of UBERON: 0000468 to FMA_256135. Due this cross-reference annotation we opted to replace the UBERON:0000468 by FMA_256135.</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0019326</oboInOwl:hasDbXref>
-        <obo:IAO_0000115 xml:lang="en">Ventral hernia refers to a condition in which abdominal contents protrude through a weakened portion of the abdominal wall.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/HP_0001788 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/HP_0001788">
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Premature rupture of membranes</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;ontoneo/ONTONEO_00000160"/>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HP:0001788</oboInOwl:id>
-        <oboInOwl:hasAlternativeId rdf:datatype="http://www.w3.org/2001/XMLSchema#string">HP:0002163</oboInOwl:hasAlternativeId>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Premature rupture of membranes (PROM) is a condition which occurs in pregnancy when the amniotic sac ruptures more than an hour before the onset of labor.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Ventral hernia refers to a condition in which abdominal contents protrude through a weakened portion of the abdominal wall.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -709,9 +1356,32 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
     <owl:Class rdf:about="&obo;HP_0004872">
         <rdfs:label xml:lang="en">Incisional hernia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;HP_0100790"/>
-        <obo:IAO_0000115 xml:lang="en">An abdominal hernia that occurs at a site of weakness in the abdominal wall resulting from an incompletely-healed surgical wound.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0004872</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Recurrent abdominal hernia</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">An abdominal hernia that occurs at a site of weakness in the abdominal wall resulting from an incompletely-healed surgical wound.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0005100 -->
+
+    <owl:Class rdf:about="&obo;HP_0005100">
+        <rdfs:label rdf:datatype="&xsd;string">Premature birth following premature rupture of fetal membranes</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001622"/>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001788"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0005100</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0005267 -->
+
+    <owl:Class rdf:about="&obo;HP_0005267">
+        <rdfs:label rdf:datatype="&xsd;string">Premature delivery because of cervical insufficiency or membrane fragility</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001622"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0005267</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -728,6 +1398,155 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HP_0006266 -->
+
+    <owl:Class rdf:about="&obo;HP_0006266">
+        <rdfs:label rdf:datatype="&xsd;string">Small placenta</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000587"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_63934"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0012767"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0006266</oboInOwl:id>
+        <obo:HP_0040005 rdf:datatype="&xsd;string">Reduced size of the `placenta` (FMA:63934).</obo:HP_0040005>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Reduced size of the placenta.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0006267 -->
+
+    <owl:Class rdf:about="&obo;HP_0006267">
+        <rdfs:label rdf:datatype="&xsd;string">Large placenta</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000586"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_63934"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0012767"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0006267</oboInOwl:id>
+        <obo:HP_0040005 rdf:datatype="&xsd;string">Increased size of the `placenta` (FMA:63934).</obo:HP_0040005>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Increased size of the placenta.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Placental enlargement</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C1855338</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0010519 -->
+
+    <owl:Class rdf:about="&obo;HP_0010519">
+        <rdfs:label rdf:datatype="&xsd;string">Increased fetal movement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001557"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2009-09-20T10:44:15Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormal increase in quantity or strength of fetal movements.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Fetal hyperkinesia</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0010519</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0010881 -->
+
+    <owl:Class rdf:about="&obo;HP_0010881">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormality of the umbilical cord</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_85541"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001197"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-09-13T08:24:04Z</oboInOwl:creation_date>
+        <obo:HP_0040005 rdf:datatype="&xsd;string">An abnormality of the `umbilical cord` (FMA:85541), which is the cord connecting the developing embryo or fetus to the placenta.</obo:HP_0040005>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormality of the umbilical cord, which is the cord connecting the developing embryo or fetus to the placenta.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0010881</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0010948 -->
+
+    <owl:Class rdf:about="&obo;HP_0010948">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormality of the fetal cardiovascular system</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000118"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-01-16T03:53:44Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Abnormality of the fetal circulation system</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormality of the fetal circulation system or fetal echocardiogram.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0010948</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0010949 -->
+
+    <owl:Class rdf:about="&obo;HP_0010949">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormality of umbilical vein blood flow</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0010948"/>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0011403"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-01-16T04:15:43Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An first-trimester prenatal ultrasound finding of abnormal blood flow in the umbilical vein.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0010949</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Umbilical vein blood flow (UVBF) is closely related to the mass of placental cotyledons and is considered an expression of the amount of oxygen and nutrients transferred from the mother to the fetus.</rdfs:comment>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HP_0010959 -->
 
     <owl:Class rdf:about="&obo;HP_0010959">
@@ -735,7 +1554,7 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <rdfs:subClassOf rdf:resource="&obo;HP_0005948"/>
         <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-01-18T11:56:02Z</oboInOwl:creation_date>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">CCAM</oboInOwl:hasRelatedSynonym>
-        <obo:IAO_0000115 xml:lang="en">Congenital cystic adenomatoid malformation (CCAM) can be diagnosed prenatally if ultrasound shows a cystic or solid lung tumor. A CCAM does not have systemic arterial blood supply (in contrast to bronchopulmonary sequenstration). It is a cystic area within the lung that originates from abnormal embryogenesis.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Congenital cystic adenomatoid malformation (CCAM) can be diagnosed prenatally if ultrasound shows a cystic or solid lung tumor. A CCAM does not have systemic arterial blood supply (in contrast to bronchopulmonary sequenstration). It is a cystic area within the lung that originates from abnormal embryogenesis.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="&xsd;string">Congenital cystic adenomatoid malformation (CCAM) results in a multicystic mass that replaces the normal lung structure. CCAM is usually unilateral and confined to a single lobe of the lung.</rdfs:comment>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Congenital cystic disease of the lung</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Cystic adenomatoid lung disease</oboInOwl:hasExactSynonym>
@@ -745,6 +1564,7 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D015615</oboInOwl:hasDbXref>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+        <obo:IAO_0000115 xml:lang="en">Congenital cystic adenomatoid malformation (CCAM) can be diagnosed prenatally if ultrasound shows a cystic or solid lung tumor. A CCAM does not have systemic arterial blood supply (in contrast to bronchopulmonary sequenstration). It is a cystic area within the lung that originates from abnormal embryogenesis.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
         <rdfs:label xml:lang="en">Cystic Adenomatoid Malformation of Lung, Congenital</rdfs:label>
@@ -758,6 +1578,218 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <owl:annotatedSource rdf:resource="&obo;HP_0010959"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0011403 -->
+
+    <owl:Class rdf:about="&obo;HP_0011403">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormal umbilical cord blood vessels</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;UBERON_0010260"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0010881"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-03-15T11:05:13Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0011403</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0011414 -->
+
+    <owl:Class rdf:about="&obo;HP_0011414">
+        <rdfs:label rdf:datatype="&xsd;string">Hydropic placenta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0006267"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-03-15T10:07:47Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormality of the placenta in which there are numerous cystic spaces within the placenta as well as placental enlargement.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0011414</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Hydrops of the placenta</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0011415 -->
+
+    <owl:Class rdf:about="&obo;HP_0011415">
+        <rdfs:label rdf:datatype="&xsd;string">Calcified placenta</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0001447"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_63934"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0100767"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-03-15T10:10:35Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0011415</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0011416 -->
+
+    <owl:Class rdf:about="&obo;HP_0011416">
+        <rdfs:label rdf:datatype="&xsd;string">Placental infarction</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0100767"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-03-15T10:11:39Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0011416</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Placental thromboembolism</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0011417 -->
+
+    <owl:Class rdf:about="&obo;HP_0011417">
+        <rdfs:label rdf:datatype="&xsd;string">Long umbilical cord</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000573"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_85541"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0010881"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-03-15T10:12:55Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0011417</oboInOwl:id>
+        <obo:HP_0040005 rdf:datatype="&xsd;string">Increased length of the `umbilical cord` (FMA:85541).</obo:HP_0040005>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Increased length of the umbilical cord.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0011418 -->
+
+    <owl:Class rdf:about="&obo;HP_0011418">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormal insertion of umbilical cord</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0010881"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-03-15T10:15:01Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0011418</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Vasa previa</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0011419 -->
+
+    <owl:Class rdf:about="&obo;HP_0011419">
+        <rdfs:label rdf:datatype="&xsd;string">Placental abruption</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0100767"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2012-03-15T11:08:18Z</oboInOwl:creation_date>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Abruptio placentae</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0011419</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D000037</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Separation of the placenta from the uterus wall before delivery.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0012243 -->
+
+    <owl:Class rdf:about="&obo;HP_0012243">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormal genital system morphology</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000051"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_7160"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000078"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-04-02T07:02:20Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A structural or developmental anomaly of any of the tissues involved in the genital system.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Abnormal reproductive system morphology</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0012243</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0012420 -->
+
+    <owl:Class rdf:about="&obo;HP_0012420">
+        <rdfs:label rdf:datatype="&xsd;string">Meconium stained amniotic fluid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001560"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-11-10T06:01:40Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Amniotic fluid containing the earliest stools of a mammalian infant.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0012420</oboInOwl:id>
+        <rdfs:comment rdf:datatype="&xsd;string">Meconium may be expelled into the amniotic fluid before birth in response to fetal distress. If meconium is aspirated by the fetus, it may lead to meconium aspiration syndrome.</rdfs:comment>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Meconium staining of amniotic fluid</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Meconium-stained amniotic fluid</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
     
 
 
@@ -788,12 +1820,47 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <rdfs:subClassOf rdf:resource="&obo;HP_0012639"/>
         <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-11-23T02:38:00Z</oboInOwl:creation_date>
         <obo:HP_0040005 rdf:datatype="&xsd;string">A structural abnormality of the `brain` (FMA:50801), which has as its parts the forebrain, midbrain, and hindbrain.</obo:HP_0040005>
-        <obo:IAO_0000115 xml:lang="en">A structural abnormality of the brain, which has as its parts the forebrain, midbrain, and hindbrain.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Abnormality of the brain</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0012443</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
         <oboInOwl:hasExactSynonym>Abnormal shape of brain</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">A structural abnormality of the brain, which has as its parts the forebrain, midbrain, and hindbrain.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0012569 -->
+
+    <owl:Class rdf:about="&obo;HP_0012569">
+        <rdfs:label rdf:datatype="&xsd;string">Delayed menarche</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000502"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;GO_0042696"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000140"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-01-08T08:20:18Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">First period after the age of 15 years.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0012569</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym>Delayed start of first period</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -825,11 +1892,11 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <rdfs:subClassOf rdf:resource="&obo;HP_0000707"/>
         <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-01-19T08:03:08Z</oboInOwl:creation_date>
         <obo:HP_0040005 rdf:datatype="&xsd;string">A structural anomaly of the `nervous system` (FMA:7157).</obo:HP_0040005>
-        <obo:IAO_0000115 xml:lang="en">A structural anomaly of the nervous system.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0012639</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
         <oboInOwl:hasExactSynonym>Abnormal shape of nervous system</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">A structural anomaly of the nervous system.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -864,17 +1931,18 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;HP_0001513"/>
         <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-03-23T05:00:05Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 xml:lang="en">Excessive fat around the stomach and abdomen.</obo:IAO_0000115>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Excessive fat around the stomach and abdomen.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0012743</oboInOwl:id>
         <rdfs:comment rdf:datatype="&xsd;string">PERSON: Fernanda Farinelli
 OntONeo development prioritizes the reuse of classes and entities from FMA ontology to deal with human anatomy approaches. Originally this class was defined as by HP ontology as &quot;inheres in UBERON: 0000916&quot;. UBERON ontology has cross-reference annotation (database_cross_reference) of UBERON: 0000916 to FMA:9577. Due this cross-reference annotation we opted to replace the UBERON: 0000916 by FMA:9577.</rdfs:comment>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
         <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
         <oboInOwl:hasExactSynonym>Central obesity</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 xml:lang="en">Excessive fat around the stomach and abdomen.</obo:IAO_0000115>
     </owl:Class>
     <owl:Axiom>
-        <owl:annotatedTarget>Central obesity</owl:annotatedTarget>
         <oboInOwl:hasDbXref>HPO:skoehler</oboInOwl:hasDbXref>
+        <owl:annotatedTarget>Central obesity</owl:annotatedTarget>
         <owl:annotatedSource rdf:resource="&obo;HP_0012743"/>
         <owl:annotatedProperty rdf:resource="&oboInOwl;hasExactSynonym"/>
     </owl:Axiom>
@@ -884,6 +1952,40 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <owl:annotatedSource rdf:resource="&obo;HP_0012743"/>
         <owl:annotatedProperty rdf:resource="&obo;IAO_0000115"/>
     </owl:Axiom>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0012767 -->
+
+    <owl:Class rdf:about="&obo;HP_0012767">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormal placental size</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000117"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_63934"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0100767"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2014-04-07T12:11:29Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A deviation from normal size of the placenta.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0012767</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">peter</oboInOwl:created_by>
+    </owl:Class>
     
 
 
@@ -902,13 +2004,157 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HP_0030654 -->
+
+    <owl:Class rdf:about="&obo;HP_0030654">
+        <rdfs:label>Umbilical cord cyst</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;PATO_0000470"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom>
+                                    <owl:Class>
+                                        <owl:intersectionOf rdf:parseType="Collection">
+                                            <rdf:Description rdf:about="&obo;MPATH_62"/>
+                                            <owl:Restriction>
+                                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                                <owl:someValuesFrom rdf:resource="&obo;FMA_85541"/>
+                                            </owl:Restriction>
+                                        </owl:intersectionOf>
+                                    </owl:Class>
+                                </owl:someValuesFrom>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0010881"/>
+        <rdfs:comment>Umbilical cord cysts can be single or multiple. Most usually, a solitary umbilical cyst is observed. They can be classified as (i) true cysts if they have an epithelial lining (allentoic cyst or omphalomesenteric duct cyst) or false cysts if they do not have an epithelial lining (umbilical cord pseudocyst).</rdfs:comment>
+        <obo:IAO_0000115>Any cystic lesion associated with the umbilical cord.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0030655 -->
+
+    <owl:Class rdf:about="&obo;HP_0030655">
+        <rdfs:label>Umbilical cord knot</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0010881"/>
+        <obo:IAO_0000115>An entwining of a segment of umbilical cord, usually without obstructing fetal circulation and commonly result from fetal slippage through a loop of the cord.</obo:IAO_0000115>
+        <oboInOwl:created_by>UToronto:chum</oboInOwl:created_by>
+        <rdfs:comment>When the true knot remains tight, it may impede the circulation of the fetus and may result to fetal death in utero especially in labor.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0030656 -->
+
+    <owl:Class rdf:about="&obo;HP_0030656">
+        <rdfs:label>Umbilical vein varix</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0010881"/>
+        <oboInOwl:created_by>UToronto:chum</oboInOwl:created_by>
+        <obo:IAO_0000115>Focal dilation of the umbilical vein.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0030657 -->
+
+    <owl:Class rdf:about="&obo;HP_0030657">
+        <rdfs:label>Umbilical cord hematoma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0010881"/>
+        <obo:IAO_0000115>Bleeding from the vessels of the cord with extravasation of blood into the Wharton jelly surrounding the umbilical cord vessels.</obo:IAO_0000115>
+        <oboInOwl:created_by>UToronto:chum</oboInOwl:created_by>
+        <oboInOwl:hasExactSynonym>Umbilical cord haematoma</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0030658 -->
+
+    <owl:Class rdf:about="&obo;HP_0030658">
+        <rdfs:label>Marginal umbilical cord insertion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0011418"/>
+        <rdfs:comment>Marginal cord insertion has an ncidence of about 7 percent of births. It is associated with intrauterine growth retardation, preterm labor and development of velamentous cord insertion.</rdfs:comment>
+        <oboInOwl:hasExactSynonym>Marginal cord insertion</oboInOwl:hasExactSynonym>
+        <oboInOwl:created_by>UToronto:chum</oboInOwl:created_by>
+        <obo:IAO_0000115>Insertion of the umbilical cord within 2 cm from the placental edge.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0030659 -->
+
+    <owl:Class rdf:about="&obo;HP_0030659">
+        <rdfs:label>Velamentous cord insertion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0011418"/>
+        <obo:IAO_0000115>Insertion of the umbilical cord into the chorio-amniotic membranes of the placenta.</obo:IAO_0000115>
+        <oboInOwl:created_by>UToronto:chum</oboInOwl:created_by>
+        <rdfs:comment>Velamentous cord insertion and an incidence of 1.1 percent of singleton births, and 8.7 to 16 percent of twin births.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0030660 -->
+
+    <owl:Class rdf:about="&obo;HP_0030660">
+        <rdfs:label>Furcate cord insertion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0011418"/>
+        <oboInOwl:created_by>UToronto:chum</oboInOwl:created_by>
+        <obo:IAO_0000115>Branching of the umbilical cord before its insertion into the placenta.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0030714 -->
+
+    <owl:Class rdf:about="&obo;HP_0030714">
+        <rdfs:label>Subchorionic thrombohematoma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0100767"/>
+        <obo:IAO_0000115>A large maternal clot that separates the chorionic place from the villous chorion.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Breus&apos; mole</oboInOwl:hasExactSynonym>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0030720 -->
+
+    <owl:Class rdf:about="&obo;HP_0030720">
+        <rdfs:label>Subchorionic septal cyst</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0100767"/>
+        <obo:IAO_0000115>Cyst on the surface of the placenta consisting of amnion and chorion.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0030753 -->
+
+    <owl:Class rdf:about="&obo;HP_0030753">
+        <rdfs:label>Intrauterine fetal demise of one twin after midgestation</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001197"/>
+        <obo:IAO_0000115>Loss of one twin occurring after midgestation (17 weeks gestation).</obo:IAO_0000115>
+        <rdfs:comment>Loss of one twin in the first trimester does not appear to impair the development of the surviving twin. However, fetal death occurring after midgestation (17 weeks&apos; gestation) may increase the risk of IUGR, preterm labor, preeclampsia and perinatal mortality.</rdfs:comment>
+        <oboInOwl:hasRelatedSynonym>Single-twin demise</oboInOwl:hasRelatedSynonym>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/HP_0100541 -->
 
     <owl:Class rdf:about="&obo;HP_0100541">
         <rdfs:label xml:lang="en">Femoral hernia</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;HP_0100790"/>
         <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-12-20T06:16:40Z</oboInOwl:creation_date>
-        <obo:IAO_0000115 xml:lang="en">A hernia which occurs just below the inguinal ligament, where abdominal contents pass through a naturally occurring weakness called the femoral canal.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Crural hernia</oboInOwl:hasExactSynonym>
         <rdfs:comment rdf:datatype="&xsd;string">Femoral hernias are a relatively uncommon type, accounting for only 3% of all hernias. Femoral hernia appears as a bulge in the upper thigh.</rdfs:comment>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0100541</oboInOwl:id>
@@ -918,7 +2164,25 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0019288</oboInOwl:hasDbXref>
         <oboInOwl:created_by rdf:datatype="&xsd;string">doelkens</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">A hernia which occurs just below the inguinal ligament, where abdominal contents pass through a naturally occurring weakness called the femoral canal.</obo:IAO_0000115>
         <oboInOwl:inSubset rdf:resource="&obo;hp#hposlim_core"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0100608 -->
+
+    <owl:Class rdf:about="&obo;HP_0100608">
+        <rdfs:label rdf:datatype="&xsd;string">Metrorrhagia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000140"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-12-27T06:14:01Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0100608</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D008796</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0025874</oboInOwl:hasDbXref>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">doelkens</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115>Bleeding at irregular intervals.</obo:IAO_0000115>
+        <oboInOwl:hasExactSynonym>Abnormal uterus bleeding</oboInOwl:hasExactSynonym>
     </owl:Class>
     
 
@@ -951,7 +2215,56 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
         <oboInOwl:creation_date rdf:datatype="&xsd;string">2010-12-30T01:35:05Z</oboInOwl:creation_date>
         <oboInOwl:id rdf:datatype="&xsd;string">HP:0100672</oboInOwl:id>
         <obo:HP_0040005 rdf:datatype="&xsd;string">The presence of a `hernia` (MPATH:75) of the `vagina` (FMA:19949).</obo:HP_0040005>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">doelkens</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 xml:lang="en">The presence of a hernia of the vagina.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0100767 -->
+
+    <owl:Class rdf:about="&obo;HP_0100767">
+        <rdfs:label rdf:datatype="&xsd;string">Abnormality of the placenta</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:intersectionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="&obo;BFO_0000019"/>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0000052"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_63934"/>
+                            </owl:Restriction>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;RO_0002573"/>
+                                <owl:someValuesFrom rdf:resource="&obo;PATO_0000460"/>
+                            </owl:Restriction>
+                        </owl:intersectionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0001197"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-06-07T11:03:03Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An abnormality of the placenta, the organ that connects the developing fetus to the uterine wall to enable nutrient uptake, waste elimination, and gas exchange.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0100767</oboInOwl:id>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">doelkens</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0100768 -->
+
+    <owl:Class rdf:about="&obo;HP_0100768">
+        <rdfs:label rdf:datatype="&xsd;string">Choriocarcinoma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0100767"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-06-07T11:05:40Z</oboInOwl:creation_date>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A malignant, trophoblastic and aggressive cancer, usually of the placenta. It is characterized by early hematogenous spread to the lungs and belongs to the far end of the spectrum of gestational trophoblastic disease (GTD), a subset of germ cell tumors.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0100768</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MeSH:D002822</oboInOwl:hasDbXref>
         <oboInOwl:created_by rdf:datatype="&xsd;string">doelkens</oboInOwl:created_by>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
     </owl:Class>
@@ -986,15 +2299,113 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
     
 
 
+    <!-- http://purl.obolibrary.org/obo/HP_0100883 -->
+
+    <owl:Class rdf:about="&obo;HP_0100883">
+        <rdfs:label rdf:datatype="&xsd;string">Chorangioma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0100767"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2011-12-01T02:50:56Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0100883</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Hamartoma-like growth in the placenta consisting of blood vessels.</obo:IAO_0000115>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">doelkens</oboInOwl:created_by>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0200067 -->
+
+    <owl:Class rdf:about="&obo;HP_0200067">
+        <rdfs:label rdf:datatype="&xsd;string">Recurrent spontaneous abortion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;SYMP_0000199"/>
+        <oboInOwl:creation_date rdf:datatype="&xsd;string">2013-05-31T01:33:01Z</oboInOwl:creation_date>
+        <oboInOwl:id rdf:datatype="&xsd;string">HP:0200067</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Repeated episodes of abortion (Expulsion of the product of fertilization before completing the term of gestation) without deliberate interference.</obo:IAO_0000115>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">Spontaneous abortion, recurrent</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">human_phenotype</oboInOwl:hasOBONamespace>
+        <oboInOwl:created_by rdf:datatype="&xsd;string">sebastiankohler</oboInOwl:created_by>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0400007 -->
+
+    <owl:Class rdf:about="&obo;HP_0400007">
+        <rdfs:label>Polymenorrhea</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000140"/>
+        <obo:IAO_0000115>Frequent menses; menstrual cycles lasting less than 21 days.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UMLS:C0032519</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/HP_0400008 -->
+
+    <owl:Class rdf:about="&obo;HP_0400008">
+        <rdfs:label>Menometrorrhagia</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;HP_0000140"/>
+        <obo:IAO_0000115>Prolonged/excessive menses and bleeding at irregular intervals.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref>UMLS:C0232943</oboInOwl:hasDbXref>
+    </owl:Class>
+    
+
+
+   
+
+
+    <!-- http://purl.obolibrary.org/obo/MPATH_62 -->
+
+    <owl:Class rdf:about="&obo;MPATH_62"/>
+    
+
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000051 -->
 
     <owl:Class rdf:about="&obo;PATO_0000051"/>
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000117 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000117"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000460 -->
 
     <owl:Class rdf:about="&obo;PATO_0000460"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000462 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000462"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000470 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000470"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000502 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000502"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000573 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000573"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000574 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000574"/>
     
 
 
@@ -1010,6 +2421,24 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000586 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000586"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000587 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000587"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0000595 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000595"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0000623 -->
 
     <owl:Class rdf:about="&obo;PATO_0000623"/>
@@ -1022,6 +2451,24 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
     
 
 
+    <!-- http://purl.obolibrary.org/obo/PATO_0000694 -->
+
+    <owl:Class rdf:about="&obo;PATO_0000694"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001447 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001447"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/PATO_0001509 -->
+
+    <owl:Class rdf:about="&obo;PATO_0001509"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/PATO_0001869 -->
 
     <owl:Class rdf:about="&obo;PATO_0001869"/>
@@ -1031,6 +2478,37 @@ OntONeo development prioritizes the reuse of classes and entities from FMA ontol
     <!-- http://purl.obolibrary.org/obo/PATO_0002163 -->
 
     <owl:Class rdf:about="&obo;PATO_0002163"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/SYMP_0000199 -->
+
+    <owl:Class rdf:about="&obo;SYMP_0000199"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000173 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000173"/>
+    
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001179 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0001179"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0010260 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0010260"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000160 -->
+
+    <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000160"/>
 </rdf:RDF>
 
 

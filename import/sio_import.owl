@@ -29,7 +29,7 @@
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of SIO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <rdfs:comment xml:lang="en">SIO subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/sio_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/sio_import.owl"/>
         <xsd:title rdf:datatype="&xsd;string">Semanticscience Integrated Ontology</xsd:title>	
 	</owl:Ontology>
     
@@ -64,6 +64,30 @@ This owl file represents the necessary entities of SIO that are reused in OntONe
     
 
 
+    <!-- http://semanticscience.org/resource/equivalentTo -->
+
+    <owl:AnnotationProperty rdf:about="&sio;equivalentTo"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/example -->
+
+    <owl:AnnotationProperty rdf:about="&sio;example"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/hasSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&sio;hasSynonym"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/subset -->
+
+    <owl:AnnotationProperty rdf:about="&sio;subset"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -75,6 +99,9 @@ This owl file represents the necessary entities of SIO that are reused in OntONe
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000050 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000050"/>
     
 
 
@@ -91,14 +118,51 @@ This owl file represents the necessary entities of SIO that are reused in OntONe
     
 
 
+    <!-- http://semanticscience.org/resource/SIO_000008 -->
+
+    <owl:ObjectProperty rdf:about="&sio;SIO_000008">
+        <rdfs:label xml:lang="en">has attribute</rdfs:label>
+        <sio:subset>core</sio:subset>
+        <dc:identifier>SIO_000008</dc:identifier>
+        <obo:IAO_0000115 xml:lang="en">has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&sio;SIO_000001"/>
+        <owl:inverseOf rdf:resource="&sio;SIO_000011"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000011 -->
+
+    <owl:ObjectProperty rdf:about="&sio;SIO_000011">
+        <rdfs:label xml:lang="en">is attribute of</rdfs:label>
+        <dc:identifier>SIO_000011</dc:identifier>
+        <obo:IAO_0000115 xml:lang="en">is attribute of is a relation that associates an attribute with an entity where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&sio;SIO_000001"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000219 -->
+
+    <owl:ObjectProperty rdf:about="&sio;SIO_000219">
+        <rdfs:label xml:lang="en">is source of</rdfs:label>
+        <dc:identifier>SIO_000219</dc:identifier>
+        <obo:IAO_0000115 xml:lang="en">is source of is a relation between a source of information about some entity.</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&sio;SIO_000011"/>
+        <owl:inverseOf rdf:resource="&sio;SIO_000253"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://semanticscience.org/resource/SIO_000253 -->
 
     <owl:ObjectProperty rdf:about="&sio;SIO_000253">
-		<obo:IAO_0000115 xml:lang="en">has source is a relation between an entity and another entity from which it stems from.</obo:IAO_0000115>
-		<rdfs:label xml:lang="en">has source</rdfs:label>
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-		<rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000008"/>	
-	</owl:ObjectProperty>
+        <rdfs:label xml:lang="en">has source</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">has source is a relation between an entity and another entity from which it stems from.</obo:IAO_0000115>
+        <rdfs:subPropertyOf rdf:resource="&sio;SIO_000008"/>
+    </owl:ObjectProperty>
     
 
 
@@ -122,37 +186,16 @@ This owl file represents the necessary entities of SIO that are reused in OntONe
     <!-- http://semanticscience.org/resource/SIO_000365 -->
 
     <owl:ObjectProperty rdf:about="&sio;SIO_000365">
-		<rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000219"/>
-		<obo:IAO_0000115 xml:lang="en">is creator of is a relation between a creator and an entity..</obo:IAO_0000115>
-		<sio:hasSynonym xml:lang="en">is created by</sio:hasSynonym>
-		<rdfs:label xml:lang="en">is creator of</rdfs:label>
-		<dc:identifier>SIO_000365</dc:identifier>
-		<rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </owl:ObjectProperty> 
-	
-    <!-- http://semanticscience.org/resource/SIO_000219 -->
-
-    <owl:ObjectProperty rdf:about="&sio;SIO_000219">
-	    <rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-		<owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000253"/>
-		<obo:IAO_0000115 xml:lang="en">is source of is a relation between a source of information about some entity.</obo:IAO_0000115>
-		<rdfs:label xml:lang="en">is source of</rdfs:label>
-		<dc:identifier>SIO_000219</dc:identifier>
-		<rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </owl:ObjectProperty> 
+        <rdfs:label xml:lang="en">is creator of</rdfs:label>
+        <dc:identifier>SIO_000365</dc:identifier>
+        <sio:hasSynonym xml:lang="en">is created by</sio:hasSynonym>
+        <obo:IAO_0000115 xml:lang="en">is creator of is a relation between a creator and an entity..</obo:IAO_0000115>
+        <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+        <rdfs:subPropertyOf rdf:resource="&sio;SIO_000219"/>
+    </owl:ObjectProperty>
+    
 
 
-	    <!-- http://semanticscience.org/resource/SIO_000011 -->
-
-  <owl:ObjectProperty rdf:about="http://semanticscience.org/resource/SIO_000011">
-		<rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-		<obo:IAO_0000115 xml:lang="en">is attribute of is a relation that associates an attribute with an entity where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</obo:IAO_0000115>
-		<rdfs:label xml:lang="en">is attribute of</rdfs:label>
-		<dc:identifier>SIO_000011</dc:identifier>
-		<rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </owl:ObjectProperty> 
-
-  
     <!-- http://semanticscience.org/resource/SIO_000736 -->
 
     <owl:ObjectProperty rdf:about="&sio;SIO_000736">
@@ -163,22 +206,7 @@ This owl file represents the necessary entities of SIO that are reused in OntONe
         <rdfs:isDefinedBy rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
         <rdfs:subPropertyOf rdf:resource="&sio;SIO_000001"/>
     </owl:ObjectProperty>
-
-
-    <!-- http://semanticscience.org/resource/SIO_000008 -->
-
-    <owl:ObjectProperty rdf:about="&sio;SIO_000008">
-		<rdf:type rdf:resource="http://www.w3.org/2002/07/owl#ObjectProperty"/>
-		<rdfs:subPropertyOf rdf:resource="http://semanticscience.org/resource/SIO_000001"/>
-		<owl:inverseOf rdf:resource="http://semanticscience.org/resource/SIO_000011"/>
-		<obo:IAO_0000115 xml:lang="en">has attribute is a relation that associates a entity with an attribute where an attribute is an intrinsic characteristic such as a quality, capability, disposition, function, or is an externally derived attribute determined from some descriptor (e.g. a quantity, position, label/identifier) either directly or indirectly through generalization of entities of the same type.</obo:IAO_0000115>
-		<sio:subset>core</sio:subset>
-		<rdfs:label xml:lang="en">has attribute</rdfs:label>
-		<dc:identifier>SIO_000008</dc:identifier>	
-    </owl:ObjectProperty>
-
-
-	
+    
 
 
     <!-- http://semanticscience.org/resource/SIO_001242 -->
@@ -205,9 +233,33 @@ This owl file represents the necessary entities of SIO that are reused in OntONe
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/IAO_0000300 -->
+
+    <owl:Class rdf:about="&obo;IAO_0000300"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/IAO_0020015 -->
 
     <owl:Class rdf:about="&obo;IAO_0020015"/>
+    
+
+
+    <!-- http://semanticscience.org/resource/SIO_000570 -->
+
+    <owl:Class rdf:about="&sio;SIO_000570">
+        <rdfs:label xml:lang="en">movement</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <dc:identifier>SIO_000570</dc:identifier>
+        <obo:IAO_0000115 xml:lang="en">movement is the process in which an object is spatially displaced.</obo:IAO_0000115>
+        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
+    </owl:Class>
     
 
 
@@ -226,81 +278,6 @@ This owl file represents the necessary entities of SIO that are reused in OntONe
         <obo:IAO_0000115 xml:lang="en">a middle name is a name assigned to an individual that is not the first or last name.</obo:IAO_0000115>
         <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
     </owl:Class>
-	
-	
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001319 -->
-
-    <owl:Class rdf:about="&sio;SIO_001319">
-        <rdfs:label xml:lang="en">telephone number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;IAO_0000300"/>
-        <dc:identifier>SIO_001319</dc:identifier>
-        <obo:IAO_0000115 xml:lang="en">a cellular phone number is a number to connect to a mobile device</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001320 -->
-
-    <owl:Class rdf:about="&sio;SIO_001320">
-        <rdfs:label xml:lang="en">cellular phone number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&sio;SIO_001319"/>
-        <dc:identifier>SIO_001320</dc:identifier>
-        <obo:IAO_0000115 xml:lang="en">a cellular phone number is a number to connect to a mobile device</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_000570 -->
-
-    <owl:Class rdf:about="&sio;SIO_000570">
-    <rdfs:label xml:lang="en">movement</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
-        <dc:identifier>SIO_000570</dc:identifier>
-		<obo:IAO_0000115 xml:lang="en">movement is the process in which an object is spatially displaced.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001321 -->
-
-    <owl:Class rdf:about="&sio;SIO_001321">
-        <rdfs:label xml:lang="en">fax number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&sio;SIO_001319"/>
-        <dc:identifier>SIO_001321</dc:identifier>
-        <obo:IAO_0000115 xml:lang="en">a fax number is a number to connect to fax device</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001324 -->
-
-    <owl:Class rdf:about="&sio;SIO_001324">
-        <rdfs:label xml:lang="en">work phone number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&sio;SIO_001319"/>
-        <dc:identifier>SIO_001324</dc:identifier>
-        <obo:IAO_0000115 xml:lang="en">a work phone number is the number to connect to an phone at a place of work.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </owl:Class>
-    
-
-
-    <!-- http://semanticscience.org/resource/SIO_001325 -->
-
-    <owl:Class rdf:about="&sio;SIO_001325">
-        <rdfs:label xml:lang="en">home phone number</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&sio;SIO_001319"/>
-        <dc:identifier>SIO_001325</dc:identifier>
-        <obo:IAO_0000115 xml:lang="en">a home phone number is the number to connect to an phone at a place of residence.</obo:IAO_0000115>
-        <obo:IAO_0000412 rdf:resource="http://semanticscience.org/ontology/sio.owl"/>
-    </owl:Class>	
-	
 </rdf:RDF>
 
 

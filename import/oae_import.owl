@@ -21,10 +21,10 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;ontoneo/import/oae_import.owl">
         <xsd:title rdf:datatype="&xsd;string">Ontology of Adverse Events</xsd:title>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/oae_import.owl"/>
+        <rdfs:comment xml:lang="en">OAE subset applied to OntONeo ontology.</rdfs:comment>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of OAE that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <rdfs:comment xml:lang="en">OAE subset applied to OntONeo ontology.</rdfs:comment>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/oae_import.owl"/>
     </owl:Ontology>
     
 
@@ -95,6 +95,12 @@ This owl file represents the necessary entities of OAE that are reused in OntONe
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000063"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/BFO_0000066 -->
 
     <owl:ObjectProperty rdf:about="&obo;BFO_0000066"/>
@@ -121,6 +127,12 @@ This owl file represents the necessary entities of OAE that are reused in OntONe
     <!-- http://purl.obolibrary.org/obo/FMA_49893 -->
 
     <owl:Class rdf:about="&obo;FMA_49893"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/GO_0007565 -->
+
+    <owl:Class rdf:about="&obo;GO_0007565"/>
     
 
 
@@ -515,7 +527,17 @@ This owl file represents the necessary entities of OAE that are reused in OntONe
 
     <owl:Class rdf:about="&obo;OAE_0001041">
         <rdfs:label>caesarean section</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;OAE_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;OAE_0000067"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
+                        <owl:someValuesFrom rdf:resource="&obo;GO_0007565"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
         <obo:IAO_0000118>cesarean section</obo:IAO_0000118>
         <rdfs:seeAlso>MedDRA: 10006924</rdfs:seeAlso>
         <obo:IAO_0000117>YH, SS</obo:IAO_0000117>

@@ -24,11 +24,11 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;ontoneo/import/obi_import.owl">
-	     <xsd:title rdf:datatype="&xsd;string">The Ontology for Biomedical Investigations (OBI)</xsd:title>	
+        <xsd:title rdf:datatype="&xsd;string">The Ontology for Biomedical Investigations (OBI)</xsd:title>
+        <rdfs:comment xml:lang="en">OBI subset applied to OntONeo ontology.</rdfs:comment>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of OBI that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <rdfs:comment xml:lang="en">OBI subset applied to OntONeo ontology.</rdfs:comment>	
-        <owl:versionIRI rdf:resource="&bio;ontoneo/releases/2016-12-26/obi_import.owl"/>
+        <owl:versionIRI rdf:resource="&bio;ontoneo/releases/2017-03-04/obi_import.owl"/>
     </owl:Ontology>
     
 
@@ -264,8 +264,8 @@ This owl file represents the necessary entities of OBI that are reused in OntONe
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Alan Ruttenberg</obo:IAO_0000117>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">Person:Helen Parkinson</obo:IAO_0000117>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">Person:Helen Parkinson</obo:IAO_0000119>
-        <obo:IAO_0000115 xml:lang="en">Relating a legal person to an organization in the case where the legal person has a role as member of the organization</obo:IAO_0000115>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">is member of organization</obo:IAO_0000111>
+        <obo:IAO_0000115 xml:lang="en">Relating a legal person to an organization in the case where the legal person has a role as member of the organization</obo:IAO_0000115>
         <rdfs:range rdf:resource="&obo;OBI_0000245"/>
         <owl:inverseOf rdf:resource="&obo;OBI_0001688"/>
     </owl:ObjectProperty>
@@ -503,17 +503,6 @@ This owl file represents the necessary entities of OBI that are reused in OntONe
 
     <owl:Class rdf:about="&obo;OBI_0000011">
         <rdfs:label xml:lang="en">planned process</rdfs:label>
-        <owl:equivalentClass>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="&obo;IAO_0000104"/>
-                    </owl:Restriction>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">&apos;Plan&apos; includes a future direction sense. That can be problematic if plans are changed during their execution. There are however implicit contingencies for protocols that an agent has in his mind that can be considered part of the plan, even if the agent didn&apos;t have them in mind before. Therefore, a planned process can diverge from what the agent would have said the plan was before executing it, by adjusting to problems encountered during execution (e.g. choosing another reagent with equivalent properties, if the originally planned one has run out.)</obo:IAO_0000116>
         <obo:IAO_0000232 rdf:datatype="&xsd;string">6/11/9: Edited at workshop. Used to include: is initiated by an agent</obo:IAO_0000232>
@@ -581,7 +570,13 @@ objectives is a planned process.</obo:IAO_0000116>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0000011"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:someValuesFrom rdf:resource="&obo;OBI_0000047"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -593,14 +588,8 @@ objectives is a planned process.</obo:IAO_0000116>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
+                <owl:onProperty rdf:resource="&obo;OBI_0000293"/>
                 <owl:allValuesFrom rdf:resource="&obo;BFO_0000040"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
-                <owl:someValuesFrom rdf:resource="&obo;OBI_0000047"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <owl:disjointWith rdf:resource="&obo;OBI_0600010"/>
@@ -681,8 +670,8 @@ for now.</obo:IAO_0000116>
         <obo:IAO_0000112 rdf:datatype="&xsd;string">In biology, a host is an organism that harbors a virus or parasite, or a mutual or commensal symbiont, typically providing nourishment and shelter.  http://en.wikipedia.org/wiki/Host_(biology)  30 March 09</obo:IAO_0000112>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">OBI</obo:IAO_0000119>
         <obo:IAO_0000111 rdf:datatype="&xsd;string">host role</obo:IAO_0000111>
-        <obo:IAO_0000115 xml:lang="en">host role is a role played by an organism and realized by providing nourishment, shelter or a means of reproduction to another organism within the organism playing the host role</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">http://en.wikipedia.org/wiki/Host_(biology)</obo:IAO_0000119>
+        <obo:IAO_0000115 xml:lang="en">host role is a role played by an organism and realized by providing nourishment, shelter or a means of reproduction to another organism within the organism playing the host role</obo:IAO_0000115>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
     </owl:Class>
     
@@ -699,7 +688,6 @@ for now.</obo:IAO_0000116>
                 <owl:someValuesFrom rdf:resource="&obo;PATO_0000011"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">A time measurement datum that is the result of measurement of age of an organism</obo:IAO_0000115>
         <obo:IAO_0000232 rdf:datatype="&xsd;string">In MageTab file, we use
 initialTimePoint (a process) + age (a number expected) + TimeUnit (definied in UO, such as year, hour, day, etc.)
 Now we use the term label indicating the start time point of measuring the age, (number + TimeUnit) are expected instances of the class</obo:IAO_0000232>
@@ -712,6 +700,7 @@ life of bearer doesn&apos;t imply organism
 this assay measures time not developmental stage. we recognize that development can take different time periods under different conditions such as media / temperature
 age as a quality is dubious; we plan to revisit
 stages in development are currently handled with controlled vocabulary, such as 2-somite stage </obo:IAO_0000116>
+        <obo:IAO_0000115 xml:lang="en">A time measurement datum that is the result of measurement of age of an organism</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">age measurement datum</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
     </owl:Class>
@@ -723,10 +712,10 @@ stages in development are currently handled with controlled vocabulary, such as 
     <owl:Class rdf:about="&obo;OBI_0001168">
         <rdfs:label xml:lang="en">age since fertilization measurement datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0001167"/>
-        <obo:IAO_0000115 xml:lang="en">An age measurement datum that is the result of the measurement of the age of an organism since fertilization, the process of the union of gametes of opposite sexes during the process of sexual reproduction to form a zygote.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">Definition of fertilization comes from GO.</obo:IAO_0000116>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">MO_701 fertilization</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON:Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An age measurement datum that is the result of the measurement of the age of an organism since fertilization, the process of the union of gametes of opposite sexes during the process of sexual reproduction to form a zygote.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">age since fertilization measurement datum</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
     </owl:Class>
@@ -738,9 +727,9 @@ stages in development are currently handled with controlled vocabulary, such as 
     <owl:Class rdf:about="&obo;OBI_0001169">
         <rdfs:label xml:lang="en">age since birth measurement datum</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;OBI_0001167"/>
-        <obo:IAO_0000115 xml:lang="en">An age measurement datum that is the result of the measurement of the age of an organism since birth, the process of emergence and separation of offspring from the mother.</obo:IAO_0000115>
         <obo:IAO_0000119 rdf:datatype="&xsd;string">MO_710 birth</obo:IAO_0000119>
         <obo:IAO_0000117 rdf:datatype="&xsd;string">PERSON:Chris Stoeckert, Jie Zheng</obo:IAO_0000117>
+        <obo:IAO_0000115 xml:lang="en">An age measurement datum that is the result of the measurement of the age of an organism since birth, the process of emergence and separation of offspring from the mother.</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">age since birth measurement datum</obo:IAO_0000111>
         <obo:IAO_0000114 rdf:resource="&obo;IAO_0000120"/>
     </owl:Class>
@@ -821,6 +810,17 @@ stages in development are currently handled with controlled vocabulary, such as 
         <rdfs:subClassOf rdf:resource="&obo;OBI_0001928"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
+                        <owl:someValuesFrom rdf:resource="&obo;OBI_0001755"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;OBI_0000299"/>
                 <owl:someValuesFrom>
                     <owl:Class>
@@ -829,17 +829,6 @@ stages in development are currently handled with controlled vocabulary, such as 
                             <rdf:Description rdf:about="&obo;IAO_0000030"/>
                         </owl:unionOf>
                     </owl:Class>
-                </owl:someValuesFrom>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;BFO_0000055"/>
-                <owl:someValuesFrom>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="&obo;RO_0000059"/>
-                        <owl:someValuesFrom rdf:resource="&obo;OBI_0001755"/>
-                    </owl:Restriction>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>

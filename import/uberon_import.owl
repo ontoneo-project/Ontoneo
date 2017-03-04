@@ -25,11 +25,11 @@
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
     <owl:Ontology rdf:about="&obo;ontoneo/import/uberon_import.owl">
         <xsd:title rdf:datatype="&xsd;string">Uberon multi-species anatomy ontology</xsd:title>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/uberon_import.owl"/>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of UBERON that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <rdfs:comment xml:lang="en">UBERON subset applied to OntONeo ontology.</rdfs:comment>
-	</owl:Ontology>	
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/uberon_import.owl"/>
+    </owl:Ontology>
     
 
 
@@ -61,12 +61,12 @@ This owl file represents the necessary entities of UBERON that are reused in Ont
     <owl:AnnotationProperty rdf:about="&obo;UBPROP_0000001">
         <rdfs:label xml:lang="en">external_definition</rdfs:label>
         <oboInOwl:is_metadata_tag rdf:datatype="&xsd;integer">1</oboInOwl:is_metadata_tag>
-        <obo:IAO_0000115 xml:lang="en">An alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="&xsd;string">This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UBPROP:0000001</oboInOwl:hasDbXref>
         <oboInOwl:shorthand rdf:datatype="&xsd;string">external_definition</oboInOwl:shorthand>
         <oboInOwl:id rdf:datatype="&xsd;string">external_definition</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">An alternate textual definition for a class taken unmodified from an external source. This definition may have been used to derive a generalized definition for the new class.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     
 
@@ -76,13 +76,19 @@ This owl file represents the necessary entities of UBERON that are reused in Ont
     <owl:AnnotationProperty rdf:about="&obo;UBPROP_0000003">
         <rdfs:label xml:lang="en">homology_notes</rdfs:label>
         <oboInOwl:is_metadata_tag rdf:datatype="&xsd;integer">1</oboInOwl:is_metadata_tag>
-        <obo:IAO_0000115 xml:lang="en">Notes on the homology status of this class.</obo:IAO_0000115>
         <rdfs:comment rdf:datatype="&xsd;string">This annotation property may be replaced with an annotation property from an external ontology such as IAO</rdfs:comment>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UBPROP:0000003</oboInOwl:hasDbXref>
         <oboInOwl:id rdf:datatype="&xsd;string">homology_notes</oboInOwl:id>
         <oboInOwl:shorthand rdf:datatype="&xsd;string">homology_notes</oboInOwl:shorthand>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Notes on the homology status of this class.</obo:IAO_0000115>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBPROP_0000007 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;UBPROP_0000007"/>
     
 
 
@@ -91,11 +97,11 @@ This owl file represents the necessary entities of UBERON that are reused in Ont
     <owl:AnnotationProperty rdf:about="&obo;UBPROP_0000008">
         <rdfs:label xml:lang="en">taxon_notes</rdfs:label>
         <oboInOwl:is_metadata_tag rdf:datatype="&xsd;integer">1</oboInOwl:is_metadata_tag>
-        <obo:IAO_0000115 xml:lang="en">Notes on the how instances of this class vary across species.</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UBPROP:0000008</oboInOwl:hasDbXref>
         <oboInOwl:shorthand rdf:datatype="&xsd;string">taxon_notes</oboInOwl:shorthand>
         <oboInOwl:id rdf:datatype="&xsd;string">taxon_notes</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Notes on the how instances of this class vary across species.</obo:IAO_0000115>
     </owl:AnnotationProperty>
     
 
@@ -105,19 +111,43 @@ This owl file represents the necessary entities of UBERON that are reused in Ont
     <owl:AnnotationProperty rdf:about="&obo;UBPROP_0000012">
         <rdfs:label xml:lang="en">external_ontology_notes</rdfs:label>
         <oboInOwl:is_metadata_tag rdf:datatype="&xsd;integer">1</oboInOwl:is_metadata_tag>
-        <obo:IAO_0000115 xml:lang="en">Notes on how similar or equivalent classes are represented in other ontologies.</obo:IAO_0000115>
         <obo:IAO_0000116 rdf:datatype="&xsd;string">This annotation property may be replaced with an annotation property from an external ontology such as IAO</obo:IAO_0000116>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UBPROP:0000012</oboInOwl:hasDbXref>
         <oboInOwl:id rdf:datatype="&xsd;string">external_ontology_notes</oboInOwl:id>
         <oboInOwl:shorthand rdf:datatype="&xsd;string">external_ontology_notes</oboInOwl:shorthand>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Notes on how similar or equivalent classes are represented in other ontologies.</obo:IAO_0000115>
     </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="&dc;contributor"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasBroadSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasBroadSynonym"/>
     
 
 
     <!-- http://www.geneontology.org/formats/oboInOwl#hasDbXref -->
 
     <owl:AnnotationProperty rdf:about="&oboInOwl;hasDbXref"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasExactSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasExactSynonym"/>
+    
+
+
+    <!-- http://www.geneontology.org/formats/oboInOwl#hasNarrowSynonym -->
+
+    <owl:AnnotationProperty rdf:about="&oboInOwl;hasNarrowSynonym"/>
     
 
 
@@ -157,6 +187,12 @@ This owl file represents the necessary entities of UBERON that are reused in Ont
     
 
 
+    <!-- http://xmlns.com/foaf/0.1/depicted_by -->
+
+    <owl:AnnotationProperty rdf:about="&foaf;depicted_by"/>
+    
+
+
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
@@ -174,9 +210,87 @@ This owl file represents the necessary entities of UBERON that are reused in Ont
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000051 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000051"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000062 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000062"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000063 -->
+
+    <owl:ObjectProperty rdf:about="&obo;BFO_0000063"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/RO_0001025 -->
 
     <owl:ObjectProperty rdf:about="&obo;RO_0001025"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002087 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002087"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002202 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002202"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002220 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002220"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002221 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002221"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002223 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002223"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002224 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002224"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002229 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002229"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002230 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002230"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002254 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002254"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/RO_0002572 -->
+
+    <owl:ObjectProperty rdf:about="&obo;RO_0002572"/>
     
 
 
@@ -191,9 +305,45 @@ This owl file represents the necessary entities of UBERON that are reused in Ont
     
 
 
+    <!-- http://purl.obolibrary.org/obo/BFO_0000011 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000011"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000015 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000015"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/BFO_0000035 -->
+
+    <owl:Class rdf:about="&obo;BFO_0000035"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_14703 -->
+
+    <owl:Class rdf:about="&obo;FMA_14703"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_18820 -->
 
     <owl:Class rdf:about="&obo;FMA_18820"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_21451 -->
+
+    <owl:Class rdf:about="&obo;FMA_21451"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_63183 -->
+
+    <owl:Class rdf:about="&obo;FMA_63183"/>
     
 
 
@@ -203,9 +353,1073 @@ This owl file represents the necessary entities of UBERON that are reused in Ont
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_67552 -->
+
+    <owl:Class rdf:about="&obo;FMA_67552"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_69067 -->
+
+    <owl:Class rdf:about="&obo;FMA_69067"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_69068 -->
+
+    <owl:Class rdf:about="&obo;FMA_69068"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_69072 -->
+
+    <owl:Class rdf:about="&obo;FMA_69072"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_7154 -->
+
+    <owl:Class rdf:about="&obo;FMA_7154"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_80223 -->
+
+    <owl:Class rdf:about="&obo;FMA_80223"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_85541 -->
+
+    <owl:Class rdf:about="&obo;FMA_85541"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9637 -->
+
+    <owl:Class rdf:about="&obo;FMA_9637"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9669 -->
+
+    <owl:Class rdf:about="&obo;FMA_9669"/>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_9670 -->
 
     <owl:Class rdf:about="&obo;FMA_9670"/>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000066 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000066">
+        <rdfs:label rdf:datatype="&xsd;string">fully formed stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000092"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000111"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BilaDO:0000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0001272</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBdv:00005369</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The stage of development at which the animal is fully formed, including immaturity and maturity. Includes both sexually immature stage, and adult stage.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000066</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBls:0000041</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XtroDO:0000084</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">adult stage</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">fully formed animal stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">juvenile-adult stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#efo_slim"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/566"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000067 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000067">
+        <rdfs:label rdf:datatype="&xsd;string">embryo stage part</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0000105"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A stage that is part of the embryo stage.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000067</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">embryonic stage part</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#grouping_class"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000068 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000068">
+        <rdfs:label rdf:datatype="&xsd;string">embryo stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000063"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000092"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="&obo;UBERON_0000092"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A life cycle stage that starts with fertilization and ends with the fully formed embryo.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BilaDO:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EV:0300001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBdv:00005289</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:72652</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000022</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000068</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBls:0000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBls:0000092</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBls:0000102</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000012</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">embryogenesis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">embryonic stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/296280003"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000071 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000071">
+        <rdfs:label rdf:datatype="&xsd;string">death stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002229"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">End of the life of an organism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000071</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:0000437</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XtroDO:0000085</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">death</oboInOwl:hasRelatedSynonym>
+        <obo:UBPROP_0000012 rdf:datatype="&xsd;string">ncit:Death is an outcome</obo:UBPROP_0000012>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000092 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000092">
+        <rdfs:label rdf:datatype="&xsd;string">post-embryonic stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BilaDO:0000003</oboInOwl:hasDbXref>
+        <obo:UBPROP_0000008 rdf:datatype="&xsd;string">In birds, the postnatal stage begins when the beak penetrates the shell (i.e., external pipping) (Brown et al. 1997)</obo:UBPROP_0000008>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000024</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000092</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBls:0000022</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBls:0000093</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBls:0000103</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">post-hatching stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">postembryonic</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">postembryonic stage</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">stage succeeding embryo, including mature structure</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/344"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000104 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000104">
+        <rdfs:label rdf:datatype="&xsd;string">life cycle</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000015"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002230"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000071"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002224"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An entire span of an organism&apos;s life, commencing with the zygote stage and ending in the death of the organism.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBdv:00000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000011</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000104</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">entire life cycle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">entire lifespan</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">life</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">lifespan</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ncithesaurus:Life</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#upper_level"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/532"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000105 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000105">
+        <rdfs:label rdf:datatype="&xsd;string">life cycle stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000011"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A spatiotemporal region encompassing some part of the life cycle of an organism.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000105</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0000399</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBdv:00007012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:24120</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OlatDv:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PdumDv:0000090</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000105</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBls:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000000</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0100000</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">developmental stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ncithesaurus:Developmental_Stage</oboInOwl:hasDbXref>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">stage</oboInOwl:hasNarrowSynonym>
+        <obo:UBPROP_0000012 rdf:datatype="&xsd;string">the WBls class &apos;all stages&apos; belongs here as it is the superclass of other WBls stages</obo:UBPROP_0000012>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">this class represents a proper part of the life cycle of an organism. The class &apos;life cycle&apos; should not be placed here</obo:IAO_0000116>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <obo:UBPROP_0000012 rdf:datatype="&xsd;string">we map the ZFS unknown stage here as it is logically equivalent to saying *some* life cycle stage</obo:UBPROP_0000012>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#efo_slim"/>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#upper_level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000106 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000106">
+        <rdfs:label rdf:datatype="&xsd;string">zygote stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002223"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">1-cell stage</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A stage at which the organism is a single cell produced by means of sexual reproduction.</obo:IAO_0000115>
+        <obo:UBPROP_0000003 rdf:datatype="&xsd;string">As in all metazoans, eumetazoan development begins with a fertilized egg, or zygote.[well established][VHOG]</obo:UBPROP_0000003>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000106</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BilaDO:0000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0001322</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EHDAA:27</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EMAPA:16033</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBdv:00005288</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PdumDv:0000100</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000106</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">VHOG:0000745</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000001</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">fertilized egg stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">fertilized egg stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">one cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">one-cell stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">zygote</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">zygotum</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Zygote"/>
+        <oboInOwl:hasDbXref rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12601"/>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#efo_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000107 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000107">
+        <rdfs:label rdf:datatype="&xsd;string">cleavage stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000107</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BilaDO:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0001290</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBdv:00000054</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MESH:A16.254.270</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000015</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000020</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">PdumDv:0000200</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The first few specialized divisions of an activated animal egg; Stage consisting of division of cells in the early embryo. The zygotes of many species undergo rapid cell cycles with no significant growth, producing a cluster of cells the same size as the original zygote. The different cells derived from cleavage are called blastomeres and form a compact mass called the morula. Cleavage ends with the formation of the blastula.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000107</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000046</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Cleavage_(embryo)"/>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#efo_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000108 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000108">
+        <rdfs:label rdf:datatype="&xsd;string">blastula stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An early stage of embryonic development in animals. It is produced by cleavage of a fertilized ovum and consists of a spherical layer of around 128 cells surrounding a central fluid-filled cavity called the blastocoel. The blastula follows the morula and precedes the gastrula in the developmental sequence.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000108</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BilaDO:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0001282</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000016</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000021</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OpenCyc:Mx4rEetFnKP2EdqAAAACs4vPlg</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000108</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBls:0000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000045</oboInOwl:hasDbXref>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">consider adding a preceding stage &apos;morula stage&apos; as part of cleavage</obo:IAO_0000116>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Blastula"/>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#efo_slim"/>
+        <foaf:depicted_by rdf:resource="http://upload.wikimedia.org/wikipedia/commons/c/c6/Blastulation.png"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000109 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000109">
+        <rdfs:label rdf:datatype="&xsd;string">gastrula stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000108"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A stage defined by complex and coordinated series of cellular movements that occurs at the end of cleavage during embryonic development of most animals. The details of gastrulation vary from species to species, but usually result in the formation of the three primary germ layers, ectoderm, mesoderm and endoderm.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000109</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BilaDO:0000008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0001296</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBdv:00005317</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000019</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000109</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">WBls:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000047</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">blastocystis trilaminaris stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">trilaminar blastocyst stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">trilaminar blastoderm stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">trilaminar disk stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">trilaminar germ stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">trilaminar stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#efo_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000110 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000110">
+        <rdfs:label rdf:datatype="&xsd;string">neurula stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000109"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000110</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BilaDO:0000009</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000012</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000017</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Staged defined by the formation of a tube from the flat layer of ectodermal cells known as the neural plate. This will give rise to the central nervous system.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000110</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/343"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000111 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000111">
+        <rdfs:label rdf:datatype="&xsd;string">organogenesis stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000110"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A stage at which the ectoderm, endoderm, and mesoderm develop into the internal organs of the organism.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000111</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BilaDO:0000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000015</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000018</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000005</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000032</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000111</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">segmentation stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Organogenesis"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/533"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000112 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000112">
+        <rdfs:label rdf:datatype="&xsd;string">sexually immature stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000112</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0002168</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0001300</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EV:0300051</oboInOwl:hasDbXref>
+        <obo:UBPROP_0000008 rdf:datatype="&xsd;string">In mammals this would include infant (nourishment from lactation) and juvenile (prepubertal no longer dependent on mother)</obo:UBPROP_0000008>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000043</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000009</oboInOwl:hasDbXref>
+        <obo:UBPROP_0000001 rdf:datatype="&xsd;string">The stage of being a sexually immature adult animal[XAO:1000010].</obo:UBPROP_0000001>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000112</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000010</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XtroDO:0000083</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000051</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">immature stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">juvenile stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">subadult stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#efo_slim"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/427"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000113 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000113">
+        <rdfs:label rdf:datatype="&xsd;string">post-juvenile adult stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000066"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BILS:0000113</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EV:0300064</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EV:0300070</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MIAA:0000403</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000110</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000026</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000027</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The stage of being a sexually mature adult animal.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000113</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000093</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000044</oboInOwl:hasDbXref>
+        <oboInOwl:hasBroadSynonym rdf:datatype="&xsd;string">adult stage</oboInOwl:hasBroadSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/345"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/499"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0000173 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0000173">
+        <rdfs:label rdf:datatype="&xsd;string">amniotic fluid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_9669"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002221"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_69068"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_80223"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Amniotic fluid is a bodily fluid consisting of watery liquid surrounding and cushioning a growing fetus within the amnion. It allows the fetus to move freely without the walls of the uterus being too tight against its body. Buoyancy is also provided. The composition of the fluid changes over the course of gestation. Initially, amniotic fluid is similar to maternal plasma, mainly water with electrolytes. As the fetus develops, proteins, carbohydrates, lipids, phospholipids originating from the lungs, fetal cells, and urea are deposited in the fluid.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0000068</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CALOHA:TS-0034</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ENVO:02000021</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EV:0100123</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:305905</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GAID:1155</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MA:0002893</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MESH:D000653</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0000173</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0002638</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">VHOG:0001267</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">acqua amnii</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">liquor amnii</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0002638"/>
+        <oboInOwl:hasDbXref rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13188"/>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#pheno_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0001179 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0001179">
+        <rdfs:label rdf:datatype="&xsd;string">peritoneal cavity</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;FMA_67552"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002220"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_14703"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002220"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_21451"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002572"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_9908"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_12241"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_9908"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Anatomical cavity bounded by visceral and parietal peritoneum</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001782</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EHDAA2:0001446</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EMAPA:16138</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:14704</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">GAID:24</oboInOwl:hasDbXref>
+        <obo:UBPROP_0000003 rdf:datatype="&xsd;string">In hagfishes a transverse septum extends upward from the ventral body wall posterior to the heart, partly separating an anterior pericardial cavity from a larger peritoneal cavity. (...) These basic relationships have not been modified by urodeles. The small pericardial cavity remains far forward where it is separated by a transverse septum from the principal coelom, which may now be called a pleuroperitoneal cavity because slender lungs are present. (...) The heart [of other tetrapods] is separated from the lungs (and liver if present) by more or less horizontal partitions that have their origin in the embryo as folds on the serous membrane of the right and left lateral body walls. These grow out to join in the midline of the body. They are called lateral mesocardia (birds) or pleuropericardial membranes. Posteriorly they join the transverse septum to form the adult pericardial membrane, or pericardium. (...) In their partitioning of their coelom, embryonic mammals resemble first early fishes (incomplete partition, posterior to heart, consisting of the transverse septum) and then reptiles (pericardium derived from transverse septum and pleuropericardial membranes) Mammals then separate paired pleural cavities from the peritoneal cavity by a diaphragm. The ventral portion of this organ comes from the transverse septum. The dorsal portion is derived from the dorsal mesentery and from still another pair of outgrowths from the lateral body wall, the pleuroperitoneal membranes.[well established][VHOG]</obo:UBPROP_0000003>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MA:0000054</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MESH:A01.047.025.600.678</oboInOwl:hasDbXref>
+        <obo:UBPROP_0000001 rdf:datatype="&xsd;string">The potential space between the parietal and visceral layers of the peritoneum, which are normally in contact. The peritoneal cavity is divided into the greater and lesser sac. The greater sac is the peritoneal cavity, and the lesser sac is the omental bursa. [TFD][VHOG]</obo:UBPROP_0000001>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0001179</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C1704247</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">VHOG:0000852</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">cavitas peritonealis</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">saccus serosus peritonei</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Peritoneal_cavity"/>
+        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C1704247"/>
+        <oboInOwl:hasDbXref rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12769"/>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#uberon_slim"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/181616008"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003104 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0003104">
+        <rdfs:label rdf:datatype="&xsd;string">mesenchyme</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_9637"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002254"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_69072"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:UBPROP_0000001 rdf:datatype="&xsd;string">A mesh-like cell arrangement, less compact than an epithelium. Kimmel et al, 1995.[TAO]</obo:UBPROP_0000001>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">AAO:0010427</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">AEO:0000145</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001393</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CALOHA:TS-0620</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EHDAA2:0003145</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EV:0100007</oboInOwl:hasDbXref>
+        <obo:UBPROP_0000001 rdf:datatype="&xsd;string">Portion of tissue consisting of loosely organized undifferentiated mesodermal cells that give rise to such structures as connective tissues, blood, lymphatics, bone, and cartilage.[AAO]</obo:UBPROP_0000001>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Portion of tissue consisting of loosely organized undifferentiated mesodermal cells that give rise to such structures as connective tissues, blood, lymphatics, bone, and cartilage[XAO]. A mesh-like cell arrangement, less compact than an epithelium[ZFA]. The part of the embryonic mesoderm, consisting of loosely packed, unspecialized cells set in a gelatinous ground substance, from which connective tissue, bone, cartilage, and the circulatory and lymphatic systems develop[BTO].</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">TAO:0000393</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0003104</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0162415</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">VHOG:0000170</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:0003046</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFA:0000393</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">mesenchyma</oboInOwl:hasRelatedSynonym>
+        <obo:UBPROP_0000007 rdf:datatype="&xsd;string">mesenchymal</obo:UBPROP_0000007>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mesenchymal tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">mesenchyme tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">portion of mesenchymal tissue</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">portion of mesenchyme tissue</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">the relationship to mesoderm is weaker than develops_from in order to have classes such as &apos;head mesenchyme from mesoderm&apos; make sense</obo:IAO_0000116>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Mesenchyme"/>
+        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0162415"/>
+        <oboInOwl:hasDbXref rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13301"/>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#pheno_slim"/>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#uberon_slim"/>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#vertebrate_core"/>
+        <foaf:depicted_by rdf:resource="http://upload.wikimedia.org/wikipedia/commons/f/f4/Mesenchymal_Stem_Cell.jpg"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0003422 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0003422">
+        <rdfs:label rdf:datatype="&xsd;string">mesenchyme of umbilical cord</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0003104"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_85541"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0003104"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_85541"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A gelatinous substance within the umbilical cord, largely made up of mucopolysaccharides (hyaluronic acid and chondroitin sulfate). It also contains some fibroblasts and macrophages. It is derived from Extra Embryonic Mesoderm[WP]</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EMAPA:26127</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EMAPA:35925</oboInOwl:hasDbXref>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">TODO - check</obo:IAO_0000116>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0003422</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Wharton&apos;s jelly</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">umbilical cord mesenchyme</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Wharton&apos;s_jelly"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/368069009"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0004707 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0004707">
+        <rdfs:label rdf:datatype="&xsd;string">pharyngula stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000111"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A stage that follows the blastula, gastrula and neurula stages. At the pharyngula stage, all vertebrate embryos show remarkable similarities.</obo:IAO_0000115>
+        <obo:UBPROP_0000008 rdf:datatype="&xsd;string">Corresponds to E7-E11 in Mouse (Galis et al, TREE, 2001)</obo:UBPROP_0000008>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">DrerDO:0000052</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0001310</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000006</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0004707</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000050</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">pharyngula</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">phylotypic stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Pharyngula"/>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#efo_slim"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007220 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0007220">
+        <rdfs:label rdf:datatype="&xsd;string">late embryonic stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0004707"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000111"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">An embryo stage that covers late steps of the embryogenesis with a fully formed embryo still developing before birth or egg hatching.</obo:IAO_0000115>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EV:0300011</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EVM:2990031</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBdv:00005333</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:63631</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MIAA:0000399</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000031</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000023</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0007220</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">embryo late (growth) stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">embryo late growth stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">embryo late stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">fetal stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">fetus</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">fetus stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/367619004"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/355"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/565"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007221 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0007221">
+        <rdfs:label rdf:datatype="&xsd;string">neonate stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">BTO:0001762</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EV:0300037</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000082</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MmusDv:0000096</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NIF_Organism:birnlex_695</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">OGES:000025</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Of or pertaining to the period of time immediately following birth, or to the newborn.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0007221</oboInOwl:id>
+        <obo:IAO_0000116 rdf:datatype="&xsd;string">consider splitting infant/newborn</obo:IAO_0000116>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">fledgling stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">hatchling</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">hatchling stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">infant stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">neonatal stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">nestling stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">newborn stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">pouch stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">puggle</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">puggle stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Infant"/>
+        <oboInOwl:hasDbXref rdf:resource="http://neurolex.org/wiki/Category:Infant_organism"/>
+        <oboInOwl:hasDbXref rdf:resource="http://neurolex.org/wiki/Category:Newborn_organism"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/350"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007222 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0007222">
+        <rdfs:label rdf:datatype="&xsd;string">late adult stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000062"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0018241"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EV:0300123</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">HsapDv:0000093</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">NIF_Organism:birnlex_691</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0007222</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">UMLS:C0001792</oboInOwl:hasDbXref>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">elderly</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">elderly stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">geriatric</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">geriatric stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0001792"/>
+        <oboInOwl:hasDbXref rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16268"/>
+        <rdfs:seeAlso rdf:resource="https://github.com/obophenotype/uberon/issues/495"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007232 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0007232">
+        <rdfs:label rdf:datatype="&xsd;string">2 cell stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000106"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">2-cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">Cleavage:2-cell</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">NF stage 2 (2-cell)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0007232</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000011</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XtroDO:0000006</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000002</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">two-cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007233 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0007233">
+        <rdfs:label rdf:datatype="&xsd;string">4 cell stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007232"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">4-cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">Cleavage:4-cell</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">NF stage 3 (4-cell)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0007233</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000013</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XtroDO:0000007</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000003</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">four-cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0007236 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0007236">
+        <rdfs:label rdf:datatype="&xsd;string">8 cell stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000067"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000107"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007233"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">8-cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">Cleavage:8-cell</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">NF stage 4 (8-cell)</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0007236</oboInOwl:id>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XAO:1000014</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">XtroDO:0000008</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">ZFS:0000004</oboInOwl:hasDbXref>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">eight-cell stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0008816 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0008816">
+        <rdfs:label rdf:datatype="&xsd;string">embryonic head</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;FMA_7154"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;FMA_69068"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_69067"/>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_7154"/>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">CALOHA:TS-0246</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FBbt:00000155</oboInOwl:hasDbXref>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">FMA:293011</oboInOwl:hasDbXref>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0008816</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">A head that is part of a embryo.</obo:IAO_0000115>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#non_informative"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0010260 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0010260">
+        <rdfs:label rdf:datatype="&xsd;string">umbilical blood vessel</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;FMA_63183"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                        <owl:someValuesFrom>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                                <owl:someValuesFrom rdf:resource="&obo;FMA_85541"/>
+                            </owl:Restriction>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_63183"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0001025"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0003422"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EMAPA:36493</oboInOwl:hasDbXref>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">One of the three blood vessels, usually one large umbilical vein and two small umbilical arteries, buried within Wharton&apos;s jelly, that transport blood to and from the placenta, where exchange between the mother and fetus takes place; the umbilical vein carries oxygenated, nutrient-rich blood from the placenta to the fetus, and the umbilical arteries carry deoxygenated, nutrient-depleted blood from the fetus to the placenta.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0010260</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">allantoic vessel</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">umbilical cord blood vessel</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">umbilical cord blood vessels</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">umbilical vasculature</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">umbilical vessel</oboInOwl:hasExactSynonym>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#pheno_slim"/>
+        <oboInOwl:hasDbXref rdf:resource="http://www.snomedbrowser.com/Codes/Details/408728001"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0012101 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0012101">
+        <rdfs:label rdf:datatype="&xsd;string">perinatal stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0000092"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0000068"/>
+                    </owl:Restriction>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:UBPROP_0000008 rdf:datatype="&xsd;string">In birds, the paranatal stage starts when the beak penetrates into the air pocket (air cell) between the inner and outer shell membranes</obo:UBPROP_0000008>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The period spanning the range immediately before and after birth</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0012101</oboInOwl:id>
+        <oboInOwl:hasNarrowSynonym rdf:datatype="&xsd;string">paranatal stage</oboInOwl:hasNarrowSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:Class>
     
 
 
@@ -237,52 +1451,214 @@ This owl file represents the necessary entities of UBERON that are reused in Ont
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">EFO:0001942</oboInOwl:hasDbXref>
         <oboInOwl:hasDbXref rdf:datatype="&xsd;string">MESH:D005312</oboInOwl:hasDbXref>
         <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0012168</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">blood that remains in the placenta and in the attached umbilical cord after childbirth[WP].</obo:IAO_0000115>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">cord blood</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">fetal blood</oboInOwl:hasRelatedSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
         <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">umbilical cord blood</oboInOwl:hasRelatedSynonym>
+        <obo:IAO_0000115 xml:lang="en">blood that remains in the placenta and in the attached umbilical cord after childbirth[WP].</obo:IAO_0000115>
         <oboInOwl:hasDbXref rdf:resource="http://en.wikipedia.org/wiki/Cord_blood"/>
         <oboInOwl:inSubset rdf:resource="&obo;uberon/core#efo_slim"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.obolibrary.org/obo/UBERON_0000173 -->
+    <!-- http://purl.obolibrary.org/obo/UBERON_0018241 -->
 
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/UBERON_0000173">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9669"/>
+    <owl:Class rdf:about="&obo;UBERON_0018241">
+        <rdfs:label rdf:datatype="&xsd;string">prime adult stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0001025"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_80223"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000113"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A life cycle stage that starts at completion of development and growth of the sexually mature adult animal, and ends before senescence.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0018241</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">adulthood stage</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <dc:contributor rdf:resource="https://github.com/ANiknejad"/>
+        <dc:contributor rdf:resource="https://github.com/cmungall"/>
+        <dc:contributor rdf:resource="https://github.com/fbastian"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0018685 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0018685">
+        <rdfs:label rdf:datatype="&xsd;string">nursing stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000051"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007221"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/RO_0002221"/>
-                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_69068"/>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000092"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amniotic fluid is a bodily fluid consisting of watery liquid surrounding and cushioning a growing fetus within the amnion. It allows the fetus to move freely without the walls of the uterus being too tight against its body. Buoyancy is also provided. The composition of the fluid changes over the course of gestation. Initially, amniotic fluid is similar to maternal plasma, mainly water with electrolytes. As the fetus develops, proteins, carbohydrates, lipids, phospholipids originating from the lungs, fetal cells, and urea are deposited in the fluid.</obo:IAO_0000115>
-        <oboInOwl:hasDbXref rdf:resource="http://linkedlifedata.com/resource/umls/id/C0002638"/>
-        <oboInOwl:hasDbXref rdf:resource="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13188"/>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">BTO:0000068</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">CALOHA:TS-0034</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">ENVO:02000021</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">EV:0100123</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:305905</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">GAID:1155</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MA:0002893</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MESH:D000653</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UMLS:C0002638</oboInOwl:hasDbXref>
-        <oboInOwl:hasDbXref rdf:datatype="http://www.w3.org/2001/XMLSchema#string">VHOG:0001267</oboInOwl:hasDbXref>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">uberon</oboInOwl:hasOBONamespace>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">acqua amnii</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:hasRelatedSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">liquor amnii</oboInOwl:hasRelatedSynonym>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UBERON:0000173</oboInOwl:id>
-        <oboInOwl:inSubset rdf:resource="http://purl.obolibrary.org/obo/uberon/core#pheno_slim"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amniotic fluid</rdfs:label>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A mammalian developmental stage that covers the period from birth until weaning.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0018685</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">suckling stage</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0034919 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0034919">
+        <rdfs:label rdf:datatype="&xsd;string">juvenile stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000112"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">The stage of being no more dependent of the nest and/or from caregivers for subsistence while having not reach sexual maturity.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0034919</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <dc:contributor rdf:resource="https://github.com/ANiknejad"/>
+        <dc:contributor rdf:resource="https://github.com/cmungall"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0034920 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0034920">
+        <rdfs:label rdf:datatype="&xsd;string">infant stage</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0000105"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0018685"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;RO_0002087"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007221"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Nursing stage that follows the neonate stage in mammals and ends at weaning.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0034920</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <dc:contributor rdf:resource="https://github.com/ANiknejad"/>
+        <dc:contributor rdf:resource="https://github.com/cmungall"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0035943 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0035943">
+        <rdfs:label rdf:datatype="&xsd;string">life cycle temporal boundary</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000035"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A temporal boundary connecting two life cycle stages that follow in immediate succession. A temporal boundary is an abstract, instantaneous entity.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0035943</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+        <oboInOwl:inSubset rdf:resource="&obo;uberon/core#upper_level"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0035944 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0035944">
+        <rdfs:label rdf:datatype="&xsd;string">life-death temporal boundary</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0035943"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002229"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0035943"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A life cycle temporal boundary that marks the end of the life cycle of the organism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0035944</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">death</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">end of life</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">end of life cycle</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">moment of death</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">time of death</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0035945 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0035945">
+        <rdfs:label rdf:datatype="&xsd;string">start of life cycle</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0035943"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002223"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0035943"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0000104"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A life cycle temporal boundary that marks the start of the life cycle of the organism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0035945</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/UBERON_0035946 -->
+
+    <owl:Class rdf:about="&obo;UBERON_0035946">
+        <rdfs:label rdf:datatype="&xsd;string">start of neonate stage</rdfs:label>
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="&obo;UBERON_0035943"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="&obo;RO_0002223"/>
+                        <owl:someValuesFrom rdf:resource="&obo;UBERON_0007221"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="&obo;UBERON_0035943"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;BFO_0000050"/>
+                <owl:someValuesFrom rdf:resource="&obo;UBERON_0007221"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">A life cycle temporal boundary that marks the start of the neonate stage of the organism.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">UBERON:0035946</oboInOwl:id>
+        <oboInOwl:hasRelatedSynonym rdf:datatype="&xsd;string">birth</oboInOwl:hasRelatedSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">moment of birth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">time of birth</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">uberon</oboInOwl:hasOBONamespace>
     </owl:Class>
 </rdf:RDF>
 

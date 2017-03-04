@@ -28,7 +28,7 @@
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of OMRSE that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <rdfs:comment xml:lang="en">The Ontology of Medically Related Social Entities (OMRSE) subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/omrse_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/omrse_import.owl"/>
     </owl:Ontology>
     
 
@@ -158,6 +158,14 @@ This owl file represents the necessary entities of OMRSE that are reused in OntO
 
     <owl:AnnotationProperty rdf:about="&obo;IAO_0000602">
         <rdfs:isDefinedBy rdf:resource="&obo;iao.owl"/>
+    </owl:AnnotationProperty>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000136 -->
+
+    <owl:AnnotationProperty rdf:about="&obo;OMRSE_00000136">
+        <rdfs:domain rdf:resource="&obo;BFO_0000038"/>
     </owl:AnnotationProperty>
     
 
@@ -368,12 +376,7 @@ This owl file represents the necessary entities of OMRSE that are reused in OntO
     <!-- http://purl.obolibrary.org/obo/RO_0000053 -->
 
     <owl:ObjectProperty rdf:about="&obo;RO_0000053">
-        <rdfs:label xml:lang="en">bearer of</rdfs:label>
-        <rdfs:label xml:lang="en">bearer_of</rdfs:label>
-        <rdfs:label xml:lang="en">is bearer of</rdfs:label>
         <rdfs:range rdf:resource="&obo;BFO_0000020"/>
-        <obo:RO_0001900 rdf:resource="&obo;RO_0001901"/>
-        <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:ObjectProperty>
     
 
@@ -452,6 +455,25 @@ This owl file represents the necessary entities of OMRSE that are reused in OntO
         <obo:RO_0001900 rdf:resource="&obo;RO_0001901"/>
         <obo:IAO_0000412 rdf:resource="&obo;omrse.owl"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/OMRSE_00000136 -->
+
+    <owl:DatatypeProperty rdf:about="&obo;OMRSE_00000136">
+        <rdfs:range rdf:resource="&xsd;string"/>
+    </owl:DatatypeProperty>
     
 
 

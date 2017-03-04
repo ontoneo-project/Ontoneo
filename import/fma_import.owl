@@ -33,7 +33,7 @@
 This owl file represents the necessary entities of FMA that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <obo:IAO_0000412>versionIRI: http://purl.obolibrary.org/obo/fma/releases/2016-05-25/fma.owl</obo:IAO_0000412>
         <rdfs:comment xml:lang="en">FMA subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2016-12-26/FMA_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/FMA_import.owl"/>
     </owl:Ontology>
     
 
@@ -228,14 +228,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000027"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_259054"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_9578"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_9578"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_259054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:10430</oboInOwl:id>
@@ -252,14 +252,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_86166"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_19898"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_19898"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_9601"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Breast skin</oboInOwl:hasExactSynonym>
@@ -321,10 +321,22 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
 
     <owl:Class rdf:about="&obo;FMA_12237">
         <rdfs:label xml:lang="en">Organ cavity</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000028"/>
-        <obo:IAO_0000115 xml:lang="en">Anatomical cavity, which is surrounded by all morphological parts of an organ; is continuous within the organ; contains one or more body substances. Examples: pericardial cavity, cavity of stomach, uterine cavity.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_67552"/>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Cavity of organ</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:12237</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Anatomical cavity, which is surrounded by all morphological parts of an organ; is continuous within the organ; contains one or more body substances. Examples: pericardial cavity, cavity of stomach, uterine cavity.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_12274 -->
+
+    <owl:Class rdf:about="&obo;FMA_12274">
+        <rdfs:label rdf:datatype="&xsd;string">Urine</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_9674"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Excretion in liquid state processed by the kidney.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:12274</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -348,14 +360,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_86166"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67771"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67771"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:12828</oboInOwl:id>
@@ -390,9 +402,9 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     <owl:Class rdf:about="&obo;FMA_14065">
         <rdfs:label xml:lang="en">Organ component</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000024"/>
-        <obo:IAO_0000115 xml:lang="en">Cardinal organ part which is bounded predominantly by bonafide boundaries.  Examples: lobe of lung, osteon, acinus, submucosa, anterior leaflet of mitral valve, capsule of kidney, cortical bone, muscle fasciculus.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:14065</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Cardinal organ part which is bounded predominantly by bonafide boundaries.  Examples: lobe of lung, osteon, acinus, submucosa, anterior leaflet of mitral valve, capsule of kidney, cortical bone, muscle fasciculus.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -505,6 +517,23 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_14703 -->
+
+    <owl:Class rdf:about="&obo;FMA_14703">
+        <rdfs:label rdf:datatype="&xsd;string">Visceral peritoneum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_64796"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_9584"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:14703</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_14761 -->
 
     <owl:Class rdf:about="&obo;FMA_14761">
@@ -567,18 +596,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45659"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_222946"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_222946"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -590,14 +607,26 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45659"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45659"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_222946"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Bladder</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:15900</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the right and left ureters and distally with the urethra. Examples: There is only one urinary bladder.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the right and left ureters and distally with the urethra. Examples: There is only one urinary bladder.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -609,18 +638,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_5018"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_10430"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_16580"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_13478"/>
             </owl:Restriction>
@@ -629,6 +646,18 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_72062"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_10430"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_16580"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:16202</oboInOwl:id>
@@ -698,13 +727,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_259054"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_9578"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_9578"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_259054"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:16580</oboInOwl:id>
@@ -725,8 +754,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:17558</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the right and left uterine tubes and distally is connected to the vagina. Examples: There is only one uterus.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the right and left uterine tubes and distally is connected to the vagina. Examples: There is only one uterus.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -926,21 +955,21 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45663"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45663"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:18245</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Fallopian tube</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which connects the uterine cavity to the peritoneal cavity. Examples: There are only two uterine tubes, the right and the left uterine tubes.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Oviduct</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which connects the uterine cavity to the peritoneal cavity. Examples: There are only two uterine tubes, the right and the left uterine tubes.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1108,8 +1137,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18245"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1120,8 +1149,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:18483</oboInOwl:id>
@@ -1139,12 +1168,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_18245"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
@@ -1153,6 +1176,12 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_259284"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:18484</oboInOwl:id>
@@ -1400,19 +1429,19 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45659"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45659"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:19667</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which connects the cavity of the urinary bladder to the exterior. Examples: There is only one urethra.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which connects the cavity of the urinary bladder to the exterior. Examples: There is only one urethra.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1662,8 +1691,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:19949</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which connects the cervical canal of uterus to the vestibule of vagina. Examples: There is only one vagina.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which connects the cervical canal of uterus to the vestibule of vagina. Examples: There is only one vagina.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -1736,13 +1765,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_19949"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_27975"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_27975"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_19949"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:20005</oboInOwl:id>
@@ -1787,10 +1816,22 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
 
     <owl:Class rdf:about="&obo;FMA_20192">
         <rdfs:label xml:lang="en">Vestibule</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;BFO_0000028"/>
-        <obo:IAO_0000115 xml:lang="en">Anatomical cavity that connects an organ cavity, organ cavity subdivision or cavity of body part subdivision to the exterior, completely or partially surrounded by organs or organ parts that are lined by epithelium. Examples: preputial cavity, vestibule of vagina.</obo:IAO_0000115>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_67552"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:20192</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Anatomical cavity that connects an organ cavity, organ cavity subdivision or cavity of body part subdivision to the exterior, completely or partially surrounded by organs or organ parts that are lined by epithelium. Examples: preputial cavity, vestibule of vagina.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_12241 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_12241">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_29733"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">General anatomical term that refers to a cavity that is enclosed by a serous membrane and contains serous fluid.  Examples: pleural cavity, peritoneal cavity, subdeltoid bursa, synovial cavity of hip joint.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:12241</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serous cavity</rdfs:label>
     </owl:Class>
     
 
@@ -1814,6 +1855,12 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20462"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -1821,12 +1868,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9578"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1862,7 +1903,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_16580"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_72062"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -1874,7 +1915,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_72062"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_16580"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2021,6 +2062,12 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20367"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
@@ -2029,12 +2076,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:20369</oboInOwl:id>
@@ -2050,14 +2091,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20367"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2157,13 +2198,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -2185,6 +2226,12 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_20374"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
@@ -2193,12 +2240,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_20354"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45649"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:20381</oboInOwl:id>
@@ -2283,9 +2324,9 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     <owl:Class rdf:about="&obo;FMA_20394">
         <rdfs:label xml:lang="en">Human body</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_256133"/>
-        <obo:IAO_0000115 xml:lang="en">Anatomical structure which is the aggregate material substance of an individual member of the Homo sapiens species. Examples: There is only one human body.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:20394</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Anatomical structure which is the aggregate material substance of an individual member of the Homo sapiens species. Examples: There is only one human body.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2632,8 +2673,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:24728</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Subdivision of head which consists of the viscerocranium and all layers superficial to it. Examples: There is only one face.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Subdivision of head which consists of the viscerocranium and all layers superficial to it. Examples: There is only one face.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -2666,11 +2707,40 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     <owl:Class rdf:about="&obo;FMA_256135">
         <rdfs:label xml:lang="en">Body</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000027"/>
-        <obo:IAO_0000115 xml:lang="en">Anatomical structure which is the aggregate material substance of an individual member of a species.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:256135</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Anatomical structure which is the aggregate material substance of an individual member of a species.</obo:IAO_0000115>
+    </owl:Class>
+
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_21451 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_21451">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_64796"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://purl.obolibrary.org/obo/fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="http://purl.obolibrary.org/obo/FMA_9584"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:21451</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Parietal peritoneum</rdfs:label>
     </owl:Class>
     
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_67552 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_67552">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/BFO_0000028"/>
+        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical space which contains  portions of one or more body substances and is  bounded by the internal surface of one  maximally connected anatomical structure. Examples: cranial cavity, pharyngeal recess space, nasal cavity, tooth socket, cavity of serous sac, lumen of stomach, lumen of artery, fornix of vagina.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:67552</oboInOwl:id>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anatomical cavity</rdfs:label>
+    </owl:Class>    
 
 
     <!-- http://purl.obolibrary.org/obo/FMA_258963 -->
@@ -2788,62 +2858,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     
 
 
-    <!-- http://purl.obolibrary.org/obo/FMA_85537 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_85537">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_63917"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:85537</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Extra-embryonic structure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FMA_3710 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_3710">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_67498"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hollow tree, the organ parts of which are arteries, veins or lymphatic vessels. Examples: systemic arterial tree (organ), portal venous tree (organ), thoracic duct tree.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:3710</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Vascular tree</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FMA_80223 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_80223">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_85537"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:80223</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amnion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FMA_69067 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_69067">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_63917"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:69067</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Embryonic structure</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FMA_69068 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_69068">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_69067"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:69068</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Embryo</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FMA_27975 -->
 
     <owl:Class rdf:about="&obo;FMA_27975">
@@ -2856,6 +2870,18 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:27975</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_29733 -->
+
+    <owl:Class rdf:about="&obo;FMA_29733">
+        <rdfs:label rdf:datatype="&xsd;string">General anatomical term</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Anatomical term that represents more than one concept.  It is a homonym. Examples: muscle, bone, liver cell, fiber, apex of lung.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:29733</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -2878,6 +2904,18 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:label xml:lang="en">Skin of pectoral part of chest</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_61416"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:34829</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_3710 -->
+
+    <owl:Class rdf:about="&obo;FMA_3710">
+        <rdfs:label rdf:datatype="&xsd;string">Vascular tree</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:3710</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Hollow tree, the organ parts of which are arteries, veins or lymphatic vessels. Examples: systemic arterial tree (organ), portal venous tree (organ), thoracic duct tree.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -2912,10 +2950,10 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     <owl:Class rdf:about="&obo;FMA_3724">
         <rdfs:label xml:lang="en">Anatomical orifice</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000028"/>
-        <obo:IAO_0000115 xml:lang="en">Anatomical conduit space that connects two adjacent body spaces, surrounded by two or more subdivisions of two or more organs or organ parts. Examples: right atrioventricular orifice, orifice of artery, hilum of kidney, porta hepatis.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Anatomical ostium</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:3724</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Anatomical conduit space that connects two adjacent body spaces, surrounded by two or more subdivisions of two or more organs or organ parts. Examples: right atrioventricular orifice, orifice of artery, hilum of kidney, porta hepatis.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3025,13 +3063,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_45652"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45663"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45663"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -3060,19 +3098,19 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_45657"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7159"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7159"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">*Subdivision of urinary system which consists of the urinary bladder and the urethra.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:45659</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">*Subdivision of urinary system which consists of the urinary bladder and the urethra.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3105,9 +3143,9 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
                 <owl:someValuesFrom rdf:resource="&obo;FMA_24728"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">*Subdivision of face which consists of the nasal skeleton, nasal septum and nasal cavity.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:46472</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">*Subdivision of face which consists of the nasal skeleton, nasal septum and nasal cavity.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3161,7 +3199,7 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_45615"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -3173,11 +3211,24 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_45615"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:49177</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Upper GI tract</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_49893 -->
+
+    <owl:Class rdf:about="&obo;FMA_49893">
+        <rdfs:label rdf:datatype="&xsd;string">Coronary artery</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_66464"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Coronary arterial tree</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:49893</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Systemic artery which supplies the heart.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -3212,14 +3263,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_86166"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67796"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67796"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Areola skin</oboInOwl:hasExactSynonym>
@@ -3305,8 +3356,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:label xml:lang="en">Bone organ</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:5018</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Organ with cavitated organ parts, which primarily consists of compact (cortical) and cancellous bone, which surround bone marrow cavities; together with other bones, cartilages and joints, it constitutes the skeletal system.  Examples: femur, sternum, maxilla, vertebra, talus.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ with cavitated organ parts, which primarily consists of compact (cortical) and cancellous bone, which surround bone marrow cavities; together with other bones, cartilages and joints, it constitutes the skeletal system.  Examples: femur, sternum, maxilla, vertebra, talus.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3317,8 +3368,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:label xml:lang="en">Muscle organ</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:5022</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Nonparenchymatous organ that primarily consists of skeletal muscle tissue aggregated into macroscopic fasciculi by connective tissue; together with other muscles, it constitutes the muscular system. Examples: biceps, diaphragm, masseter, right third external intercostal muscle, external oblique, levator ani, serratus anterior.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Nonparenchymatous organ that primarily consists of skeletal muscle tissue aggregated into macroscopic fasciculi by connective tissue; together with other muscles, it constitutes the muscular system. Examples: biceps, diaphragm, masseter, right third external intercostal muscle, external oblique, levator ani, serratus anterior.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3329,8 +3380,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:label xml:lang="en">Fascia organ</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:5023</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Nonparenchymatous organ that consists of organ parts composed of various types of connective tissue; it surrounds and interconnects various organs and body parts, and establishes the anatomical integrity of body parts and organ systems. Examples: superficial fascia, investing fascia, fat pad.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Nonparenchymatous organ that consists of organ parts composed of various types of connective tissue; it surrounds and interconnects various organs and body parts, and establishes the anatomical integrity of body parts and organ systems. Examples: superficial fascia, investing fascia, fat pad.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3344,8 +3395,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Arterial tree organ part</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Arterial vessel</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:50720</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Subdivision of arterial tree (organ) which consists of branching sets of tubes (arterial trunk)  that form a tree; together with other arterial trees (organ part), it constitutes an arterial tree (organ). Examples: pulmonary arterial tree, right coronary arterial tree, superior mesenteric tree.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Subdivision of arterial tree (organ) which consists of branching sets of tubes (arterial trunk)  that form a tree; together with other arterial trees (organ part), it constitutes an arterial tree (organ). Examples: pulmonary arterial tree, right coronary arterial tree, superior mesenteric tree.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3356,11 +3407,11 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:label xml:lang="en">Vein</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_86188"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:50723</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Subdivision of venous tree (organ) which consists of branching sets of tubes (venous trunks)  that form a tree; together with other venous trees (organ part), it constitutes a venous tree (organ). Examples: subclavian venous tree, jugular tree, extrahepatic portal tree, common iliac venous tree.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Venous subtree</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Venous tree organ part</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Venous vessel</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Subdivision of venous tree (organ) which consists of branching sets of tubes (venous trunks)  that form a tree; together with other venous trees (organ part), it constitutes a venous tree (organ). Examples: subclavian venous tree, jugular tree, extrahepatic portal tree, common iliac venous tree.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3377,8 +3428,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:50801</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Segment of neuraxis that has as its parts gray matter and white matter that surround the cerebral ventricular system;  Examples: There is only one brain.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Segment of neuraxis that has as its parts gray matter and white matter that surround the cerebral ventricular system;  Examples: There is only one brain.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3599,10 +3650,10 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_67619"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:55268</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Organ region with floating fiat boundary</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="en">Organ region with one or more floating fiat boundaries. Examples: apical zone of lung, superior pole of kidney, gingiva, apex of prostate, ascending colon proper.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Organ sector</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Organ zone</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ region with one or more floating fiat boundaries. Examples: apical zone of lung, superior pole of kidney, gingiva, apex of prostate, ascending colon proper.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -3714,13 +3765,13 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_73269"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_62088"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_62088"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_73269"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:58005</oboInOwl:id>
@@ -3766,14 +3817,14 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_61418"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_73104"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_73104"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_10464"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Breast proper skin</oboInOwl:hasExactSynonym>
@@ -3871,8 +3922,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Accessory gland of Montgomery</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Accessory gland of breast</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:58090</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Lobular organ the parenchyma of which consists of acini connected to the surface of the areola or to a lactiferous duct by the duct of areolar gland. Examples: There are variable numbers of areolar glands.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Lobular organ the parenchyma of which consists of acini connected to the surface of the areola or to a lactiferous duct by the duct of areolar gland. Examples: There are variable numbers of areolar glands.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4069,57 +4120,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     
 
 
-    <!-- http://purl.obolibrary.org/obo/FMA_9674 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_9674">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9669"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Body substance derived from ingested substances that have been modified by one or more organs. Example: feces, flatus, urine.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:9674</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Excretion</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FMA_12274 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_12274">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9674"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Excretion in liquid state processed by the kidney.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:12274</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Urine</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FMA_64183 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_64183">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9674"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Excretion in semisolid state processed by the intestine.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fecal matter</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stool</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:64183</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feces</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FMA_62970 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_62970">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9669"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Body substance in liquid state contained in the lumen of arterial and venous trees, blood capillary and the cardiac chambers; constitutes the liquid phase of blood.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood plasma</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:62970</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Portion of plasma</rdfs:label>
-    </owl:Class>
-    
-
-
     <!-- http://purl.obolibrary.org/obo/FMA_61399 -->
 
     <owl:Class rdf:about="&obo;FMA_61399">
@@ -4133,19 +4133,6 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:61399</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FMA_63083 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_63083">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_9669"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Body substance derived from plasma by the elimination of fibrinogen.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Blood serum</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:63083</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Serum</rdfs:label>
     </owl:Class>
     
 
@@ -4334,8 +4321,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:62088</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Lobe of breast</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Lobe of mammary gland</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="en">Lobular organ which consist of a lactiferous duct tree and the set of lactiferous acini that are connected to duct tree. Examples: There are variable numbers of lactiferous duct trees.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Lobular organ which consist of a lactiferous duct tree and the set of lactiferous acini that are connected to duct tree. Examples: There are variable numbers of lactiferous duct trees.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4430,6 +4417,32 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_62970 -->
+
+    <owl:Class rdf:about="&obo;FMA_62970">
+        <rdfs:label rdf:datatype="&xsd;string">Portion of plasma</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_9669"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Blood plasma</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Body substance in liquid state contained in the lumen of arterial and venous trees, blood capillary and the cardiac chambers; constitutes the liquid phase of blood.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:62970</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_63083 -->
+
+    <owl:Class rdf:about="&obo;FMA_63083">
+        <rdfs:label rdf:datatype="&xsd;string">Serum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_9669"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Blood serum</oboInOwl:hasExactSynonym>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Body substance derived from plasma by the elimination of fibrinogen.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:63083</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_63169 -->
 
     <owl:Class rdf:about="&obo;FMA_63169">
@@ -4465,14 +4478,25 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_63183 -->
+
+    <owl:Class rdf:about="&obo;FMA_63183">
+        <rdfs:label rdf:datatype="&xsd;string">Blood vessel</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_29733"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:63183</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_63887 -->
 
     <owl:Class rdf:about="&obo;FMA_63887">
         <rdfs:label xml:lang="en">Biological macromolecule</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000040"/>
-        <obo:IAO_0000115 xml:lang="en">Anatomical structure which has as its parts one or more ordered aggregates of nucleotide, amino acid fatty acid or sugar molecules bonded to one another.  Examples: collagen, DNA, neurotransmitter, troponin.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:63887</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Anatomical structure which has as its parts one or more ordered aggregates of nucleotide, amino acid fatty acid or sugar molecules bonded to one another.  Examples: collagen, DNA, neurotransmitter, troponin.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4482,33 +4506,9 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     <owl:Class rdf:about="&obo;FMA_63917">
         <rdfs:label xml:lang="en">Gestational structure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">Anatomical structure, which is the developmental form of a vertebrate animal or any of its parts at any given time from fertilization of the egg by the sperm to parturition. Examples: embryo, embryonic structure, fetus, fetal heart.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:63917</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FMA_49893 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_49893">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_66464"/>
-        <obo:IAO_0000115 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Systemic artery which supplies the heart.</obo:IAO_0000115>
-        <oboInOwl:hasExactSynonym rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coronary arterial tree</oboInOwl:hasExactSynonym>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:49893</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Coronary artery</rdfs:label>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.obolibrary.org/obo/FMA_74647 -->
-
-    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_74647">
-        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_12278"/>
-        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
-        <oboInOwl:id rdf:datatype="http://www.w3.org/2001/XMLSchema#string">FMA:74647</oboInOwl:id>
-        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Oxytocin</rdfs:label>
+        <obo:IAO_0000115 xml:lang="en">Anatomical structure, which is the developmental form of a vertebrate animal or any of its parts at any given time from fertilization of the egg by the sperm to parturition. Examples: embryo, embryonic structure, fetus, fetal heart.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4519,8 +4519,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:label xml:lang="en">Fetus</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_63920"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:63919</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Fetal structure, which is a developmental form of a vertebrate animal at any given time point from 8 weeks of gestation to birth (or hatching). Examples: There is only one fetus.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Fetal structure, which is a developmental form of a vertebrate animal at any given time point from 8 weeks of gestation to birth (or hatching). Examples: There is only one fetus.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4531,7 +4531,44 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:label xml:lang="en">Fetal structure</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_63917"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:63920</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 xml:lang="en">Gestational structure, which is the developmental form of a vertebrate animal or any of its parts at any given time point from 8 weeks of gestation to parturition. Examples: fetus, fetal organ, fetal body part, placenta.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_63934 -->
+
+    <owl:Class rdf:about="&obo;FMA_63934">
+        <rdfs:label rdf:datatype="&xsd;string">Placenta</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_85537"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:63934</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_64183 -->
+
+    <owl:Class rdf:about="&obo;FMA_64183">
+        <rdfs:label rdf:datatype="&xsd;string">Feces</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_9674"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Excretion in semisolid state processed by the intestine.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:64183</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Fecal matter</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Stool</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_64796 -->
+
+    <owl:Class rdf:about="&obo;FMA_64796">
+        <rdfs:label rdf:datatype="&xsd;string">Region of serous membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_86103"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:64796</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Serous membrane subdivision</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -4601,6 +4638,16 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_77053 -->
+
+    <owl:Class rdf:about="http://purl.obolibrary.org/obo/FMA_77053">
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/FMA_17559"/>
+        <oboInOwl:hasOBONamespace rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fma</oboInOwl:hasOBONamespace>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uterine horn</rdfs:label>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_67473 -->
 
     <owl:Class rdf:about="&obo;FMA_67473">
@@ -4618,9 +4665,9 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     <owl:Class rdf:about="&obo;FMA_67498">
         <rdfs:label xml:lang="en">Organ</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">Anatomical structure which has as its direct parts portions of two or more types of tissue or two or more types of cardinal organ part which constitute a maximally connected anatomical structure demarcated predominantly by a bona fide anatomical surface. Examples: femur, biceps, liver, heart, skin, tracheobronchial tree, ovary.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:67498</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Anatomical structure which has as its direct parts portions of two or more types of tissue or two or more types of cardinal organ part which constitute a maximally connected anatomical structure demarcated predominantly by a bona fide anatomical surface. Examples: femur, biceps, liver, heart, skin, tracheobronchial tree, ovary.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4630,9 +4677,9 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     <owl:Class rdf:about="&obo;FMA_67509">
         <rdfs:label xml:lang="en">Organ system subdivision</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000024"/>
-        <obo:IAO_0000115 xml:lang="en">Anatomical structure, which consists of a specific set of the members of (predominantly) one organ or organ part subclass interconnected by zones of continuity or body substances; is demarcated from other subdivisions of the same organ system by one or more zones of continuity or anatomical lines; together with other subdivisions of the same organ system, it constitutes an organ system. Examples: rib cage, facial skeleton, portal system, central nervous system, upper respiratory tract, muscle group of back.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:67509</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Anatomical structure, which consists of a specific set of the members of (predominantly) one organ or organ part subclass interconnected by zones of continuity or body substances; is demarcated from other subdivisions of the same organ system by one or more zones of continuity or anatomical lines; together with other subdivisions of the same organ system, it constitutes an organ system. Examples: rib cage, facial skeleton, portal system, central nervous system, upper respiratory tract, muscle group of back.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4642,9 +4689,9 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
     <owl:Class rdf:about="&obo;FMA_67619">
         <rdfs:label xml:lang="en">Organ region</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000024"/>
-        <obo:IAO_0000115 xml:lang="en">Cardinal organ part which is a fiat subdivision of an organ. Examples: lingula of left lung, tail of pancreas, artery, trochanter, nodulus of semilunar valve, right side of heart, duodenum, fundus of stomach.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:67619</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Cardinal organ part which is a fiat subdivision of an organ. Examples: lingula of left lung, tail of pancreas, artery, trochanter, nodulus of semilunar valve, right side of heart, duodenum, fundus of stomach.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4692,9 +4739,9 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:67771</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Papillary part of breast</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="en">Subdivision of breast which consists of skin, connective tissue and smooth muscle bundle, modified sebaceous glands and papillary part of lactiferous duct.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Teat</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Subdivision of breast which consists of skin, connective tissue and smooth muscle bundle, modified sebaceous glands and papillary part of lactiferous duct.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4734,8 +4781,8 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:67796</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Subdivision of breast which consists of skin, connective tissue and smooth muscle bundle and modified sebaceous glands and which surrounds the nipple.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Subdivision of breast which consists of skin, connective tissue and smooth muscle bundle and modified sebaceous glands and which surrounds the nipple.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4780,7 +4827,74 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
         <rdfs:subClassOf rdf:resource="&obo;FMA_14065"/>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Epencephalon-1</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:67944</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 xml:lang="en">Organ component of neuraxis that has as its parts the cerebellar cortex, cerebellar nuclear complex and cerebellar white matter. Examples: There is only one cerebellum.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_69067 -->
+
+    <owl:Class rdf:about="&obo;FMA_69067">
+        <rdfs:label rdf:datatype="&xsd;string">Embryonic structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_63917"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:69067</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_69068 -->
+
+    <owl:Class rdf:about="&obo;FMA_69068">
+        <rdfs:label rdf:datatype="&xsd;string">Embryo</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_69067"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:69068</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_69069 -->
+
+    <owl:Class rdf:about="&obo;FMA_69069">
+        <rdfs:label rdf:datatype="&xsd;string">Embryonic tissue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_69067"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:69069</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Germ layer</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_69070 -->
+
+    <owl:Class rdf:about="&obo;FMA_69070">
+        <rdfs:label rdf:datatype="&xsd;string">Ectoderm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_69069"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:69070</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_69071 -->
+
+    <owl:Class rdf:about="&obo;FMA_69071">
+        <rdfs:label rdf:datatype="&xsd;string">Endoderm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_69069"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:69071</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_69072 -->
+
+    <owl:Class rdf:about="&obo;FMA_69072">
+        <rdfs:label rdf:datatype="&xsd;string">Mesoderm</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_69069"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:69072</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -4837,9 +4951,9 @@ This owl file represents the necessary entities of FMA that are reused in OntONe
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7088</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 xml:lang="en">Organ with cavitated organ parts, which is continuous with the systemic and 
 pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO_0000115>
-        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
 
@@ -4894,25 +5008,25 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_49177"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7148</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the esophagus and distally with the small intestine. Examples: There is only one stomach.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the esophagus and distally with the small intestine. Examples: There is only one stomach.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4922,9 +5036,9 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
     <owl:Class rdf:about="&obo;FMA_7149">
         <rdfs:label xml:lang="en">Organ system</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000030"/>
-        <obo:IAO_0000115 xml:lang="en">Anatomical structure, which has as its direct parts instances of one or more organ types which are interconnected with one another by zones of continuity. Examples: skeletal system, cardiovascular system, alimentary system.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7149</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Anatomical structure, which has as its direct parts instances of one or more organ types which are interconnected with one another by zones of continuity. Examples: skeletal system, cardiovascular system, alimentary system.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4937,13 +5051,13 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Digestive system</oboInOwl:hasExactSynonym>
@@ -4961,19 +5075,19 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
-        <obo:IAO_0000115 xml:lang="en">Cardinal body part, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with the skull, it is partially surrounded by skin of head. Examples: There is only one head.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7154</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Head (volume)</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Cardinal body part, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with the skull, it is partially surrounded by skin of head. Examples: There is only one head.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -4985,8 +5099,8 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_231430"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7155</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Neck (volume)</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="en">Subdivision of body proper, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with the cervical vertebral coumn, it is partially surrounded by skin of neck. Examples: There is only one neck.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Subdivision of body proper, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with the cervical vertebral coumn, it is partially surrounded by skin of neck. Examples: There is only one neck.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5033,8 +5147,8 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         </rdfs:subClassOf>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Apparatus respiratorius</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7158</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Organ system which consists of structures involved in respiration.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ system which consists of structures involved in respiration.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5089,18 +5203,18 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7161</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Organ system which consists of the heart, the systemic and pulmonary arterial and venous system, the  lymphatic and the portal venous system.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ system which consists of the heart, the systemic and pulmonary arterial and venous system, the  lymphatic and the portal venous system.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5125,19 +5239,19 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_74657"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_74657"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7163</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Nonparenchymatous organ that consists of the epidermis, dermis and sets of hair and nails and which surrounds the entire body. Subdivisions of the skin surround various body parts; as a whole, the skin constitutes the external layer of the body.  Examples: There is only one skin.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Skin of body</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Nonparenchymatous organ that consists of the epidermis, dermis and sets of hair and nails and which surrounds the entire body. Subdivisions of the skin surround various body parts; as a whole, the skin constitutes the external layer of the body.  Examples: There is only one skin.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5148,9 +5262,9 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:label xml:lang="en">Trunk</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_231430"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7181</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Subdivision of body proper, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with the ribcage, thoracic and lumbar vertebral column, sacrum and coccyx, it is partially surrounded by skin of trunk. Examples: There is only one trunk.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Torso</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Subdivision of body proper, which consists of a maximal set of diverse subclasses of organ and organ part spatially associated with the ribcage, thoracic and lumbar vertebral column, sacrum and coccyx, it is partially surrounded by skin of trunk. Examples: There is only one trunk.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5161,8 +5275,8 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:label xml:lang="en">Lung</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7195</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Lobular organ which has as its parts alveoli connected to the tracheobronchial tree. Examples: There are only two instances, right lung and left lung.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Lobular organ which has as its parts alveoli connected to the tracheobronchial tree. Examples: There are only two instances, right lung and left lung.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5190,8 +5304,8 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7197</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Lobular organ which has as its parts lobules connected to the biliary tree. Examples: There is only one liver.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Lobular organ which has as its parts lobules connected to the biliary tree. Examples: There is only one liver.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5208,8 +5322,8 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7198</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Lobular organ the parenchyma of which consists of glandular acini which communicate via a duct system with the duodenum. Examples: There is only one pancreas.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Lobular organ the parenchyma of which consists of glandular acini which communicate via a duct system with the duodenum. Examples: There is only one pancreas.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5240,13 +5354,13 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_7199"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_7199"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
@@ -5262,9 +5376,9 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7200</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the stomach and distally with the large intestine. Examples: There is only one small intestine.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Small bowel</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the stomach and distally with the large intestine. Examples: There is only one small intestine.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5276,32 +5390,32 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_7199"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
-            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45615"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_7199"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_7199"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7201</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Large bowel</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the small intestine and distally with the anal canal. Examples: There is only large intestine.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the small intestine and distally with the anal canal. Examples: There is only large intestine.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5319,8 +5433,8 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7202</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Gall bladder</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the cystic duct and distally terminates in the fundus of the gallbladder. Examples: There is only one gallbladder.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ with organ cavity which is continuous proximally with the cystic duct and distally terminates in the fundus of the gallbladder. Examples: There is only one gallbladder.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5394,7 +5508,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_7209"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5406,7 +5520,7 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_45654"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -5424,13 +5538,13 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:72979</oboInOwl:id>
@@ -5551,6 +5665,17 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_74647 -->
+
+    <owl:Class rdf:about="&obo;FMA_74647">
+        <rdfs:label rdf:datatype="&xsd;string">Oxytocin</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_12278"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:74647</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_74657 -->
 
     <owl:Class rdf:about="&obo;FMA_74657">
@@ -5569,9 +5694,9 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:74657</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Organ system subdivision which consists of the skin and the superficial fascia. Examples: There is only one integument.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">The integument</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ system subdivision which consists of the skin and the superficial fascia. Examples: There is only one integument.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5584,13 +5709,13 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:7482</oboInOwl:id>
@@ -5725,16 +5850,38 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
-                <owl:someValuesFrom rdf:resource="&obo;FMA_67812"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_20394"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:79063</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_80223 -->
+
+    <owl:Class rdf:about="&obo;FMA_80223">
+        <rdfs:label rdf:datatype="&xsd;string">Amnion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_85537"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:80223</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_80224 -->
+
+    <owl:Class rdf:about="&obo;FMA_80224">
+        <rdfs:label rdf:datatype="&xsd;string">Chorion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_85537"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:80224</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -5745,10 +5892,10 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
     <owl:Class rdf:about="&obo;FMA_82482">
         <rdfs:label xml:lang="en">Wall of organ</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_14065"/>
-        <obo:IAO_0000115 xml:lang="en">Anatomical organ component  enclosing an organ cavity.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:82482</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Organ wall</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Anatomical organ component  enclosing an organ cavity.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5809,12 +5956,46 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_85537 -->
+
+    <owl:Class rdf:about="&obo;FMA_85537">
+        <rdfs:label rdf:datatype="&xsd;string">Extra-embryonic structure</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_63917"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:85537</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_85538 -->
+
+    <owl:Class rdf:about="&obo;FMA_85538">
+        <rdfs:label xml:lang="en">Decidua</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_85537"/>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Decidous membrane</oboInOwl:hasExactSynonym>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:85538</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_85539 -->
 
     <owl:Class rdf:about="&obo;FMA_85539">
         <rdfs:label xml:lang="en">Exocrine system</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000027"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:85539</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_85541 -->
+
+    <owl:Class rdf:about="&obo;FMA_85541">
+        <rdfs:label rdf:datatype="&xsd;string">Umbilical cord</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_85537"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:85541</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -5837,10 +6018,10 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
     <owl:Class rdf:about="&obo;FMA_86103">
         <rdfs:label xml:lang="en">Region of organ component</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000024"/>
-        <obo:IAO_0000115 xml:lang="en">Cardinal organ part which is a fiat subdivision of an organ component. Examples: cervical part of wall of esophagus, mucosa of body of stomach.</obo:IAO_0000115>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:86103</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Organ component region</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Cardinal organ part which is a fiat subdivision of an organ component. Examples: cervical part of wall of esophagus, mucosa of body of stomach.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5852,9 +6033,9 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_67619"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:86140</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Organ region with fixed fiat boundary</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="en">Organ region with one or more anchored fiat boundaries. Examples: artery, trunk of nerve, cervical part of esophagus, pelvic part of vagina, horn of thyroid cartilage, anterior segment of eyeball.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Segment of organ</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Organ region with one or more anchored fiat boundaries. Examples: artery, trunk of nerve, cervical part of esophagus, pelvic part of vagina, horn of thyroid cartilage, anterior segment of eyeball.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -5918,6 +6099,50 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_86477 -->
+
+    <owl:Class rdf:about="&obo;FMA_86477">
+        <rdfs:label rdf:datatype="&xsd;string">Decidua basalis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_85537"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:86477</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_86478 -->
+
+    <owl:Class rdf:about="&obo;FMA_86478">
+        <rdfs:label rdf:datatype="&xsd;string">Decidua capsularis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_85537"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:86478</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_86479 -->
+
+    <owl:Class rdf:about="&obo;FMA_86479">
+        <rdfs:label rdf:datatype="&xsd;string">Decidual parietalis</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_85537"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:86479</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_86480 -->
+
+    <owl:Class rdf:about="&obo;FMA_86480">
+        <rdfs:label rdf:datatype="&xsd;string">Decidual cell</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_85537"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:86480</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_86484 -->
 
     <owl:Class rdf:about="&obo;FMA_86484">
@@ -5935,6 +6160,17 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:label xml:lang="en">Endocervix</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_77054"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:86485</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_87180 -->
+
+    <owl:Class rdf:about="&obo;FMA_87180">
+        <rdfs:label rdf:datatype="&xsd;string">Yolk sac</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_85537"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:87180</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -5998,8 +6234,8 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_231430"/>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Chest</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9576</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Subdivision of trunk proper, which is demarcated from the neck by the plane of the superior thoracic aperture and from the abdomen internally by the inferior surface of the diaphragm and externally by the costal margin and associated with the thoracic vertebral column and ribcage and from the back of the thorax by the external surface of the posterolateral part of the rib cage, the anterior surface of the thoracic vertebral column and the posterior axillary lines; together with the abdomen and the perineum, it constitutes the trunk proper. Examples: There is only one thorax.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Subdivision of trunk proper, which is demarcated from the neck by the plane of the superior thoracic aperture and from the abdomen internally by the inferior surface of the diaphragm and externally by the costal margin and associated with the thoracic vertebral column and ribcage and from the back of the thorax by the external surface of the posterolateral part of the rib cage, the anterior surface of the thoracic vertebral column and the posterior axillary lines; together with the abdomen and the perineum, it constitutes the trunk proper. Examples: There is only one thorax.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -6012,8 +6248,8 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Abdominopelvic region</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Abdominopelvis</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9577</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Subdivision of trunk proper, which is demarcated from the thorax internally by the inferior surface of the sternocostal part of the diaphragm and externally by the costal margin, from the back of abdomen by the external surface of the posterior abdominal wall,  from the perineum by the superior surface of the urogenital diaphragm and from the lower limbs by the inguinal folds; together with the thorax, and perineum, it constitutes the trunk proper. Examples: There is only one abdomen.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Subdivision of trunk proper, which is demarcated from the thorax internally by the inferior surface of the sternocostal part of the diaphragm and externally by the costal margin, from the back of abdomen by the external surface of the posterior abdominal wall,  from the perineum by the superior surface of the urogenital diaphragm and from the lower limbs by the inguinal folds; together with the thorax, and perineum, it constitutes the trunk proper. Examples: There is only one abdomen.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -6031,9 +6267,9 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9578</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Lesser pelvis</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="en">Subdivision of abdomen, which is demarcated from the abdomen proper by the plane of the superior pelvic aperture, and from the perineum by the inferior surface of the pelvic diaphragm; together with the abdomen proper, it constitutes the abdomen. Examples: There is only one pelvis.</obo:IAO_0000115>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">True pelvis</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Subdivision of abdomen, which is demarcated from the abdomen proper by the plane of the superior pelvic aperture, and from the perineum by the inferior surface of the pelvic diaphragm; together with the abdomen proper, it constitutes the abdomen. Examples: There is only one pelvis.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -6051,7 +6287,37 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9579</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Perineal region</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
         <obo:IAO_0000115 xml:lang="en">Subdivision of trunk proper, which is demarcated from the pelvis by the inferior surface of the pelvic diaphragm and from the lower limbs by the perineofemoral lines; together with the thorax, and abdomen, it constitutes the trunk. Examples: There is only one perineum.</obo:IAO_0000115>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9581 -->
+
+    <owl:Class rdf:about="&obo;FMA_9581">
+        <rdfs:label rdf:datatype="&xsd;string">Serous membrane</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_82482"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:9581</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Tunica serosa</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Wall of serous sac</oboInOwl:hasExactSynonym>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9584 -->
+
+    <owl:Class rdf:about="&obo;FMA_9584">
+        <rdfs:label rdf:datatype="&xsd;string">Peritoneum</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_9581"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#constitutional_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_9908"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:9584</oboInOwl:id>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -6065,8 +6331,8 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9601</oboInOwl:id>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Mammary part of chest</oboInOwl:hasExactSynonym>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Mammary region</oboInOwl:hasExactSynonym>
-        <obo:IAO_0000115 xml:lang="en">Subdivision of the pectoral part of the chest which consists of the nipple, areola and breast proper.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Subdivision of the pectoral part of the chest which consists of the nipple, areola and breast proper.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -6083,8 +6349,8 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
             </owl:Restriction>
         </rdfs:subClassOf>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9603</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Lobular organ the parenchyma of which consists of ductless, glandular follicles filled with colloid. Examples: thyroid gland proper, accessory thyroid gland, lingual thyroid gland.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Lobular organ the parenchyma of which consists of ductless, glandular follicles filled with colloid. Examples: thyroid gland proper, accessory thyroid gland, lingual thyroid gland.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -6095,6 +6361,19 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:label xml:lang="en">Pectoralis major</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;FMA_5022"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9627</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9637 -->
+
+    <owl:Class rdf:about="&obo;FMA_9637">
+        <rdfs:label rdf:datatype="&xsd;string">Portion of tissue</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;BFO_0000030"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Anatomical structure which has as its parts cells of predominantly one type with or without intercellular matrix. Examples: epithelium, muscle tissue, connective tissue, neural tissue, lymphoid tissue.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:9637</oboInOwl:id>
+        <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Tissue</oboInOwl:hasExactSynonym>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
@@ -6144,8 +6423,8 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000030"/>
         <oboInOwl:hasExactSynonym rdf:datatype="&xsd;string">Body substance</oboInOwl:hasExactSynonym>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9669</oboInOwl:id>
-        <obo:IAO_0000115 xml:lang="en">Material anatomical entity in a gaseous, liquid, semisolid or solid state, with or without the admixture of cells and biological macromolecules; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures. Examples: saliva, semen, cerebrospinal fluid, respiratory air, urine, feces, blood, plasma, lymph.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+        <obo:IAO_0000115 xml:lang="en">Material anatomical entity in a gaseous, liquid, semisolid or solid state, with or without the admixture of cells and biological macromolecules; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures. Examples: saliva, semen, cerebrospinal fluid, respiratory air, urine, feces, blood, plasma, lymph.</obo:IAO_0000115>
     </owl:Class>
     
 
@@ -6157,13 +6436,13 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
         <rdfs:subClassOf rdf:resource="&obo;FMA_9669"/>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9667"/>
             </owl:Restriction>
         </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
-                <owl:onProperty rdf:resource="&obo;fma#regional_part_of"/>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
                 <owl:someValuesFrom rdf:resource="&obo;FMA_9667"/>
             </owl:Restriction>
         </rdfs:subClassOf>
@@ -6175,12 +6454,66 @@ pulmonary arterial and venous trees. Examples: There is only one heart.</obo:IAO
     
 
 
+    <!-- http://purl.obolibrary.org/obo/FMA_9673 -->
+
+    <owl:Class rdf:about="&obo;FMA_9673">
+        <rdfs:label rdf:datatype="&xsd;string">Tissue fluid</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_9669"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:9673</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Transudate which surrounds cells within a tissue.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9674 -->
+
+    <owl:Class rdf:about="&obo;FMA_9674">
+        <rdfs:label rdf:datatype="&xsd;string">Excretion</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_9669"/>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Body substance derived from ingested substances that have been modified by one or more organs. Example: feces, flatus, urine.</obo:IAO_0000115>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:9674</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9689 -->
+
+    <owl:Class rdf:about="&obo;FMA_9689">
+        <rdfs:label rdf:datatype="&xsd;string">Serous sac</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_67498"/>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:9689</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Organ with organ cavity, which has as parts a serous membrane and a serous cavity . Examples: pleural sac, pericardial sac, tendon sheath, bursa.</obo:IAO_0000115>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
     <!-- http://purl.obolibrary.org/obo/FMA_9825 -->
 
     <owl:Class rdf:about="&obo;FMA_9825">
         <rdfs:label xml:lang="en">Immune system</rdfs:label>
         <rdfs:subClassOf rdf:resource="&obo;BFO_0000027"/>
         <oboInOwl:id rdf:datatype="&xsd;string">FMA:9825</oboInOwl:id>
+        <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.obolibrary.org/obo/FMA_9908 -->
+
+    <owl:Class rdf:about="&obo;FMA_9908">
+        <rdfs:label rdf:datatype="&xsd;string">Peritoneal sac</rdfs:label>
+        <rdfs:subClassOf rdf:resource="&obo;FMA_9689"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="&obo;fma#systemic_part_of"/>
+                <owl:someValuesFrom rdf:resource="&obo;FMA_71132"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <oboInOwl:id rdf:datatype="&xsd;string">FMA:9908</oboInOwl:id>
+        <obo:IAO_0000115 rdf:datatype="&xsd;string">Serous sac, which has as parts the peritoneum and the peritoneal cavity. Examples: There is only one peritoneal sac.</obo:IAO_0000115>
         <oboInOwl:hasOBONamespace rdf:datatype="&xsd;string">fma</oboInOwl:hasOBONamespace>
     </owl:Class>
     
