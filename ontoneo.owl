@@ -36,7 +36,7 @@
     <owl:Ontology rdf:about="&obo;ontoneo/ontoneo.owl">
         <rdfs:label xml:lang="en">The Ontology of Obstetric and Neonatal domain</rdfs:label>
         <rdfs:label xml:lang="pt">A Ontologia do Domínio Obstétrico e Neonatal</rdfs:label>
-        <owl:versionInfo rdf:datatype="&xsd;dateTime">2016-11-26</owl:versionInfo>
+        <owl:versionInfo rdf:datatype="&xsd;dateTime">2017-03-04</owl:versionInfo>
         <dc:source rdf:datatype="&xsd;string">ISBN:9780262527811 - Building Ontologies with Basic Formal Ontology. By Robert Arp, Barry Smith and Andrew D. Spear</dc:source>
         <rdfs:comment rdf:datatype="&xsd;string">PERSON: Fernanda Farinelli
 OntONeo development prioritizes the reuse of classes and entities from FMA ontology to deal with human anatomy approaches. Every class reference of others ontology for the anatomy domain, for example, UBERON and CARO, in which has the cross-reference annotation to some FMA class are replaced by the FMA class referred.</rdfs:comment>
@@ -45,8 +45,8 @@ Ontoneo is a ontology that the development is in progress, then take in mind for
         <dc:source rdf:datatype="&xsd;string">Woman’s Health Record Model from The American Congress of Obstetrician and Gynecologists (acog.org).</dc:source>
         <dc:source rdf:datatype="&xsd;string">https://github.com/ontoneo-project/Ontoneo</dc:source>
         <foaf:mbox rdf:datatype="&xsd;string">ontoneoontology@gmail.com</foaf:mbox>
-        <owl:priorVersion rdf:datatype="&xsd;string">v1.2</owl:priorVersion>
-        <owl:versionInfo rdf:datatype="&xsd;string">v1.3</owl:versionInfo>
+        <owl:priorVersion rdf:datatype="&xsd;string">v1.3</owl:priorVersion>
+        <owl:versionInfo rdf:datatype="&xsd;string">v1.4</owl:versionInfo>
         <foaf:homepage>https://ontoneo.com/</foaf:homepage>
         <dc:contributor>Fernanda Farinelli</dc:contributor>
         <dc:contributor xml:lang="en">Barry Smith</dc:contributor>
