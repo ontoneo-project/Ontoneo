@@ -26,7 +26,7 @@
 This owl file represents the necessary entities of PATO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <rdfs:comment xml:lang="en">PATO subset applied to OntONeo ontology.</rdfs:comment>
         <xsd:title rdf:datatype="&xsd;string">Phenotypic quality</xsd:title>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/import/pato_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/pato_import.owl"/>
 	</owl:Ontology> 
     
 
