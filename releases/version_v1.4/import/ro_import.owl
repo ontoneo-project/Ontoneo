@@ -1,5 +1,6 @@
 <?xml version="1.0"?>
 
+
 <!DOCTYPE rdf:RDF [
     <!ENTITY foaf "http://xmlns.com/foaf/0.1/" >
     <!ENTITY cito "http://purl.org/spar/cito/" >
@@ -13,37 +14,28 @@
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
 
-<rdf:RDF xmlns="http://purl.obolibrary.org/obo/ontoneo/import/ro_import.owl#"
-     xml:base="http://purl.obolibrary.org/obo/ontoneo/import/ro_import.owl"
+
+<rdf:RDF xmlns="&obo;ontoneo/import/ro_import.owl#"
+     xml:base="&obo;ontoneo/import/ro_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
-     xmlns:bio="http://purl.bioontology.org/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
-     xmlns:owl="http://www.w3.org/2002/07/owl#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:xml="http://www.w3.org/XML/1998/namespace"
-     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:cito="http://purl.org/spar/cito/"
-     xmlns:foaf="http://xmlns.com/foaf/0.1/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
-     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
-     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
-     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
-     xmlns:terms="http://purl.org/dc/terms/"
-     xmlns:subsets="http://purl.obolibrary.org/obo/ro/subsets#">
-    <owl:Ontology rdf:about="http://purl.obolibrary.org/obo/ontoneo/import/ro_import.owl">
-        <owl:versionIRI rdf:resource="http://purl.obolibrary.org/obo/ontoneo/import/ro_import.owl"/>
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:bio="http://purl.bioontology.org/"
+     xmlns:cito="http://purl.org/spar/cito/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
+    <owl:Ontology rdf:about="&obo;ontoneo/import/ro_import.owl">
+        <xsd:title rdf:datatype="&xsd;string">OBO Relations Ontology (RO)</xsd:title>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
-			This owl file represents the necessary entities of RO that are reused in OntONeo Ontology.
-			This file was created using Ontofox and some intermediary entities were not imported.
-		</rdfs:comment>
-        <rdfs:comment xml:lang="en">RO subset applied to OntONeo ontology. Updated on: 2021-01-09 (YYYY-MM-DD)</rdfs:comment>			
-        <dc:description xml:lang="en">The OBO Relations Ontology (RO) is a collection of OWL relations (ObjectProperties) intended for use across a wide variety of biological ontologies.</dc:description>
-        <dc:title xml:lang="en">OBO Relations Ontology</dc:title>
-        <terms:license rdf:resource="https://creativecommons.org/publicdomain/zero/1.0/"/>
-        <foaf:homepage rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/oborel/obo-relations/</foaf:homepage>
+This owl file represents the necessary entities of RO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
+        <rdfs:comment xml:lang="en">RO subset applied to OntONeo ontology.</rdfs:comment>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/ro_import.owl"/>
     </owl:Ontology>
     
+
 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -1062,6 +1054,7 @@ Where we have an annotation assertion
     <owl:ObjectProperty rdf:about="&obo;BFO_0000051">
         <rdf:type rdf:resource="&owl;TransitiveProperty"/>
         <rdfs:label xml:lang="en">has part</rdfs:label>
+        <rdfs:label xml:lang="en">part of</rdfs:label>
         <obo:IAO_0000116 xml:lang="en">Everything has itself as a part. Any part of any part of a thing is itself part of that thing. Two distinct things cannot have each other as a part.</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Occurrents are not subject to change and so parthood between occurrents holds for all the times that the part exists. Many continuants are subject to change, so parthood between continuants will only hold at certain times, but this is difficult to specify in OWL. See https://code.google.com/p/obo-relations/wiki/ROAndTime</obo:IAO_0000116>
         <obo:IAO_0000116 xml:lang="en">Parthood requires the part and the whole to have compatible classes: only an occurrent have an occurrent as part; only a process can have a process as part; only a continuant can have a continuant as part; only an independent continuant can have an independent continuant as part; only a specifically dependent continuant can have a specifically dependent continuant as part; only a generically dependent continuant can have a generically dependent continuant as part. (This list is not exhaustive.) A continuant cannot have an occurrent as part: use &apos;participates in&apos;. An occurrent cannot have a continuant as part: use &apos;has participant&apos;. An immaterial entity cannot have a material entity as part: use &apos;location of&apos;. An independent continuant cannot have a specifically dependent continuant as part: use &apos;bearer of&apos;. A specifically dependent continuant cannot have an independent continuant as part: use &apos;inheres in&apos;.</obo:IAO_0000116>
@@ -1156,7 +1149,7 @@ Where we have an annotation assertion
     <owl:ObjectProperty rdf:about="&obo;BFO_0000066">
         <rdfs:label xml:lang="en">occurs in</rdfs:label>
         <rdfs:comment>Paraphrase of definition: a relation between a process and an independent continuant, in which the process takes place entirely within the independent continuant</rdfs:comment>
-        <obo:IAO_0000115 xml:lang="en">b occurs_in c =def b is a process and c is a material entity or immaterial entity&amp; there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.&amp; forall(t) if b exists_at t then c exists_at t &amp; there exist spatial regions s and sâ€™ where &amp; b spatially_projects_onto s at t&amp; c is occupies_spatial_region sâ€™ at t&amp; s is a proper_continuant_part_of sâ€™ at t</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">b occurs_in c =def b is a process and c is a material entity or immaterial entity&amp; there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.&amp; forall(t) if b exists_at t then c exists_at t &amp; there exist spatial regions s and s’ where &amp; b spatially_projects_onto s at t&amp; c is occupies_spatial_region s’ at t&amp; s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">occurs in</obo:IAO_0000111>
         <obo:IAO_0000118 xml:lang="en">occurs_in</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">unfolds in</obo:IAO_0000118>
@@ -1180,7 +1173,7 @@ Where we have an annotation assertion
     <owl:ObjectProperty rdf:about="&obo;BFO_0000067">
         <rdfs:label xml:lang="en">contains process</rdfs:label>
         <rdfs:comment>Paraphrase of definition: a relation between an independent continuant and a process, in which the process takes place entirely within the independent continuant</rdfs:comment>
-        <obo:IAO_0000115 xml:lang="en">[copied from inverse property &apos;occurs in&apos;] b occurs_in c =def b is a process and c is a material entity or immaterial entity&amp; there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.&amp; forall(t) if b exists_at t then c exists_at t &amp; there exist spatial regions s and sâ€™ where &amp; b spatially_projects_onto s at t&amp; c is occupies_spatial_region sâ€™ at t&amp; s is a proper_continuant_part_of sâ€™ at t</obo:IAO_0000115>
+        <obo:IAO_0000115 xml:lang="en">[copied from inverse property &apos;occurs in&apos;] b occurs_in c =def b is a process and c is a material entity or immaterial entity&amp; there exists a spatiotemporal region r and b occupies_spatiotemporal_region r.&amp; forall(t) if b exists_at t then c exists_at t &amp; there exist spatial regions s and s’ where &amp; b spatially_projects_onto s at t&amp; c is occupies_spatial_region s’ at t&amp; s is a proper_continuant_part_of s’ at t</obo:IAO_0000115>
         <obo:IAO_0000111 xml:lang="en">site of</obo:IAO_0000111>
         <rdfs:isDefinedBy rdf:resource="&obo;bfo.owl"/>
     </owl:ObjectProperty>

@@ -27,7 +27,7 @@
         <rdfs:comment xml:lang="en">GO subset applied to OntONeo ontology.</rdfs:comment>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of GO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/import/go_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/go_import.owl"/>
     </owl:Ontology>
     
 

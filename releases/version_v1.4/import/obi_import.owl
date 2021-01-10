@@ -28,7 +28,7 @@
         <rdfs:comment xml:lang="en">OBI subset applied to OntONeo ontology.</rdfs:comment>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of OBI that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/import/obi_import.owl"/>
+        <owl:versionIRI rdf:resource="&bio;ontoneo/releases/2017-03-04/obi_import.owl"/>
     </owl:Ontology>
     
 

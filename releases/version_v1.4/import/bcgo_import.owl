@@ -33,7 +33,7 @@
         <dc:contributor>Elisabetta Manduchi</dc:contributor>
         <dc:creator>Jie Zheng</dc:creator>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/import/bcgo_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/bcgo_import.owl"/>
     </owl:Ontology>
     
 
