@@ -3362,8 +3362,8 @@ A process that has participant some human body and realizes some patient role, i
         <obo:IAO_0000117 xml:lang="en">PERSON: Fernanda Farinelli</obo:IAO_0000117>
         <obo:IAO_0000118 xml:lang="pt">exame da pélvis feminina</obo:IAO_0000118>
         <ontoneo:ONTONEO_1000002 xml:lang="en">PERSON: Fernanda Farinelli</ontoneo:ONTONEO_1000002>
-        <rdf:comment xml:lang="pt">Durante um exame pélvico feminino, um profissional de saúde, por exemplo, um médico ou enfermeira, identifica o tamanho e posição da vagina, colo do útero, útero e ovários.</rdf:comment>
-        <rdf:comment xml:lang="en">During a female pelvic examination a health care provider, for instance, a doctor or nurse, identify the size and position of the vagina, cervix, uterus, and ovaries.</rdf:comment>
+        <rdfs:comment xml:lang="pt">Durante um exame pélvico feminino, um profissional de saúde, por exemplo, um médico ou enfermeira, identifica o tamanho e posição da vagina, colo do útero, útero e ovários.</rdfs:comment>
+        <rdfs:comment xml:lang="en">During a female pelvic examination a health care provider, for instance, a doctor or nurse, identify the size and position of the vagina, cervix, uterus, and ovaries.</rdfs:comment>
         <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl</rdfs:isDefinedBy>
         <rdfs:label xml:lang="pt">exame pélvico feminino</rdfs:label>
         <rdfs:label xml:lang="en">female pelvic examination</rdfs:label>
@@ -6318,7 +6318,7 @@ Source: http://www.genico.ch/en/childbirth_glossary</rdfs:comment>
         <obo:IAO_0000118 xml:lang="pt">abruptio placenta</obo:IAO_0000118>
         <obo:IAO_0000119 xml:lang="en">https://en.wikipedia.org/wiki/Placental_abruption</obo:IAO_0000119>
         <obo:IAO_0000119 xml:lang="pt">https://www.tuasaude.com/descolamento-da-placenta/</obo:IAO_0000119>
-        <rdf:comment xml:lang="en">It cause the mother to hemorrhage possibly requiring a Cesarean delivery.</rdf:comment>
+        <rdfs:comment xml:lang="en">It cause the mother to hemorrhage possibly requiring a Cesarean delivery.</rdfs:comment>
         <rdfs:label xml:lang="pt">descolamento da placenta</rdfs:label>
         <rdfs:label xml:lang="pt">placenta abrupta</rdfs:label>
         <rdfs:label xml:lang="en">placenta abruption</rdfs:label>
@@ -6743,11 +6743,11 @@ Source: http://www.genico.ch/en/childbirth_glossary</rdfs:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000247"/>
         <obo:IAO_0000115 xml:lang="en">TO DO</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <rdf:comment xml:lang="en">Simply explained a uterine window is a weakness in the uterine muscle. A uterine window can happen in any woman who has had uterine surgery but the most common reason is a previous c-section. Uterine windows are often discovered in the third trimester at the time of c-section.
+        <rdfs:comment xml:lang="en">Simply explained a uterine window is a weakness in the uterine muscle. A uterine window can happen in any woman who has had uterine surgery but the most common reason is a previous c-section. Uterine windows are often discovered in the third trimester at the time of c-section.
 
 When a uterine window occurs the uterine wall becomes as thin as Saran Wrap and the baby can clearly be seen through the thin uterine muscle. Hence the term ‘uterine window’. It is commonly believed uterine windows will eventually progress to rupture of the uterus if enough time and stress are allowed.
 
-https://www.tubal-reversal.net/blog/uterine-window-and-uterine-rupture-is-tubal-ligation-necessary/</rdf:comment>
+https://www.tubal-reversal.net/blog/uterine-window-and-uterine-rupture-is-tubal-ligation-necessary/</rdfs:comment>
         <rdfs:label xml:lang="pt">janela uterina</rdfs:label>
         <rdfs:label xml:lang="en">uterine window</rdfs:label>
     </owl:Class>
@@ -6760,9 +6760,9 @@ https://www.tubal-reversal.net/blog/uterine-window-and-uterine-rupture-is-tubal-
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000247"/>
         <obo:IAO_0000115 xml:lang="en">TO DO</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <rdf:comment xml:lang="en">Uterine perforation is a potential complication of any intrauterine procedure. It may be associated with injury to surrounding blood vessels or viscera such as the bladder or intestine. If not diagnosed at the time of the procedure it can occasionally result in massive hemorrhage or sepsis; however, the majority of uterine perforations are sub-clinical and safely resolve by themselves without treatment and do not cause any significant long-term damage. Risk factors include cervical stenosis during trans-cervical procedures or decreased strength of the myometrial wall as in pregnancy or menopause.
+        <rdfs:comment xml:lang="en">Uterine perforation is a potential complication of any intrauterine procedure. It may be associated with injury to surrounding blood vessels or viscera such as the bladder or intestine. If not diagnosed at the time of the procedure it can occasionally result in massive hemorrhage or sepsis; however, the majority of uterine perforations are sub-clinical and safely resolve by themselves without treatment and do not cause any significant long-term damage. Risk factors include cervical stenosis during trans-cervical procedures or decreased strength of the myometrial wall as in pregnancy or menopause.
 
-https://en.wikipedia.org/wiki/Uterine_perforation</rdf:comment>
+https://en.wikipedia.org/wiki/Uterine_perforation</rdfs:comment>
         <rdfs:label xml:lang="pt">perfuração uterina</rdfs:label>
         <rdfs:label xml:lang="en">uterine perforation</rdfs:label>
     </owl:Class>
@@ -6775,11 +6775,11 @@ https://en.wikipedia.org/wiki/Uterine_perforation</rdf:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/ontoneo/ONTONEO_00000247"/>
         <obo:IAO_0000115 xml:lang="en">TO DO</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
-        <rdf:comment xml:lang="en">Uterine rupture is a potentially catastrophic event during childbirth by which the integrity of the myometrial wall is breached. In an incomplete rupture the peritoneum is still intact. With a complete rupture the contents of the uterus may spill into the peritoneal cavity or the broad ligament. A uterine rupture is a life-threatening event for mother and baby.
+        <rdfs:comment xml:lang="en">Uterine rupture is a potentially catastrophic event during childbirth by which the integrity of the myometrial wall is breached. In an incomplete rupture the peritoneum is still intact. With a complete rupture the contents of the uterus may spill into the peritoneal cavity or the broad ligament. A uterine rupture is a life-threatening event for mother and baby.
 A uterine rupture typically occurs during active labor, but may also develop during late pregnancy.
 Uterine dehiscence is a similar condition, but involves fewer layers, less bleeding, and less risk.
 
-https://en.wikipedia.org/wiki/Uterine_rupture</rdf:comment>
+https://en.wikipedia.org/wiki/Uterine_rupture</rdfs:comment>
         <rdfs:label xml:lang="pt">ruptura uterina</rdfs:label>
         <rdfs:label xml:lang="en">uterine rupture</rdfs:label>
     </owl:Class>
@@ -6828,8 +6828,8 @@ https://en.wikipedia.org/wiki/Uterine_rupture</rdf:comment>
         <obo:IAO_0000118 xml:lang="en">cesariana de segmento superior</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">classical cesarean section</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="en">upper segment caesarean section</obo:IAO_0000118>
-        <rdf:comment xml:lang="en">It is the fastest method of cesarean delivery in which is usually used when a rapid delivery is necessary or for very preterm fetuses.</rdf:comment>
-        <rdf:comment xml:lang="en">É o método mais rápido de cesariana em que normalmente é utilizado quando é necessário um parto rápido ou para fetos muito prematuros.</rdf:comment>
+        <rdfs:comment xml:lang="en">It is the fastest method of cesarean delivery in which is usually used when a rapid delivery is necessary or for very preterm fetuses.</rdfs:comment>
+        <rdfs:comment xml:lang="en">É o método mais rápido de cesariana em que normalmente é utilizado quando é necessário um parto rápido ou para fetos muito prematuros.</rdfs:comment>
         <rdfs:label xml:lang="pt">cesariana clássica</rdfs:label>
         <rdfs:label xml:lang="pt">cesariana tradicional</rdfs:label>
         <rdfs:label xml:lang="en">classical caesarean section</rdfs:label>
@@ -6868,8 +6868,8 @@ https://en.wikipedia.org/wiki/Uterine_rupture</rdf:comment>
         <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/CMO_0000012"/>
         <obo:IAO_0000115 xml:lang="pt">O peso corporal de um organismo grávido no início da gravidez.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="en">The body weight of a pregnant organism at pregnancy onset.</obo:IAO_0000115>
-        <rdf:comment xml:lang="pt">Geralmente identificado na primeira consulta pré-natal.</rdf:comment>
-        <rdf:comment xml:lang="en">Usually identified at the first prenatal visit.</rdf:comment>
+        <rdfs:comment xml:lang="pt">Geralmente identificado na primeira consulta pré-natal.</rdfs:comment>
+        <rdfs:comment xml:lang="en">Usually identified at the first prenatal visit.</rdfs:comment>
         <rdfs:label xml:lang="pt">peso no início da gravidez</rdfs:label>
         <rdfs:label xml:lang="en">weight at pregnancy onset</rdfs:label>
     </owl:Class>
@@ -6895,8 +6895,8 @@ https://en.wikipedia.org/wiki/Uterine_rupture</rdf:comment>
         <obo:IAO_0000115 xml:lang="en">A lower segment cesarean section that is made through a vertical incision in the lower uterine segment.</obo:IAO_0000115>
         <obo:IAO_0000115 xml:lang="pt">Um segmento de cesariana de segmento inferior que é feito através de uma incisão vertical no segmento uterino inferior.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">low vertical cesarean section</obo:IAO_0000118>
-        <rdf:comment xml:lang="en">A low vertical incision might be used if your baby is in an awkward position (top right).
-Source: http://www.mayoclinic.org/tests-procedures/c-section/multimedia/uterine-incisions-used-during-c-sections/img-20006738</rdf:comment>
+        <rdfs:comment xml:lang="en">A low vertical incision might be used if your baby is in an awkward position (top right).
+Source: http://www.mayoclinic.org/tests-procedures/c-section/multimedia/uterine-incisions-used-during-c-sections/img-20006738</rdfs:comment>
         <rdfs:label xml:lang="pt">cesariana vertical do segmento inferior</rdfs:label>
         <rdfs:label xml:lang="en">low vertical caesarean section</rdfs:label>
     </owl:Class>
@@ -7047,8 +7047,8 @@ Source: http://www.mayoclinic.org/tests-procedures/c-section/multimedia/uterine-
         <obo:IAO_0000115 xml:lang="pt">Uma medida escalar que se refere ao diâmetro da abertura do colo do útero medida durante o processo de dilatação cervical.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="en">cervical dilation measurement</obo:IAO_0000118>
         <obo:IAO_0000118 xml:lang="pt">valor da dilatação do colo do útero</obo:IAO_0000118>
-        <rdf:comment xml:lang="en">It is expressed in centimeters or finger breadths; one finger breadth is approximately 2 cm. At full dilation the diameter of the cervical opening is 10 cm.
-Source: Mosby&apos;s Medical Dictionary, 9th edition. © 2009, Elsevier, found at &lt;http://medical-dictionary.thefreedictionary.com/cervical+dilation&gt;</rdf:comment>
+        <rdfs:comment xml:lang="en">It is expressed in centimeters or finger breadths; one finger breadth is approximately 2 cm. At full dilation the diameter of the cervical opening is 10 cm.
+Source: Mosby&apos;s Medical Dictionary, 9th edition. © 2009, Elsevier, found at &lt;http://medical-dictionary.thefreedictionary.com/cervical+dilation&gt;</rdfs:comment>
         <rdfs:label xml:lang="en">cervix diameter measurement datum</rdfs:label>
         <rdfs:label xml:lang="pt">medida do diâmetro do colo do útero</rdfs:label>
     </owl:Class>
@@ -8748,20 +8748,20 @@ Source: https://en.wikipedia.org/wiki/Gestational_age</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">bolsa amniótica</obo:IAO_0000118>
         <rdfs:label xml:lang="pt">âmnio</rdfs:label>
         <obo:IAO_0000115 xml:lang="pt"></obo:IAO_0000115>
-        <rdf:comment xml:lang="pt">A bolsa amniótica ou âmnio é um dos anexos embrionários que alguns vertebrados (incluindo alguns répteis, algumas aves e alguns mamíferos) possuem durante o seu desenvolvimento embrionário. Os animais que possuem âmnio são designados amniotas.
+        <rdfs:comment xml:lang="pt">A bolsa amniótica ou âmnio é um dos anexos embrionários que alguns vertebrados (incluindo alguns répteis, algumas aves e alguns mamíferos) possuem durante o seu desenvolvimento embrionário. Os animais que possuem âmnio são designados amniotas.
 O âmnio é uma bolsa em forma de saco que está repleta de líquido amniótico e tem uma função protetora, permitindo que o embrião se desenvolva num ambiente úmido, tal como acontece com os anfíbios e com os peixes que se desenvolvem na água, e por outro lado protegendo o embrião, amortecendo os choques térmicos e mecânicos.
 O âmnio forma-se a partir de uma dobra interna da ectoderme e nos ovos dos répteis e das aves está envolto pelo alantocórion, ao passo que, nos mamíferos está envolto pelo córion, e este por sua vez pela placenta.
 Em suma, o saco amniótico é similar a uma bolsa, preenchida com um liquido (o líquido amniótico), e tem como função proteger o feto de choques térmicos e mecânicos que podem ocorrer durante a gestação.
-Source: https://pt.wikipedia.org/wiki/Bolsa_amni%C3%B3tica</rdf:comment>
+Source: https://pt.wikipedia.org/wiki/Bolsa_amni%C3%B3tica</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FMA_80224">
         <obo:IAO_0000118 xml:lang="pt">cório</obo:IAO_0000118>
         <rdfs:label xml:lang="pt">córion</rdfs:label>
-        <rdf:comment xml:lang="pt">Córion ou cório é uma membrana extra-embrionária que existe durante a gravidez e que forma a parede externa dos blastocisto em répteis, aves e mamíferos. Ele é formado pela mesoderme extra-embrionária e duas camadas de trofoblasto que envolvem o embrião e as outras membranas. As vilosidades coriônicas invadem o endométrio para permitir a transferência de nutrientes do sangue materno para o feto.[1]
+        <rdfs:comment xml:lang="pt">Córion ou cório é uma membrana extra-embrionária que existe durante a gravidez e que forma a parede externa dos blastocisto em répteis, aves e mamíferos. Ele é formado pela mesoderme extra-embrionária e duas camadas de trofoblasto que envolvem o embrião e as outras membranas. As vilosidades coriônicas invadem o endométrio para permitir a transferência de nutrientes do sangue materno para o feto.[1]
 Une-se com o alantóide para formar o alantocórion com função respiratória para aves e répteis, não em mamíferos.
 Em aves e répteis o córion está localizado logo abaixo da casca; nos mamíferos o córion faz parte da placenta e também está envolvido com a remoção de resíduos.
 Durante a segunda semana de desenvolvimento embrionário humano, córion é a camada que reveste internamente o celoma e que é composto por trofoblasto e mesoderme. Surge durante a terceira semana de gestação, entre o o 15º dia e 17º dia de gravidez.
-Fonte: https://pt.wikipedia.org/wiki/C%C3%B3rion</rdf:comment>
+Fonte: https://pt.wikipedia.org/wiki/C%C3%B3rion</rdfs:comment>
         <obo:IAO_0000115 xml:lang="pt">TO DO</obo:IAO_0000115>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FMA_82743">
@@ -8790,11 +8790,11 @@ Fonte: https://pt.wikipedia.org/wiki/C%C3%B3rion</rdf:comment>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FMA_85538">
         <obo:IAO_0000115 xml:lang="pt">A decídua refere-se à camada funcional do endométrio de uma mulher grávida (endométrio gravídico) que se separa do restante do útero ao nascimento.</obo:IAO_0000115>
         <obo:IAO_0000118 xml:lang="pt">decíduo</obo:IAO_0000118>
-        <rdf:comment xml:lang="pt">A decídua (do latim deciduus, que significa &quot;queda&quot; ou &quot;derrame&quot;) é um anexo embrionário encontrado somente nos mamíferos placentários. Consiste em uma membrana delgada que, juntamente com o córion liso e o âmnio, delimita a bolsa amniótica.
+        <rdfs:comment xml:lang="pt">A decídua (do latim deciduus, que significa &quot;queda&quot; ou &quot;derrame&quot;) é um anexo embrionário encontrado somente nos mamíferos placentários. Consiste em uma membrana delgada que, juntamente com o córion liso e o âmnio, delimita a bolsa amniótica.
 Na mulher, a decídua é a parte da mucosa uterina onde a placenta está implantada e que se hipertrofia durante a gestação e que é expulsa durante e após o parto.
 A decídua é formada a partir da camada do endométrio que recobre o ovo, após ocorrer a nidação. Sua função é conferir proteção ao embrião.
 Após o parto, a puerpera continua com perdas sanguíneas, denominadas de lóquios, nas quais contínua a eliminar a restante decídua já necrosada. Para além dos restos da decídua, os lóquios são compostos por muco, leucócitos e sangue proveniente do local da placenta.
-Fonte: https://pt.wikipedia.org/wiki/Dec%C3%ADdua_(animal)</rdf:comment>
+Fonte: https://pt.wikipedia.org/wiki/Dec%C3%ADdua_(animal)</rdfs:comment>
         <obo:IAO_0000119 xml:lang="pt">http://www.dacelulaaosistema.uff.br/?p=702</obo:IAO_0000119>
         <rdfs:label xml:lang="pt">decídua</rdfs:label>
     </rdf:Description>
@@ -8807,11 +8807,11 @@ Fonte: https://pt.wikipedia.org/wiki/Dec%C3%ADdua_(animal)</rdf:comment>
         <rdfs:label xml:lang="pt">decídua basal</rdfs:label>
         <obo:IAO_0000115 xml:lang="pt">Decídua basal: parte que fica abaixo do concepto, formando o componente materno da placenta.</obo:IAO_0000115>
         <obo:IAO_0000119 xml:lang="pt">http://www.dacelulaaosistema.uff.br/?p=702 (Access date: 12/28/2016)</obo:IAO_0000119>
-        <rdf:comment xml:lang="en">the decidua of the endometrium in the uterus that lies beneath the implanted ovum. Also called decidua serotina.
-Mosby&apos;s Medical Dictionary, 9th edition. © 2009, Elsevier.</rdf:comment>
-        <rdf:comment xml:lang="en">the area of endometrium between the implanted chorionic sac and the myometrium, which develops into the maternal part of the placenta.
+        <rdfs:comment xml:lang="en">the decidua of the endometrium in the uterus that lies beneath the implanted ovum. Also called decidua serotina.
+Mosby&apos;s Medical Dictionary, 9th edition. © 2009, Elsevier.</rdfs:comment>
+        <rdfs:comment xml:lang="en">the area of endometrium between the implanted chorionic sac and the myometrium, which develops into the maternal part of the placenta.
 Synonym(s): decidua serotina
-Farlex Partner Medical Dictionary © Farlex 2012</rdf:comment>
+Farlex Partner Medical Dictionary © Farlex 2012</rdfs:comment>
     </rdf:Description>
     <rdf:Description rdf:about="http://purl.obolibrary.org/obo/FMA_86478">
         <obo:IAO_0000115 xml:lang="pt">Decídua capsular: parte superficial da decídua que recobre o concepto.</obo:IAO_0000115>
