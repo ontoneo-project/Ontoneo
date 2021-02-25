@@ -11,17 +11,17 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;ontoneo/import/efo_import.owl#"
-     xml:base="&obo;ontoneo/import/efo_import.owl"
+<rdf:RDF xmlns="&obo;ontoneo/releases/2021-02-24/import/efo_import.owl#"
+     xml:base="&obo;ontoneo/releases/2021-02-24/import/efo_import.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:efo="http://www.ebi.ac.uk/efo/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/efo_import.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/releases/2021-02-24/import/efo_import.owl">
         <xsd:title rdf:datatype="&xsd;string">Experimental Factor Ontology</xsd:title>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/efo_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2021-02-24/import/efo_import.owl"/>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of EFO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <rdfs:comment xml:lang="en">EFO subset applied to OntONeo ontology.</rdfs:comment>

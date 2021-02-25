@@ -5694,7 +5694,7 @@ Source: http://www.genico.ch/en/childbirth_glossary</rdfs:comment>
     <owl:Class rdf:about="&obo;ontoneo/ONTONEO_00000160">
         <rdfs:label xml:lang="en">rupture of membranes</rdfs:label>
         <rdfs:label xml:lang="pt">ruptura de membranas</rdfs:label>
-        <rdfs:subClassOf rdf:resource="&obo;GO_0008150"/>
+        <rdfs:subClassOf rdf:resource="http://purl.obolibrary.org/obo/GO_0008150"/>
         <rdfs:isDefinedBy rdf:datatype="&xsd;anyURI">http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl</rdfs:isDefinedBy>
         <obo:IAO_0000119 rdf:datatype="&xsd;anyURI">http://www.genico.ch/en/childbirth_glossary</obo:IAO_0000119>
         <obo:IAO_0000115 xml:lang="en">A biological process that consists on the tear of the amniotic sac, causing the amniotic fluid to flow out through the vagina. It usually happens shortly before the birth, the expectant mother feels wetness and notices a clear odorless fluid.</obo:IAO_0000115>

@@ -11,8 +11,8 @@
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
 
-<rdf:RDF xmlns="&obo;ontoneo/import/mpath_import.owl#"
-     xml:base="&obo;ontoneo/import/mpath_import.owl"
+<rdf:RDF xmlns="&obo;ontoneo/releases/2021-02-24/import/mpath_import.owl#"
+     xml:base="&obo;ontoneo/releases/2021-02-24/import/mpath_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#"
@@ -21,12 +21,12 @@
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/mpath_import.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/releases/2021-02-24/import/mpath_import.owl">
         <dc:title xml:lang="en">Mouse pathology</dc:title>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of MPATH that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <rdfs:comment xml:lang="en">MPATH subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/mpath_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2021-02-24/mpath_import.owl"/>
     </owl:Ontology>
 	
     <!-- 

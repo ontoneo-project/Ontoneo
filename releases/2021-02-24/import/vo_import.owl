@@ -12,8 +12,8 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;ontoneo/import/vo_import.owl#"
-     xml:base="&obo;ontoneo/import/vo_import.owl"
+<rdf:RDF xmlns="&obo;ontoneo/releases/2021-02-24/import/vo_import.owl#"
+     xml:base="&obo;ontoneo/releases/2021-02-24/import/vo_import.owl"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:bio="http://purl.bioontology.org/"
@@ -21,12 +21,12 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/vo_import.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/releases/2021-02-24/import/vo_import.owl">
         <xsd:title rdf:datatype="&xsd;string">Vaccine Ontology</xsd:title>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of VO that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
         <rdfs:comment xml:lang="en">VO subset applied to OntONeo ontology.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/vo_import.owl"/>		
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2021-02-24/vo_import.owl"/>		
     </owl:Ontology>
     
 

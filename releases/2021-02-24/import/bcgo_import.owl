@@ -11,8 +11,8 @@
     <!ENTITY oboInOwl "http://www.geneontology.org/formats/oboInOwl#" >
 ]>
 
-<rdf:RDF xmlns="&obo;ontoneo/import/bcgo_import.owl#"
-     xml:base="&obo;ontoneo/import/bcgo_import.owl"
+<rdf:RDF xmlns="&obo;ontoneo/releases/2021-02-24/import/bcgo_import.owl#"
+     xml:base="&obo;ontoneo/releases/2021-02-24/import/bcgo_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:ubprop="http://purl.obolibrary.org/obo/ubprop#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/"
@@ -24,7 +24,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/bcgo_import.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/releases/2021-02-24/import/bcgo_import.owl">
         <rdfs:comment>This file is based on checkout of our SVN repository revision $Revision: 204$</rdfs:comment>
         <foaf:homepage>https://github.com/obi-bcgo/bcgo</foaf:homepage>
         <dc:creator>Chris Stoeckert</dc:creator>
@@ -33,7 +33,7 @@
         <dc:contributor>Elisabetta Manduchi</dc:contributor>
         <dc:creator>Jie Zheng</dc:creator>
         <dc:license rdf:resource="http://creativecommons.org/licenses/by/3.0/"/>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/bcgo_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2021-02-24/import/bcgo_import.owl"/>
     </owl:Ontology>
     
 

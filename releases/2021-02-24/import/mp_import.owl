@@ -15,8 +15,8 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;ontoneo/import/mp_import.owl#"
-     xml:base="&obo;ontoneo/import/mp_import.owl"
+<rdf:RDF xmlns="&obo;ontoneo/releases/2021-02-24/import/mp_import.owl#"
+     xml:base="&obo;ontoneo/releases/2021-02-24/import/mp_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -27,12 +27,12 @@
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:mp-edit="&obo;mp-edit#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/mp_import.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/releases/2021-02-24/import/mp_import.owl">
         <xsd:title rdf:datatype="&xsd;string">Mammalian phenotype</xsd:title>
         <rdfs:comment xml:lang="en">MP subset applied to OntONeo ontology.</rdfs:comment>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of MP that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/mp_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2021-02-24/mp_import.owl"/>
     </owl:Ontology>
     
 

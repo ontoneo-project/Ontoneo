@@ -13,8 +13,8 @@
 ]>
 
 
-<rdf:RDF xmlns="&obo;ontoneo/import/doid_import.owl#"
-     xml:base="&obo;ontoneo/import/doid_import.owl"
+<rdf:RDF xmlns="&obo;ontoneo/releases/2021-02-24/import/doid_import.owl#"
+     xml:base="&obo;ontoneo/releases/2021-02-24/import/doid_import.owl"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:obo="http://purl.obolibrary.org/obo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
@@ -23,12 +23,12 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:oboInOwl="http://www.geneontology.org/formats/oboInOwl#">
-    <owl:Ontology rdf:about="&obo;ontoneo/import/doid_import.owl">
+    <owl:Ontology rdf:about="&obo;ontoneo/releases/2021-02-24/import/doid_import.owl">
         <xsd:title rdf:datatype="&xsd;string">Human Disease Ontology</xsd:title>
         <rdfs:comment xml:lang="en">DOID subset applied to OntONeo ontology.</rdfs:comment>
         <rdfs:comment xml:lang="en">PERSON: Fernanda Farinelli
 This owl file represents the necessary entities of DOID that are reused in OntONeo Ontology. This file was created using Ontofox and some intermediary entities were not imported.</rdfs:comment>
-        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2017-03-04/doid_import.owl"/>
+        <owl:versionIRI rdf:resource="&obo;ontoneo/releases/2021-02-24/import/doid_import.owl"/>
     </owl:Ontology>
     
 
