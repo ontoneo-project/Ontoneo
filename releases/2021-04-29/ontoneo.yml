@@ -19,16 +19,11 @@ entries:
 - exact: /tracker
   replacement: https://github.com/ontoneo-project/Ontoneo/issues
 
-### Current Releases
-
-- exact: /ontoneo.owl
-  replacement: hhttps://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/ontoneo.owl
-  
 ### Imported ontologies current release
 - prefix: /import/
-  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/
+  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-04-29/import/ro_import.owl
   tests:
-  - from: /import/ro_import.owl
+  - from: releases/2021-02-24/import/ro_import.owl
     to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/ro_import.owl
 
 ### Previous release
@@ -38,11 +33,8 @@ entries:
   
 - exact: /releases/2021-04-29
   replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-04-29
-  tests:
-  - from: releases/2021-04-29/import/ro_import.owl
-    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/ro_import.owl  
-
-- exact: /releases/2021-02-24
+  
+  - exact: /releases/2021-02-24
   replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/2021-02-24
 
   - exact: /releases/2017-03-04
@@ -60,4 +52,3 @@ entries:
 ### Documentation Pages and Redirects
 - exact: /homepage
   replacement: http://ontoneo.com
-  
