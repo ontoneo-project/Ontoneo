@@ -11,6 +11,7 @@ license:
 domain: biomedical, health
 homepage: ontoneo.com 
 mailing_list: http://groups.google.com/group/ontoneo-discuss
+publications: 
 products: 
 build:
  url soure: http://purl.obolibrary.org/obo/ontoneo/ontoneo.owl
