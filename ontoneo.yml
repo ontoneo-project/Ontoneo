@@ -24,12 +24,6 @@ entries:
 - exact: /ontoneo.owl
   replacement: hhttps://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/releases/ontoneo.owl
   
-### Imported ontologies current release
-- prefix: /import/
-  replacement: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/
-  tests:
-  - from: /import/ro_import.owl
-    to: https://raw.githubusercontent.com/ontoneo-project/Ontoneo/master/import/ro_import.owl
 
 ### Previous release
 
