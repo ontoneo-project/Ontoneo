@@ -4,9 +4,9 @@ The Obstetric and Neonatal Ontology is a structured controlled vocabulary to pro
 
 This ontology has been created to provide a consensus representation of salient electronic health record (EHR) data in this medical specialties, in order to serve EHR interoperability of the associated data and information systems. Interoperability of EHR data in woman and child care is important to ensuring continuity of care during the prenatal and postnatal periods for both mother and child.
 
-OntONeo  is a collection of entities related to anatomy, embryology and medical specialties related to care of woman and child (gynecology, obstetric, pediatric, neonatology).
+OntONeo is a collection of entities related to anatomy, embryology and medical specialties related to care of woman and child (gynecology, obstetric, pediatric, neonatology).
 
-The current version of OntONeo is version 1.6 deployed on 04-29-2021. 
+The current version of OntONeo is version 2.0 deployed on  March 14, 2025. 
 
 The previous versions are located at releases folder according to the version deployed date.
 
