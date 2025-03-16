@@ -38,8 +38,6 @@ usages:
 - user: http://recol.eci.ufmg.br/
   description: The Research Group on Knowledge Representation, Ontologies, and Language (ReCOL) investigates theoretical and applied aspects of knowledge modeling, including the use of biomedical ontologies such as OntONeo.
 activity_status: active
-
-https://raw.githubusercontent.com/ontoneo-project/Ontoneo/refs/heads/master/ontoneo.owl
 ---
 The OntONeo suite is a collection of open ontologies available about Obstetric and Neonatal domain, currently designed to be composed by three complementary sub-ontologies covering several data from electronic health records (EHRs) involved in the care of the pregnant woman, and of her baby.
 ---
